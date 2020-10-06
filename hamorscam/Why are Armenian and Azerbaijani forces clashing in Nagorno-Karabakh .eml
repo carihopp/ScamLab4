@@ -1,0 +1,1393 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a05:6838:6504:0:0:0:0 with SMTP id eo4csp5657140nkb;
+        Wed, 30 Sep 2020 10:13:54 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxQT93eVp5dWFnR6LMMRcdbkUHEzFwqqZLwpWtQhIJqhQkFAR2VbIGqyugxtDFNxUkmNaj/
+X-Received: by 2002:adf:e312:: with SMTP id b18mr4523095wrj.372.1601486034055;
+        Wed, 30 Sep 2020 10:13:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601486034; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oz2mcl4e1eS/RSamgAQBNIWv583+vwtZXEk+IwLSYuosrT23x5NMlsKHKR74nBly0P
+         /4d714Zh86OqpzDZVdx4oYeblUmivRSmsxhJzUkZRehXeWL+i7dt/7qDyld7VBpczTbr
+         Rc/9ihOPZBCNxikQ+Xw0NB8u6Kv8EPKbZ23dbVgvzc05iF8SEH7BkiBY3VOFnx+5S5Bm
+         VpexBGxGHCpM7usg+cmEfLwMktc9HmOMWRhoJWEOdybxiiR857e+RxLXehMVOJh0LYik
+         QGQEyCD61vKhoc0zAHDBC6YtBTBp/jJNncfbJaTcljj0gLGMo3lqoE2jkIhkqcM+9h09
+         1R8A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:date:list-unsubscribe:mime-version:subject:message-id
+         :to:from:dkim-signature:dkim-signature;
+        bh=SDx7t7Io41uZCfw65g2h1nO1BlaeOEK1jmiU/0cawQA=;
+        b=yrevud1FPwPC2zBItgAtdXr2dxEc6iFRWwD8A8luw+4f4XK9n0Qe/Ownhm9Vs4MlI5
+         mSMUPMlz5WKCmBdgsp1XyEt6Yp5byCB7MdNkr3At4OMuhksSx3vdCZ9AOcPF1GSbzUTa
+         IKanEBVkV7t80vQq6w8WtTk+s0uSrihAXkE96tLHv8HlTtuXA2ElTuKJ1peIJxoaua82
+         RCjnXR6yrUqN2E7lu7QJ71WJknsgKDducNjGmgY3aeNAH2rtrYlYv/xN+Ag6CKlUX2Qs
+         JMC/d5MyrSgYV2N1yMSKO5BTHoYeApnOkmkwQwx3rwx34QMKpBIm3RClumzn2radbM7L
+         jfMQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@euronews.com header.s=p47swque6i4l23xegu46qterbpnisfb4 header.b=NN2q7to8;
+       dkim=pass header.i=@amazonses.com header.s=shh3fegwg5fppqsuzphvschd53n6ihuv header.b="EooIZL/A";
+       spf=pass (google.com: domain of 01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@newsletter-personnalisee.euronews.com designates 54.240.6.8 as permitted sender) smtp.mailfrom=01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@newsletter-personnalisee.euronews.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=euronews.com
+Return-Path: <01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@newsletter-personnalisee.euronews.com>
+Received: from a6-8.smtp-out.eu-west-1.amazonses.com (a6-8.smtp-out.eu-west-1.amazonses.com. [54.240.6.8])
+        by mx.google.com with ESMTPS id o15si2417080wmm.70.2020.09.30.10.13.53
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Wed, 30 Sep 2020 10:13:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@newsletter-personnalisee.euronews.com designates 54.240.6.8 as permitted sender) client-ip=54.240.6.8;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@euronews.com header.s=p47swque6i4l23xegu46qterbpnisfb4 header.b=NN2q7to8;
+       dkim=pass header.i=@amazonses.com header.s=shh3fegwg5fppqsuzphvschd53n6ihuv header.b="EooIZL/A";
+       spf=pass (google.com: domain of 01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@newsletter-personnalisee.euronews.com designates 54.240.6.8 as permitted sender) smtp.mailfrom=01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@newsletter-personnalisee.euronews.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=euronews.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=p47swque6i4l23xegu46qterbpnisfb4; d=euronews.com; t=1601486033;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe:Date;
+	bh=C1wq/BPlBIcQzuVxFEpuNP+f0hnJ/lU46H2j5EfS/PU=;
+	b=NN2q7to8A/bsE8Cts9rlRGd+bO5WUSGYRMHNTlW81/GUVrSRNbVZFt28IEeF3jx7
+	Aczr6z39C2R2enQKaM5XYIgMVb1lwPrBXTZt3FskWMPzrXcXTEhVICDB4bLqG8Vj4Ra
+	dNi+e65+RxifC7EXv/necZ/tCtBqZtDtkcciBi34=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=shh3fegwg5fppqsuzphvschd53n6ihuv; d=amazonses.com; t=1601486033;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe:Date:Feedback-ID;
+	bh=C1wq/BPlBIcQzuVxFEpuNP+f0hnJ/lU46H2j5EfS/PU=;
+	b=EooIZL/AK7o1hcmIrOENfsMUaEqHeJmovrWBTno5yR8SnHe//w65j/1Eg18afKrJ
+	f5HGdV9M5JGG1ysPUUQFaL3MjMoBb9bzSYDto1YgLRMcka4bFY2VCHRcXOSBQ2XGxEE
+	O2mUyBE8GtXqXuqxAok+y276kSHp+o3Az/a037/M=
+From: Euronews <noreply@euronews.com>
+To: thomposondouglas@gmail.com
+Message-ID: <01020174e00191fe-43dd0ac4-46f2-481f-9bda-e6b73661ca12-000000@eu-west-1.amazonses.com>
+Subject: Why are Armenian and Azerbaijani forces clashing in
+ Nagorno-Karabakh?
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_19879_703998020.1601486033170"
+X-Ownpage-Campaign-Id: 57757
+List-Unsubscribe: <mailto:list-unsubscribe-auto+34170738+57757+6a2e67c53cf8304bc3c4c7211d9c4244@ownpage.fr?subject=unsubscribe>, <https://services.ownpage.fr/unsubscribe/direct/21d281cc37e84c52/eyJubCI6IjU3NzU3IiwidSI6IjZhMmU2N2M1M2NmODMwNGJjM2M0YzcyMTFkOWM0MjQ0IiwiZW0iOiJ0aG9tcG9zb25kb3VnbGFzQGdtYWlsLmNvbSJ9>
+Date: Wed, 30 Sep 2020 17:13:53 +0000
+X-SES-Outgoing: 2020.09.30-54.240.6.8
+Feedback-ID: 1.eu-west-1.LhW6beufoAYoCG0U0cTtBo6vNdpNV/kCnXyqtlb5KhY=:AmazonSES
+
+------=_Part_19879_703998020.1601486033170
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Why are Armenian and Azerbaijani forces clashing in Nagorno-Karabakh?
+https://www.euronews.com/2020/09/30/nagorno-karabakh-why-has-there-been-a-flare-up-of-violence
+Euronews spoke to four experts to get their take on the recent surge in violence in the Nagorno-Karabakh region.
+
+Trump-Biden presidential debate: Five key takeaways
+https://www.euronews.com/2020/09/30/first-us-presidential-debate-five-key-takeaways
+Trump is no stranger to going on the offensive, but his fighting approach on stage left his Democratic opponent struggling to complete a sentence during the debate.
+
+Coronavirus: Belgium death toll hits 10k, UK breaks daily cases record
+https://www.euronews.com/2020/09/30/coronavirus-belgium-death-toll-passes-10-000-uk-breaks-new-daily-cases-record
+Belgium's death toll from the virus passed 10,000 on Wednesday as cases soared in the UK, breaking its daily new cases record.
+
+Which countries in Europe are experiencing a second wave of COVID-19?
+https://www.euronews.com/2020/09/30/is-europe-having-a-covid-19-second-wave-country-by-country-breakdown
+There is much talk of a second wave of coronavirus in Europe. But what does the data tell us?
+
+The Rule of Law: what is it and why is it important?
+https://www.euronews.com/2020/09/30/the-rule-of-law-what-is-it-and-why-is-it-important
+In recent years, citizens of EU countries have taken to the streets, protesting against what they saw as democratic backsliding. The European Commission has introduced ways to limit regression on rule of law. We explain the issue that is shaking the EU's foundations.
+
+Marseille and Paris hit out over tightening of COVID-19 restrictions
+https://www.euronews.com/2020/09/23/coronavirus-france-unveils-new-measures-to-tackle-flare-up-in-cases-and-hospitalisations
+Bars and restaurants in Marseille and Guadeloupe, where there are currently more than 250 COVID-19 cases per 100,000 population, will have to shut from Saturday.
+
+Paris holds body-positive fashion show by the Eiffel Tower
+https://www.euronews.com/2020/09/28/paris-holds-body-positive-fashion-show-by-the-eiffel-tower
+It's a movement of kindness towards oneself and others, whatever the age, whatever the body type, whatever the disability, whatever the disease," said Georgia Stein, model and organiser of the body-positive fashion show.
+
+Half a million sharks could be killed for Covid-19 vaccine, says NGO | Living
+https://www.euronews.com/living/2020/09/29/half-a-million-sharks-could-be-killed-for-covid-19-vaccine-say-experts
+"Sourcing an ingredient from a wild animal is not a long-term solution."
+
+------=_Part_19879_703998020.1601486033170
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" dir=3D"ltr"><head><meta http-equiv=3D"Content-Type" content=3D"text/htm=
+l; charset=3Dutf-8"><meta name=3D"viewport" content=3D"width=3Ddevice-width=
+, initial-scale=3D1.0"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=
+=3D9; IE=3D8; IE=3D7; IE=3DEDGE"><link rel=3D"icon" type=3D"image/png" href=
+=3D"http://www.euronews.com/favicon-32x32.png" sizes=3D"32x32"><link rel=3D=
+"icon" type=3D"image/png" href=3D"http://www.euronews.com/android-chrome-19=
+2x192.png" sizes=3D"192x192"><link rel=3D"icon" type=3D"image/png" href=3D"=
+http://www.euronews.com//favicon-96x96.png" sizes=3D"96x96"><link rel=3D"ic=
+on" type=3D"image/png" href=3D"http://www.euronews.com/favicon-16x16.png" s=
+izes=3D"16x16"><title>Why are Armenian and Azerbaijani forces clashing in N=
+agorno-Karabakh?</title><style type=3D"text/css">
+      body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-s=
+ize-adjust:100%; margin:0; padding:0; color:#000000}
+      img {outline:none; text-decoration:none; -ms-interpolation-mode: bicu=
+bic;}
+      a img {border:none;}
+      table td {border-collapse: collapse;}
+      table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rsp=
+ace:0pt}
+      a {color: inherit; text-decoration:none}
+      a:visited {color: inherit; text-decoration:none}
+      @font-face {
+      font-family: 'noto-naskh-arabic';
+      url('https://assets.ownpage.fr/euronews/fonts/NotoNaskhArabic-unhinte=
+d/NotoNaskhArabic-Regular.ttf') format('truetype'),
+      font-weight: normal;
+        font-style: normal;
+      }
+      @media only screen and (max-width: 640px), (max-device-width: 640px)
+      {
+        .column {
+          display: block;
+          width: 100% !important;
+        }
+        .mobile-w-maxw-100p {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .mobile-img-max {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+        .mobile-img-100px {
+          width: 100px !important;
+        }
+        .mobile-img-50px {
+          width: 50px !important;
+        }
+        .mobile-align-center {
+          text-align: center !important;
+        }
+        .mobile-text-align-center {
+          text-align: center !important;
+        }
+        .mobile-article-title {
+          padding: 20px 20px 0px 20px !important;
+        }
+        .mobile-article-desc {
+          padding: 10px 20px 0px 20px !important;
+        }
+        .mobile-video-title {
+          padding: 10px 20px 20px 20px !important;
+        }
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        .mobile-hide {
+          display: none !important;
+        }
+        .mobile-show-block {
+          display: block !important;
+        }
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .mobile-no-padding {
+          padding: 0px 0px 0px 0px !important;
+        }
+        .mobile-article-title-padding {
+          padding: 5px 10px 5px 10px !important;
+        }
+      }
+    </style></head><body><span style=3D"display:none !important;max-height:=
+ 0px; font-size: 0px; overflow: hidden; mso-hide: all;">Euronews spoke to f=
+our experts to get their take on the recent surge in violence in the...</sp=
+an><img src=3D"http://ownpage.euronews.com/mail/21d281cc37e84c52/eyJ1IjoiNm=
+EyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJnIjoiMTA5NjQ5In0=3D" style=3D"=
+display:none" width=3D"1" height=3D"1" border=3D"0" alt=3D""><table cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" s=
+tyle=3D"margin:auto;background:#ffffff" dir=3D"ltr"><!--Couleur du fond ici=
+ --><tbody><tr><td><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"=
+center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]-=
+-><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" al=
+ign=3D"center" style=3D"max-width:640px;margin:0 auto;background:#ffffff"><=
+!--Couleur du fond ici --><tbody><tr><td style=3D"padding: 5px 20px 5px 20p=
+x;color:black;font-family:arial,sans-serif;font-size:11px;text-align:center=
+;font-weight:normal;padding-bottom:5px;background-color: #ffffff;"><a href=
+=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY=
+3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly9taX=
+Jyb3Iub3ducGFnZS5mci9jbGllbnRzLzIxZDI4MWNjMzdlODRjNTIvbmV3c2xldHRlcnMvNTc3N=
+TcvNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQuaHRtbD91dG1fc291cmNlPW5ld3Ns=
+ZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT1leUpuZFdsa0lqb2lObUV5WlR=
+ZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOT=
+Y0OSIsInAiOiIxIn0=3D" style=3D"color:#333333;text-decoration:underline">Onl=
+ine Version</a></td></tr><tr><td><!--[if (gte mso 9)|(IE)]><table width=3D"=
+640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr>=
+<td><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;backgro=
+und:#000000"><tbody><tr><td style=3D"padding:0px 0px 0px 0px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center"=
+ style=3D"margin:0 auto;"><tbody><tr><td style=3D"font-family:Helvetica, Ar=
+ial, sans-serif;color:#d9d9d9;font-size:13px;font-weight:normal;font-style:=
+normal;line-height:16px;text-align:center;text-decoration:none;text-transfo=
+rm:none;padding:5px 5px 5px 5px;"> Your personalized newsletter - <span sty=
+le=3D"font-weight:bold">09/30/20</span></td></tr></tbody></table></td></tr>=
+</tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!-=
+-[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=
+=3D"max-width:640px;margin:0 auto;background:#ffffff"><tbody><tr><td style=
+=3D"padding:0px 0px 0px 0px;"><table cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"100%" border=3D"0" align=3D"center" style=3D"max-width:640px;margin:=
+0 auto;background:#ffffff;"><tbody><tr><td align=3D"center" style=3D"text-a=
+lign: center; vertical-align: top; font-size: 0;padding: 30px 0px 0px 0px;"=
+><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ1Ijo=
+iNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cD=
+ovL3d3dy5ldXJvbmV3cy5jb20vP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJ=
+nV0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6=
+UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjIifQ=3D=3D" t=
+arget=3D"_blank" style=3D"color:#000000;text-decoration:none;text-align:cen=
+ter;outline:none"><img style=3D"display:inline-block; border:none;margin:au=
+to;align:right;" border=3D"0" width=3D"240" alt=3D"" src=3D"https://assets.=
+ownpage.fr/euronews/euronews-logo-blue-small-2.png"></a></td></tr></tbody><=
+/table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></tabl=
+e><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"cente=
+r" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><ta=
+ble cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=
+=3D"center" style=3D"max-width:640px;margin:0 auto;background:#ffffff"><tbo=
+dy><tr><td style=3D"padding:0px 0px 0px 0px;"><table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"margin:=
+0 auto;"><tbody><tr><td style=3D"font-family:Helvetica, Arial, sans-serif;c=
+olor:#000001;font-size:15px;font-weight:normal;font-style:normal;line-heigh=
+t:16px;text-align:center;text-decoration:none;text-transform:none;padding:1=
+0px 20px 25px 20px;"> Your daily dose of news and stories, selected by euro=
+news just for you. </td></tr></tbody></table></td></tr></tbody></table><!--=
+[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gte mso 9)|(IE=
+)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:640px;ma=
+rgin:0 auto;background:#ffffff"><tbody><tr><td style=3D"padding:0px 0px 0px=
+ 0px;"><table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"=
+0" bgcolor=3D"#ffffff"><tbody><tr><td class=3D"mobile-no-padding" style=3D"=
+text-align: center;padding: 0px 0px 0px 0px;"><a href=3D"http://ownpage.eur=
+onews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1NDMwOWFhMDM4MDAwNmQyO=
+TE2ZiIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6=
+Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvbmFnb3Juby1rYXJhYmFraC13aHktaGFzLXR=
+oZXJlLWJlZW4tYS1mbGFyZS11cC1vZi12aW9sZW5jZT91dG1fc291cmNlPW5ld3NsZXR0ZXImdX=
+RtX21lZGl1bT1lbiZ1dG1fY29udGVudD1uYWdvcm5vLWthcmFiYWtoLXdoeS1oYXMtdGhlcmUtY=
+mVlbi1hLWZsYXJlLXVwLW9mLXZpb2xlbmNlJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6=
+WTJZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJ=
+wIjoiMyJ9" title=3D"Read on the website" target=3D"_blank" style=3D"color:#=
+000000;text-decoration:none;outline:none;display:block"><img style=3D"borde=
+r:none;max-width:640px;" border=3D"0" width=3D"640" alt=3D"" src=3D"https:/=
+/static.euronews.com/articles/stories/05/00/85/98/1000x563_cmsv2_05a57485-d=
+e98-54f3-a72e-102f0c2bbd17-5008598.jpg" class=3D"mobile-img-max"></a></td><=
+/tr><tr><td style=3D"padding:20px 20px 0px 20px;text-decoration:none;outlin=
+e:none;text-align:left;"><a href=3D"http://ownpage.euronews.com/newsletter/=
+21d281cc37e84c52/eyJhciI6IjVmNzQ1NDMwOWFhMDM4MDAwNmQyOTE2ZiIsInUiOiI2YTJlNj=
+djNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY=
+29tLzIwMjAvMDkvMzAvbmFnb3Juby1rYXJhYmFraC13aHktaGFzLXRoZXJlLWJlZW4tYS1mbGFy=
+ZS11cC1vZi12aW9sZW5jZT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1=
+fY29udGVudD1uYWdvcm5vLWthcmFiYWtoLXdoeS1oYXMtdGhlcmUtYmVlbi1hLWZsYXJlLXVwLW=
+9mLXZpb2xlbmNlJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpSa=
+k56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoiNCJ9" title=3D"R=
+ead on the website" target=3D"_blank" style=3D"text-decoration:none;outline=
+:none;border:none;color:#000000;font-family:Helvetica, Arial, sans-serif;li=
+ne-height:21px;text-align:left;font-weight:bold;font-size:18px"><strong sty=
+le=3D"text-decoration:none;color:#000000;font-weight:bold;">Why are Armenia=
+n and Azerbaijani forces clashing in Nagorno-Karabakh?</strong></a></td></t=
+r><tr><td style=3D"padding:10px 20px 0px 20px;text-decoration:none;outline:=
+none;text-align:left;"><a href=3D"http://ownpage.euronews.com/newsletter/21=
+d281cc37e84c52/eyJhciI6IjVmNzQ1NDMwOWFhMDM4MDAwNmQyOTE2ZiIsInUiOiI2YTJlNjdj=
+NTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29=
+tLzIwMjAvMDkvMzAvbmFnb3Juby1rYXJhYmFraC13aHktaGFzLXRoZXJlLWJlZW4tYS1mbGFyZS=
+11cC1vZi12aW9sZW5jZT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY=
+29udGVudD1uYWdvcm5vLWthcmFiYWtoLXdoeS1oYXMtdGhlcmUtYmVlbi1hLWZsYXJlLXVwLW9m=
+LXZpb2xlbmNlJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpSak5=
+6SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoiNSJ9" title=3D"Rea=
+d on the website" target=3D"_blank" style=3D"text-decoration:none;outline:n=
+one;border:none;color:#000000;font-family:Helvetica, Arial, sans-serif;line=
+-height:18px;text-align:left;font-weight:300;font-size:14px"><strong style=
+=3D"text-decoration:none;color:#000000;font-weight:300;">Euronews spoke to =
+four experts to get their take on the recent surge in violence in the Nagor=
+no-Karabakh region....</strong></a> &nbsp; <a href=3D"http://ownpage.eurone=
+ws.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1NDMwOWFhMDM4MDAwNmQyOTE2=
+ZiIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly9=
+3d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvbmFnb3Juby1rYXJhYmFraC13aHktaGFzLXRoZX=
+JlLWJlZW4tYS1mbGFyZS11cC1vZi12aW9sZW5jZT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX=
+21lZGl1bT1lbiZ1dG1fY29udGVudD1uYWdvcm5vLWthcmFiYWtoLXdoeS1oYXMtdGhlcmUtYmVl=
+bi1hLWZsYXJlLXVwLW9mLXZpb2xlbmNlJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJ=
+ZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIj=
+oiNiJ9" title=3D"Read on the website" target=3D"_blank" style=3D"text-decor=
+ation:underline;outline:none;border:none;color:#1b9fce;font-family:Helvetic=
+a, Arial, sans-serif;line-height:18px;font-weight:300;font-size:14px"><stro=
+ng style=3D"text-decoration:none;color:#1b9fce;font-weight:700;"><!--[if gt=
+ mso 15]><span style=3D"font-weight:300"><![endif]--> Read more=20
+                    <!--[if gt mso 15]></span><![endif]--></strong></a></td=
+></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]><=
+/td></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640"=
+ align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td>=
+<![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;backgroun=
+d:#ffffff"><tbody><tr><td style=3D"padding:0px 0px 0px 0px;"><table cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" s=
+tyle=3D"margin:0 auto;"><tbody><tr><td style=3D"font-size:30px;height:30px;=
+line-height:30px;">&nbsp;</td></tr></tbody></table></td></tr></tbody></tabl=
+e><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gte mso =
+9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:64=
+0px;margin:0 auto;"><tbody><tr style=3D"background:#ffffff;"><td style=3D"t=
+ext-align:center;vertical-align:middle;font-size:0;width:640px;" width=3D"6=
+40"><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td align=3D"center" valign=
+=3D"middle" width=3D"281" style=3D"width:281px;max-width:281px;text-align:c=
+enter;"><![endif]--><div class=3D"column" align=3D"center" style=3D"width:4=
+4%;display:inline-block;vertical-align:middle;"><table class=3D"mobile-w-ma=
+xw-100p" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" al=
+ign=3D"center" style=3D"max-width:281px;margin:0 auto;"><tbody><tr><td clas=
+s=3D"mobile-no-padding" style=3D"padding: 0px 7px 0px 20px;"><table width=
+=3D"100%" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;=
+"><tbody><tr><td width=3D"100%" align=3D"center" style=3D"border-collapse:c=
+ollapse;padding: ;"><a href=3D"http://ownpage.euronews.com/newsletter/21d28=
+1cc37e84c52/eyJhciI6IjVmNzQ1OGYzOWFhMDM4MDAwNmQyOTI5MCIsInUiOiI2YTJlNjdjNTN=
+jZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLz=
+IwMjAvMDkvMzAvZmlyc3QtdXMtcHJlc2lkZW50aWFsLWRlYmF0ZS1maXZlLWtleS10YWtlYXdhe=
+XM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9Zmlyc3Qt=
+dXMtcHJlc2lkZW50aWFsLWRlYmF0ZS1maXZlLWtleS10YWtlYXdheXMmX29wZT1leUpuZFdsa0l=
+qb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIi=
+wiZyI6IjEwOTY0OSIsInAiOiI3In0=3D" title=3D"Read on the website" target=3D"_=
+blank" style=3D"text-decoration:none!important;outline-style:none;border-wi=
+dth:0;outline-color:0;color:#000000;width:100%;border-style:none;display:bl=
+ock"><img width=3D"254" class=3D"mobile-img-max" src=3D"https://static.euro=
+news.com/articles/stories/05/01/80/22/1000x563_cmsv2_f5e6e5a9-3d1a-560d-b47=
+d-d5a236d6ae53-5018022.jpg" alt=3D"" style=3D"-ms-interpolation-mode:bicubi=
+c;text-decoration:none;outline-color:0;outline-style:none;border-width:0;bo=
+rder-style:none;"></a></td></tr></tbody></table></td></tr></tbody></table><=
+/div><!--[if (gte mso 9)|(IE)]></td><td align=3D"center" valign=3D"middle" =
+width=3D"358" style=3D"width:358px;max-width:358px;text-align:center;"><![e=
+ndif]--><div class=3D"column" align=3D"center" style=3D"width:56%;display:i=
+nline-block;vertical-align:middle;"><table class=3D"mobile-w-maxw-100p" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"cente=
+r" style=3D"max-width:358px;margin:0 auto;"><tbody><tr><td class=3D"mobile-=
+no-padding" style=3D"padding: 0px 20px 0px 7px;"><table width=3D"100%" alig=
+n=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border=
+-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><=
+td class=3D"mobile-article-title" style=3D"padding:0px 0px 0px 0px;text-dec=
+oration:none;outline:none;text-align:left;"><a href=3D"http://ownpage.euron=
+ews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1OGYzOWFhMDM4MDAwNmQyOTI=
+5MCIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly=
+93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvZmlyc3QtdXMtcHJlc2lkZW50aWFsLWRlYmF0Z=
+S1maXZlLWtleS10YWtlYXdheXM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4m=
+dXRtX2NvbnRlbnQ9Zmlyc3QtdXMtcHJlc2lkZW50aWFsLWRlYmF0ZS1maXZlLWtleS10YWtlYXd=
+heXMmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUT=
+VZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiI4In0=3D" title=3D"Read on =
+the website" target=3D"_blank" style=3D"text-decoration:none;font-style:nor=
+mal;outline:none;color:#000000;font-family:Helvetica, Arial, sans-serif;tex=
+t-transform:none;line-height:21px;text-align:left;font-weight:bold;font-siz=
+e:18px"> Trump-Biden presidential debate: Five key takeaways </a></td></tr>=
+<tr><td class=3D"mobile-article-desc" style=3D"padding:10px 0px 0px 0px;tex=
+t-decoration:none;outline:none;text-align:left;"><a href=3D"http://ownpage.=
+euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1OGYzOWFhMDM4MDAwNm=
+QyOTI5MCIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0c=
+HM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvZmlyc3QtdXMtcHJlc2lkZW50aWFsLWRl=
+YmF0ZS1maXZlLWtleS10YWtlYXdheXM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW0=
+9ZW4mdXRtX2NvbnRlbnQ9Zmlyc3QtdXMtcHJlc2lkZW50aWFsLWRlYmF0ZS1maXZlLWtleS10YW=
+tlYXdheXMmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJe=
+E1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiI5In0=3D" title=3D"Rea=
+d on the website" target=3D"_blank" style=3D"text-decoration:none;font-styl=
+e:normal;outline:none;color:#000000;font-family:Helvetica, Arial, sans-seri=
+f;text-transform:none;line-height:18px;text-align:left;font-weight:300;font=
+-size:14px"> Trump is no stranger to going on the offensive, but his fighti=
+ng approach on stage left his Democratic opponent... </a> &nbsp; <a href=3D=
+"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1OG=
+YzOWFhMDM4MDAwNmQyOTI5MCIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0N=
+CIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvZmlyc3QtdXMtcHJl=
+c2lkZW50aWFsLWRlYmF0ZS1maXZlLWtleS10YWtlYXdheXM_dXRtX3NvdXJjZT1uZXdzbGV0dGV=
+yJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9Zmlyc3QtdXMtcHJlc2lkZW50aWFsLWRlYmF0ZS=
+1maXZlLWtleS10YWtlYXdheXMmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBM=
+FltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiIxMCJ9=
+" title=3D"Read on the website" target=3D"_blank" style=3D"text-decoration:=
+underline;outline:none;border:none;color:#1b9fce;font-family:Helvetica, Ari=
+al, sans-serif;line-height:18px;font-weight:300;font-size:14px"><strong sty=
+le=3D"text-decoration:none;color:#1b9fce;font-weight:700;">Read more</stron=
+g></a></td></tr></tbody></table></td></tr></tbody></table></div><!--[if (gt=
+e mso 9)|(IE)]></td></tr></table><![endif]--></td></tr><tr style=3D"backgro=
+und:#ffffff;"><td style=3D"font-size:20px;height:20px;line-height:20px;" he=
+ight=3D"0" colspan=3D"1">&nbsp;</td></tr></tbody></table><!--[if (gte mso 9=
+)|(IE)]></td></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table widt=
+h=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+><tr><td><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;">=
+<tbody><tr style=3D"background:#ffffff;"><td style=3D"text-align:center;ver=
+tical-align:middle;font-size:0;width:640px;" width=3D"640"><!--[if (gte mso=
+ 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0"><tr><td align=3D"center" valign=3D"middle" width=3D"2=
+81" style=3D"width:281px;max-width:281px;text-align:center;"><![endif]--><d=
+iv class=3D"column" align=3D"center" style=3D"width:44%;display:inline-bloc=
+k;vertical-align:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=
+=3D"max-width:281px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-paddi=
+ng" style=3D"padding: 0px 7px 0px 20px;"><table width=3D"100%" align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collaps=
+e:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td width=
+=3D"100%" align=3D"center" style=3D"border-collapse:collapse;padding: ;"><a=
+ href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJhciI6Ij=
+VmNzQzMTFkOWFhMDM4MDAwNmQyOGFiOSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZ=
+DljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvY29yb25h=
+dmlydXMtYmVsZ2l1bS1kZWF0aC10b2xsLXBhc3Nlcy0xMC0wMDAtdWstYnJlYWtzLW5ldy1kYWl=
+seS1jYXNlcy1yZWNvcmQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2=
+NvbnRlbnQ9Y29yb25hdmlydXMtYmVsZ2l1bS1kZWF0aC10b2xsLXBhc3Nlcy0xMC0wMDAtdWstY=
+nJlYWtzLW5ldy1kYWlseS1jYXNlcy1yZWNvcmQmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6=
+VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSI=
+sInAiOiIxMSJ9" title=3D"Read on the website" target=3D"_blank" style=3D"tex=
+t-decoration:none!important;outline-style:none;border-width:0;outline-color=
+:0;color:#000000;width:100%;border-style:none;display:block"><img width=3D"=
+254" class=3D"mobile-img-max" src=3D"https://static.euronews.com/articles/s=
+tories/05/01/78/82/1000x563_cmsv2_819f344a-09b2-5d9b-8722-463045b46507-5017=
+882.jpg" alt=3D"" style=3D"-ms-interpolation-mode:bicubic;text-decoration:n=
+one;outline-color:0;outline-style:none;border-width:0;border-style:none;"><=
+/a></td></tr></tbody></table></td></tr></tbody></table></div><!--[if (gte m=
+so 9)|(IE)]></td><td align=3D"center" valign=3D"middle" width=3D"358" style=
+=3D"width:358px;max-width:358px;text-align:center;"><![endif]--><div class=
+=3D"column" align=3D"center" style=3D"width:56%;display:inline-block;vertic=
+al-align:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-wi=
+dth:358px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=
+=3D"padding: 0px 20px 0px 7px;"><table width=3D"100%" align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collaps=
+e;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td class=3D"mobil=
+e-article-title" style=3D"padding:0px 0px 0px 0px;text-decoration:none;outl=
+ine:none;text-align:left;"><a href=3D"http://ownpage.euronews.com/newslette=
+r/21d281cc37e84c52/eyJhciI6IjVmNzQzMTFkOWFhMDM4MDAwNmQyOGFiOSIsInUiOiI2YTJl=
+NjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3M=
+uY29tLzIwMjAvMDkvMzAvY29yb25hdmlydXMtYmVsZ2l1bS1kZWF0aC10b2xsLXBhc3Nlcy0xMC=
+0wMDAtdWstYnJlYWtzLW5ldy1kYWlseS1jYXNlcy1yZWNvcmQ_dXRtX3NvdXJjZT1uZXdzbGV0d=
+GVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9Y29yb25hdmlydXMtYmVsZ2l1bS1kZWF0aC10=
+b2xsLXBhc3Nlcy0xMC0wMDAtdWstYnJlYWtzLW5ldy1kYWlseS1jYXNlcy1yZWNvcmQmX29wZT1=
+leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaW=
+ZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiIxMiJ9" title=3D"Read on the website" t=
+arget=3D"_blank" style=3D"text-decoration:none;font-style:normal;outline:no=
+ne;color:#000000;font-family:Helvetica, Arial, sans-serif;text-transform:no=
+ne;line-height:21px;text-align:left;font-weight:bold;font-size:18px"> Coron=
+avirus: Belgium death toll hits 10k, UK breaks daily cases record </a></td>=
+</tr><tr><td class=3D"mobile-article-desc" style=3D"padding:10px 0px 0px 0p=
+x;text-decoration:none;outline:none;text-align:left;"><a href=3D"http://own=
+page.euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQzMTFkOWFhMDM4M=
+DAwNmQyOGFiOSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoi=
+aHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvY29yb25hdmlydXMtYmVsZ2l1bS1=
+kZWF0aC10b2xsLXBhc3Nlcy0xMC0wMDAtdWstYnJlYWtzLW5ldy1kYWlseS1jYXNlcy1yZWNvcm=
+Q_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9Y29yb25hd=
+mlydXMtYmVsZ2l1bS1kZWF0aC10b2xsLXBhc3Nlcy0xMC0wMDAtdWstYnJlYWtzLW5ldy1kYWls=
+eS1jYXNlcy1yZWNvcmQmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXp=
+ZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiIxMyJ9" titl=
+e=3D"Read on the website" target=3D"_blank" style=3D"text-decoration:none;f=
+ont-style:normal;outline:none;color:#000000;font-family:Helvetica, Arial, s=
+ans-serif;text-transform:none;line-height:18px;text-align:left;font-weight:=
+300;font-size:14px"> Belgium's death toll from the virus passed 10,000 on W=
+ednesday as cases soared in the UK, breaking its daily new cases... </a> &n=
+bsp; <a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ=
+hciI6IjVmNzQzMTFkOWFhMDM4MDAwNmQyOGFiOSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNG=
+M3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvY=
+29yb25hdmlydXMtYmVsZ2l1bS1kZWF0aC10b2xsLXBhc3Nlcy0xMC0wMDAtdWstYnJlYWtzLW5l=
+dy1kYWlseS1jYXNlcy1yZWNvcmQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4=
+mdXRtX2NvbnRlbnQ9Y29yb25hdmlydXMtYmVsZ2l1bS1kZWF0aC10b2xsLXBhc3Nlcy0xMC0wMD=
+AtdWstYnJlYWtzLW5ldy1kYWlseS1jYXNlcy1yZWNvcmQmX29wZT1leUpuZFdsa0lqb2lObUV5W=
+lRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEw=
+OTY0OSIsInAiOiIxNCJ9" title=3D"Read on the website" target=3D"_blank" style=
+=3D"text-decoration:underline;outline:none;border:none;color:#1b9fce;font-f=
+amily:Helvetica, Arial, sans-serif;line-height:18px;font-weight:300;font-si=
+ze:14px"><strong style=3D"text-decoration:none;color:#1b9fce;font-weight:70=
+0;">Read more</strong></a></td></tr></tbody></table></td></tr></tbody></tab=
+le></div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></tr>=
+<tr style=3D"background:#ffffff;"><td style=3D"font-size:20px;height:20px;l=
+ine-height:20px;" height=3D"0" colspan=3D"1">&nbsp;</td></tr></tbody></tabl=
+e><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gte mso =
+9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:64=
+0px;margin:0 auto;"><tbody><tr style=3D"background:#ffffff;"><td style=3D"t=
+ext-align:center;vertical-align:middle;font-size:0;width:640px;" width=3D"6=
+40"><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td align=3D"center" valign=
+=3D"middle" width=3D"281" style=3D"width:281px;max-width:281px;text-align:c=
+enter;"><![endif]--><div class=3D"column" align=3D"center" style=3D"width:4=
+4%;display:inline-block;vertical-align:middle;"><table class=3D"mobile-w-ma=
+xw-100p" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" al=
+ign=3D"center" style=3D"max-width:281px;margin:0 auto;"><tbody><tr><td clas=
+s=3D"mobile-no-padding" style=3D"padding: 0px 7px 0px 20px;"><table width=
+=3D"100%" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;=
+"><tbody><tr><td width=3D"100%" align=3D"center" style=3D"border-collapse:c=
+ollapse;padding: ;"><a href=3D"http://ownpage.euronews.com/newsletter/21d28=
+1cc37e84c52/eyJhciI6IjVmNzQ3MmI0OWFhMDM4MDAwNmQyOTg5NiIsInUiOiI2YTJlNjdjNTN=
+jZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLz=
+IwMjAvMDkvMzAvaXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13YXZlLWNvdW50c=
+nktYnktY291bnRyeS1icmVha2Rvd24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09=
+ZW4mdXRtX2NvbnRlbnQ9aXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13YXZlLWN=
+vdW50cnktYnktY291bnRyeS1icmVha2Rvd24mX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VX=
+pZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsI=
+nAiOiIxNSJ9" title=3D"Read on the website" target=3D"_blank" style=3D"text-=
+decoration:none!important;outline-style:none;border-width:0;outline-color:0=
+;color:#000000;width:100%;border-style:none;display:block"><img width=3D"25=
+4" class=3D"mobile-img-max" src=3D"https://static.euronews.com/articles/sto=
+ries/04/85/22/46/1000x563_cmsv2_4fa7af26-0455-5e6e-92ab-5050144db277-485224=
+6.jpg" alt=3D"" style=3D"-ms-interpolation-mode:bicubic;text-decoration:non=
+e;outline-color:0;outline-style:none;border-width:0;border-style:none;"></a=
+></td></tr></tbody></table></td></tr></tbody></table></div><!--[if (gte mso=
+ 9)|(IE)]></td><td align=3D"center" valign=3D"middle" width=3D"358" style=
+=3D"width:358px;max-width:358px;text-align:center;"><![endif]--><div class=
+=3D"column" align=3D"center" style=3D"width:56%;display:inline-block;vertic=
+al-align:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-wi=
+dth:358px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=
+=3D"padding: 0px 20px 0px 7px;"><table width=3D"100%" align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collaps=
+e;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td class=3D"mobil=
+e-article-title" style=3D"padding:0px 0px 0px 0px;text-decoration:none;outl=
+ine:none;text-align:left;"><a href=3D"http://ownpage.euronews.com/newslette=
+r/21d281cc37e84c52/eyJhciI6IjVmNzQ3MmI0OWFhMDM4MDAwNmQyOTg5NiIsInUiOiI2YTJl=
+NjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3M=
+uY29tLzIwMjAvMDkvMzAvaXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13YXZlLW=
+NvdW50cnktYnktY291bnRyeS1icmVha2Rvd24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZ=
+WRpdW09ZW4mdXRtX2NvbnRlbnQ9aXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13=
+YXZlLWNvdW50cnktYnktY291bnRyeS1icmVha2Rvd24mX29wZT1leUpuZFdsa0lqb2lObUV5WlR=
+ZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOT=
+Y0OSIsInAiOiIxNiJ9" title=3D"Read on the website" target=3D"_blank" style=
+=3D"text-decoration:none;font-style:normal;outline:none;color:#000000;font-=
+family:Helvetica, Arial, sans-serif;text-transform:none;line-height:21px;te=
+xt-align:left;font-weight:bold;font-size:18px"> Which countries in Europe a=
+re experiencing a second wave of COVID-19? </a></td></tr><tr><td class=3D"m=
+obile-article-desc" style=3D"padding:10px 0px 0px 0px;text-decoration:none;=
+outline:none;text-align:left;"><a href=3D"http://ownpage.euronews.com/newsl=
+etter/21d281cc37e84c52/eyJhciI6IjVmNzQ3MmI0OWFhMDM4MDAwNmQyOTg5NiIsInUiOiI2=
+YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25=
+ld3MuY29tLzIwMjAvMDkvMzAvaXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13YX=
+ZlLWNvdW50cnktYnktY291bnRyeS1icmVha2Rvd24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0b=
+V9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9aXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29u=
+ZC13YXZlLWNvdW50cnktYnktY291bnRyeS1icmVha2Rvd24mX29wZT1leUpuZFdsa0lqb2lObUV=
+5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6Ij=
+EwOTY0OSIsInAiOiIxNyJ9" title=3D"Read on the website" target=3D"_blank" sty=
+le=3D"text-decoration:none;font-style:normal;outline:none;color:#000000;fon=
+t-family:Helvetica, Arial, sans-serif;text-transform:none;line-height:18px;=
+text-align:left;font-weight:300;font-size:14px"> There is much talk of a se=
+cond wave of coronavirus in Europe. But what does the data tell us?... </a>=
+ &nbsp; <a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/=
+eyJhciI6IjVmNzQ3MmI0OWFhMDM4MDAwNmQyOTg5NiIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzN=
+jNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMz=
+AvaXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13YXZlLWNvdW50cnktYnktY291b=
+nRyeS1icmVha2Rvd24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2Nv=
+bnRlbnQ9aXMtZXVyb3BlLWhhdmluZy1hLWNvdmlkLTE5LXNlY29uZC13YXZlLWNvdW50cnktYnk=
+tY291bnRyeS1icmVha2Rvd24mX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMF=
+ltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiIxOCJ9"=
+ title=3D"Read on the website" target=3D"_blank" style=3D"text-decoration:u=
+nderline;outline:none;border:none;color:#1b9fce;font-family:Helvetica, Aria=
+l, sans-serif;line-height:18px;font-weight:300;font-size:14px"><strong styl=
+e=3D"text-decoration:none;color:#1b9fce;font-weight:700;">Read more</strong=
+></a></td></tr></tbody></table></td></tr></tbody></table></div><!--[if (gte=
+ mso 9)|(IE)]></td></tr></table><![endif]--></td></tr><tr style=3D"backgrou=
+nd:#ffffff;"><td style=3D"font-size:20px;height:20px;line-height:20px;" hei=
+ght=3D"0" colspan=3D"1">&nbsp;</td></tr></tbody></table><!--[if (gte mso 9)=
+|(IE)]></td></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=
+=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=
+<tr><td><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;bac=
+kground:#ffffff"><tbody><tr><td style=3D"padding:0px 0px 0px 0px;"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"cen=
+ter" style=3D"margin:0 auto;"><tbody><tr><td style=3D"font-size:30px;height=
+:30px;line-height:30px;">&nbsp;</td></tr></tbody></table></td></tr></tbody>=
+</table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gt=
+e mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-wi=
+dth:640px;margin:0 auto;background:#303030"><tbody><tr><td style=3D"padding=
+:0px 0px 0px 0px;"><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"=
+center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]-=
+-><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" al=
+ign=3D"center" style=3D"max-width:640px;margin:0 auto;background:#303030"><=
+tbody><tr><td style=3D"padding:0px 0px 0px 0px;"><table cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" border=3D"0" align=3D"center" style=3D"max-=
+width:640px;margin:0 auto;background:#303030;"><tbody><tr><td align=3D"cent=
+er" style=3D"text-align: center; vertical-align: top; font-size: 0;padding:=
+ 10px 20px 20px 20px;"><a href=3D"http://ownpage.euronews.com/newsletter/21=
+d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6=
+ZmFsc2UsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tL2xpdmluZz91dG1fc291cmNlPW5=
+ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT1leUpuZFdsa0lqb2lObU=
+V5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6I=
+jEwOTY0OSIsInAiOiIxOSJ9" target=3D"_blank" style=3D"color:#000000;text-deco=
+ration:none;text-align:center;outline:none"><img style=3D"display:inline-bl=
+ock; border:none;margin:auto;align:right;" border=3D"0" width=3D"150" alt=
+=3D"" src=3D"https://assets.ownpage.fr/euronews/living_horizontal_white.png=
+"></a></td></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso =
+9)|(IE)]></td></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table wid=
+th=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+"><tr><td><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;"=
+><tbody><tr style=3D"background:#303030;"><td style=3D"text-align:center;ve=
+rtical-align:middle;font-size:0;width:640px;" width=3D"640"><!--[if (gte ms=
+o 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0"><tr><td align=3D"center" valign=3D"middle" width=3D"=
+281" style=3D"width:281px;max-width:281px;text-align:center;"><![endif]--><=
+div class=3D"column" align=3D"center" style=3D"width:44%;display:inline-blo=
+ck;vertical-align:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=
+=3D"max-width:281px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-paddi=
+ng" style=3D"padding: 0px 7px 0px 20px;"><table width=3D"100%" align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collaps=
+e:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td width=
+=3D"100%" align=3D"center" style=3D"border-collapse:collapse;padding: ;"><a=
+ href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJhciI6Ij=
+VmNzMwNTFkOWFhMDM4MDAwNmQyNThiZSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZ=
+DljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tL2xpdmluZy8yMDIwLzA5LzI5=
+L2hhbGYtYS1taWxsaW9uLXNoYXJrcy1jb3VsZC1iZS1raWxsZWQtZm9yLWNvdmlkLTE5LXZhY2N=
+pbmUtc2F5LWV4cGVydHM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2=
+NvbnRlbnQ9aGFsZi1hLW1pbGxpb24tc2hhcmtzLWNvdWxkLWJlLWtpbGxlZC1mb3ItY292aWQtM=
+TktdmFjY2luZS1zYXktZXhwZXJ0cyZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRN=
+ekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjI=
+wIn0=3D" title=3D"Read on the website" target=3D"_blank" style=3D"text-deco=
+ration:none!important;outline-style:none;border-width:0;outline-color:0;col=
+or:#000000;width:100%;border-style:none;display:block"><img width=3D"254" c=
+lass=3D"mobile-img-max" src=3D"https://static.euronews.com/articles/stories=
+/05/01/48/42/1000x563_cmsv2_96c7f14e-5c6f-53d6-934c-5e928600e804-5014842.jp=
+g" alt=3D"" style=3D"-ms-interpolation-mode:bicubic;text-decoration:none;ou=
+tline-color:0;outline-style:none;border-width:0;border-style:none;"></a></t=
+d></tr></tbody></table></td></tr></tbody></table></div><!--[if (gte mso 9)|=
+(IE)]></td><td align=3D"center" valign=3D"middle" width=3D"358" style=3D"wi=
+dth:358px;max-width:358px;text-align:center;"><![endif]--><div class=3D"col=
+umn" align=3D"center" style=3D"width:56%;display:inline-block;vertical-alig=
+n:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:358=
+px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padd=
+ing: 0px 20px 0px 7px;"><table width=3D"100%" align=3D"left" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td class=3D"mobile-articl=
+e-title" style=3D"padding:0px 0px 0px 0px;text-decoration:none;outline:none=
+;text-align:left;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281=
+cc37e84c52/eyJhciI6IjVmNzMwNTFkOWFhMDM4MDAwNmQyNThiZSIsInUiOiI2YTJlNjdjNTNj=
+ZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tL2x=
+pdmluZy8yMDIwLzA5LzI5L2hhbGYtYS1taWxsaW9uLXNoYXJrcy1jb3VsZC1iZS1raWxsZWQtZm=
+9yLWNvdmlkLTE5LXZhY2NpbmUtc2F5LWV4cGVydHM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0b=
+V9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9aGFsZi1hLW1pbGxpb24tc2hhcmtzLWNvdWxkLWJlLWtp=
+bGxlZC1mb3ItY292aWQtMTktdmFjY2luZS1zYXktZXhwZXJ0cyZfb3BlPWV5Sm5kV2xrSWpvaU5=
+tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIj=
+oiMTA5NjQ5IiwicCI6IjIxIn0=3D" title=3D"Read on the website" target=3D"_blan=
+k" style=3D"text-decoration:none;font-style:normal;outline:none;color:#e9e9=
+e9;font-family:Helvetica, Arial, sans-serif;text-transform:none;line-height=
+:21px;text-align:left;font-weight:bold;font-size:18px"> Half a million shar=
+ks could be killed for Covid-19 vaccine, says NGO | Living </a></td></tr><t=
+r><td class=3D"mobile-article-desc" style=3D"padding:10px 0px 0px 0px;text-=
+decoration:none;outline:none;text-align:left;"><a href=3D"http://ownpage.eu=
+ronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzMwNTFkOWFhMDM4MDAwNmQy=
+NThiZSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM=
+6Ly93d3cuZXVyb25ld3MuY29tL2xpdmluZy8yMDIwLzA5LzI5L2hhbGYtYS1taWxsaW9uLXNoYX=
+Jrcy1jb3VsZC1iZS1raWxsZWQtZm9yLWNvdmlkLTE5LXZhY2NpbmUtc2F5LWV4cGVydHM_dXRtX=
+3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9aGFsZi1hLW1pbGxp=
+b24tc2hhcmtzLWNvdWxkLWJlLWtpbGxlZC1mb3ItY292aWQtMTktdmFjY2luZS1zYXktZXhwZXJ=
+0cyZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNV=
+l6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjIyIn0=3D" title=3D"Read on =
+the website" target=3D"_blank" style=3D"text-decoration:none;font-style:nor=
+mal;outline:none;color:#e9e9e9;font-family:Helvetica, Arial, sans-serif;tex=
+t-transform:none;line-height:18px;text-align:left;font-weight:300;font-size=
+:14px"> "Sourcing an ingredient from a wild animal is not a long-term solut=
+ion."... </a> &nbsp; <a href=3D"http://ownpage.euronews.com/newsletter/21d2=
+81cc37e84c52/eyJhciI6IjVmNzMwNTFkOWFhMDM4MDAwNmQyNThiZSIsInUiOiI2YTJlNjdjNT=
+NjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tL=
+2xpdmluZy8yMDIwLzA5LzI5L2hhbGYtYS1taWxsaW9uLXNoYXJrcy1jb3VsZC1iZS1raWxsZWQt=
+Zm9yLWNvdmlkLTE5LXZhY2NpbmUtc2F5LWV4cGVydHM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV=
+0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9aGFsZi1hLW1pbGxpb24tc2hhcmtzLWNvdWxkLWJlLW=
+tpbGxlZC1mb3ItY292aWQtMTktdmFjY2luZS1zYXktZXhwZXJ0cyZfb3BlPWV5Sm5kV2xrSWpva=
+U5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJn=
+IjoiMTA5NjQ5IiwicCI6IjIzIn0=3D" title=3D"Read on the website" target=3D"_bl=
+ank" style=3D"text-decoration:underline;outline:none;border:none;color:#E2C=
+39D;font-family:Helvetica, Arial, sans-serif;line-height:18px;font-weight:3=
+00;font-size:14px"><strong style=3D"text-decoration:none;color:#E2C39D;font=
+-weight:700;">Read more</strong></a></td></tr></tbody></table></td></tr></t=
+body></table></div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->=
+</td></tr><tr style=3D"background:#303030;"><td style=3D"font-size:20px;hei=
+ght:20px;line-height:20px;" height=3D"0" colspan=3D"1">&nbsp;</td></tr></tb=
+ody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></=
+tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->=
+<!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><table cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" styl=
+e=3D"max-width:640px;margin:0 auto;background:#ffffff"><tbody><tr><td style=
+=3D"padding:0px 0px 0px 0px;"><table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"center" style=3D"margin:0 auto;"><tbody>=
+<tr><td style=3D"font-size:30px;height:30px;line-height:30px;">&nbsp;</td><=
+/tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></t=
+d></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" a=
+lign=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><!=
+[endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;background:#f=
+fffff" class=3D"mobile-hide"><tbody><tr><td style=3D"padding:0px 0px 0px 0p=
+x;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" =
+align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td style=3D"font-size=
+:20px;height:20px;line-height:20px;">&nbsp;</td></tr></tbody></table></td><=
+/tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--=
+><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><table cellpaddi=
+ng=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" sty=
+le=3D"max-width:640px;margin:0 auto;"><tbody><tr style=3D"background:#fffff=
+f;"><td style=3D"text-align:center;vertical-align:middle;font-size:0;width:=
+640px;" width=3D"640"><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=
+=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td align=
+=3D"center" valign=3D"middle" width=3D"281" style=3D"width:281px;max-width:=
+281px;text-align:center;"><![endif]--><div class=3D"column" align=3D"center=
+" style=3D"width:44%;display:inline-block;vertical-align:middle;"><table cl=
+ass=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" align=3D"center" style=3D"max-width:281px;margin:0 auto;"><=
+tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0px 7px 0px 20p=
+x;"><table width=3D"100%" align=3D"left" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-t=
+able-rspace:0pt;"><tbody><tr><td width=3D"100%" align=3D"center" style=3D"b=
+order-collapse:collapse;padding: ;"><a href=3D"http://ownpage.euronews.com/=
+newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQ=
+yNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMj=
+YvZXUtbWlncmF0aW9uLXBhY3Qtd2lsbC1pbnN0aXR1dGlvbmFsaXNlLXhlbm9waG9iaWEtY2xha=
+W1zLW1lZGl0ZXJyYW5lYW4tcmVzY3VlLWdyb3VwP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1f=
+bWVkaXVtPWVuJnV0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTR=
+NekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6Ij=
+I0In0=3D" title=3D"Read on the website" target=3D"_blank" style=3D"text-dec=
+oration:none!important;outline-style:none;border-width:0;outline-color:0;co=
+lor:#000000;width:100%;border-style:none;display:block"><img width=3D"254" =
+class=3D"mobile-img-max" src=3D"https://static.euronews.com/articles/storie=
+s/05/00/14/74/1000x563_cmsv2_fa5df3a2-20d3-5abe-8f70-52f6198d2896-5001474.j=
+pg" alt=3D"" style=3D"-ms-interpolation-mode:bicubic;text-decoration:none;o=
+utline-color:0;outline-style:none;border-width:0;border-style:none;"></a></=
+td></tr></tbody></table></td></tr></tbody></table></div><!--[if (gte mso 9)=
+|(IE)]></td><td align=3D"center" valign=3D"middle" width=3D"358" style=3D"w=
+idth:358px;max-width:358px;text-align:center;"><![endif]--><div class=3D"co=
+lumn" align=3D"center" style=3D"width:56%;display:inline-block;vertical-ali=
+gn:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:35=
+8px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"pad=
+ding: 0px 20px 0px 7px;"><table width=3D"100%" align=3D"left" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;mso-t=
+able-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td class=3D"mobile-artic=
+le-title" style=3D"padding:0px 0px 0px 0px;text-decoration:none;outline:non=
+e;text-align:left;"><a href=3D"http://ownpage.euronews.com/newsletter/21d28=
+1cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmF=
+sc2UsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjYvZXUtbWlncmF0aW=
+9uLXBhY3Qtd2lsbC1pbnN0aXR1dGlvbmFsaXNlLXhlbm9waG9iaWEtY2xhaW1zLW1lZGl0ZXJyY=
+W5lYW4tcmVzY3VlLWdyb3VwP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0=
+bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6Ump=
+Oekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjI1In0=3D" title=
+=3D"Read on the website" target=3D"_blank" style=3D"text-decoration:none;fo=
+nt-style:normal;outline:none;color:#000000;font-family:Helvetica, Arial, sa=
+ns-serif;text-transform:none;line-height:21px;text-align:left;font-weight:b=
+old;font-size:18px"> European Union's proposed new migration pact generates=
+ dissatisfaction on all sides </a></td></tr><tr><td class=3D"mobile-article=
+-desc" style=3D"padding:10px 0px 0px 0px;text-decoration:none;outline:none;=
+text-align:left;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281c=
+c37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc=
+2UsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjYvZXUtbWlncmF0aW9u=
+LXBhY3Qtd2lsbC1pbnN0aXR1dGlvbmFsaXNlLXhlbm9waG9iaWEtY2xhaW1zLW1lZGl0ZXJyYW5=
+lYW4tcmVzY3VlLWdyb3VwP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV=
+9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOe=
+kl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjI2In0=3D" title=3D=
+"Read on the website" target=3D"_blank" style=3D"text-decoration:none;font-=
+style:normal;outline:none;color:#000000;font-family:Helvetica, Arial, sans-=
+serif;text-transform:none;line-height:18px;text-align:left;font-weight:300;=
+font-size:14px"> In frontier nations there's worry over the administrative =
+burden. Those involved in rescue missions in the Mediterranean... </a> &nbs=
+p; <a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ1I=
+joiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0=
+cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjYvZXUtbWlncmF0aW9uLXBhY3Qtd2lsbC1=
+pbnN0aXR1dGlvbmFsaXNlLXhlbm9waG9iaWEtY2xhaW1zLW1lZGl0ZXJyYW5lYW4tcmVzY3VlLW=
+dyb3VwP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV9jb250ZW50PSZfb=
+3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlO=
+RFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjI3In0=3D" title=3D"Read on the we=
+bsite" target=3D"_blank" style=3D"text-decoration:underline;outline:none;bo=
+rder:none;color:#1b9fce;font-family:Helvetica, Arial, sans-serif;line-heigh=
+t:18px;font-weight:300;font-size:14px"><strong style=3D"text-decoration:non=
+e;color:#1b9fce;font-weight:700;">Read more</strong></a></td></tr></tbody><=
+/table></td></tr></tbody></table></div><!--[if (gte mso 9)|(IE)]></td></tr>=
+</table><![endif]--></td></tr><tr style=3D"background:#ffffff;"><td style=
+=3D"font-size:20px;height:20px;line-height:20px;" height=3D"0" colspan=3D"1=
+">&nbsp;</td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></tab=
+le><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"cent=
+er" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><t=
+able cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=
+=3D"center" style=3D"max-width:640px;margin:0 auto;"><tbody><tr style=3D"ba=
+ckground:#ffffff;"><td style=3D"text-align:center;vertical-align:middle;fon=
+t-size:0;width:640px;" width=3D"640"><!--[if (gte mso 9)|(IE)]><table width=
+=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=
+<tr><td align=3D"center" valign=3D"middle" width=3D"281" style=3D"width:281=
+px;max-width:281px;text-align:center;"><![endif]--><div class=3D"column" al=
+ign=3D"center" style=3D"width:44%;display:inline-block;vertical-align:middl=
+e;"><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:281px;marg=
+in:0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0p=
+x 7px 0px 20px;"><table width=3D"100%" align=3D"left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;mso-table-lsp=
+ace:0pt;mso-table-rspace:0pt;"><tbody><tr><td width=3D"100%" align=3D"cente=
+r" style=3D"border-collapse:collapse;padding: ;"><a href=3D"http://ownpage.=
+euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1MWU2OWFhMDM4MDAwNm=
+QyOTBlOSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0c=
+HM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvdGhlLXJ1bGUtb2YtbGF3LXdoYXQtaXMt=
+aXQtYW5kLXdoeS1pcy1pdC1pbXBvcnRhbnQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWR=
+pdW09ZW4mdXRtX2NvbnRlbnQ9dGhlLXJ1bGUtb2YtbGF3LXdoYXQtaXMtaXQtYW5kLXdoeS1pcy=
+1pdC1pbXBvcnRhbnQmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZe=
+lJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiIyOCJ9" title=
+=3D"Read on the website" target=3D"_blank" style=3D"text-decoration:none!im=
+portant;outline-style:none;border-width:0;outline-color:0;color:#000000;wid=
+th:100%;border-style:none;display:block"><img width=3D"254" class=3D"mobile=
+-img-max" src=3D"https://static.euronews.com/articles/stories/05/01/81/02/1=
+000x563_cmsv2_9090fe75-9b39-5c82-a0d3-c015065dd33f-5018102.jpg" alt=3D"" st=
+yle=3D"-ms-interpolation-mode:bicubic;text-decoration:none;outline-color:0;=
+outline-style:none;border-width:0;border-style:none;"></a></td></tr></tbody=
+></table></td></tr></tbody></table></div><!--[if (gte mso 9)|(IE)]></td><td=
+ align=3D"center" valign=3D"middle" width=3D"358" style=3D"width:358px;max-=
+width:358px;text-align:center;"><![endif]--><div class=3D"column" align=3D"=
+center" style=3D"width:56%;display:inline-block;vertical-align:middle;"><ta=
+ble class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:358px;margin:0 au=
+to;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0px 20px =
+0px 7px;"><table width=3D"100%" align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt=
+;mso-table-rspace:0pt;"><tbody><tr><td class=3D"mobile-article-title" style=
+=3D"padding:0px 0px 0px 0px;text-decoration:none;outline:none;text-align:le=
+ft;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ=
+hciI6IjVmNzQ1MWU2OWFhMDM4MDAwNmQyOTBlOSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNG=
+M3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvd=
+GhlLXJ1bGUtb2YtbGF3LXdoYXQtaXMtaXQtYW5kLXdoeS1pcy1pdC1pbXBvcnRhbnQ_dXRtX3Nv=
+dXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9dGhlLXJ1bGUtb2YtbGF=
+3LXdoYXQtaXMtaXQtYW5kLXdoeS1pcy1pdC1pbXBvcnRhbnQmX29wZT1leUpuZFdsa0lqb2lObU=
+V5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6I=
+jEwOTY0OSIsInAiOiIyOSJ9" title=3D"Read on the website" target=3D"_blank" st=
+yle=3D"text-decoration:none;font-style:normal;outline:none;color:#000000;fo=
+nt-family:Helvetica, Arial, sans-serif;text-transform:none;line-height:21px=
+;text-align:left;font-weight:bold;font-size:18px"> The Rule of Law: what is=
+ it and why is it important? </a></td></tr><tr><td class=3D"mobile-article-=
+desc" style=3D"padding:10px 0px 0px 0px;text-decoration:none;outline:none;t=
+ext-align:left;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc=
+37e84c52/eyJhciI6IjVmNzQ1MWU2OWFhMDM4MDAwNmQyOTBlOSIsInUiOiI2YTJlNjdjNTNjZj=
+gzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwM=
+jAvMDkvMzAvdGhlLXJ1bGUtb2YtbGF3LXdoYXQtaXMtaXQtYW5kLXdoeS1pcy1pdC1pbXBvcnRh=
+bnQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9dGhlLXJ=
+1bGUtb2YtbGF3LXdoYXQtaXMtaXQtYW5kLXdoeS1pcy1pdC1pbXBvcnRhbnQmX29wZT1leUpuZF=
+dsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJ=
+TNEIiwiZyI6IjEwOTY0OSIsInAiOiIzMCJ9" title=3D"Read on the website" target=
+=3D"_blank" style=3D"text-decoration:none;font-style:normal;outline:none;co=
+lor:#000000;font-family:Helvetica, Arial, sans-serif;text-transform:none;li=
+ne-height:18px;text-align:left;font-weight:300;font-size:14px"> In recent y=
+ears, citizens of EU countries have taken to the streets, protesting agains=
+t what they saw as democratic... </a> &nbsp; <a href=3D"http://ownpage.euro=
+news.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzQ1MWU2OWFhMDM4MDAwNmQyOT=
+BlOSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6L=
+y93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMzAvdGhlLXJ1bGUtb2YtbGF3LXdoYXQtaXMtaXQt=
+YW5kLXdoeS1pcy1pdC1pbXBvcnRhbnQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW0=
+9ZW4mdXRtX2NvbnRlbnQ9dGhlLXJ1bGUtb2YtbGF3LXdoYXQtaXMtaXQtYW5kLXdoeS1pcy1pdC=
+1pbXBvcnRhbnQmX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqT=
+npJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiIzMSJ9" title=3D"R=
+ead on the website" target=3D"_blank" style=3D"text-decoration:underline;ou=
+tline:none;border:none;color:#1b9fce;font-family:Helvetica, Arial, sans-ser=
+if;line-height:18px;font-weight:300;font-size:14px"><strong style=3D"text-d=
+ecoration:none;color:#1b9fce;font-weight:700;">Read more</strong></a></td><=
+/tr></tbody></table></td></tr></tbody></table></div><!--[if (gte mso 9)|(IE=
+)]></td></tr></table><![endif]--></td></tr><tr style=3D"background:#ffffff;=
+"><td style=3D"font-size:20px;height:20px;line-height:20px;" height=3D"0" c=
+olspan=3D"1">&nbsp;</td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td=
+></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" al=
+ign=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![=
+endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"1=
+00%" align=3D"center" style=3D"max-width:640px;margin:0 auto;"><tbody><tr s=
+tyle=3D"background:#ffffff;"><td style=3D"text-align:center;vertical-align:=
+middle;font-size:0;width:640px;" width=3D"640"><!--[if (gte mso 9)|(IE)]><t=
+able width=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0"><tr><td align=3D"center" valign=3D"middle" width=3D"281" style=3D=
+"width:281px;max-width:281px;text-align:center;"><![endif]--><div class=3D"=
+column" align=3D"center" style=3D"width:44%;display:inline-block;vertical-a=
+lign:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:=
+281px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"p=
+adding: 0px 7px 0px 20px;"><table width=3D"100%" align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;mso=
+-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td width=3D"100%" alig=
+n=3D"center" style=3D"border-collapse:collapse;padding: ;"><a href=3D"http:=
+//ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNmJhMjFjYTY0=
+NTM1MDAwNmI5ZWE1MCIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInV=
+yIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjMvY29yb25hdmlydXMtZnJhbm=
+NlLXVudmVpbHMtbmV3LW1lYXN1cmVzLXRvLXRhY2tsZS1mbGFyZS11cC1pbi1jYXNlcy1hbmQta=
+G9zcGl0YWxpc2F0aW9ucz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1f=
+Y29udGVudD1jb3JvbmF2aXJ1cy1mcmFuY2UtdW52ZWlscy1uZXctbWVhc3VyZXMtdG8tdGFja2x=
+lLWZsYXJlLXVwLWluLWNhc2VzLWFuZC1ob3NwaXRhbGlzYXRpb25zJl9vcGU9ZXlKbmRXbGtJam=
+9pTm1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsI=
+mciOiIxMDk2NDkiLCJwIjoiMzIifQ=3D=3D" title=3D"Read on the website" target=
+=3D"_blank" style=3D"text-decoration:none!important;outline-style:none;bord=
+er-width:0;outline-color:0;color:#000000;width:100%;border-style:none;displ=
+ay:block"><img width=3D"254" class=3D"mobile-img-max" src=3D"https://static=
+.euronews.com/articles/stories/04/99/90/76/1000x563_cmsv2_26c6a0d3-4f65-596=
+b-a584-907565642631-4999076.jpg" alt=3D"" style=3D"-ms-interpolation-mode:b=
+icubic;text-decoration:none;outline-color:0;outline-style:none;border-width=
+:0;border-style:none;"></a></td></tr></tbody></table></td></tr></tbody></ta=
+ble></div><!--[if (gte mso 9)|(IE)]></td><td align=3D"center" valign=3D"mid=
+dle" width=3D"358" style=3D"width:358px;max-width:358px;text-align:center;"=
+><![endif]--><div class=3D"column" align=3D"center" style=3D"width:56%;disp=
+lay:inline-block;vertical-align:middle;"><table class=3D"mobile-w-maxw-100p=
+" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"=
+center" style=3D"max-width:358px;margin:0 auto;"><tbody><tr><td class=3D"mo=
+bile-no-padding" style=3D"padding: 0px 20px 0px 7px;"><table width=3D"100%"=
+ align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"b=
+order-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody>=
+<tr><td class=3D"mobile-article-title" style=3D"padding:0px 0px 0px 0px;tex=
+t-decoration:none;outline:none;text-align:left;"><a href=3D"http://ownpage.=
+euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNmJhMjFjYTY0NTM1MDAwNm=
+I5ZWE1MCIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0c=
+HM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjMvY29yb25hdmlydXMtZnJhbmNlLXVudmVp=
+bHMtbmV3LW1lYXN1cmVzLXRvLXRhY2tsZS1mbGFyZS11cC1pbi1jYXNlcy1hbmQtaG9zcGl0YWx=
+pc2F0aW9ucz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD=
+1jb3JvbmF2aXJ1cy1mcmFuY2UtdW52ZWlscy1uZXctbWVhc3VyZXMtdG8tdGFja2xlLWZsYXJlL=
+XVwLWluLWNhc2VzLWFuZC1ob3NwaXRhbGlzYXRpb25zJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpU=
+WTNZelV6WTJZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk=
+2NDkiLCJwIjoiMzMifQ=3D=3D" title=3D"Read on the website" target=3D"_blank" =
+style=3D"text-decoration:none;font-style:normal;outline:none;color:#000000;=
+font-family:Helvetica, Arial, sans-serif;text-transform:none;line-height:21=
+px;text-align:left;font-weight:bold;font-size:18px"> Marseille and Paris hi=
+t out over tightening of COVID-19 restrictions </a></td></tr><tr><td class=
+=3D"mobile-article-desc" style=3D"padding:10px 0px 0px 0px;text-decoration:=
+none;outline:none;text-align:left;"><a href=3D"http://ownpage.euronews.com/=
+newsletter/21d281cc37e84c52/eyJhciI6IjVmNmJhMjFjYTY0NTM1MDAwNmI5ZWE1MCIsInU=
+iOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZX=
+Vyb25ld3MuY29tLzIwMjAvMDkvMjMvY29yb25hdmlydXMtZnJhbmNlLXVudmVpbHMtbmV3LW1lY=
+XN1cmVzLXRvLXRhY2tsZS1mbGFyZS11cC1pbi1jYXNlcy1hbmQtaG9zcGl0YWxpc2F0aW9ucz91=
+dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD1jb3JvbmF2aXJ=
+1cy1mcmFuY2UtdW52ZWlscy1uZXctbWVhc3VyZXMtdG8tdGFja2xlLWZsYXJlLXVwLWluLWNhc2=
+VzLWFuZC1ob3NwaXRhbGlzYXRpb25zJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZN=
+E16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoi=
+MzQifQ=3D=3D" title=3D"Read on the website" target=3D"_blank" style=3D"text=
+-decoration:none;font-style:normal;outline:none;color:#000000;font-family:H=
+elvetica, Arial, sans-serif;text-transform:none;line-height:18px;text-align=
+:left;font-weight:300;font-size:14px"> Bars and restaurants in Marseille an=
+d Guadeloupe, where there are currently more than 250 COVID-19 cases per 10=
+0,000... </a> &nbsp; <a href=3D"http://ownpage.euronews.com/newsletter/21d2=
+81cc37e84c52/eyJhciI6IjVmNmJhMjFjYTY0NTM1MDAwNmI5ZWE1MCIsInUiOiI2YTJlNjdjNT=
+NjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tL=
+zIwMjAvMDkvMjMvY29yb25hdmlydXMtZnJhbmNlLXVudmVpbHMtbmV3LW1lYXN1cmVzLXRvLXRh=
+Y2tsZS1mbGFyZS11cC1pbi1jYXNlcy1hbmQtaG9zcGl0YWxpc2F0aW9ucz91dG1fc291cmNlPW5=
+ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD1jb3JvbmF2aXJ1cy1mcmFuY2UtdW=
+52ZWlscy1uZXctbWVhc3VyZXMtdG8tdGFja2xlLWZsYXJlLXVwLWluLWNhc2VzLWFuZC1ob3Nwa=
+XRhbGlzYXRpb25zJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpS=
+ak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoiMzUifQ=3D=3D" t=
+itle=3D"Read on the website" target=3D"_blank" style=3D"text-decoration:und=
+erline;outline:none;border:none;color:#1b9fce;font-family:Helvetica, Arial,=
+ sans-serif;line-height:18px;font-weight:300;font-size:14px"><strong style=
+=3D"text-decoration:none;color:#1b9fce;font-weight:700;">Read more</strong>=
+</a></td></tr></tbody></table></td></tr></tbody></table></div><!--[if (gte =
+mso 9)|(IE)]></td></tr></table><![endif]--></td></tr><tr style=3D"backgroun=
+d:#ffffff;"><td style=3D"font-size:20px;height:20px;line-height:20px;" heig=
+ht=3D"0" colspan=3D"1">&nbsp;</td></tr></tbody></table><!--[if (gte mso 9)|=
+(IE)]></td></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=
+=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=
+<tr><td><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;bac=
+kground:#ffffff"><tbody><tr><td style=3D"padding:0px 0px 0px 0px;"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"cen=
+ter" style=3D"margin:0 auto;"><tbody><tr><td style=3D"font-size:30px;height=
+:30px;line-height:30px;">&nbsp;</td></tr></tbody></table></td></tr></tbody>=
+</table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gt=
+e mso 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-wi=
+dth:640px;margin:0 auto;background:#ffffff;"><tbody><tr><td style=3D"vertic=
+al-align:middle;font-size:0;width:640px;" width=3D"640"><table cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=
+=3D"max-width:640px;margin:0 auto;background:#ffffff;" class=3D"mobile-img-=
+max"><tbody><tr><td align=3D"center" style=3D"text-align:center;vertical-al=
+ign:top;font-size:0;padding:0px 0px 30px 0px"><a href=3D"http://ownpage.eur=
+onews.com/newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjN=
+zIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly93d3cuZnQuY29tL25ld2FnZW5k=
+YT9zZWdtZW50SWQ9NGMwOWY0MWEtYmFmOC02ZWZmLTMyZmEtZmQ0NDkzN2RkYzBiICZ1dG1fc29=
+1cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT1leUpuZFdsa0=
+lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEI=
+iwiZyI6IjEwOTY0OSIsInAiOiIzNiJ9" style=3D"color:#000000;text-decoration:non=
+e;outline:none" target=3D"_blank"><img style=3D"display:block;border:none;m=
+argin:0 auto;width:100%;max-width:640px;" border=3D"0" width=3D"640" alt=3D=
+"" src=3D"https://assets.ownpage.fr/euronews/image/15a73ca84ee4e7d5.jpeg" c=
+lass=3D"mobile-img-max"></a></td></tr></tbody></table></td></tr></tbody></t=
+able><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gte m=
+so 9)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width=
+:640px;margin:0 auto;background:#ffffff"><tbody><tr><td style=3D"padding:0p=
+x 0px 0px 0px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"100%" align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td style=
+=3D"font-size:30px;height:30px;line-height:30px;">&nbsp;</td></tr></tbody><=
+/table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></tabl=
+e><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"cente=
+r" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><ta=
+ble cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=
+=3D"center" style=3D"max-width:640px;margin:0 auto;background:#10111B"><tbo=
+dy><tr><td style=3D"padding:0px 0px 0px 0px;"><!--[if (gte mso 9)|(IE)]><ta=
+ble width=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0=
+ auto;background:#10111B"><tbody><tr><td style=3D"padding:0px 0px 0px 0px;"=
+><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" ali=
+gn=3D"center" style=3D"margin:0 auto;"><tbody><tr><td style=3D"font-family:=
+Helvetica, Arial, sans-serif;color:#ffffff;font-size:14px;font-weight:300;f=
+ont-style:normal;line-height:16px;text-align:center;text-decoration:none;te=
+xt-transform:none;padding:20px 20px 10px 20px;"><span style=3D"font-style:n=
+ormal;font-size:22px;font-weight:500;text-transform:uppercase;vertical-alig=
+n:middle;">VIDEOS</span>&nbsp; you might have missed </td></tr></tbody></ta=
+ble></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><=
+![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><table=
+ cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"c=
+enter" style=3D"max-width:640px;margin:0 auto;"><tbody><tr style=3D"backgro=
+und:#10111B;"><td style=3D"text-align:center;vertical-align:middle;font-siz=
+e:0;width:640px;" width=3D"640"><!--[if (gte mso 9)|(IE)]><table width=3D"6=
+40" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><=
+td align=3D"center" valign=3D"middle" width=3D"281" style=3D"width:281px;ma=
+x-width:281px;text-align:center;"><![endif]--><div class=3D"column" align=
+=3D"center" style=3D"width:44%;display:inline-block;vertical-align:middle;"=
+><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:281px;margin:=
+0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0px 7=
+px 0px 20px;"><table width=3D"100%" align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;mso-table-lspace=
+:0pt;mso-table-rspace:0pt;"><tbody><tr><td width=3D"100%" align=3D"center" =
+style=3D"border-collapse:collapse;padding: 2px 0px 5px 0px;"><img width=3D"=
+100" class=3D"mobile-img-100px" src=3D"https://assets.ownpage.fr/euronews/l=
+ogo_no_comment_100x29.png" alt=3D"" style=3D"display:inline-block; border:n=
+one;margin:auto;" border=3D"0"></td></tr><tr><td width=3D"100%" align=3D"ce=
+nter" style=3D"border-collapse:collapse;padding: ;"><a href=3D"http://ownpa=
+ge.euronews.com/newsletter/21d281cc37e84c52/eyJhciI6IjVmNzFjZWFiNGU1MTU4MDA=
+wNmU4ZTExMSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaH=
+R0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjgvcGFyaXMtaG9sZHMtYm9keS1wb3Npd=
+Gl2ZS1mYXNoaW9uLXNob3ctYnktdGhlLWVpZmZlbC10b3dlcj91dG1fc291cmNlPW5ld3NsZXR0=
+ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD1wYXJpcy1ob2xkcy1ib2R5LXBvc2l0aXZlLWZ=
+hc2hpb24tc2hvdy1ieS10aGUtZWlmZmVsLXRvd2VyJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWT=
+NZelV6WTJZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2N=
+DkiLCJwIjoiMzcifQ=3D=3D" title=3D"Read on the website" target=3D"_blank" st=
+yle=3D"text-decoration:none!important;outline-style:none;border-width:0;out=
+line-color:0;color:#000000;width:100%;border-style:none;display:block"><img=
+ width=3D"254" class=3D"mobile-img-max" src=3D"https://static.euronews.com/=
+articles/stories/05/01/19/06/1000x563_cmsv2_7e52f7db-87c9-52ff-a4e1-0583514=
+67b7b-5011906.jpg" alt=3D"" style=3D"-ms-interpolation-mode:bicubic;text-de=
+coration:none;outline-color:0;outline-style:none;border-width:0;border-styl=
+e:none;"></a></td></tr></tbody></table></td></tr></tbody></table></div><!--=
+[if (gte mso 9)|(IE)]></td><td align=3D"center" valign=3D"middle" width=3D"=
+358" style=3D"width:358px;max-width:358px;text-align:center;"><![endif]--><=
+div class=3D"column" align=3D"center" style=3D"width:56%;display:inline-blo=
+ck;vertical-align:middle;"><table class=3D"mobile-w-maxw-100p" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=
+=3D"max-width:358px;margin:0 auto;"><tbody><tr><td class=3D"mobile-no-paddi=
+ng" style=3D"padding: 0px 20px 0px 7px;"><table width=3D"100%" align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collaps=
+e:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;"><tbody><tr><td class=
+=3D"mobile-article-title" style=3D"padding:0px 0px 0px 0px;text-decoration:=
+none;outline:none;text-align:left;"><a href=3D"http://ownpage.euronews.com/=
+newsletter/21d281cc37e84c52/eyJhciI6IjVmNzFjZWFiNGU1MTU4MDAwNmU4ZTExMSIsInU=
+iOiI2YTJlNjdjNTNjZjgzMDRiYzNjNGM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZX=
+Vyb25ld3MuY29tLzIwMjAvMDkvMjgvcGFyaXMtaG9sZHMtYm9keS1wb3NpdGl2ZS1mYXNoaW9uL=
+XNob3ctYnktdGhlLWVpZmZlbC10b3dlcj91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1=
+bT1lbiZ1dG1fY29udGVudD1wYXJpcy1ob2xkcy1ib2R5LXBvc2l0aXZlLWZhc2hpb24tc2hvdy1=
+ieS10aGUtZWlmZmVsLXRvd2VyJl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZNE16QT=
+BZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoiMzgif=
+Q=3D=3D" title=3D"Read on the website" target=3D"_blank" style=3D"text-deco=
+ration:none;font-style:normal;outline:none;color:#ffffff;font-family:Helvet=
+ica, Arial, sans-serif;text-transform:none;line-height:21px;text-align:left=
+;font-weight:300;font-size:18px"> Paris holds body-positive fashion show by=
+ the Eiffel Tower </a></td></tr><tr><td class=3D"mobile-article-desc" style=
+=3D"padding:10px 0px 0px 0px;text-decoration:none;outline:none;text-align:l=
+eft;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/ey=
+JhciI6IjVmNzFjZWFiNGU1MTU4MDAwNmU4ZTExMSIsInUiOiI2YTJlNjdjNTNjZjgzMDRiYzNjN=
+GM3MjExZDljNDI0NCIsInVyIjoiaHR0cHM6Ly93d3cuZXVyb25ld3MuY29tLzIwMjAvMDkvMjgv=
+cGFyaXMtaG9sZHMtYm9keS1wb3NpdGl2ZS1mYXNoaW9uLXNob3ctYnktdGhlLWVpZmZlbC10b3d=
+lcj91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD1wYXJpcy=
+1ob2xkcy1ib2R5LXBvc2l0aXZlLWZhc2hpb24tc2hvdy1ieS10aGUtZWlmZmVsLXRvd2VyJl9vc=
+GU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5E=
+UWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoiMzkifQ=3D=3D" title=3D"Read on the =
+website" target=3D"_blank" style=3D"text-decoration:none;font-style:normal;=
+outline:none;color:#ffffff;font-family:Helvetica, Arial, sans-serif;text-tr=
+ansform:none;line-height:18px;text-align:left;font-weight:300;font-size:14p=
+x"> It's a movement of kindness towards oneself and others, whatever the ag=
+e, whatever the body type, whatever the... </a></td></tr></tbody></table></=
+td></tr></tbody></table></div><!--[if (gte mso 9)|(IE)]></td></tr></table><=
+![endif]--></td></tr><tr style=3D"background:#10111B;"><td style=3D"font-si=
+ze:20px;height:20px;line-height:20px;" height=3D"0" colspan=3D"1">&nbsp;</t=
+d></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif=
+]--></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><=
+![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"center" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><table=
+ cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"c=
+enter" style=3D"max-width:640px;margin:0 auto;"><tbody><tr style=3D"backgro=
+und:#ffffff;"><td style=3D"text-align:center;vertical-align:middle;font-siz=
+e:0;width:640px;" width=3D"640"><!--[if (gte mso 9)|(IE)]><table width=3D"6=
+40" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><=
+td align=3D"center" valign=3D"middle" width=3D"320" style=3D"width:320px;ma=
+x-width:320px;text-align:center;"><![endif]--><div class=3D"column" align=
+=3D"center" style=3D"width:50%;display:inline-block;vertical-align:middle;"=
+><table class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:320px;margin:=
+0 auto;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0px 0=
+px 0px 0px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"100%" align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td class=3D=
+"mobile-text-align-center" style=3D"color:#000000;font-family:Helvetica, Ar=
+ial, sans-serif;font-size:13px;font-weight:400;font-style:normal;line-heigh=
+t:13px;text-align:left;text-decoration:none;text-transform:none;letter-spac=
+ing:normal;padding:35px 15px 0px 15px;"> Discover our apps </td></tr></tbod=
+y></table><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td align=3D"cen=
+ter" style=3D"text-align: center; vertical-align: top; font-size: 0;"><tabl=
+e align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody><tr><td class=3D"mobile-align-center" style=3D"padding:15p=
+x 10px 15px 10px; text-align: left; vertical-align: top; font-size: 0;" wid=
+th=3D"100%"><!--[if (gte mso 9)|(IE)]><table width=3D"300" align=3D"left" c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><div st=
+yle=3D"display: inline-block; width: 300px; max-width: 300px;" class=3D""><=
+table width=3D"100%" align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"margin:0 auto;"><tbody><tr><td height=3D"40" width=3D"=
+135"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ=
+1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaH=
+R0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL2diL2FwcC9ldXJvbmV3cy9pZDU1NTY2NzQ3Mj9tdD04J=
+nV0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV9jb250ZW50PSZfb3BlPWV5=
+Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlE=
+lM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjQwIn0=3D" name=3D"appstore" target=3D"_b=
+lank" style=3D"color:#000000;text-decoration:none"><img alt=3D"appstore" bo=
+rder=3D"0" height=3D"40" src=3D"https://assets.ownpage.fr/euronews/badges/a=
+ppstore-badge-us.png" width=3D"135"></a></td><td height=3D"40" width=3D"134=
+"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ1Ij=
+oiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0c=
+HM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldXJvbmV3cy5l=
+eHByZXNzJmhsPWVuJnV0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV9jb25=
+0ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TV=
+dRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjQxIn0=3D" name=3D"plays=
+tore" target=3D"_blank" style=3D"color:#000000;text-decoration:none"><img a=
+lt=3D"playstore" border=3D"0" height=3D"40" src=3D"http://assets.ownpage.fr=
+/euronews/badges/google-play-badge-us.png" width=3D"134"></a></td></tr></tb=
+ody></table></div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tabl=
+e></div><!--[if (gte mso 9)|(IE)]></td><td align=3D"center" valign=3D"middl=
+e" width=3D"320" style=3D"width:320px;max-width:320px;text-align:center;"><=
+![endif]--><div class=3D"column" align=3D"center" style=3D"width:50%;displa=
+y:inline-block;vertical-align:middle;"><table class=3D"mobile-w-maxw-100p" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"ce=
+nter" style=3D"max-width:320px;margin:0 auto;"><tbody><tr><td class=3D"mobi=
+le-no-padding" style=3D"padding: 0px 0px 0px 0px;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"ma=
+rgin:0 auto;"><tbody><tr><td class=3D"mobile-text-align-center" style=3D"co=
+lor:#000000;font-family:Helvetica, Arial, sans-serif;font-size:13px;font-we=
+ight:400;font-style:normal;line-height:13px;text-align:right;text-decoratio=
+n:none;text-transform:none;letter-spacing:normal;padding:35px 15px 0px 15px=
+;"> Join us </td></tr></tbody></table><table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"margin:0 auto;=
+"><tbody><tr><td align=3D"center" style=3D"text-align: center; vertical-ali=
+gn: top; font-size: 0;"><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td class=3D"mobile-align-c=
+enter" style=3D"padding:15px 10px 15px 10px; text-align: right; vertical-al=
+ign: top; font-size: 0;" width=3D"100%"><!--[if (gte mso 9)|(IE)]><table wi=
+dth=3D"250" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+"><tr><td><![endif]--><div style=3D"display: inline-block; width: 250px; ma=
+x-width: 250px;" class=3D""><table width=3D"100%" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:0 auto;"><tbody>=
+<tr><td height=3D"40" width=3D"40"><a href=3D"http://ownpage.euronews.com/n=
+ewsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQy=
+NDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2V1cm9uZXdzLz9=
+1dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT1leU=
+puZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJ=
+TNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiI0MiJ9" name=3D"facebook" target=3D"_blank=
+" style=3D"color:#000000;text-decoration:none"><img alt=3D"facebook" border=
+=3D"0" height=3D"40" src=3D"https://assets.ownpage.fr/euronews/social/faceb=
+ook_40x40.png" width=3D"40"></a></td><td height=3D"40" width=3D"40"><a href=
+=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY=
+3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly90d2=
+l0dGVyLmNvbS9ldXJvbmV3cz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1d=
+G1fY29udGVudD0mX29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJq=
+TnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiI0MyJ9" name=3D"t=
+witter" target=3D"_blank" style=3D"color:#000000;text-decoration:none"><img=
+ alt=3D"twitter" border=3D"0" height=3D"40" src=3D"https://assets.ownpage.f=
+r/euronews/social/twitter_40x40.png" width=3D"40"></a></td><td height=3D"40=
+" width=3D"40"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37=
+e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2Us=
+InVyIjoiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9ldXJvbmV3cy50di8_dXRtX3NvdXJjZT1=
+uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdXRtX2NvbnRlbnQ9Jl9vcGU9ZXlKbmRXbGtJam9pTm=
+1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpSak56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciO=
+iIxMDk2NDkiLCJwIjoiNDQifQ=3D=3D" name=3D"instagram" target=3D"_blank" style=
+=3D"color:#000000;text-decoration:none"><img alt=3D"instagram" border=3D"0"=
+ height=3D"40" src=3D"https://assets.ownpage.fr/euronews/social/instagram_4=
+0x40.png" width=3D"40"></a></td><td height=3D"40" width=3D"40"><a href=3D"h=
+ttp://ownpage.euronews.com/newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUz=
+Y2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly93d3cubGl=
+ua2VkaW4uY29tL2NvbXBhbnkvMjg5MzkvP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaX=
+VtPWVuJnV0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwW=
+W1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjQ1In0=
+=3D" name=3D"linkedin" target=3D"_blank" style=3D"color:#000000;text-decora=
+tion:none"><img alt=3D"linkedin" border=3D"0" height=3D"40" src=3D"https://=
+assets.ownpage.fr/euronews/social/linkedin_40x40.png" width=3D"40"></a></td=
+><td height=3D"40" width=3D"40"><a href=3D"http://ownpage.euronews.com/news=
+letter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQ=
+iLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cHM6Ly9mbGlwYm9hcmQuY29tL0BldXJvbmV3cz91dG1fc2=
+91cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT1leUpuZFdsa=
+0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNE=
+IiwiZyI6IjEwOTY0OSIsInAiOiI0NiJ9" name=3D"flipboard" target=3D"_blank" styl=
+e=3D"color:#000000;text-decoration:none"><img alt=3D"flipboard" border=3D"0=
+" height=3D"40" src=3D"https://assets.ownpage.fr/euronews/social/flipboard_=
+40x40.png" width=3D"40"></a></td></tr></tbody></table></div><!--[if (gte ms=
+o 9)|(IE)]></td></tr></table><![endif]--></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr></tbody></table></div><!--[if (gte mso 9)|(IE)]=
+></td></tr></table><![endif]--></td></tr><tr style=3D"background:#ffffff;">=
+<td style=3D"font-size:20px;height:20px;line-height:20px;" height=3D"0" col=
+span=3D"1">&nbsp;</td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td><=
+/tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" alig=
+n=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![en=
+dif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100=
+%" align=3D"center" style=3D"max-width:640px;margin:0 auto;"><tbody><tr sty=
+le=3D"background:#000001;"><td style=3D"font-size:5px;height:5px;line-heigh=
+t:5px;" height=3D"5" colspan=3D"1">&nbsp;</td></tr><tr style=3D"background:=
+#000001;"><td style=3D"text-align:center;vertical-align:middle;font-size:0;=
+width:640px;" width=3D"640"><!--[if (gte mso 9)|(IE)]><table width=3D"640" =
+align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td a=
+lign=3D"center" valign=3D"middle" width=3D"160" style=3D"width:160px;max-wi=
+dth:160px;text-align:center;"><![endif]--><div class=3D"column" align=3D"ce=
+nter" style=3D"width:25%;display:inline-block;vertical-align:middle;"><tabl=
+e class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:160px;margin:0 au=
+to;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0px 0px 0=
+px 0px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"1=
+00%" align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td class=3D"mobi=
+le-text-align-center" style=3D"color:#fffffe;font-family:Helvetica, Arial, =
+sans-serif;font-size:13px;font-weight:400;font-style:normal;line-height:13p=
+x;text-align:center;text-decoration:none;text-transform:none;letter-spacing=
+:normal;padding:5px 5px 5px 5px;"> More on euronews.com: </td></tr></tbody>=
+</table></td></tr></tbody></table></div><!--[if (gte mso 9)|(IE)]></td><td =
+align=3D"center" valign=3D"middle" width=3D"480" style=3D"width:480px;max-w=
+idth:480px;text-align:center;"><![endif]--><div class=3D"column" align=3D"c=
+enter" style=3D"width:75%;display:inline-block;vertical-align:middle;"><tab=
+le class=3D"mobile-w-maxw-100p" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:480px;margin:0 au=
+to;"><tbody><tr><td class=3D"mobile-no-padding" style=3D"padding: 0px 0px 0=
+px 0px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"1=
+00%" align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td align=3D"cent=
+er" style=3D"text-align: center; vertical-align: top; font-size: 0;"><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%"><tbody><tr><td class=3D"mobile-align-center" style=3D"padding:5px 0p=
+x 5px 0px; text-align: center; vertical-align: top; font-size: 0;" width=3D=
+"100%"><!--[if (gte mso 9)|(IE)]><table width=3D"480" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><table cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" class=3D"mobil=
+e-w-maxw-100p" style=3D"display:inline-block; max-width:480px;margin:0 auto=
+;text-align: center;"><tbody><tr><td width=3D"480"><div class=3D"mobile-w-m=
+axw-100p" style=3D"display: inline-block; width: 480px; max-width: 480px;">=
+<table width=3D"100%" align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tbody><tr><td width=3D"16%" style=3D"font-family:arial,sans-s=
+erif;color:#fffffe;font-size:12px;font-weight:normal;font-style:normal;line=
+-height:16px;text-align:center;text-decoration:none;text-transform:uppercas=
+e;padding:5px 0px 5px 0px;"><a href=3D"http://ownpage.euronews.com/newslett=
+er/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ=
+1cyI6ZmFsc2UsInVyIjoiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20vP3V0bV9zb3VyY2U9bmV3c2=
+xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaV=
+FkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5=
+NjQ5IiwicCI6IjQ3In0=3D" target=3D"_blank" style=3D"text-decoration:none;fon=
+t-style:normal;outline:none;color:#fffffe;font-family:arial,sans-serif;text=
+-transform:uppercase;line-height:16px;text-align:center;font-weight:normal;=
+font-size:12px"> Home </a></td><td width=3D"16%" style=3D"font-family:arial=
+,sans-serif;color:#fffffe;font-size:12px;font-weight:normal;font-style:norm=
+al;line-height:16px;text-align:center;text-decoration:none;text-transform:u=
+ppercase;padding:5px 0px 5px 0px;"><a href=3D"http://ownpage.euronews.com/n=
+ewsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQy=
+NDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20vZXVyb3BlYW4tYWZ=
+mYWlycy9ldXJvcGVhbi1uZXdzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJn=
+V0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6U=
+mpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJnIjoiMTA5NjQ5IiwicCI6IjQ4In0=3D" targ=
+et=3D"_blank" style=3D"text-decoration:none;font-style:normal;outline:none;=
+color:#fffffe;font-family:arial,sans-serif;text-transform:uppercase;line-he=
+ight:16px;text-align:center;font-weight:normal;font-size:12px"> Europe </a>=
+</td><td width=3D"16%" style=3D"font-family:arial,sans-serif;color:#fffffe;=
+font-size:12px;font-weight:normal;font-style:normal;line-height:16px;text-a=
+lign:center;text-decoration:none;text-transform:uppercase;padding:5px 0px 5=
+px 0px;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c52=
+/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIj=
+oiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20vbmV3cy9idXNpbmVzcz91dG1fc291cmNlPW5ld3NsZ=
+XR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT1leUpuZFdsa0lqb2lObUV5WlRZ=
+M1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY=
+0OSIsInAiOiI0OSJ9" target=3D"_blank" style=3D"text-decoration:none;font-sty=
+le:normal;outline:none;color:#fffffe;font-family:arial,sans-serif;text-tran=
+sform:uppercase;line-height:16px;text-align:center;font-weight:normal;font-=
+size:12px"> Business </a></td><td width=3D"16%" style=3D"font-family:arial,=
+sans-serif;color:#fffffe;font-size:12px;font-weight:normal;font-style:norma=
+l;line-height:16px;text-align:center;text-decoration:none;text-transform:up=
+percase;padding:5px 0px 5px 0px;"><a href=3D"http://ownpage.euronews.com/ne=
+wsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyN=
+DQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20vbGl2aW5nP3V0bV9z=
+b3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2x=
+rSWpvaU5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0=
+QiLCJnIjoiMTA5NjQ5IiwicCI6IjUwIn0=3D" target=3D"_blank" style=3D"text-decor=
+ation:none;font-style:normal;outline:none;color:#fffffe;font-family:arial,s=
+ans-serif;text-transform:uppercase;line-height:16px;text-align:center;font-=
+weight:normal;font-size:12px"> Living </a></td><td width=3D"16%" style=3D"f=
+ont-family:arial,sans-serif;color:#fffffe;font-size:12px;font-weight:normal=
+;font-style:normal;line-height:16px;text-align:center;text-decoration:none;=
+text-transform:uppercase;padding:5px 0px 5px 0px;"><a href=3D"http://ownpag=
+e.euronews.com/newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMz=
+YzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20=
+vbGlmZXN0eWxlL2N1bHR1cmU_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW4mdX=
+RtX2NvbnRlbnQ9Jl9vcGU9ZXlKbmRXbGtJam9pTm1FeVpUWTNZelV6WTJZNE16QTBZbU16WXpSa=
+k56SXhNV1E1WXpReU5EUWlmUSUzRCUzRCIsImciOiIxMDk2NDkiLCJwIjoiNTEifQ=3D=3D" ta=
+rget=3D"_blank" style=3D"text-decoration:none;font-style:normal;outline:non=
+e;color:#fffffe;font-family:arial,sans-serif;text-transform:uppercase;line-=
+height:16px;text-align:center;font-weight:normal;font-size:12px"> Culture <=
+/a></td><td width=3D"16%" style=3D"font-family:arial,sans-serif;color:#ffff=
+fe;font-size:12px;font-weight:normal;font-style:normal;line-height:16px;tex=
+t-align:center;text-decoration:none;text-transform:uppercase;padding:5px 0p=
+x 5px 0px;"><a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84=
+c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInV=
+yIjoiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20va25vd2xlZGdlL3NjaS10ZWNoP3V0bV9zb3VyY2=
+U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVuJnV0bV9jb250ZW50PSZfb3BlPWV5Sm5kV2xrSWpva=
+U5tRXlaVFkzWXpVelkyWTRNekEwWW1Nell6UmpOekl4TVdRNVl6UXlORFFpZlElM0QlM0QiLCJn=
+IjoiMTA5NjQ5IiwicCI6IjUyIn0=3D" target=3D"_blank" style=3D"text-decoration:=
+none;font-style:normal;outline:none;color:#fffffe;font-family:arial,sans-se=
+rif;text-transform:uppercase;line-height:16px;text-align:center;font-weight=
+:normal;font-size:12px"> Sci-Tech </a></td></tr></tbody></table></div></td>=
+</tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-=
+-></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></t=
+able></div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></t=
+r><tr style=3D"background:#000001;"><td style=3D"font-size:5px;height:5px;l=
+ine-height:5px;" height=3D"5" colspan=3D"1">&nbsp;</td></tr></tbody></table=
+><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--><!--[if (gte mso 9=
+)|(IE)]><table width=3D"640" align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0"><tr><td><![endif]--><table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"max-width:640=
+px;margin:0 auto;background:#ffffff"><tbody><tr><td style=3D"padding:0px 0p=
+x 0px 0px;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"100%" align=3D"center" style=3D"margin:0 auto;"><tbody><tr><td style=3D=
+"font-family:Helvetica, Arial, sans-serif;color:#949494;font-size:11px;font=
+-weight:300;font-style:normal;line-height:12px;text-align:center;text-decor=
+ation:none;text-transform:none;padding:30px 5px 5px 5px;"> =C2=A9 Euronews,=
+ all rights reserved. Euronews SA, 56 quai Rambaud, 69002 Lyon, France. </t=
+d></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]>=
+</td></tr></table><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640=
+" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td=
+><![endif]--><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"100%" align=3D"center" style=3D"max-width:640px;margin:0 auto;backgroun=
+d:#ffffff"><tbody><tr><td style=3D"padding:0px 0px 0px 0px;"><table cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" s=
+tyle=3D"margin:0 auto;"><tbody><tr><td style=3D"font-family:Helvetica, Aria=
+l, sans-serif;color:#949494;font-size:11px;font-weight:300;font-style:norma=
+l;line-height:12px;text-align:center;text-decoration:none;text-transform:no=
+ne;padding:5px 5px 5px 5px;"> You are receiving this email because you have=
+ subscribed to the Euronews newsletter. If you no longer wish to receive it=
+, you can <a href=3D"http://ownpage.euronews.com/newsletter/21d281cc37e84c5=
+2/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIxMWQ5YzQyNDQiLCJ1cyI6dHJ1ZSwidXIiO=
+iJodHRwczovL3NlcnZpY2VzLm93bnBhZ2UuZnIvdW5zdWJzY3JpYmUvMjFkMjgxY2MzN2U4NGM1=
+Mi9leUp1YkNJNklqVTNOelUzSWl3aWRTSTZJalpoTW1VMk4yTTFNMk5tT0RNd05HSmpNMk0wWXp=
+jeU1URmtPV00wTWpRMElpd2laVzBpT2lKMGFHOXRjRzl6YjI1a2IzVm5iR0Z6UUdkdFlXbHNMbU=
+52YlNKOT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX=
+29wZT1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5=
+TkRRaWZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiI1MyJ9" style=3D"color:#949494;te=
+xt-decoration:underline">unsubscribe by clicking here</a></td></tr></tbody>=
+</table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></tab=
+le><![endif]--><!--[if (gte mso 9)|(IE)]><table width=3D"640" align=3D"cent=
+er" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]--><t=
+able cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=
+=3D"center" style=3D"max-width:640px;margin:0 auto;background:#ffffff"><tbo=
+dy><tr><td style=3D"padding:0px 0px 0px 0px;"><table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"margin:=
+0 auto;"><tbody><tr><td style=3D"font-family:Helvetica, Arial, sans-serif;c=
+olor:#949494;font-size:11px;font-weight:300;font-style:normal;line-height:1=
+2px;text-align:center;text-decoration:none;text-transform:none;padding:5px =
+5px 25px 5px;"> In accordance with the French law relating to information t=
+echnology, data files and civil liberties of January 6, 1978, you have at a=
+ny time the right to access, rectify and delete any personal data concernin=
+g you, by writing to us through our =C2=AB <a href=3D"http://ownpage.eurone=
+ws.com/newsletter/21d281cc37e84c52/eyJ1IjoiNmEyZTY3YzUzY2Y4MzA0YmMzYzRjNzIx=
+MWQ5YzQyNDQiLCJ1cyI6ZmFsc2UsInVyIjoiaHR0cDovL3d3dy5ldXJvbmV3cy5jb20vY29udGF=
+jdD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbiZ1dG1fY29udGVudD0mX29wZT=
+1leUpuZFdsa0lqb2lObUV5WlRZM1l6VXpZMlk0TXpBMFltTXpZelJqTnpJeE1XUTVZelF5TkRRa=
+WZRJTNEJTNEIiwiZyI6IjEwOTY0OSIsInAiOiI1NCJ9" style=3D"color:#949494;text-de=
+coration:underline">Contact</a> =C2=BB section. </td></tr></tbody></table><=
+/td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![end=
+if]--></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table=
+><![endif]--></td></tr></tbody></table></body></html>
+------=_Part_19879_703998020.1601486033170--

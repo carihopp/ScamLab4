@@ -1,0 +1,133 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a67:b108:0:0:0:0:0 with SMTP id w8csp245822vsl;
+        Sun, 4 Oct 2020 04:22:26 -0700 (PDT)
+X-Received: by 2002:aca:da8b:: with SMTP id r133mr5775103oig.163.1601810546516;
+        Sun, 04 Oct 2020 04:22:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601810546; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hCzp4QOdLw8QVZ4uGXz0v9h7VAqI4ZWwy5aXoEXrzD7njQh4uwPbq2rLMBcKZNdHGs
+         QMhozT+7A3htUsYcdhsaM6uqeC6goL4kHnj6nk0NmPu32atRjT1gkd6wVyqxsbqT4vyU
+         i2dznsog/NphkC0QkYg7u65lgcuVHgNZqiACeYN42wZiPXaoIpx3YvQLhd9miMfQyovf
+         4QGle2r0JXrmbSuEeZ87bjBHTXPEC5FYlKPHjd43VMDaqgQ0r4YboaNkNnMqT078+IAl
+         pv3EX8Uw/8hzSOOyn37phcXqRhaQ8YR7gEtKiTHP/Fgw0Cf68KG3iFnIDj2I29PiB8B3
+         KKJA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=npXAZ0SK80z1+1INS0q0pbsfIGS+o1lhI7ykvdSHGjI=;
+        b=nKI/QukxjEMRtHdCvPGNRV5t3ymx64RVuxJCBpn4DDj9PeR764UxBd4Ic/DOzOkLUj
+         yFfEkpGMjGVQIwRee4LrTtzNFCmmylzjKvJBPYju5FQmuGOY2gqV379ftQC2huDQvHAZ
+         IVvEjforo7tFkndTWftuq2170vAZ+KXD4mR5YbJT6MHGfTR8I0SkZUw5wv35c35jyE1+
+         UsDm3DluqFMZvNoXLVD0pdqr9VBxAcySuO/4mN8cQ44dqJqbKG+wHops6yC92IsOgp6M
+         7Ofjqh0gysQsHD23jYqf/MQa7F/9W7hvwzVxHfcH7oIMYk4ginEPj4XI0IP7rZuVVotV
+         s7/A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=c4NA5q3Y;
+       spf=pass (google.com: domain of holtmann2017@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=holtmann2017@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <holtmann2017@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id s83sor1297748oib.67.2020.10.04.04.22.26
+        for <thomposondouglas@gmail.com>
+        (Google Transport Security);
+        Sun, 04 Oct 2020 04:22:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of holtmann2017@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=c4NA5q3Y;
+       spf=pass (google.com: domain of holtmann2017@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=holtmann2017@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:reply-to:from:date:message-id:subject:to;
+        bh=npXAZ0SK80z1+1INS0q0pbsfIGS+o1lhI7ykvdSHGjI=;
+        b=c4NA5q3YqR9hdTyr26X+lbccFgBk0DACoIRHHZZ3PUQZibSRMgR7zLPDKudE5j4C8w
+         ZBz5TB/cQtjaYalVTjXJ/TZxxb0XZqQqfoRvOu77Arc/YNWN+C0OmZx3isgqOPVwp0K/
+         RrhGvSyH5nf6wH7QTdDIiU4eAslAMQ81sEuwrp8vNuErmM5g3DnkIB0B/SML3Wf8xMVs
+         qOM4y7NUCUXh2M83SSgs3FYVRSI/1cqRuy7/WrrmIQEa//VPt0ZD1al7t4x5jKmywW8e
+         OqjsRmL3ZTyuNhGk/PkqKynLPv7tI1bLe4yz6O0ULDXDZIgS8+uLsvI4X7gCytclWYEK
+         n5KA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+         :subject:to;
+        bh=npXAZ0SK80z1+1INS0q0pbsfIGS+o1lhI7ykvdSHGjI=;
+        b=tUV/c1dE14hDBc5HKTTvuIyISFhlZ+txFNFdp5Lx427dSe5S1RgrNtRk5miHaBKDqG
+         hWf5zEr9u+0TzaBG7Pnr175CpyNYIEkVHc4DSs+5zShFMFRG49QrwCVt92+PxsiwtC9p
+         ens976S+IVM3wdiSVU5/aqagaZoEsiMe6UtipC3p1a1WpXa+6Xi0lfOrlkR2w2G3ujJU
+         AFVC/Og/KxP5pAXAcUgxMnk0ifpNHkBwCf4Q4glG9kosdN2c7j+Klfsc2aDlWWlGpVRz
+         GwngO1ZKFHJsmobLpUwUuXo2OaGEOoy5gV7yFUAbXF3+RvqImqY1cTVbRfHXJCuTep6z
+         HMmA==
+X-Gm-Message-State: AOAM5316gQ7dwATAjO9uga1aM3yBIDBO8wRNGME9jIY8n3HXHmikFVMc
+	8qk/CwyZ61ApDFCg4N0a3qXdPURTI1CHz5G7XsQ=
+X-Google-Smtp-Source: ABdhPJyNczZGI+QKQzy2kzeiAhgFsYgxMpzrLh1EDgta6mzXpL7gUdftVey/Ou4aijKNr1SAaANpkzovvGf358swVbM=
+X-Received: by 2002:aca:31d4:: with SMTP id x203mr2582469oix.168.1601810546025;
+ Sun, 04 Oct 2020 04:22:26 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: gcbonline101@gmail.com
+From: BANK OF GHANA <holtmann2017@gmail.com>
+Date: Sun, 4 Oct 2020 04:23:19 -0700
+Message-ID: <CAETMa3Yk1tB18CX8wVUUDyoSYfW=Ys=WuFySz4Fi3Qdu0ENj_Q@mail.gmail.com>
+Subject: Re:Dear Fund Beneficiary.
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="00000000000097eade05b0d69476"
+Bcc: thomposondouglas@gmail.com
+
+--00000000000097eade05b0d69476
+Content-Type: text/plain; charset="UTF-8"
+
+BANK OF GHANA
+(Head Office Annex)
+One Thorpe Road,
+ P. O. Box GP 2674
+ Accra, Ghana
+
+Telephone +233-200669327
+
+                          Date:3/10/2020
+
+
+
+Dear Fund Beneficiary,
+
+I am Mr.Ernest Kwamina Yedu Addison,Governor,Bank Of Ghana.I am writing to
+inform you about your over-due funds that was brought here in my office to
+arrange and facilitate the immediate release of the amount of $4.500.000.00
+(Four Million Five Hundred United States Dollars Only) into your bank
+account as stated which you know that this transaction has taken longer
+than expected.
+
+I look forward to your response.
+
+Best Regards
+
+Mr.Ernest Kwamina Yedu Addison
+Executive Governor
+Bank Of Ghana.
+
+--00000000000097eade05b0d69476
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+QkFOSyBPRiBHSEFOQTxicj4oSGVhZCBPZmZpY2UgQW5uZXgpPGJyPk9u
+ZSBUaG9ycGUgUm9hZCw8YnI+wqBQLiBPLiBCb3ggR1AgMjY3NDxicj7CoEFjY3JhLCBHaGFuYSDC
+oCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDC
+oCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDC
+oCDCoCDCoCDCoCA8YnI+VGVsZXBob25lICsyMzMtMjAwNjY5MzI3IDxicj7CoCDCoCDCoCDCoCDC
+oCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDC
+oCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDC
+oCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCBEYXRlOjMvMTAvMjAyMDxicj48YnI+wqAgwqAgwqAg
+wqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAg
+wqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAg
+wqAgwqA8YnI+RGVhciBGdW5kIEJlbmVmaWNpYXJ5LCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDC
+oDxicj7CoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDC
+oCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoCDCoDxicj5JIGFtIE1yLkVybmVzdCBLd2FtaW5h
+IFllZHUgQWRkaXNvbixHb3Zlcm5vcixCYW5rIE9mIEdoYW5hLkkgYW0gd3JpdGluZyB0byBpbmZv
+cm0geW91IGFib3V0IHlvdXIgb3Zlci1kdWUgZnVuZHMgdGhhdCB3YXMgYnJvdWdodCBoZXJlIGlu
+IG15IG9mZmljZSB0byBhcnJhbmdlIGFuZCBmYWNpbGl0YXRlIHRoZSBpbW1lZGlhdGUgcmVsZWFz
+ZSBvZiB0aGUgYW1vdW50IG9mICQ0LjUwMC4wMDAuMDAgKEZvdXIgTWlsbGlvbiBGaXZlIEh1bmRy
+ZWQgVW5pdGVkIFN0YXRlcyBEb2xsYXJzIE9ubHkpIGludG8geW91ciBiYW5rIGFjY291bnQgYXMg
+c3RhdGVkIHdoaWNoIHlvdSBrbm93IHRoYXQgdGhpcyB0cmFuc2FjdGlvbiBoYXMgdGFrZW4gbG9u
+Z2VyIHRoYW4gZXhwZWN0ZWQuPGJyPjxicj5JIGxvb2sgZm9yd2FyZCB0byB5b3VyIHJlc3BvbnNl
+Ljxicj48YnI+QmVzdCBSZWdhcmRzPGJyPjxicj5Nci5Fcm5lc3QgS3dhbWluYSBZZWR1IEFkZGlz
+b248YnI+RXhlY3V0aXZlIEdvdmVybm9yPGJyPkJhbmsgT2YgR2hhbmEuPGJyPjwvZGl2Pg0K
+--00000000000097eade05b0d69476--

@@ -1,0 +1,562 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a05:6838:350:0:0:0:0 with SMTP id e16csp2401335nke;
+        Sun, 27 Sep 2020 03:32:17 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwwaq4BeVAROYV6IRD7kQsnoKO3+DoGdG/zL/g5XPUQNmwh/3u9KAumWc+j95cyQS3nIB2V
+X-Received: by 2002:aa7:c504:: with SMTP id o4mr10779794edq.82.1601202737581;
+        Sun, 27 Sep 2020 03:32:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601202737; cv=none;
+        d=google.com; s=arc-20160816;
+        b=P/lPcANFM0ZQQt77yoKiPzZiqoo+5JpaKzpqKuZacGqxKyj/qzu1FEe2rkovN4Tqd/
+         pE4cOF5YCqArJf1I8j4X+FltUGnyjBwxLZb51YPTQpGuzee2rrhPq5fgrkXLDGP9ScK0
+         8H8d1vsWBye3K+4MygAI65M+eeZPvvYxGQOR9rYqthjw072bBZfdFXkpwrEvVaw3bfoB
+         799BOHAA6urSTw+tYpUypVsVqv8sstiFXgc/jaJI2cGDO743zwQvntrt/IZfKjjR5M3j
+         eoc+Z6nakYV7roPyHJz5s+o325K9xAXto2BWmr5TQQcBFP5b4ey1hUUpi1m3T/fL4O7s
+         GLFw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:to:from:subject:date:message-id:dkim-signature;
+        bh=FRcIX4c72yPwjeXelBlaLXDCcOs1L4jSF3gaUHnLZmY=;
+        b=p4060BTiTb4GqOC/cpZvKHozR/VX2Gdz9IcZHexnD5ubedRxRDrswELWykVLjGo2Ka
+         YdeQKmlQw2s7aQ+qSfdeHv+kFMZ6T5JXDN1WQvTOEVsSnLg9+HatgyD4CxFYp5wgnncI
+         dlfMJ3r8SsBYHbHNchsfDzv9jS/XcQRl+TIAnUESI0+OU5vSbexLcwufWwA2prpSuHYm
+         6xmrpHGc+Iqt7XlMwW492sqkc0ICUOtv5bCagt9FIPov3D8QH1i5mUsK16cADXDpguPN
+         5/YAuZjDaNz03A1ReE5YFTfPh8aR3ej4yyF4uvwuukNVvhRaRmvwQqMt9k1/VQS6yeex
+         qAAQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@email.oddschecker.com header.s=xp header.b=SMOm3vsm;
+       spf=pass (google.com: domain of return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com designates 109.68.66.12 as permitted sender) smtp.mailfrom=return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com
+Return-Path: <return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com>
+Received: from mta6612.mxmfb.com (mta6612.mxmfb.com. [109.68.66.12])
+        by mx.google.com with ESMTPS id b19si5231367ejd.451.2020.09.27.03.32.17
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 27 Sep 2020 03:32:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com designates 109.68.66.12 as permitted sender) client-ip=109.68.66.12;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@email.oddschecker.com header.s=xp header.b=SMOm3vsm;
+       spf=pass (google.com: domain of return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com designates 109.68.66.12 as permitted sender) smtp.mailfrom=return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=xp; d=email.oddschecker.com;
+ h=Message-ID:Date:Subject:From:To:MIME-Version:Content-Type;
+ i=no-reply@email.oddschecker.com;
+ bh=FRcIX4c72yPwjeXelBlaLXDCcOs1L4jSF3gaUHnLZmY=;
+ b=SMOm3vsmJJyBe9xXJPjuooulkYa4CJ7CJFFK9oxl7sanpRc1GvlbGSuMuds0vp43eLC0eaSwS1xm
+   BSZTAzkslsT7Q8O3Pjz+GtpeWAKNeNvtHyYK/qUyvLwB5yxALORETGd7fUguYk1zmIgNloVYLUxk
+   MkkUEq2ADkFLT/TA+aU=
+Return-Path: <return-1991-558461777-11eb00acb27c0040aaa60ac7230aab14@email.oddschecker.com>
+Message-ID: <89a975eff246a538797ddbec1343397a@swift.generated>
+Date: Sun, 27 Sep 2020 10:32:09 +0000
+Subject: Activate your oddschecker account...
+From: oddschecker <no-reply@email.oddschecker.com>
+To: thomposondouglas@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1601202729_984da73fa2edcc2a705071a72cbd547f_=_"
+
+
+--_=_swift_1601202729_984da73fa2edcc2a705071a72cbd547f_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+...or miss the benefits | View online [here](https://api.xtremepush.com/api=
+/email/click?project_id=3D1991&action_id=3D558461777&profile_id=3D11eb00acb=
+27c0040aaa60ac7230aab14&link=3D55745&url=3Dhttps%3A%2F%2Fdashboard.xtremepu=
+sh.com%2Femail%2Fmessage%2Farchive%3Fproject_id%3D1991%26profile_id%3D11eb0=
+0acb27c0040aaa60ac7230aab14%26action_id%3D558461777).
+
+[Oddschecker](ht=
+tps://api.xtremepush.com/api/email/click?project_id=3D1991&action_id=3D5584=
+61777&profile_id=3D11eb00acb27c0040aaa60ac7230aab14&link=3D56319&url=3Dhttp=
+s%3A%2F%2Fwww.oddschecker.com%2F%3Futm_source%3Dpasswordreset%26utm_medium%=
+3Demail%26utm_content%3DHeader_Logo%26utm_campaign%3DPWR)
+
+Thank you fo=
+r becoming a valued member of the Oddschecker community, it's great to have=
+ you onboard. The only thing left to do is to activate your account, which =
+you can do by clicking the button below.
+
+This will ensure we can keep =
+you informed about the latest free bet offers, tips and insight and it will=
+ also help keep your account secure.
+[Activate Account](https://api.xtrem=
+epush.com/api/email/click?project_id=3D1991&action_id=3D558461777&profile_i=
+d=3D11eb00acb27c0040aaa60ac7230aab14&link=3D57354&url=3Dhttps%3A%2F%2Foddsc=
+hecker.com%2Fmyoddschecker%2Fverify-email%2F4p6g5svkfu24sub4s2ggpsk28e)
+=
+
+You have been sent this email as a registered holder of an Oddschecker a=
+ccount.
+View our [Privacy Policy](https://api.xtremepush.com/api/email/cl=
+ick?project_id=3D1991&action_id=3D558461777&profile_id=3D11eb00acb27c0040aa=
+a60ac7230aab14&link=3D55748&url=3Dhttp%3A%2F%2Fwww.oddschecker.com%2Fmyodds=
+checker%2Fprivacy) and [Terms and Conditions](https://api.xtremepush.com/ap=
+i/email/click?project_id=3D1991&action_id=3D558461777&profile_id=3D11eb00ac=
+b27c0040aaa60ac7230aab14&link=3D55749&url=3Dhttp%3A%2F%2Fwww.oddschecker.co=
+m%2Fmyoddschecker%2Fterms-and-conditions).
+To unsubscribe, follow this [l=
+ink](https://api.xtremepush.com/api/email/click?project_id=3D1991&action_id=
+=3D558461777&profile_id=3D11eb00acb27c0040aaa60ac7230aab14&link=3D55750&url=
+=3Dhttps%3A%2F%2Fdashboard.xtremepush.com%2Femail%2Fsubscription%2Funsubscr=
+ibe%3Fproject_id%3D1991%26profile_id%3D11eb00acb27c0040aaa60ac7230aab14%26a=
+ction_id%3D558461777).
+Oddschecker is operated by Cyan Blue Odds Limited =
+(Alderney co.no 1919) with registered office at Century House, 12 Victoria =
+Street, Alderney, GY9 3UF.
+
+--_=_swift_1601202729_984da73fa2edcc2a705071a72cbd547f_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head><meta http-equiv=3D"Content-Type" content=3D"te=
+xt/html; charset=3Dutf-8" /><!--[if !mso]>
+        <!--><meta http-equiv=
+=3D"X-UA-Compatible" content=3D"IE=3Dedge" /><!--
+       =20
+        <![e=
+ndif]--><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1.0">
+=09<title>Oddschecker</title>
+=09<style type=3D"text/css">d=
+iv, p, a, li, td {
+     -webkit-text-size-adjust: none;
+}
+ body {
+ =
+    Margin: 0;
+     padding: 0;
+     min-width: 100%;
+}
+ table {
+=
+     border-spacing: 0;
+}
+ td {
+     padding: 0;
+}
+ img {
+     =
+border: 0;
+}
+ .wrapper {
+     width: 100%;
+     table-layout: fixed=
+;
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;=
+
+}
+ .webkit {
+     max-width: 600px;
+}
+ .outer {
+     Margin: 0=
+ auto;
+     width: 100%;
+     max-width: 600px;
+}
+ a {
+     color=
+: #333333;
+     text-decoration: underline;
+}
+ .two-column {
+     t=
+ext-align: center;
+     font-size: 0;
+}
+ .two-column .column {
+    =
+ width: 100%;
+     max-width: 300px;
+     display: inline-block;
+    =
+ vertical-align: top;
+}
+ .appleLinkGrey a {
+     text-decoration: non=
+e !important;
+     color: #333333 !important;
+}
+=09=09
+ @media all =
+and (max-width: 500px) and (min-width: 100px) {
+     .full-on-mobile {
+=
+         width:100% !important;
+         max-width:100% !important;
+   =
+ }
+     .hide-on-mobile {
+         display:none !important;
+    }
+ =
+    .scale-on-mobile {
+         height: auto !important;
+         width=
+: 100% !important;
+         max-width:100% !important;
+    }
+     .tw=
+o-column .column {
+         width: 100%;
+         max-width: 100%;
+  =
+  }
+     .mobile-padding1 {
+         padding-left:20px !important;
+  =
+       padding-right:20px !important;
+    }
+     .mobile-padding2 {
+ =
+        padding-left:10px !important;
+         padding-right:10px !import=
+ant;
+    }
+     .mobile-padding3 {
+         padding-left:0px !importa=
+nt;
+         padding-right:0px !important;
+    }
+     .mobile-padding=
+4 {
+         padding-left:10px !important;
+    }
+=09 .bodyContent {=
+
+=09 color: #323232;
+=09 font-size: 25px;
+=09 font-family: Arial, Hel=
+vetica, sans-serif;
+     line-height: 125%;
+}
+     .bodyHeader {
+=
+=09 color: #323232;
+=09 font-size: 30px;
+=09 font-family: Arial, Helvet=
+ica, sans-serif;
+}
+}
+=09</style>
+=09<!--[if (gte mso 9)|(IE)]>
+  =
+          <style type=3D"text/css">
+ table {
+    border-collapse: colla=
+pse !important;
+}
+ </style>
+            <![endif]-->
+</head>
+<bod=
+y style=3D"Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-=
+left:0;min-width:100%;background-color:#FFFFFF;">
+<center class=3D"wrappe=
+r" style=3D"width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms=
+-text-size-adjust:100%;">
+<div class=3D"webkit" style=3D"max-width:600px;=
+"><!-- Start: Preheader -->
+<div style=3D"font-family:Arial, sans-serif;f=
+ont-size:1px;color:#f6f7fb;line-height:1px;mso-line-height-rule:exactly;dis=
+play:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:a=
+ll;">&nbsp;</div>
+<!-- End: Preheader --><!--[if (gte mso 9)|(IE)]>
+   =
+                 <table width=3D"600" align=3D"center" style=3D"border-spac=
+ing:0;font-family: Arial, sans-serif;color:#333333;">
+                   =
+     <tr>
+                            <td style=3D"padding-top:0;padding-=
+bottom:0;padding-right:0;padding-left:0;">
+                              =
+  <![endif]-->
+
+<table align=3D"center" bgcolor=3D"#FFFFFF" class=3D"ou=
+ter" style=3D"border-spacing:0; Margin:0 auto;width:100%;max-width:600px;">=
+
+=09<tbody>
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#FFFFFF" class=3D"mobi=
+le-padding2" style=3D"color:#323232; font-family: Arial, Helvetica, sans-se=
+rif; font-size:12px; mso-line-height-rule:exactly; line-height:18px; paddin=
+g-top:5px;padding-bottom:5px;padding-right:35px;padding-left:35px;width:100=
+%;text-align:center;">&nbsp;...or miss the benefits | View online <a href=
+=3D"https://api.xtremepush.com/api/email/click?project_id=3D1991&amp;action=
+_id=3D558461777&amp;profile_id=3D11eb00acb27c0040aaa60ac7230aab14&link=3D55=
+745&url=3Dhttps%3A%2F%2Fdashboard.xtremepush.com%2Femail%2Fmessage%2Farchiv=
+e%3Fproject_id%3D1991%26profile_id%3D11eb00acb27c0040aaa60ac7230aab14%26act=
+ion_id%3D558461777">here</a>.</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<t=
+d align=3D"center" bgcolor=3D"#033954" class=3D"one-column mobile-padding3"=
+ style=3D"padding-top:0px;padding-bottom:10px;padding-left:82px; padding-ri=
+ght:82px; text-align:center">
+=09=09=09<table align=3D"center" style=3D"b=
+order-spacing:0;" width=3D"100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<t=
+r>
+=09=09=09=09=09=09<td align=3D"center" style=3D"padding-top:34px; padd=
+ing-bottom:15px;"><a href=3D"https://api.xtremepush.com/api/email/click?pro=
+ject_id=3D1991&amp;action_id=3D558461777&amp;profile_id=3D11eb00acb27c0040a=
+aa60ac7230aab14&link=3D56319&url=3Dhttps%3A%2F%2Fwww.oddschecker.com%2F%3Fu=
+tm_source%3Dpasswordreset%26utm_medium%3Demail%26utm_content%3DHeader_Logo%=
+26utm_campaign%3DPWR" target=3D"_blank"><img align=3D"center" alt=3D"Oddsch=
+ecker" src=3D"https://xtremepush-beefree.s3.amazonaws.com/xp/images/6e2be6d=
+485060b09a21f0d498b83a2ba68a659ff/Template%20Assets/OC_Logo_2.png" style=3D=
+"display: block;" width=3D"150" /> </a></td>
+=09=09=09=09=09</tr>
+=09=
+=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09=
+=09<tr>
+=09=09=09<td bgcolor=3D"#FFFFFF" class=3D"one-column mobile-paddi=
+ng3" style=3D"padding-top:20px;padding-bottom:35px;padding-right:37px;paddi=
+ng-left:37px;">
+=09=09=09<table align=3D"center" bgcolor=3D"#FFFFFF" styl=
+e=3D"border-spacing:0;font-family:sans-serif;color:#333333;" width=3D"100%"=
+>
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=
+=3D"padding-top:10px; padding-bottom:25px; padding-left:25px; padding-right=
+:25px;  font-family: Arial, Helvetica, sans-serif; font-size:15px; line-hei=
+ght:20px; mso-line-height-rule:exactly; color:#323232">Thank you for becomi=
+ng a valued member of the Oddschecker community, it's great to have you onb=
+oard. The only thing left to do is to activate your account, which you can =
+do by clicking the button below.<br />
+=09=09=09=09=09=09<br />
+=09=09=
+=09=09=09=09This will ensure we can keep you informed about the latest free=
+ bet offers, tips and insight and it will also help keep your account secur=
+e.</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<t=
+d bgcolor=3D"#FFFFFF" style=3D"border-left:0px solid #ffffff; border-right:=
+0px solid #ffffff; border-bottom:0px solid #ffffff; font-family: Arial, Hel=
+vetica, sans-serif; font-size:13px; line-height:15px; text-align:center; co=
+lor:#323232"><a href=3D"https://api.xtremepush.com/api/email/click?project_=
+id=3D1991&amp;action_id=3D558461777&amp;profile_id=3D11eb00acb27c0040aaa60a=
+c7230aab14&link=3D57354&url=3Dhttps%3A%2F%2Foddschecker.com%2Fmyoddschecker=
+%2Fverify-email%2F4p6g5svkfu24sub4s2ggpsk28e" target=3D"_blank"><img alt=3D=
+"Activate Account" class=3D"scale-on-mobile" src=3D"https://xtremepush-beef=
+ree.s3.amazonaws.com/xp/images/6e2be6d485060b09a21f0d498b83a2ba68a659ff/Tem=
+plate%20Assets/ActivateAccountCTA_1.png" width=3D"396" /> </a></td>
+=09=
+=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</t=
+d>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td align=3D"center" class=3D"one-=
+column" style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-lef=
+t:0;">
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"border-spacing:0;font-family: Arial, sans-serif;co=
+lor:#333333;" width=3D"90%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tb=
+ody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09=09<tr>
+=09=
+=09=09<td class=3D"one-column" style=3D"padding-top:0;padding-bottom:0;padd=
+ing-right:0;padding-left:0;">
+=09=09=09<table style=3D"border-spacing:0;f=
+ont-family: Arial, sans-serif;color:#333333;" width=3D"100%">
+=09=09=09=
+=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"color:#9D=
+9DA3; font-family: Arial, Helvetica, sans-serif; font-size:11px; mso-line-h=
+eight-rule:exactly; line-height:13px; padding-top:20px;padding-bottom:20px;=
+padding-right:20px;padding-left:20px;width:100%;text-align:center;">You hav=
+e been sent this email as a registered holder of an Oddschecker account.<br=
+ />
+=09=09=09=09=09=09View our <a href=3D"https://api.xtremepush.com/api/=
+email/click?project_id=3D1991&amp;action_id=3D558461777&amp;profile_id=3D11=
+eb00acb27c0040aaa60ac7230aab14&link=3D55748&url=3Dhttp%3A%2F%2Fwww.oddschec=
+ker.com%2Fmyoddschecker%2Fprivacy">Privacy Policy</a> and <a href=3D"https:=
+//api.xtremepush.com/api/email/click?project_id=3D1991&amp;action_id=3D5584=
+61777&amp;profile_id=3D11eb00acb27c0040aaa60ac7230aab14&link=3D55749&url=3D=
+http%3A%2F%2Fwww.oddschecker.com%2Fmyoddschecker%2Fterms-and-conditions">Te=
+rms and Conditions</a>.<br />
+=09=09=09=09=09=09To unsubscribe, follow th=
+is <a href=3D"https://api.xtremepush.com/api/email/click?project_id=3D1991&=
+amp;action_id=3D558461777&amp;profile_id=3D11eb00acb27c0040aaa60ac7230aab14=
+&link=3D55750&url=3Dhttps%3A%2F%2Fdashboard.xtremepush.com%2Femail%2Fsubscr=
+iption%2Funsubscribe%3Fproject_id%3D1991%26profile_id%3D11eb00acb27c0040aaa=
+60ac7230aab14%26action_id%3D558461777">link</a>.<br />
+=09=09=09=09=09=09=
+Oddschecker is operated by Cyan Blue Odds Limited (Alderney co.no 1919) wit=
+h registered office at Century House, 12 Victoria Street, Alderney, GY9 3UF=
+.</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<!--[if (gte mso 9)=
+|(IE)]>
+                                            </td>
+             =
+                           </tr>
+                                    </ta=
+ble>
+                                    <![endif]--></div>
+</center>=
+
+<style type=3D"text/css">@media screen and (max-device-width: 480px), sc=
+reen and (max-width: 480px) {
+     .full-on-mobile {
+         width:100=
+% !important;
+         max-width:100% !important;
+    }
+     .hide-on=
+-mobile {
+         display:none !important;
+    }
+     .scale-on-mobi=
+le {
+         height: auto !important;
+         width: 100% !important;=
+
+         max-width:100% !important;
+    }
+     .two-column .column {=
+
+         width: 100%;
+         max-width: 100%;
+    }
+     .mobile=
+-padding1 {
+         padding-left:20px !important;
+         padding-rig=
+ht:20px !important;
+    }
+     .mobile-padding2 {
+         padding-le=
+ft:10px !important;
+         padding-right:10px !important;
+    }
+   =
+  .mobile-padding3 {
+         padding-left:0px !important;
+         pad=
+ding-right:0px !important;
+    }
+     .mobile-padding4 {
+         pad=
+ding-left:10px !important;
+    }
+   .bodyContent {
+=09     color: #32=
+3232;
+=09     font-size: 25px;
+=09     font-family: Arial, Helvetica, s=
+ans-serif;
+=09     line-height: 125%;
+    }
+     .bodyHeader {
+=09 =
+    color: #323232;
+=09     font-size: 30px;
+=09     font-family: Arial=
+, Helvetica, sans-serif;
+    }
+}
+
+@media only screen=20
+    and (de=
+vice-width : 375px)=20
+    and (device-height : 667px) {=20
+=09.full-on-mob=
+ile {
+         width:100% !important;
+         max-width:100% !importan=
+t;
+    }
+     .hide-on-mobile {
+         display:none !important;
+ =
+   }
+     .scale-on-mobile {
+         height: auto !important;
+      =
+   width: 100% !important;
+         max-width:100% !important;
+    }
+=
+     .two-column .column {
+         width: 100%;
+         max-width: 10=
+0%;
+    }
+     .mobile-padding1 {
+         padding-left:20px !importa=
+nt;
+         padding-right:20px !important;
+    }
+     .mobile-paddin=
+g2 {
+         padding-left:10px !important;
+         padding-right:10px=
+ !important;
+    }
+     .mobile-padding3 {
+         padding-left:0px =
+!important;
+         padding-right:0px !important;
+    }
+     .mobile=
+-padding4 {
+         padding-left:10px !important;
+    }
+     .bodyCo=
+ntent {
+=09     color: #323232;
+=09     font-size: 28px;
+=09     font=
+-family: Arial, Helvetica, sans-serif;
+    }
+     .bodyHeader {
+=09  =
+   color: #323232;
+=09     font-size: 35px;
+=09     font-family: Arial,=
+ Helvetica, sans-serif;
+    }
+=09
+=09}
+</style>
+<div style=3D"fon=
+t-size: 0"><img src=3D"https://api.xtremepush.com/api/email/open?project_id=
+=3D1991&amp;action_id=3D558461777&amp;profile_id=3D11eb00acb27c0040aaa60ac7=
+230aab14" width=3D"1" height=3D"1" alt=3D"" /></div></body>
+<link href=3D=
+"../../../apps/creativeEditor/css/icons.css" id=3D"dcBlockCss" media=3D"all=
+" rel=3D"stylesheet" type=3D"text/css" /></html>
+
+
+--_=_swift_1601202729_984da73fa2edcc2a705071a72cbd547f_=_--
+

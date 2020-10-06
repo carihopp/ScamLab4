@@ -1,0 +1,487 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a67:b108:0:0:0:0:0 with SMTP id w8csp1042472vsl;
+        Mon, 5 Oct 2020 07:36:07 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJznI+34um6vZsRkFhw2lzIvI+3IGKQe9PrBWErBl28tOYKJWIRcK83HO5e07/qCchJhs49E
+X-Received: by 2002:a05:620a:211b:: with SMTP id l27mr281554qkl.56.1601908566821;
+        Mon, 05 Oct 2020 07:36:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601908566; cv=none;
+        d=google.com; s=arc-20160816;
+        b=B1jN//vLYx3CRQZ6glicy51LExn7SbWsx6PG79/Wwo0Fq1MTFELl0ePmlbIyXNIgO4
+         G0QDVpTjncwDvtcpcdmgXwF5FuJAjk7BachkpXyqDKvBah3j+ZO4w8XPrs+tdvvTEATO
+         7NM1GRfoUVWZlJdNpUP30J+ZigOU7ITTJiWXUgE99VpCd6tPoMVaX726nMoRNE42n7Uq
+         k9xnXzMb9N/QjsBVmuWufWtdfQ2aGNen7uctoJkEL4N5pkWYuwkTfYKkt9ymnDN9cdUY
+         FmTi9oJgmEZKWCdQw2qfqQhkgndqHGN3oseudzfGNem84QgdgJ6vG9BSSnyMz1xfGlpz
+         Poqw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=references:mime-version:subject:message-id:reply-to:from:date
+         :dkim-signature;
+        bh=OFf6i+5YsY8BOoMLHC7KdOdvtpNsvIhl1Inlidv4MNE=;
+        b=FtcsDm27pw/JHHFGviRXUujN8QwSzUlIOA9giGrNX4kGO04VLVKOnTFk9RSMGAYi8b
+         CE3IBpqquOXO1PedmIGLgujgVq7oOPvJbFdHqP7lsLCJd3W3gmrsuBaOWON07qZY9L+c
+         AigcwniIjiOIRcjaUb7bGV9keaHnE5OYSvXDjUqH7X5iBWefqYedukBqyyHC4FHO+Cca
+         4yvoNZdmko6XKjcATqF8ZEwfJ8gElWlAKr72KbX0XndlQrGcq2YY4AusvB8AFur8dBpf
+         cLY7UMSIyIM0g8tQsMMvJRe2wMbKX9pR5ROGTyKzyk6VH35Unvl7fL71JordaDdwTyFx
+         6WaQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aol.de header.s=a2048 header.b=iRJsvDwN;
+       spf=pass (google.com: domain of mdafag@aol.de designates 74.6.133.41 as permitted sender) smtp.mailfrom=mdafag@aol.de;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=aol.de
+Return-Path: <mdafag@aol.de>
+Received: from sonic305-2.consmr.mail.bf2.yahoo.com (sonic305-2.consmr.mail.bf2.yahoo.com. [74.6.133.41])
+        by mx.google.com with ESMTPS id s18si78305qvr.12.2020.10.05.07.36.06
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 05 Oct 2020 07:36:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mdafag@aol.de designates 74.6.133.41 as permitted sender) client-ip=74.6.133.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aol.de header.s=a2048 header.b=iRJsvDwN;
+       spf=pass (google.com: domain of mdafag@aol.de designates 74.6.133.41 as permitted sender) smtp.mailfrom=mdafag@aol.de;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=aol.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aol.de; s=a2048; t=1601908566; bh=OFf6i+5YsY8BOoMLHC7KdOdvtpNsvIhl1Inlidv4MNE=; h=Date:From:Reply-To:Subject:References:From:Subject; b=iRJsvDwNnnm+331vCy51Fa7t1/14l37gQ2m8riC7VWoCTbJqug9jyfYHtMcmTOuob6fovf1FTvtT69LVnUdFFBt/U8MdSaeqN6i7yeOomkB/zOdVxVUQSZEX6zHR/ZrgQls3WMGeJsPmK3rFv/hAJmqAIzORIZDQqzmM3IjjS/MTDOYisQSh0bV0IvslhsXGLNJpfJNstHuWAYMirirAkDeRBvOkUcaU0yqaDRWYY4b7KuyQuod20Yqm55DI7oRCfJOW0svRvNDU6PX2YuiTThI7xb1fcsBFewGCwYG5YOla83XiTJGmL1Vr8mo9y8HIF8e5M64vTizz18DVBHHqBQ==
+X-YMail-OSG: Tcb7WqEVM1ljsBJRfp4P49aAw6kvFV19TfyaFvyd_t6.KwTyUxH4u2sYqvRSDuY
+ qbyDHA5F1pODKHV_wEYLPn8Gmc.757oayp6I.On_aQn7NJ0Zn6iJmncSzM9__R1tO89FTs4uogzA
+ rAgxekfKz_VV2JcZ2iOlE7ZXUWsyl_UiFfjQWQO_pBhTenNcImXhnxt4Wofuy0QgSwQjqz0d.4ep
+ lFOpyrUfhNqX3d2e5IZa3PSr2_3P.CFx6MSYEl8Xn2yXgPXORX2XjBKm8XWtDd9YdxiGFU8F52RA
+ 1A77VsnukUUk7nxGERCCEpL_WPasCT8lEVDAyYyp6MM0zoXRkgnOUKHGG19OPICjy15ukmmhaAr0
+ Ubig225YmDukCJFjUgopbqDJcXEZRPGZ1SncVjstsj06bdmSBgEMbsn0sw9uyjHcO0DmUsegpkHI
+ KyPmEmXLKnkyqmnbTZtenr2aTy8oCVf1Soifjwwr8TeEAIBgksqx5DdDLSdzYUl0vY_FBb5laNbL
+ 6SSOTx66r4K4LSo2Uyp.ytN6f_AOTWkVbg6XGDeHTxfJfNlUR7oWJGdluIHERhEk7r8zHx2RsxLx
+ ZqNUcQqc2kgrTf3uK0sP9UBBu2lnU_pA9CdH564W2rtS.Ovl_xIj5vFpxdAYnjxahYZC1a3hvnT1
+ xqFSyjjq9xq_hl6RKw_.uYWdEFc2NSW8xsQNy78EyYWK3F5IpRDF3xsWn_Jm1avQPvBrg6cNVjQZ
+ ZqEdm.dnnrjWD4pvlFLNxDJI_3Cw4kbJAlV0_3xMKjhHH5pxotWahdMUafU6OMCbaCRoPjv0pZgn
+ F2I2LdAORxdQ8Ej_4igKMXWNKXu_KVCuh0byLFGZTlbA_Z8EWL2QzQLBrjJbrZNwPRXCKgfMOrHR
+ kLGkCmaM_FhlVg7EnBtMuuUkM73SZWgAHuWgVHMpLe0UtjEwywBUMWTYCdrFUvnf3yn.A3.fFZuM
+ p1ujF.0IcJRbPO8fOvtqmiYYqGEdVCGok39RVoSeDtgHFNPepX9KwjrNEl_eDUC4ssnQDClcgcY0
+ 2A3pUsnjPCu1Uav6Q3xtbZXrnuwomCtK4PXdVjFvyiFMg0qfbGMpDRivTYDBOy6SEbD3qLWT5n1w
+ Z0yzEieKp7ORJiVk8VAnY6fxHHN6Ue6PonW9yG46o0tcGgOhbc1AAKU.E5Z0vINKlk9_NA7ouNme
+ vnxyVSQpHcWqRNGU5LCOu1cp8Ce_KyzqedVX6qWKTu4UbLfBf6yRYz3hks8dZe02q1MOABq_Kbqa
+ nzrOvnucfTms4uh.4lVDCkoLRKn.qGHvF83X2Ko0aTDVO_JPLpqTw.IQ52igelduX9TP3PkKGOHj
+ OHWFSoaXUSUOJADRatQrKLMKtR4xjVlfOggKeHNBv0yuVN3AIXXQaHZybAW7JAPyUwWZ1OWqCwzj
+ 6xI9ZqhMJBKiPxSBMvj__5wM0VZKJfIPsn7XIEYGE
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic305.consmr.mail.bf2.yahoo.com with HTTP; Mon, 5 Oct 2020 14:36:06 +0000
+Date: Mon, 5 Oct 2020 14:36:01 +0000 (UTC)
+From: "Miss. Analyze Kipkalya" <mdafag@aol.de>
+Reply-To: "Miss. Analyze Kipkalya" <mdafag@aol.de>
+Message-ID: <233498995.1865023.1601908561800@mail.yahoo.com>
+Subject: Dearest One
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1865022_274140554.1601908561797"
+References: <233498995.1865023.1601908561800.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.16718 aolwebmail Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+Content-Length: 17375
+
+------=_Part_1865022_274140554.1601908561797
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+My dearest one,
+
+I am writing this mail to you with tears and sorrow from my heart.
+With due respect, trust and humanity, I appeal to you to exercise a
+little patience and read through my letter as I feel quite safe
+dealing with you in this important business having gone through your
+remarkable profile. Honestly I am writing this email to you with
+pains, tears and sorrow in my heart, i would really like to have a
+good relationship with you and I have a special reason why I decided
+to contact you. I decided to contact you due to the urgency of my
+situation.
+
+My name is Miss.Analyze Kipkalya, 22yrs old female and i am from Kenya
+in East Africa. Light in complexion, single (never married) but
+presently I am residing here in Ouagadougou, Burkina Faso refugee
+camp. My father Late Dr Kipkalya Kones was the former Kenyan road
+Minister. He and Assistant Minister of Home Affairs Lorna Laboso had
+been on board the Cessna 210, which was headed to Kericho and crashed
+in a remote area called Kajong'a, in western Kenya. The plane crashed
+on Tuesday 10th, June, 2008. You can re
+ad more about the crash through the below site:
+http://edition.cnn.com/2008/WORLD/africa/06/10/kenya.crash/index.html?iref=
+=3Dnextin
+After the burial of my father, my Father brothers conspired and sold
+my father' s property to an Italian Expert rate which they shared the
+money among themselves and left nothing for me. One faithful morning,
+I opened my father's briefcase and found out the documents which he
+have deposited huge amount of money in one bank in Burkina Faso with
+my name as the next of kin, because when he was alive he deposited
+some amount of money in a Bank in Burkina Faso which he used my name
+as the next of kin. The amount in question is $10.5Million.
+
+I have informed the bank about claiming this money and the only thing
+they told me is to look for a foreign partner who will assist me in
+the transfer due to my refugee status here in Burkina Faso. My spirit
+tells me that you are the honest and reliable person who will help me
+and stand as my trustee so that I will present you to the Bank for
+transferring my father=E2=80=99s money to your bank account overseas. I hav=
+e
+chosen to contact you after my prayers and I believe that you will not
+betray my trust. But rather take me as your own biological sister or
+daughter which I will be coming to your country as soon as this money
+is transferred to your account.
+
+My dearest, things are very bad for me here in the refugee camp where
+I am living today. People are dying here day after day because of lack
+of food and poor medical treatment. Even one of us died last night and
+was buried this morning. I am afraid of what i am seeing here. I don't
+know who it will be her turn tomorrow; I was planning to read law in
+my life before the ugly incident that killed my parents that put me in
+this horrible place I found myself today. This place is like a prison
+as we are only allowed to go out on Monday and Friday of the week as
+given by the united nation rules and regulation here in Burkina Faso.
+It=E2=80=99s in this refugee we are only allowed to go out two times in a
+week. It's just like one staying in the prison and I hope to come out
+here soon by your help.
+
+I don' t have any relatives now whom i can go to and the only person i
+have now is Rev Isaac Ambrose who is the pastor of the (Christ for all
+Churches) here in the refugee he has been very nice to me since i came
+here but i am not living with him rather i am leaving in the women's
+hostel because the refugee have two hostels one for men the other for
+women, so you can always contact me through this my both email
+address: (missanalyze_kipkalya@aol.com)
+thanks and am waiting for your reply. Please if you want to help me
+out of this situation respond back so that I will tell you more about
+me.
+
+Yours faithful
+Miss. Analyze Kipkalya
+------=_Part_1865022_274140554.1601908561797
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<div style=3D"color:black;font: 10pt arial;">
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">My dearest one,<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">I am writing this mail to you with t=
+ears and sorrow from my heart.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">With due respect, trust and humanity=
+, I appeal to you to exercise a<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">little patience and read through my =
+letter as I feel quite safe<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">dealing with you in this important b=
+usiness having gone through your<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">remarkable profile. Honestly I am wr=
+iting this email to you with<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">pains, tears and sorrow in my heart,=
+ i would really like to have a<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">good relationship with you and I hav=
+e a special reason why I decided<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">to contact you. I decided to contact=
+ you due to the urgency of my<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">situation.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">My name is Miss.Analyze Kipkalya, 22=
+yrs old female and i am from Kenya<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">in East Africa. Light in complexion,=
+ single (never married) but<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">presently I am residing here in Ouag=
+adougou, Burkina Faso refugee<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">camp. My father Late Dr Kipkalya Kon=
+es was the former Kenyan road<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">Minister. He and Assistant Minister =
+of Home Affairs Lorna Laboso had<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">been on board the Cessna 210, which =
+was headed to Kericho and crashed<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">in a remote area called Kajong'a, in=
+ western Kenya. The plane crashed<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">on Tuesday 10th, June, 2008. You can=
+ re<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">ad more about the crash through the =
+below site:<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><a rel=3D"nofollow" target=3D"_blank=
+" href=3D"http://edition.cnn.com/2008/WORLD/africa/06/10/kenya.crash/index.=
+html?iref=3Dnextin" style=3D"text-decoration-line: underline; pointer-event=
+s: none; color: rgb(151, 155, 167) !important;">http://edition.cnn.com/2008=
+/WORLD/africa/06/10/kenya.crash/index.html?iref=3Dnextin</a><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">After the burial of my father, my Fa=
+ther brothers conspired and sold<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">my father' s property to an Italian =
+Expert rate which they shared the<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">money among themselves and left noth=
+ing for me. One faithful morning,<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">I opened my father's briefcase and f=
+ound out the documents which he<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">have deposited huge amount of money =
+in one bank in Burkina Faso with<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">my name as the next of kin, because =
+when he was alive he deposited<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">some amount of money in a Bank in Bu=
+rkina Faso which he used my name<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">as the next of kin. The amount in qu=
+estion is $10.5Million.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">I have informed the bank about claim=
+ing this money and the only thing<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">they told me is to look for a foreig=
+n partner who will assist me in<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">the transfer due to my refugee statu=
+s here in Burkina Faso. My spirit<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">tells me that you are the honest and=
+ reliable person who will help me<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">and stand as my trustee so that I wi=
+ll present you to the Bank for<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">transferring my father=E2=80=99s mon=
+ey to your bank account overseas. I have<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">chosen to contact you after my praye=
+rs and I believe that you will not<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">betray my trust. But rather take me =
+as your own biological sister or<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">daughter which I will be coming to y=
+our country as soon as this money<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">is transferred to your account.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">My dearest, things are very bad for =
+me here in the refugee camp where<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">I am living today. People are dying =
+here day after day because of lack<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">of food and poor medical treatment. =
+Even one of us died last night and<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">was buried this morning. I am afraid=
+ of what i am seeing here. I don't<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">know who it will be her turn tomorro=
+w; I was planning to read law in<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">my life before the ugly incident tha=
+t killed my parents that put me in<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">this horrible place I found myself t=
+oday. This place is like a prison<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">as we are only allowed to go out on =
+Monday and Friday of the week as<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">given by the united nation rules and=
+ regulation here in Burkina Faso.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">It=E2=80=99s in this refugee we are =
+only allowed to go out two times in a<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">week. It's just like one staying in =
+the prison and I hope to come out<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">here soon by your help.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">I don' t have any relatives now whom=
+ i can go to and the only person i<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">have now is Rev Isaac Ambrose who is=
+ the pastor of the (Christ for all<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">Churches) here in the refugee he has=
+ been very nice to me since i came<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">here but i am not living with him ra=
+ther i am leaving in the women's<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">hostel because the refugee have two =
+hostels one for men the other for<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">women, so you can always contact me =
+through this my both email<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">address: (<a rel=3D"nofollow" ymailt=
+o=3D"mailto:missanalyze_kipkalya@aol.com" target=3D"_blank" href=3D"mailto:=
+missanalyze_kipkalya@aol.com" style=3D"text-decoration-line: underline; poi=
+nter-events: none; color: rgb(151, 155, 167) !important;">missanalyze_kipka=
+lya@aol.com</a>)<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">thanks and am waiting for your reply=
+. Please if you want to help me<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">out of this situation respond back s=
+o that I will tell you more about<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">me.<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;"><br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">Yours faithful<br>
+</div>
+
+<div dir=3D"ltr" style=3D"margin: 0px; padding: 0px; font-family: Helvetica=
+, Arial, sans-serif; font-size: 13px;">Miss. Analyze Kipkalya</div>
+</div>
+
+------=_Part_1865022_274140554.1601908561797--

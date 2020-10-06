@@ -1,0 +1,1097 @@
+X-Envelope-From: <ethiopianairlines@et.flyethiopian.email>
+X-Envelope-To: <mail@carettahopp.de>
+X-Delivery-Time: 1601985716
+X-UID: 19560
+Return-Path: <ethiopianairlines@et.flyethiopian.email>
+Authentication-Results: strato.com; dmarc=pass (p=REJECT sp=NONE) header.from=et.flyethiopian.email
+Authentication-Results: strato.com; arc=none
+Authentication-Results: strato.com; dkim=pass header.d=et.flyethiopian.email
+	header.i=ethiopianairlines@et.flyethiopian.email
+Authentication-Results: strato.com; dkim-adsp=pass header.from="ethiopianairlines@et.flyethiopian.email"
+Authentication-Results: strato.com; spf=pass smtp.mailfrom="ethiopianairlines@et.flyethiopian.email"
+X-RZG-Expurgate: clean/normal
+X-RZG-Expurgate-ID: 149500::1601985715-0000FB8E-3D745E02/0/0
+X-RZG-CLASS-ID: mi00
+Received-SPF: pass
+	(strato.com: domain et.flyethiopian.email designates 129.157.116.65 as permitted sender)
+	mechanism=ip4;
+	client-ip=129.157.116.65;
+	helo="omp.et.flyethiopian.email";
+	envelope-from="ethiopianairlines@et.flyethiopian.email";
+	receiver=smtpin.rzone.de;
+	identity=mailfrom;
+Received: from omp.et.flyethiopian.email ([129.157.116.65])
+	by smtpin.rzone.de (RZmta 47.2.1 OK)
+	with ESMTPS id 804a66w96C1thmz
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits))
+	(Client did not present a certificate)
+	for <mail@carettahopp.de>;
+	Tue, 6 Oct 2020 14:01:55 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ethiopian-20190919;
+ d=et.flyethiopian.email;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:List-Unsubscribe:List-Unsubscribe-Post:Message-ID;
+ i=ethiopianairlines@et.flyethiopian.email;
+ bh=qsweS21G4kLTp6ZOgS45PsbMigjNCY016dogQeyYFkQ=;
+ b=Ojc8CqeWpw5qAzmB0Gpeix1k42gl7JjbidCG1EOoaCZaD0znKAvUt//rBJepGHZvtJB05yvZt+v4
+   OzKTYCZlaGYVayG0vouTts/fAdmoHAlJQyWEm9HGMg/aSLCF1pHzNGuiXwoHdFzJUtN2W4Fy0dqP
+   3j0CIMyq2nxsBNHgNtQNtDajv91AVLRgY/Xm/X+a4yL1x2b+03fXoQVjhlRDVuYbmeTwPzbW7I6S
+   DA7oso/G2N/i1EDT9k+4eL0cvQeBYNlqWb8Dnk9Akub/BrOCcd0yqMErIhY8crJkMiaukgtsyqE8
+   srRk2aOhWDDWV5mJf8GNFtKXV4kxuV1+PWZ1Mw==
+Received: by omp.et.flyethiopian.email id hfheb42lr0oq for <mail@carettahopp.de>; Tue, 6 Oct 2020 12:01:53 +0000 (envelope-from <ethiopianairlines@et.flyethiopian.email>)
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 6 Oct 2020 12:01:53 +0000
+To: mail@carettahopp.de
+From: =?ISO-8859-1?B?RXRoaW9waWFuIEFpcmxpbmVz?=
+ <ethiopianairlines@et.flyethiopian.email>
+Reply-To: =?ISO-8859-1?B?RXRoaW9waWFuIEFpcmxpbmVz?=
+ <Reservation@ethiopianairlines.com>
+Subject: Savor unforgettable stay at Constance Tsarabanjina
+Feedback-ID: 80749:68669:oraclersys
+List-Unsubscribe: <mailto:unsubscribe-AQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIh@imh.rsys9.net?subject=List-Unsubscribe>, <https://et.flyethiopian.email/pub/optout/UnsubscribeOneStepConfirmAction?YES=true&_ri_=X0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIh&_ei_=EolaGGF4SNMvxFF7KucKuWMjgh6eBSmkyGntk_hrppix9QbNAYeRhArG6cpDANSakOhvVxrMfpCs.>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-sgxh1: uHptxJHjLllHohiiQKL
+X-rext: 6.interact9.Enm32o1e41OK0O3fnIlOUmdXI_Ndyunw1HTE_gKER5yMBJbo
+X-cid: ethiopian.50129
+X-ei: EqtKx3hO6z9qgQaQ_7syA_s
+Message-ID: <0.0.1D.EDD.1D69BD87B6BB300.0@omp.et.flyethiopian.email>
+
+<=21DOCTYPE html>
+<html lang=3D=22en=22 xml:lang=3D=22en=22 xmlns=3D=22http://www=2Ew3=2Eorg/=
+1999/xhtml=22 xmlns:o=3D=22urn:schemas-microsoft-com:office:office=22 xmlns=
+:v=3D=22urn:schemas-microsoft-com:vml=22>
+    <head>
+    <meta content=3D=22text/html; charset=3Dutf-8=22 http-equiv=3D=22Conten=
+t-Type=22 />
+    <meta content=3D=22width=3Ddevice-width, initial-scale=3D1, maximum-sca=
+le=3D1=22 name=3D=22viewport=22 />
+    <meta content=3D=22IE=3Dedge=22 http-equiv=3D=22X-UA-Compatible=22 />
+    <meta content=3D=22telephone=3Dno=22 name=3D=22format-detection=22 />
+    <meta content=3D=22date=3Dno=22 name=3D=22format-detection=22 />
+    <meta content=3D=22address=3Dno=22 name=3D=22format-detection=22 />
+    <meta content=3D=22email=3Dno=22 name=3D=22format-detection=22 />
+    <title>Savor unforgettable stay at Constance Tsarabanjina</title>
+<=21--=5Bif gte mso 9=5D>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<style type=3D=22text/css=22>
+v=5C:* =7B behavior: url(=23default=23VML); display:inline-block=7D
+o=5C:* =7B behavior: url(=23default=23VML); =7D
+</style>
+<=21=5Bendif=5D-->
+    <style>
+      p =7B
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+      =7D
+      ul =7B
+        display: block;
+        list-style-type: disc;
+        margin-top: 1em;
+        margin-bottom: 1 em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+      =7D
+      ol =7B
+        display: block;
+        list-style-type: decimal;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+      =7D
+    </style>
+    <style>
+      html =7B
+        box-sizing: border-box;
+      =7D
+
+      body =7B
+        margin: 0;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+      =7D
+
+      =40-webkit-keyframes bugfix =7B
+        from =7B
+          padding: 0;
+        =7D
+
+        to =7B
+          padding: 0;
+        =7D
+      =7D
+
+      *,
+      *:before,
+      *:after =7B
+        box-sizing: inherit;
+      =7D
+
+      a=5Bhref=5E=3D=22x-apple-data-detectors=22=5D =7B
+        color: inherit =21important;
+        text-decoration: inherit =21important;
+      =7D
+
+      =2EReadMsgBody =7B
+        width: 100%;
+      =7D
+
+      =2EExternalClass =7B
+        width: 100%;
+      =7D
+
+      =2EExternalClass * =7B
+        line-height: 100%;
+      =7D
+       =20
+        =40media only screen and (-webkit-min-device-pixel-ratio:1),
+      (min--moz-device-pixel-ratio:1) =7B
+        =2Efancy =7B
+          opacity: 1;
+          transition: opacity =2E25s ease-in-out;
+          -moz-transition: opacity =2E25s ease-in-out;
+          -webkit-transition: opacity =2E25s ease-in-out;
+        =7D
+
+        =2Efancy:hover =7B
+          opacity: 0=2E6;
+        =7D
+
+      =40media screen and (width: 768px) and (device-height: 1024px) =7B
+        body =7B
+          min-width: 768px =21important;
+        =7D
+      =7D
+
+      =2Egm_h =7B
+        display: none =21important;
+      =7D
+
+      =2Emt-1 =7B
+        margin-top: -1px =21important;
+      =7D
+
+      =2Emb-1 =7B
+        margin-bottom: -1px =21important;
+      =7D
+      =40media only screen and (max-width: 580px) =7B
+        /* ADJUST CTA on mobile */
+        table=5Bclass=3D=22mobile-button-container=22=5D =7B
+          margin: 0 auto;
+          width: 75% =21important;
+        =7D
+
+        =2Em_tar =7B
+          text-align: right =21important;
+        =7D
+
+        =2Em_tal =7B
+          text-align: left =21important;
+        =7D
+
+        =2Em_w30px =7B
+          width: 30px =21important;
+        =7D
+
+        =2Em_w124px =7B
+          width: 124px =21important;
+        =7D
+
+        =2Em_w160px =7B
+          width: 160px =21important;
+        =7D
+
+        =2Em_w190px =7B
+          width: 190px =21important;
+        =7D        =20
+        =2Em_w320px =7B
+          width: 289px =21important;
+        =7D
+         =2Em_w50pc =7B
+          width: 50% =21important;
+        =7D
+
+          =2Em_w100pc =7B
+          width: 100% =21important;
+        =7D
+
+        =2Em_h37px =7B
+          height: 37px =21important;
+        =7D
+
+        =2Em_h40px =7B
+          height: 40px =21important;
+        =7D
+
+        =2Em_h394px =7B
+          height: 394px =21important;
+        =7D
+
+        =2Em_p0 =7B
+          padding: 0 =21important;
+        =7D
+
+        =2Em_p15px =7B
+          padding: 15px =21important;
+        =7D
+
+        =2Em_ptop0px =7B
+          padding-top: 0px =21important;
+        =7D
+
+        =2Em_ptop8px =7B
+          padding-top: 8px =21important;
+        =7D
+
+        =2Em_ptop12px =7B
+          padding-top: 12px =21important;
+        =7D
+
+        =2Em_ptop20px =7B
+          padding-top: 20px =21important;
+        =7D
+
+        =2Em_pright20px =7B
+          padding-right: 20px =21important;
+        =7D
+
+        =2Em_pbot10px =7B
+          padding-bottom: 10px =21important;
+        =7D
+
+        =2Em_f20px =7B
+          font-size: 20px =21important;
+        =7D
+
+        =2Em_f26px =7B
+          font-size: 26px =21important;
+        =7D
+
+        =2Em_bbot_h =7B
+          border-bottom: none =21important;
+        =7D
+
+        =2Em_f22px =7B
+          font-size: 22px =21important;
+        =7D
+
+        =2Em_h =7B
+          display: none =21important;
+        =7D
+
+        =2Em_s =7B
+          display: block =21important;
+          overflow: visible =21important;
+          max-height: initial =21important;
+        =7D  =20
+      =7D
+    </style>
+  </head>
+  <body>
+      >
+        <div style=3D=22mso-hide:all; display:none; font-size:1px; color:=
+=23333333; line-height:0; max-height:0; max-width:0; opacity:0; overflow:hi=
+dden=22> Savor unforgettable stay at Constance Tsarabanjina</div><=21-- Ins=
+ert &zwnj;&nbsp; after hidden preview text -->
+    <=21-- PRE-HEADER CONTENT CHANGE -->
+    <table border=3D=220=22 align=3D=22center=22 cellpadding=3D=220=22 cell=
+spacing=3D=220=22 style=3D=22table-layout:fixed; margin:auto;=22 width=3D=
+=22100%=22bgcolor=3D=22=23f1f1f1=22>
+      <tbody>
+        <tr>
+          <td align=3D=22center=22>
+            <=21-- TOP BAR -->=20
+            <table border=3D=220=22 cellpadding=3D=220=22 align=3D=22center=
+=22 cellspacing=3D=220=22 class=3D=22m_w320px=22 width=3D=22575=22>
+              <tbody>
+                <tr>
+                  <td align=3D=22left=22 dir=3D=22ltr=22 style=3D=22font-fa=
+mily:Arial, Helvetica, Sans-serif;font-size:13px;line-height:13px;padding:1=
+0px 20px 10px 20px;=22>
+
+                    <=21-- VIEW IN BROWSER-->
+<a href=3D=22https://et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpg=
+lLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYTCD&amp=
+;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGK=
+tDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dgm9m7l2l8rl2avjn3irre50cmuekj63501itr8j0=
+k2roelf3olc0=22 style=3D=22color:=231B2631;text-decoration:underline=22 tit=
+le=3D=22View in browser=22>View Online</a></td>
+                    <td>
+                    <table border=3D=220=22 cellspacing=3D=220=22 cellpaddi=
+ng=3D=220=22 class=3D=22center=22align=3D=22right=22>
+														<tr>
+															<td class=3D=22img=22 style=3D=22font-size:0pt; line-height:=
+0pt; text-align:left=22 width=3D=2230=22><a href=3D=22https://et=2Eflyethio=
+pian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcb=
+XvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYURD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDE=
+pPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=
+=3Ddl05ljeshttu0uuhhsjpse7ict4dh3murc47sh30enmt34got1hg=22 target=3D=22_bla=
+nk=22><img alt=3D=22=22  src=3D=22https://img=2Eicons8=2Ecom/material-sharp=
+/24/000000/facebook-f=2Epng=22 mc:edit=3D=22image_1=22 border=3D=220=22 wid=
+th=3D=2218=22 style=3D=22 =22 height=3D=2218=22 /></a></td>
+															<td class=3D=22img=22 style=3D=22font-size:0pt; line-height:=
+0pt; text-align:left=22 width=3D=2230=22><a href=3D=22https://et=2Eflyethio=
+pian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcb=
+XvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYUTD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDE=
+pPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=
+=3Di1a3pfn2jj5pa7f1clq3krt2bqpt8e9su5pnhegs3olv072o538g=22 target=3D=22_bla=
+nk=22><img alt=3D=22=22 src=3D=22https://img=2Eicons8=2Ecom/material-sharp/=
+24/000000/twitter-squared=2Epng=22 mc:edit=3D=22image_2=22 border=3D=220=22=
+ width=3D=2218=22 style=3D=22 =22 height=3D=2218=22  /></a></td>
+															<td class=3D=22img=22 style=3D=22font-size:0pt; line-height:=
+0pt; text-align:left=22 width=3D=2230=22><a href=3D=22https://et=2Eflyethio=
+pian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcb=
+XvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYUWD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDE=
+pPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=
+=3Dc2a69as7mqsa82lkskv713fv3q74lib9d14ljr0rc1ab6r8o5dq0=22 target=3D=22_bla=
+nk=22><img alt=3D=22=22 src=3D=22https://img=2Eicons8=2Ecom/material-rounde=
+d/24/000000/instagram-new=2Epng=22 mc:edit=3D=22image_3=22 border=3D=220=22=
+ width=3D=2218=22 style=3D=22 =22 height=3D=2218=22  /></a></td>
+															<td class=3D=22img=22 style=3D=22font-size:0pt; line-height:=
+0pt; text-align:left=22 width=3D=2230=22><a href=3D=22https://et=2Eflyethio=
+pian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcb=
+XvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYUAD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDE=
+pPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=
+=3Dg3a145ne44jbehd4rp2kihlk2dj5l8v00lms18205ej7hcigeua0=22 target=3D=22_bla=
+nk=22><img alt=3D=22=22 src=3D=22https://img=2Eicons8=2Ecom/material/24/000=
+000/youtube-play--v1=2Epng=22 mc:edit=3D=22image_4=22 border=3D=220=22 widt=
+h=3D=2218=22 style=3D=22 =22 height=3D=2218=22  /></a></td>
+														</tr>
+													</table></td>
+                </tr>
+              </tbody>
+            </table>
+            <=21--// PREHEADER =5C=5C-->
+            <=21--// HEADER =5C=5C-->
+
+            <table border=3D=220=22 align=3D=22center=22 cellpadding=3D=220=
+=22 cellspacing=3D=220=22 class=3D=22m_w320px=22 style=3D=22max-width:575px=
+; =22 width=3D=22575=22 >
+              <tbody>
+                <tr>
+                  <td bgcolor=3D=22=23ffffff=22 height=3D=2280=22valign=3D=
+=22middle=22>
+                    <table border=3D=220=22 cellpadding=3D=220=22 align=3D=
+=22center=22 cellspacing=3D=220=22 class=3D=22m_w100pc=22 width=3D=22575=22>
+                      <tbody>
+                           <tr>
+                  <td bgcolor=3D=22=232E7D32=22align=3D=22center=22height=
+=3D=2215=22 style=3D=22border-top-left-radius: 8px;
+    border-top-right-radius: 8px;=22></td>
+                </tr>
+                        =20
+                        <tr>
+                            =20
+                          <=21-- ETHIOPIAN LOGO URL DESKTOP START-->
+                          <td align=3D=22center=22 style=3D=22padding-left:=
+ 10px;=22><a href=3D=22https://et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0Gz=
+c2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3=
+DDYUCD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7f=
+kNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dfcseeorbmg16rus8fvtohgsrdir12k=
+ep5jkrn6k4a19gnjf803q0=22 title=3D=22Ethiopian airlines logo=22><img alt=3D=
+=22Ethiopian airlines logo=22 border=3D=220=22 class=3D=22m_h=22 height=3D=
+=2290=22 src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i9/responsysimages=
+/content/ethiopian/et-logo-552x90=2Epng=22 style=3D=22display:block;=22 wid=
+th=3D=22552=22 data-mc-image-bytes=3D=2243=22 data-mc-width=3D=22552=22 dat=
+a-mc-height=3D=2290=22 data-mc-natural-width=3D=22552=22 data-mc-natural-he=
+ight=3D=2290=22 /></a>
+                            <=21--=5Bif =21mso=5D><=21-- -->
+                            <=21--  ETHIOPIAN LOGO URL MOBILE START -->
+                            <div class=3D=22m_s=22 style=3D=22overflow:hidd=
+en;display:none;max-height:0;mso-hide:all;=22><a href=3D=22https://et=2Efly=
+ethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3=
+uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYUCD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9B=
+bmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_=
+di_=3Dfcseeorbmg16rus8fvtohgsrdir12kep5jkrn6k4a19gnjf803q0=22 title=3D=22Et=
+hiopian airlines logo=22><img alt=3D=22Ethiopian airlines logo=22 border=3D=
+=220=22 height=3D=2269=22 src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i=
+9/responsysimages/content/ethiopian/Et_Logo_main=2Epng=22 style=3D=22displa=
+y:block;=22 width=3D=22300=22 data-mc-image-bytes=3D=2243=22 data-mc-width=
+=3D=22300=22 data-mc-height=3D=2269=22 data-mc-natural-width=3D=22300=22 da=
+ta-mc-natural-height=3D=2269=22 /></a>
+                            </div>
+                            <=21--<=21=5Bendif=5D-->
+                          </td>
+                          <=21-- ETHIOPIAN LOGO URL MOBILE END  -->
+                       =20
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <=21--// HEADER END =5C-->
+
+            <=21--// HERO =5C-->
+
+           <a href=3D=22https://et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0G=
+zc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%=
+3DDYYAD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7=
+fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dec3o4f3vsif299i88sv5295g5kh1a=
+0238dbfvv47bjj1omf7toa0=22>  <table border=3D=220=22 align=3D=22center=22 c=
+ellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22m_w320px mt-1=22 styl=
+e=3D=22 max-width: 575px; =22 width=3D=22575=22>
+              <tbody>
+                <tr>
+                  <=21-- Hero image path change Desktop (TWICE) + Mobile in=
+ CSS -->
+                  <td align=3D=22center=22 background=3D=22https://static=
+=2Ecdn=2Eresponsys=2Enet/i9/responsysimages/content/ethiopian/CTM-03-575pxx=
+335px=2Ejpg=22 class=3D=22mod01_banner=22 height=3D=22335=22 style=3D=22bac=
+kground-position: top center; background-repeat: no-repeat; position: relat=
+ive;=22>
+                    <=21--=5Bif gte mso 9=5D>
+<v:image xmlns:v=3D=22urn:schemas-microsoft-com:vml=22 fill=3D=22true=22 st=
+roke=3D=22false=22 style=3D=22border: 0;display: inline-block;  width: 575p=
+x; height:335px; z-index:-3;=22 src=3D=22https://static=2Ecdn=2Eresponsys=
+=2Enet/i9/responsysimages/content/ethiopian/CTM-03-575pxx335px=2Ejpg=22/>
+<v:rect xmlns:v=3D=22urn:schemas-microsoft-com:vml=22 fill=3D=22true=22 str=
+oke=3D=22false=22 style=3D=22border: 0;display: inline-block;position: abso=
+lute; width: 575px; height:335px;=22>
+<v:fill opacity=3D=220%=22  color=3D=22=23333333=22 />
+<v:textbox inset=3D=220,0,0,0=22>
+<=21=5Bendif=5D-->
+                    <table border=3D=220=22 cellpadding=3D=220=22 cellspaci=
+ng=3D=220=22 width=3D=22100%=22>
+                      <tbody>
+                        <tr>
+                          <td align=3D=22center=22 class=3D=22m_h394px=22 h=
+eight=3D=22260=22 valign=3D=22top=22>
+                            <table border=3D=220=22 cellpadding=3D=220=22 c=
+ellspacing=3D=220=22 class=3D=22m_w100pc=22 width=3D=22575=22>
+                              <tbody>
+                                <tr>
+                                  <td align=3D=22left=22 style=3D=22padding=
+: 20px;=22 valign=3D=22top=22>
+                                    <=21--=5Bif gte mso 9=5D>
+                  <div><div align=3D=22right=22>
+                  <=21=5Bendif=5D-->
+                                  =20
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <=21--=5Bif =21mso=5D><=21-- -->
+                   =20
+                        <=21--<=21=5Bendif=5D-->
+                      </tbody>
+                    </table>
+                    <=21--=5Bif gte mso 9=5D>
+      </v:textbox>
+  </v:fill>
+     </v:rect>
+   </v:image>
+    <=21=5Bendif=5D-->
+                    <=21--=5Bif gte mso 9=5D>
+        <v:image src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i9/respons=
+ysimages/content/ethiopian/575-335-sez-72020-01--resized=2Ejpg=22 style=3D=
+=22 width: 575px; height: 101px; position: absolute; top: 260px; mso-positi=
+on-horizontal: center; z-index: 1;=22 />
+      <=21=5Bendif=5D-->
+                  </td>
+                </tr>
+              </tbody>
+            </table></a>
+            <=21--//HERO END =5C=5C-->
+            <=21--// SPACER =5C=5C-->
+          =20
+            <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=22=
+0=22 width=3D=22100%=22>
+              <tbody>
+                <tr>
+                  <td height=3D=2210=22></td>
+                </tr>
+              </tbody>
+            </table>
+         =20
+            <=21--// SPACER =5C=5C-->
+            <=21--// MAIN MESSAGE START =5C=5C-->
+
+            <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 border=3D=
+=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22m_w320px=22 =
+width=3D=22575=22>
+              <tbody>
+                   <tr>
+                  <td bgcolor=3D=22=232E7D32=22align=3D=22center=22height=
+=3D=225=22 style=3D=22border-top-left-radius: 8px;
+    border-top-right-radius: 8px;=22></td>
+                </tr>
+                <tr>
+                  <td align=3D=22left=22 dir=3D=22ltr=22 style=3D=22padding=
+: 20px; font-family: Arial, Helvetica, Sans-serif; font-size: 13px; line-he=
+ight: 17px;color: =23333333;=22 valign=3D=22top=22>=20
+                     Fly with Ethiopian to Madagascar and stay at Constance=
+ Tsarabanjina&=2344; with your stay at Constance Tsarabanjina you will earn=
+ double miles from 01&=2346;Oct&=2346;2020 	&=2345; 28&=2346;February&=2346=
+;2021=2E
+
+
+
+
+                    <=21-- MAIN MESSAGE BUTTON START -->
+                <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 width=3D=22100%=22>
+                      <tbody>
+                        <tr>
+                          <td align=3D=22center=22 style=3D=22padding-top: =
+20px; padding-bottom:10px;=22>
+                            <table align=3D=22center=22 border=3D=220=22 ce=
+llpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22mobile-button-containe=
+r=22 width=3D=2250%=22>
+                              <tbody>
+                                <tr>
+                                  <td bgcolor=3D=22=23d32f2f=22 dir=3D=22lt=
+r=22 height=3D=2240=22 style=3D=22background: =23d32f2f; text-align:center;=
+=22 valign=3D=22middle=22><a class=3D=22m_f m_p=22 href=3D=22https://et=2Ef=
+lyethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbt=
+w3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYYAD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_=
+9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp=
+;_di_=3Dec3o4f3vsif299i88sv5295g5kh1a0238dbfvv47bjj1omf7toa0=22 rilt=3D=22b=
+odyCTAButton=22 style=3D=22background-color: =23d32f2f; display:block; font=
+-family: Arial, Helvetica, Sans-serif; font-size: 18px; line-height: 35px; =
+color: =23FFFFFF; mso-line-height-rule:exactly; mso-width-percent:1000; tex=
+t-align:center; text-decoration:none;-webkit-text-size-adjust:none; padding=
+:0 13px 0 13px; mso-border-alt: 13px solid =23d32f2f;=22 title=3D=22Explore=
+ now=22>Explore now</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <=21-- MAIN MESSAGE BUTTON END-->=20
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+            <=21--// MAIN MESSAGE END =5C=5C-->
+              <=21--// SPACER =5C=5C-->
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 width=3D=22100%=22>
+              <tbody>
+                <tr>
+                  <td height=3D=2220=22></td>
+                </tr>
+              </tbody>
+            </table>
+            <=21--// SPACER =5C=5C-->=20
+            <=21--// TWO COLUMN SEC LAYER START =5C=5C-->
+              <table align=3D=22center=22 border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 class=3D=22m_w320px=22 width=3D=22575=22>
+              <tbody>
+                <tr>
+                  <td>
+                    <table align=3D=22left=22 aria-labelledby=3D=22left=22 =
+border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22lef=
+t m_w100pc=22 width=3D=22286=22>
+                      <tbody>
+                        <tr>
+                          <td><a href=3D=22https://et=2Eflyethiopian=2Eemai=
+l/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2G=
+XndG0YPf7cIhVXtpKX%3DDYWRD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCk=
+sKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dckl204m61h=
+7m709uo1vhaql9etcmg8rm0k9o3u3mf3ftmphvb4vg=22 rilt=3D=22asset5050=22><img h=
+eight=3D=22220=22 src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i9/respon=
+sysimages/content/ethiopian/286x220-pix-webimages-RDteam-0820-02=2Ejpg=22 s=
+tyle=3D=22display: block; border:0px =21important; outline:none =21importan=
+t;=22 width=3D=22286=22 alt=3D=22Ethiopian airlines=22 data-mc-image-bytes=
+=3D=2222921=22 data-mc-width=3D=22286=22 data-mc-height=3D=22220=22 data-mc=
+-natural-width=3D=22286=22 data-mc-natural-height=3D=22220=22 /></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <=21--=5Bif gte mso 9=5D></td><td><=21=5Bendif=5D-->
+
+                    <table align=3D=22left=22 aria-labelledby=3D=22left=22 =
+border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22lef=
+t m_w100pc=22 width=3D=22288=22>
+                      <tbody>
+                        <tr>
+                          <td align=3D=22left=22bgcolor=3D=22=23662046=22 h=
+eight=3D=22220=22 style=3D=22background-position: top center; background-re=
+peat: no-repeat; background-size: cover; background-color: =23ffffff;=22 va=
+lign=3D=22top=22>                                                 <table bo=
+rder=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 width=3D=22100%=
+=22>
+                              <tbody>
+                                <tr>
+                                   <td align=3D=22left=22 dir=3D=22ltr=22 s=
+tyle=3D=22padding: 20px 20px 0px 20px; font-family: Arial, Helvetica, Sans-=
+serif; font-size: 13px; line-height: 15px; color: =23333333; text-align:lef=
+t;=22 valign=3D=22top=22><span class=3D=22m_f22px=22 style=3D=22font-size: =
+20px; line-height: 24px; color: =23FFFFFF;=22><a href=3D=22https://et=2Efly=
+ethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3=
+uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYWRD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9B=
+bmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_=
+di_=3Dckl204m61h7m709uo1vhaql9etcmg8rm0k9o3u3mf3ftmphvb4vg=22 rilt=3D=22ass=
+et5050=22 style=3D=22font-family: Arial, Helvetica, Sans-serif; font-size: =
+20px; line-height: 24px; color: =232E7D32; text-decoration: none;=22 title=
+=3D=22Your Safety is our priority=22><b>Your Safety is our priority</b></a>=
+</span>
+                                    <br /><br />
+ We have been taking extra steps to ensure your health and comfort when you=
+ travel with us=2E
+<br/><br/>
+                                    <=21-- RIGHT COLOMN BUTTON START  -->
+                                    <table class=3D=22fancy=22 align=3D=22c=
+enter=22 border=3D=220=22 cellspacing=3D=220=22 cellpadding=3D=220=22 bgcol=
+or=3D=22=232E7D32=22>
+                                                                           =
+   <tbody>
+                                                                           =
+     <tr>
+                                                                           =
+       <td class=3D=22buttonborder=22 align=3D=22center=22 valign=3D=22midd=
+le=22 style=3D=22padding: 2px 2px 2px 2px;=22>
+                                                                           =
+         <table class=3D=22button=22 height=3D=2232=22 align=3D=22center=22=
+ border=3D=220=22 cellspacing=3D=220=22 cellpadding=3D=220=22 bgcolor=3D=22=
+=23ffffff=22 style=3D=22height: 32px; =22>
+                                                                           =
+           <tbody>
+                                                                           =
+             <tr>
+                                                                           =
+               <td align=3D=22center=22 valign=3D=22middle=22 style=3D=22pa=
+dding: 4px 14px 4px 14px; font-family:Trebuchet MS, Tahoma, sans-serif; fon=
+t-size:14px; mso-line-height-rule:exactly; line-height:18px; font-weight:bo=
+ld; letter-spacing:2px;=22><a href=3D=22https://et=2Eflyethiopian=2Eemail/p=
+ub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXnd=
+G0YPf7cIhVXtpKX%3DDYWRD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCksKA=
+ZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dckl204m61h7m7=
+09uo1vhaql9etcmg8rm0k9o3u3mf3ftmphvb4vg=22 style=3D=22text-decoration:none;=
+=22 target=3D=22_blank=22 _label=3D=22Ethiopian_btn=22 conversion=3D=22fals=
+e=22><span style=3D=22color:=232E7D32 ;=22>Watch Video</span>  </a> </td>
+                                                                           =
+             </tr>
+                                                                           =
+           </tbody>
+                                                                           =
+         </table>
+                                                                           =
+       </td>
+                                                                           =
+     </tr>
+                                                                           =
+   </tbody>
+                                                                           =
+ </table>
+                                    <=21-- RIGHT COLOMN BUTTON END-->
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <=21--=5Bif gte mso 9=5D>
+          </v:textbox>
+          </v:rect>
+          <=21=5Bendif=5D-->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <=21-- </div> -->
+            <=21--// TWO COLUMN SEC LAYER END =5C=5C-->
+          =20
+            <=21--// SPACER TO DESTINATION START =5C=5C-->
+             <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=
+=220=22 width=3D=22100%=22>
+              <tbody>
+                <tr>
+                  <td height=3D=2215=22></td>
+                </tr>
+              </tbody>
+            </table>
+          <=21--// SPACER TO DESTINATION END =5C=5C-->
+               <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 border=
+=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22m_w320px=
+=22 width=3D=22575=22>
+              <tbody>
+                  <tr>                                                     =
+                     <td align=3D=22left=22 style=3D=22padding: 10px; font-=
+family: Arial, Helvetica, Sans-serif; color: =23333333; font-size: 13px; li=
+ne-height: 20px; letter-spacing: 1px;=22> Upgrade your travel experience us=
+ing Ethiopian Mobile App, Please watch the below short <a href=3D=22https:/=
+/et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwd=
+RwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYWTD&amp;_ei_=3DEq2tf9zs59id=
+fPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=
+=2E&amp;_di_=3Dpor68lftkidh44gnu7i6i2d5p636c3mqvq0spkjunjlump8lccdg=22 styl=
+e=3D=22font-family: Arial, Helvetica, Sans-serif; color: =23333333; font-si=
+ze: 13px; line-height: 20px; letter-spacing: 1px;=22>video</a> which highli=
+ghts the features=2E</td>
+                                                                        </t=
+r>
+             =20
+              </tbody>
+            </table>
+            <a href=3D=22https://et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0=
+Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX=
+%3DDYWTD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh=
+7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dpor68lftkidh44gnu7i6i2d5p636=
+c3mqvq0spkjunjlump8lccdg=22>  <table border=3D=220=22 align=3D=22center=22 =
+cellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22m_w320px mt-1=22 sty=
+le=3D=22 padding-top:5px;max-width: 575px; =22 width=3D=22575=22>
+              <tbody>
+                <tr>
+                  <=21-- Hero image path change Desktop (TWICE) + Mobile in=
+ CSS -->
+                  <td align=3D=22center=22 background=3D=22https://static=
+=2Ecdn=2Eresponsys=2Enet/i9/responsysimages/content/ethiopian/575x335-pix-w=
+eb-image-R-Dteam-0920=2Ejpg=22 class=3D=22mod01_banner=22 height=3D=22220=
+=22 style=3D=22background-position: top center; background-repeat: no-repea=
+t; position: relative;=22>
+                    <=21--=5Bif gte mso 9=5D>
+<v:image xmlns:v=3D=22urn:schemas-microsoft-com:vml=22 fill=3D=22true=22 st=
+roke=3D=22false=22 style=3D=22border: 0;display: inline-block;  width: 575p=
+x; height:220px; z-index:-3;=22 src=3D=22https://static=2Ecdn=2Eresponsys=
+=2Enet/i9/responsysimages/content/ethiopian/575x335-pix-web-image-R-Dteam-0=
+920=2Ejpg/>
+<v:rect xmlns:v=3D=22urn:schemas-microsoft-com:vml=22 fill=3D=22true=22 str=
+oke=3D=22false=22 style=3D=22border: 0;display: inline-block;position: abso=
+lute; width: 575px; height:220px;=22>
+<v:fill opacity=3D=220%=22  color=3D=22=23333333=22 />
+<v:textbox inset=3D=220,0,0,0=22>
+<=21=5Bendif=5D-->                  =20
+                    <=21--=5Bif gte mso 9=5D>
+   </v:textbox>
+  </v:fill>
+  </v:rect>
+ </v:image>                 =20
+      <=21=5Bendif=5D-->
+                  </td>
+                </tr>
+              </tbody>
+            </table></a>
+            <=21--// FOOTER MESSAGE END =5C=5C-->    =20
+                  <=21--// SPACER TO FOOTER START =5C=5C-->
+             <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=
+=220=22 width=3D=22100%=22>
+              <tbody>
+                <tr>
+                  <td height=3D=2215=22></td>
+                </tr>
+              </tbody>
+            </table>
+          <=21--// SPACER TO FOOTER END =5C=5C-->
+            <=21--//BEGIN FOOTER=5C=5C-->
+           <table align=3D=22center=22 border=3D=220=22 cellpadding=3D=220=
+=22 cellspacing=3D=220=22 class=3D=22m_w320px=22 style=3D=22max-width:575px=
+;=22 width=3D=22575=22>
+              <=21--=5Bif gte mso 9=5D>
+<tr>
+<td style=3D=22position: relative;=22>
+<v:image style=3D=22behavior:url(=23default=23VML); display: block; positio=
+n: absolute; width: 575px; height: 56px; top: 0; left: 0; border: 0; z-inde=
+x: 1; =22 xmlns:v=3D=22urn:schemas-microsoft-com:vml=22 id=3D=22theImage=22=
+ />
+</td>
+</tr>
+<=21=5Bendif=5D-->
+              <tbody>
+              =20
+                <tr>
+                  <td align=3D=22center=22>
+                    <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 b=
+order=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 class=3D=22m_w3=
+20px=22 width=3D=22100%=22>
+                      <tbody>
+                        <tr>
+                          <td align=3D=22center=22>
+                            <table border=3D=220=22 cellpadding=3D=220=22 c=
+ellspacing=3D=220=22>
+                              <tbody>
+                                <tr>
+                                  <td align=3D=22center=22 style=3D=22paddi=
+ng: 20px 40px 10px 40px;=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 class=3D=22m_w100pc=22>
+                                      <tbody>  =20
+                                         =20
+                                          =20
+                                            <tr>
+                                         =20
+                                        </tr>
+                                         =20
+                                          <tr>
+                                          <td align=3D=22center=22 style=3D=
+=22padding: 10px 0 10px 0;=22>
+                                            <table border=3D=220=22 cellpad=
+ding=3D=220=22 cellspacing=3D=220=22 width=3D=22100%=22>
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <table align=3D=22left=
+=22 aria-labelledby=3D=22left=22 border=3D=220=22 cellpadding=3D=220=22 cel=
+lspacing=3D=220=22 class=3D=22m_w100pc=22 width=3D=22100%=22>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align=3D=22ce=
+nter=22>
+                                                              <=21--shebami=
+les logo-->
+               <table align=3D=22center=22 border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 class=3D=22m_w190px=22 width=3D=2250%=22>
+                                                              <tbody>
+                                                                <tr>
+
+                                                                  <=21--// =
+Shebamiles =5C=5C=5C=5C-->
+                                                                  <td align=
+=3D=22center=22 height=3D=2298=22 style=3D=22padding: 0 0 0 0;=22 valign=3D=
+=22middle=22 width=3D=22225=22><a href=3D=22https://et=2Eflyethiopian=2Eema=
+il/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2=
+GXndG0YPf7cIhVXtpKX%3DDYYCD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHC=
+ksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3D7s2b2q1d5=
+pie1c8nr491m9f68p7t7gshra8j13vs9v6loos8ou60=22 title=3D=22app-store=22><img=
+ alt=3D=22app-store=22 border=3D=220=22 src=3D=22https://static=2Ecdn=2Eres=
+ponsys=2Enet/i9/responsysimages/content/ethiopian/shebamiles=2Epng=22 style=
+=3D=22display: block;=22 width=3D=22225=22 height=3D=2298=22 data-mc-image-=
+bytes=3D=226981=22 data-mc-width=3D=22225=22 data-mc-height=3D=2298=22 data=
+-mc-natural-width=3D=22225=22 data-mc-natural-height=3D=2298=22 /></a>
+                                                                  </td>
+                                                                  <=21--// =
+Google-play =5C=5C=5C=5C-->
+                                                                 =20
+
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>       =
+                                        <=21--Shebamiles End-->
+                                                              <br/>
+                                                            <table align=3D=
+=22center=22 border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 c=
+lass=3D=22m_w190px=22 width=3D=2250%=22>
+                                                              <tbody>
+                                                                <tr>
+
+                                                                  <=21--// =
+App-store =5C=5C=5C=5C-->
+                                                                  <td align=
+=3D=22center=22 height=3D=2230=22 style=3D=22padding: 0 5px 0 0;=22 valign=
+=3D=22middle=22 width=3D=22103=22><a href=3D=22https://et=2Eflyethiopian=2E=
+email/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgO=
+Sa2GXndG0YPf7cIhVXtpKX%3DDYWAD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3=
+EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3D9kv3t0=
+0uas2fm6fvgcmmoe467dncu33fbfc7j9fm08upov03dqb0=22 title=3D=22app-store=22><=
+img alt=3D=22app-store=22 border=3D=220=22 src=3D=22https://static=2Ecdn=2E=
+responsys=2Enet/i9/responsysimages/content/ethiopian/fa-apple=2Epng=22 styl=
+e=3D=22display: block;=22 width=3D=22103=22 height=3D=2230=22 data-mc-image=
+-bytes=3D=226981=22 data-mc-width=3D=22103=22 data-mc-height=3D=2230=22 dat=
+a-mc-natural-width=3D=22103=22 data-mc-natural-height=3D=2230=22 /></a>
+                                                                  </td>
+                                                                  <=21--// =
+Google-play =5C=5C=5C=5C-->
+                                                                  <td align=
+=3D=22center=22 height=3D=2230=22 style=3D=22padding: 0 5px 0 0;=22 valign=
+=3D=22middle=22 width=3D=22103=22><a href=3D=22https://et=2Eflyethiopian=2E=
+email/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgO=
+Sa2GXndG0YPf7cIhVXtpKX%3DDYWCD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3=
+EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3D3mtq2g=
+t6jbir5sn3gmrpbe7551nab3rl1e8tr05kcnheb96rlrsg=22 title=3D=22google-play=22=
+><img alt=3D=22google-play=22 border=3D=220=22 src=3D=22https://static=2Ecd=
+n=2Eresponsys=2Enet/i9/responsysimages/content/ethiopian/fa-google=2Epng=22=
+ style=3D=22display: block;=22 width=3D=22103=22 height=3D=2230=22 data-mc-=
+image-bytes=3D=2243=22 data-mc-width=3D=22103=22 data-mc-height=3D=221=22 d=
+ata-mc-natural-width=3D=221=22 data-mc-natural-height=3D=2230=22 /></a>
+                                                                  </td>
+
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+
+
+
+
+                                                    <=21--// SPACER =5C=5C=
+=5C=5C-->
+                                                    <table border=3D=220=22=
+ cellpadding=3D=220=22 cellspacing=3D=220=22 width=3D=22100%=22>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height=3D=225=
+=22>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                    <=21--// SPACER =5C=5C=
+=5C=5C-->
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <=21--// SPACER =5C=5C-->
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 width=3D=22100%=22>
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D=22center=22 style=3D=
+=22font-family: Arial, Helvetica, Sans-serif; font-size: 11px; line-height:=
+ 13px; color: =23666666;=22>Download Ethiopian Airlines Mobile App Today<br>
+and enjoy convenience at you finger tips=2E
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <=21--// SPACER =5C=5C-->
+                                    <=21--// ADDRESS =5C=5C=5C=5C-->
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 class=3D=22m_w100pc=22 style=3D=22padding:15p=
+x 10px;=22 width=3D=22100%=22>
+                                      <tbody>                              =
+       =20
+                                      </tbody>
+                                    </table>
+                                    <=21--// EMAIL PREFERENCES =5C=5C=5C=5C=
+-->
+                                  =20
+                                    <=21--// T&C =5C=5C=5C=5C-->
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 class=3D=22m_w100pc=22 width=3D=22100%=22>
+                                      <tbody>
+                                        <tr>
+                                            <td align=3D=22center=22 valign=
+=3D=22top=22 width=3D=22100%=22 class=3D=22m_w100pc=22 style=3D=22font-fami=
+ly: Arial, sans-serif; font-size: 10px; mso-line-height-rule: exactly; line=
+-height: 12px; color: =235f6267;=22>
+                                              <a href=3D=22https://et=2Efly=
+ethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3=
+uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYYRD&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9B=
+bmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E&amp;_=
+di_=3Djc5fhdd05cofr81h2jmn5p2e7ln12ualfjht0ci3spu0go1604d0=22 style=3D=22fo=
+nt-size: 10px; line-height: 12px; color: =232E7D32;=22> <b>Learn more about=
+ latest Covid-19 updates policy</b></a> on our website at <a href=3D=22http=
+s://et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLW=
+SwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYYRD&amp;_ei_=3DEq2tf9zs5=
+9idfPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a=
+3wk=2E&amp;_di_=3Djc5fhdd05cofr81h2jmn5p2e7ln12ualfjht0ci3spu0go1604d0=22 s=
+tyle=3D=22font-size: 10px; line-height: 12px; color: =232E7D32;=22>www=2EEt=
+hiopianairlines=2Ecom/aa/travel-updates/covid-19</a>=2E<br><br>
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>                               =
+=20
+                                  </td>
+                                </tr>                                =20
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                           <tr>
+                                  <td align=3D=22center=22 bgcolor=3D=22=23=
+f1f1f1=22 valign=3D=22top=22 width=3D=22100%=22 class=3D=22m_w100pc=22 styl=
+e=3D=22font-family: Arial, sans-serif; font-size: 10px; mso-line-height-rul=
+e: exactly; line-height: 12px; color: =235f6267;=22>
+                               <table border=3D=220=22 cellpadding=3D=220=
+=22 cellspacing=3D=220=22 class=3D=22m_w100pc=22 style=3D=22padding:10px 15=
+px;=22 width=3D=22100%=22>
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D=22center=22 style=3D=
+=22font-family: Arial, sans-serif; font-size: 10px; mso-line-height-rule: e=
+xactly; line-height: 12px; color: =235f6267;=22>
+                                                You have been sent this ema=
+il because you are subscribed to Ethiopian Airlines via email=2E If you wou=
+ld like to modify your preferences&=2344; you can <a href=3D=22https://et=
+=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlDQGguUThSLWSwdRwU=
+Mgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYYTD&amp;_ei_=3DEq2tf9zs59idfPO=
+1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4PGKtDtAJNNbroobUQ14a3wk=2E=
+&amp;_di_=3Dm1dqorhsfui7s8ft0468nkiapbglmtanirnh1b68c9ms2krfu9pg=22 encrypt=
+=3D=22=22 style=3D=22font-size: 10px; line-height: 12px; color: =235f6267;=
+=22>Update</a>=2E&nbsp;If you no longer wish to receive emails&=2344; you c=
+an <a href=3D=22https://et=2Eflyethiopian=2Eemail/pub/cc?_ri_=3DX0Gzc2X%3DA=
+QpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXtpKX%3DDYYWD&=
+amp;_ei_=3DEq2tf9zs59idfPO1Sc_9BbmSDEpPBd_C3EHCksKAZgfiJg_TpbMUJqh7fkNqiee4=
+PGKtDtAJNNbroobUQ14a3wk=2E&amp;_di_=3Dl2jiq600l2mlf6506uevhnfbj9a0m20sr3n17=
+cj0cu8csaspvtug=22 encrypt=3D=22=22 style=3D=22font-size: 10px; line-height=
+: 12px; color: =235f6267;=22>unsubscribe</a>=2E<br><br>
+
+                                    <b>Please do not reply to this email=2E=
+</b><br>
+
+                                  <=21--  Mailing address: Aeroplan Centre,=
+ P=2EO=2E Box 24000, Station Pointe-Claire Dorval, Pointe-Claire (Quebec) C=
+anada H4Y 1K4 -->
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>                               =
+                                                  =20
+                                     <=21-- COPYRIGHT START -->
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 class=3D=22m_w100pc=22 style=3D=22padding:0px=
+ 15px;=22 width=3D=22100%=22>
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D=22center=22 style=3D=
+=22font-family: Arial, sans-serif; font-size: 10px; mso-line-height-rule: e=
+xactly; line-height: 12px; color: =235f6267;=22>All Rights Reserved =A9 202=
+0 Ethiopian Airlines,The new spirit of=2E Africa=2E
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  <=21-- COPYRIGHT END -->                 =
+                    =20
+                               </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>         =20
+              </tbody>
+            </table>
+            <=21--FOOTER END-->
+          </td>
+        </tr>
+      </tbody>
+    </table><table cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22b=
+order: 0px; padding: 0px; margin: 0px; position: absolute; display: none; f=
+loat: left=22>
+<tr>
+<td height=3D=221=22 style=3D=22font-size: 1px; line-height: 1px; padding: =
+0px;=22>
+<br><img src=3D=22https://et=2Eflyethiopian=2Eemail/pub/as?_ri_=3DX0Gzc2X%3=
+DAQpglLjHJlDQGguUThSLWSwdRwUMgbtw3uKzcbXvKPmgOSa2GXndG0YPf7cIhVXHkMX%3Dw&_e=
+i_=3DEolaGGF4SNMvxFF7KucKuWMjgh6eBSmkyGntk_hrppix9QbNAYeRhArG6cpDANSakOhvVx=
+rMfpCs=2E=22></img>
+<br><=21--Start BK pixel--><IMG SRC=3D=22https://tags=2Ebluekai=2Ecom/site/=
+81215?e_id_s81215=3Dfd995b8584689a20cd0f24c72269f11c32f7f4fa58652038624db23=
+6b53d45e2&e_id_m81215=3Da47e5a2aa549e9b3d952805358506838=22 HEIGHT=3D=221=
+=22 WIDTH=3D=221=22><=21--End BK pixel-->
+</td>
+</tr>
+</table>
+  </body>
+</html>
+
+

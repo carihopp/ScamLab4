@@ -1,0 +1,1002 @@
+Return-Path: <bounces+361267-b163-caretta=gmx.de@mail9.glassdoor.com>
+Received: from o9.mail8.glassdoor.com ([50.31.63.61]) by mx-ha.gmx.net
+ (mxgmx014 [212.227.15.9]) with ESMTPS (Nemesis) id 1MvqNB-1kh8Bp3s07-00syyn
+ for <caretta@gmx.de>; Tue, 06 Oct 2020 12:27:47 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=glassdoor.com; 
+	h=content-type:from:mime-version:reply-to:to:subject; s=s1; 
+	bh=w724DODq5KppgggtQmxA3Sbz+3CPv8LcowYTVOLPauA=; b=TK7hkVFRv5Hb5
+	dno5F2j4E2Wt9MSSxoqRLrJCpvZ7vWtqyGfp8FLTxsbxm+0gmGhzDLbuQ/IU9dvt
+	u7wSJIb4yR73DweI0kmNCjuwSdo4/ZY60T0hUt6Fp9oMvJBGIY2m4ERYPVr4W+xw
+	Gb2nGfDh4VW0lVw08jbM7S92S4bhBw=
+Received: by filter1462p1mdw1.sendgrid.net with SMTP id filter1462p1mdw1-30785-5F7C46A1-16
+        2020-10-06 10:27:45.861532625 +0000 UTC m=+1086362.447855217
+Received: from MzYxMjY3 (unknown)
+	by geopod-ismtpd-4-6 (SG) with HTTP id afDLgr0aRFGsSDNJesCM0g
+	Tue, 06 Oct 2020 10:27:45.834 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=f9cc8c2ec6ae006abe2b2f456d45763f2db258095ac31915f9615fa5fe0b
+Date: Tue, 06 Oct 2020 10:27:45 +0000 (UTC)
+From: "Glassdoor Jobs" <noreply@glassdoor.com>
+Mime-Version: 1.0
+Reply-to: noreply@glassdoor.com
+To: caretta@gmx.de
+Message-ID: <afDLgr0aRFGsSDNJesCM0g@geopod-ismtpd-4-6>
+Subject: SHUTTLE99 OU is hiring in Tallinn (Estonia). Apply Now.
+X-SG-EID: ftolGjqWmE+WlffBqlMd8DOO5h9fqsiQM2IaCGty17EkoNiYNiedYP3pfYZFqw1r4isPFca3cmRKFm
+ Lx6N2MI6cjORtObHvVszUQrgPBHZOkf23ZxqAweAgcabUIl1gh2b1l6oGcCvaoTibiMtGUWjq0d7kJ
+ s1cL/6+P+BSxUrkO//pY9tk96CG+LHFy9LZDI/TyGvEGSO9STZBDR3APvu5J8AFhMcRVJw6QwmKb8B
+ 4=
+X-SG-ID: NMHL7tc+AxXN/stbBh9h7P31qSxMyUIh26Htvq4d9p+/sXZ6v+5dyOre8FEYctzyL00RraotPWmeqM
+ UVxtfM0tDgzCdk2mbbZl6Xv60k4Mm3fBRS5VsCZRVOSqWRYANSIaK6lDsvc+IKtL9XcTgNvVHq2+LB
+ 5llxy6mWf7GuHLapx3JxPaLGzRUq3ELxzPriuSild9iRgIEoCm6HHEm+sakLHbnGxluZlwuNg3bouL
+ de+OuDDl6I5FAkYWNtCHJ07dNt6k6eZUJ0AUcXSWFU0iMmAbGuhwIW40Iu5Eo7QVw=
+Envelope-To: <caretta@gmx.de>
+X-GMX-Antispam: 0 (Mail was not recognized as spam); Detail=V3;
+X-Spam-Flag: NO
+X-UI-Filterresults: notjunk:1;V03:K0:RPW96SNnTgs=:OfkTwRZFcB6eCjBdqDAxCnI++T
+ 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
+ bR73A6+Q==
+
+--f9cc8c2ec6ae006abe2b2f456d45763f2db258095ac31915f9615fa5fe0b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SHUTTLE99 OU is hiring=
+
+--f9cc8c2ec6ae006abe2b2f456d45763f2db258095ac31915f9615fa5fe0b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"x-apple-disable-message-reformatting">
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<meta name=3D"format-detection" content=3D"address=3Dno">
+<title>
+SHUTTLE99 OU is hiring in Tallinn (Estonia). Apply Now.</title>
+<link href=3D"https://fonts.googleapis.com/css?family=3DLato" rel=3D"styles=
+heet" type=3D"text/css">
+<style type=3D"text/css">
+@media screen and (min-width:500px) {
+[class=3D"vertPadding"] {
+padding-bottom: 10px;
+}
+[class=3D"horzPadding"] {
+padding-left: 10px;
+}
+}
+#GDEmail td { font-family: Lato, Arial, Helvetica, sans-serif; }
+</style>
+</head>
+<body bgcolor=3D"#f3f3f3" id=3D"GDEmail" yahoofix class=3D"yahoofix">
+<div style=3D"display:none;font-size:1px;color:#333333;line-height:1px;max-=
+height:0px;max-width:0px;opacity:0;overflow:hidden;">SHUTTLE99 OU is hiring=
+</div>
+<div id=3D"GDEmailWrapper" style=3D"margin: 0; padding: 0; font-size: 16px;=
+ font-family: Lato, Arial, Helvetica, sans-serif">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wid=
+th=3D"100%" bgcolor=3D"#f3f3f3" style=3D"min-width: 100%;">
+<tr>
+<td class=3D'vertPadding'></td>
+</tr>
+<tr>
+<td class=3D"horzPadding"></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"500" bgcolor=3D"#ffffff"
+style=3D"border-top: 1px solid #C2C2C2; border-bottom: 1px solid #C2C2C2; b=
+order-left: 1px solid #C2C2C2; border-right: 1px solid #C2C2C2;">
+<tr>
+<td align=3D"center" valign=3D"middle" height=3D"75" style=3D"padding-left:=
+ 8.5%; padding-right: 8.5%; padding-top: 10px">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/index.htm?utm_mediu=
+m=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&utm_content=3D=
+ja-logo&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" target=3D"_blank"=
+ style=3D"text-decoration: none" universal=3D"true">
+<img src=3D"https://www.glassdoor.com/crs/mail/logos/gdlogoHw_2x.png" id=3D=
+"Logo"
+alt=3D"Glassdoor" title=3D"Glassdoor" height=3D"30" width=3D"142"
+style=3D"border: none">
+</a>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td style=3D"padding-left: 8.5%; padding-right: 8.5%; padding-bottom: 20px;=
+">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%; ">
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom: 10px; font-siz=
+e: 20px; line-height: 1.3;">
+<span style=3D"color: #0D0D0D; font-size: 20px; font-weight: bold;">
+New jobs for Part Time
+</span>
+<br/>
+<span style=3D"font-size: 18px;">
+Tallinn (Estonia)
+</span>
+</td>
+</tr>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%;">
+<tr>
+<td align=3D"center" valign=3D"bottom" style=3D"padding-top: 20px; font-siz=
+e: 20px; line-height: 1.0; color:grey;">
+<span style=3D"font-size: 12px;">
+By clicking on a job below, you agree to Glassdoor's <br/><a href=3D'https:=
+//www.glassdoor.com/about/terms.htm' style=3D'text-decoration:none;'>Terms =
+of Use</a> and <a href=3D'https://www.glassdoor.com/about/privacy.htm' styl=
+e=3D'text-decoration:none;'>Privacy Policy</a>.
+</span>
+</td>
+</tr>
+</table>
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"min-widt=
+h: 100%;" border=3D"0px">
+<tr>
+<td colspan=3D"4">
+<hr style=3D"height: 1px; background-color: #c2c2c2; border: none; margin-t=
+op: 20px; margin-bottom: 20px;"/>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-right:0px; padding-left:=
+0px; width:10%; max-width:10%; min-width:10%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"50" style=
+=3D"min-width: 50px; max-width: 50px; ">
+<tr>
+<td align=3D"center" valign=3D"bottom" style=3D"line-height: 0; font-size: =
+0;" width=3D"50" height=3D"50">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/partner/jobListing.=
+htm?pos=3D101&ao=3D588939&s=3D224&guid=3D00000174fd73cbdd8a70995e9978b533&s=
+rc=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=3D148308=
+793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_8366789c&cb=
+=3D1601980058965&jobListingId=3D3697330483&utm_medium=3Demail&utm_source=3D=
+jobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_term=3D=
+&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"line-height: 0; font-size: =
+0;">
+<img width=3D"48" height=3D"48" src=3D"http://www.glassdoor.com/crs/mail/ic=
+ons/building_60x60.png"
+alt=3D"SHUTTLE99 OU" title=3D"SHUTTLE99 OU"
+style=3D"border: 1px solid #C2C2C2;">
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td align=3D"left" valign=3D"top" style=3D"width:90%; max-width:90%; min-wi=
+dth:90%; padding-right:0px; padding-left:20px;">
+<a universal=3D'true' style=3D"color: #404040; font-size: 16px; line-height=
+: 1.3; text-decoration: none;" href=3D"https://www.glassdoor.com/partner/jo=
+bListing.htm?pos=3D101&ao=3D588939&s=3D224&guid=3D00000174fd73cbdd8a70995e9=
+978b533&src=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=
+=3D148308793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_8366=
+789c&cb=3D1601980058965&jobListingId=3D3697330483&utm_medium=3Demail&utm_so=
+urce=3Djobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_=
+term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw">
+<span style=3D"font-size: 18px; color: #1861BF">Online marketing specialist=
+</span>
+<br/>
+SHUTTLE99 OU
+- <span style=3D"color: #808080;">Tallinn</span>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+<hr style=3D"height: 1px; background-color: #c2c2c2; border: none; margin-t=
+op: 20px; margin-bottom: 20px;"/>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-right:0px; padding-left:=
+0px; width:10%; max-width:10%; min-width:10%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"50" style=
+=3D"min-width: 50px; max-width: 50px; ">
+<tr>
+<td align=3D"center" valign=3D"bottom" style=3D"line-height: 0; font-size: =
+0;" width=3D"50" height=3D"50">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/partner/jobListing.=
+htm?pos=3D102&ao=3D588939&s=3D224&guid=3D00000174fd73cbdd8a70995e9978b533&s=
+rc=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=3D148308=
+793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_b39a6841&cb=
+=3D1601980058966&jobListingId=3D3698151410&utm_medium=3Demail&utm_source=3D=
+jobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_term=3D=
+&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"line-height: 0; font-size: =
+0;">
+<img width=3D"48" height=3D"48" src=3D"http://www.glassdoor.com/crs/mail/ic=
+ons/building_60x60.png"
+alt=3D"SHUTTLE99 OU" title=3D"SHUTTLE99 OU"
+style=3D"border: 1px solid #C2C2C2;">
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td align=3D"left" valign=3D"top" style=3D"width:90%; max-width:90%; min-wi=
+dth:90%; padding-right:0px; padding-left:20px;">
+<a universal=3D'true' style=3D"color: #404040; font-size: 16px; line-height=
+: 1.3; text-decoration: none;" href=3D"https://www.glassdoor.com/partner/jo=
+bListing.htm?pos=3D102&ao=3D588939&s=3D224&guid=3D00000174fd73cbdd8a70995e9=
+978b533&src=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=
+=3D148308793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_b39a=
+6841&cb=3D1601980058966&jobListingId=3D3698151410&utm_medium=3Demail&utm_so=
+urce=3Djobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_=
+term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw">
+<span style=3D"font-size: 18px; color: #1861BF">Python web developer intern=
+</span>
+<br/>
+SHUTTLE99 OU
+- <span style=3D"color: #808080;">Tallinn</span>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+<hr style=3D"height: 1px; background-color: #c2c2c2; border: none; margin-t=
+op: 20px; margin-bottom: 20px;"/>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-right:0px; padding-left:=
+0px; width:10%; max-width:10%; min-width:10%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"50" style=
+=3D"min-width: 50px; max-width: 50px; ">
+<tr>
+<td align=3D"center" valign=3D"bottom" style=3D"line-height: 0; font-size: =
+0;" width=3D"50" height=3D"50">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/partner/jobListing.=
+htm?pos=3D103&ao=3D148364&s=3D224&guid=3D00000174fd73cbdd8a70995e9978b533&s=
+rc=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=3D148308=
+793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_e04fd9df&cb=
+=3D1601980058966&jobListingId=3D3671994702&utm_medium=3Demail&utm_source=3D=
+jobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_term=3D=
+&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"line-height: 0; font-size: =
+0;">
+<img width=3D"48" height=3D"48" src=3D"https://media.glassdoor.com/sqlm/240=
+9260/ignite-mental-health-squarelogo-1565469465989.png"
+alt=3D"Ignite Mental Health" title=3D"Ignite Mental Health"
+style=3D"border: 1px solid #C2C2C2;">
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"middle" height=3D"20" width=3D"50"
+style=3D"font-size: 14px; border-left: 1px solid #0CAA41; border-bottom: 1p=
+x solid #0CAA41; border-right: 1px solid #0CAA41; border-radius: 2px; color=
+: #0CAA41; white-space: nowrap;">
+4.0&nbsp;&#x2605;
+</td>
+</tr>
+</table>
+</td>
+<td align=3D"left" valign=3D"top" style=3D"width:90%; max-width:90%; min-wi=
+dth:90%; padding-right:0px; padding-left:20px;">
+<a universal=3D'true' style=3D"color: #404040; font-size: 16px; line-height=
+: 1.3; text-decoration: none;" href=3D"https://www.glassdoor.com/partner/jo=
+bListing.htm?pos=3D103&ao=3D148364&s=3D224&guid=3D00000174fd73cbdd8a70995e9=
+978b533&src=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=
+=3D148308793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_e04f=
+d9df&cb=3D1601980058966&jobListingId=3D3671994702&utm_medium=3Demail&utm_so=
+urce=3Djobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_=
+term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw">
+<span style=3D"font-size: 18px; color: #1861BF">Board Of Director Member | =
+National Social Impact Accelerator (part-time, remote, volunteer)</span>
+<br/>
+Ignite Mental Health
+- <span style=3D"color: #808080;">Tallinn</span>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"">
+<hr style=3D"height: 1px; background-color: #7F7F7F; border: none; margin: =
+0;"/>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left: 8.5%; padding-right: 8.5%; padding-top: 20px; pa=
+dding-bottom: 20px; ">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%; ">
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom: 10px; font-siz=
+e: 20px; line-height: 1.3;">
+<span style=3D"color: #0D0D0D; font-size: 20px; font-weight: bold;">
+Top jobs still available
+</span>
+</td>
+</tr>
+</table>
+<hr style=3D"height: 1px; background-color: #c2c2c2; border: none; margin-t=
+op: 20px; margin-bottom: 20px;"/>
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"min-widt=
+h: 100%;" border=3D"0px">
+<tr>
+<td align=3D"left" valign=3D"top" colspan=3D"4" style=3D"width:100%; paddin=
+g-bottom: 7px; font-size: 0; text-align: left;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" co=
+lor=3D"#EA7600"
+style=3D"display: inline-block; margin-right: 5px; margin-bottom: 5px; padd=
+ing-left: 0px; padding-right: 10px; padding-top: 1px; padding-bottom: 3px; =
+border-radius: 3px;">
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"font-size: 12px; color: #EA=
+7600; line-height: 12px;">
+HIRING SURGE
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-right:0px; padding-left:=
+0px; width:10%; max-width:10%; min-width:10%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"50" style=
+=3D"min-width: 50px; max-width: 50px; ">
+<tr>
+<td align=3D"center" valign=3D"bottom" style=3D"line-height: 0; font-size: =
+0;" width=3D"50" height=3D"50">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/partner/jobListing.=
+htm?pos=3D101&ao=3D826481&s=3D255&guid=3D00000174fd73cbdda694aa307ae56e4e&s=
+rc=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=3D148308=
+793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_b1758239&cb=
+=3D1601980058966&jobListingId=3D2801420623&utm_medium=3Demail&utm_source=3D=
+jobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_term=3D=
+&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"line-height: 0; font-size: =
+0;">
+<img width=3D"48" height=3D"48" src=3D"https://media.glassdoor.com/sqlm/667=
+913/appen-squarelogo-1587056629615.png"
+alt=3D"Appen" title=3D"Appen"
+style=3D"border: 1px solid #C2C2C2;">
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"middle" height=3D"20" width=3D"50"
+style=3D"font-size: 14px; border-left: 1px solid #0CAA41; border-bottom: 1p=
+x solid #0CAA41; border-right: 1px solid #0CAA41; border-radius: 2px; color=
+: #0CAA41; white-space: nowrap;">
+3.7&nbsp;&#x2605;
+</td>
+</tr>
+</table>
+</td>
+<td align=3D"left" valign=3D"top" style=3D"width:90%; max-width:90%; min-wi=
+dth:90%; padding-right:0px; padding-left:20px;">
+<a universal=3D'true' style=3D"color: #404040; font-size: 16px; line-height=
+: 1.3; text-decoration: none;" href=3D"https://www.glassdoor.com/partner/jo=
+bListing.htm?pos=3D101&ao=3D826481&s=3D255&guid=3D00000174fd73cbdda694aa307=
+ae56e4e&src=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=
+=3D148308793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_b175=
+8239&cb=3D1601980058966&jobListingId=3D2801420623&utm_medium=3Demail&utm_so=
+urce=3Djobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_=
+term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw">
+<span style=3D"font-size: 18px; color: #1861BF">Part-time, Work from Home |=
+ Social Media Evaluator</span>
+<br/>
+Appen
+- <span style=3D"color: #808080;">Tallinn</span>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+<hr style=3D"height: 1px; background-color: #c2c2c2; border: none; margin-t=
+op: 20px; margin-bottom: 20px;"/>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-right:0px; padding-left:=
+0px; width:10%; max-width:10%; min-width:10%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"50" style=
+=3D"min-width: 50px; max-width: 50px; ">
+<tr>
+<td align=3D"center" valign=3D"bottom" style=3D"line-height: 0; font-size: =
+0;" width=3D"50" height=3D"50">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/partner/jobListing.=
+htm?pos=3D102&ao=3D148364&s=3D255&guid=3D00000174fd73cbdda694aa307ae56e4e&s=
+rc=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=3D148308=
+793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_c3509375&cb=
+=3D1601980058967&jobListingId=3D3689826919&utm_medium=3Demail&utm_source=3D=
+jobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_term=3D=
+&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"line-height: 0; font-size: =
+0;">
+<img width=3D"48" height=3D"48" src=3D"https://media.glassdoor.com/sqlm/240=
+9260/ignite-mental-health-squarelogo-1565469465989.png"
+alt=3D"Ignite Mental Health" title=3D"Ignite Mental Health"
+style=3D"border: 1px solid #C2C2C2;">
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"middle" height=3D"20" width=3D"50"
+style=3D"font-size: 14px; border-left: 1px solid #0CAA41; border-bottom: 1p=
+x solid #0CAA41; border-right: 1px solid #0CAA41; border-radius: 2px; color=
+: #0CAA41; white-space: nowrap;">
+4.0&nbsp;&#x2605;
+</td>
+</tr>
+</table>
+</td>
+<td align=3D"left" valign=3D"top" style=3D"width:90%; max-width:90%; min-wi=
+dth:90%; padding-right:0px; padding-left:20px;">
+<a universal=3D'true' style=3D"color: #404040; font-size: 16px; line-height=
+: 1.3; text-decoration: none;" href=3D"https://www.glassdoor.com/partner/jo=
+bListing.htm?pos=3D102&ao=3D148364&s=3D255&guid=3D00000174fd73cbdda694aa307=
+ae56e4e&src=3DGD_JOB_AD&t=3DJA&extid=3D13&exst=3DL&ist=3D&ast=3DL&vt=3De&ja=
+=3D148308793&uido=3DBA7B1AD47445E9A3FAAA887448D7DDF2&slr=3Dtrue&cs=3D1_c350=
+9375&cb=3D1601980058967&jobListingId=3D3689826919&utm_medium=3Demail&utm_so=
+urce=3Djobalert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-jobtitle&utm_=
+term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw">
+<span style=3D"font-size: 18px; color: #1861BF">SEO Co-Director | National =
+Social Impact Accelerator - Non-Profit (part-time, remote, volunteer)</span>
+<br/>
+Ignite Mental Health
+- <span style=3D"color: #808080;">Tallinn</span>
+</a>
+</td>
+</tr>
+<tr>
+<td colspan=3D"4">
+</td>
+</tr>
+</table>
+<hr style=3D"height: 1px; background-color: #c2c2c2; border: none; margin-t=
+op: 20px; margin-bottom: 10px;"/>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%;">
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"padding-top: 10px; padding-=
+bottom: 0px">
+<a universal=3D'true' rel=3D"nofollow" target=3D"_blank" href=3D"https://ww=
+w.glassdoor.com/Job/tallinn-part-time-jobs-SRCH_IL.0,7_IC2775919_KO8,17_SAJ=
+R.htm?utm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert=
+&utm_content=3Dja-alljobs-JACTABOTTOM&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2e=
+GBSb4CmczHw&ja=3D148308793"
+style=3D"text-decoration: none;" universal=3D"true">
+<table cellpadding=3D15 cellspacing=3D"0" align=3D"center" bgcolor=3D"#0CAA=
+41" width=3D"280"
+style=3D"min-width: 280px; border-radius: 3px; border: none">
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"font-size: 18px; color: #ff=
+ffff;">
+See All Jobs
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"">
+<hr style=3D"height: 1px; background-color: #7F7F7F; border: none; margin: =
+0;"/>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left: 8.5%; padding-right: 8.5%; padding-top: 20px; pa=
+dding-bottom: 20px; ">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%; ">
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom: 10px; font-siz=
+e: 20px; line-height: 1.3;">
+<span style=3D"color: #0D0D0D; font-size: 20px; font-weight: bold;">
+Create related alerts for Tallinn (Estonia) with one click
+</span>
+</td>
+</tr>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%; padding-bottom: 20px;">
+<tr>
+<td align=3D"center" style=3D"padding-top:20px; padding-bottom: 10px;">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/job-alert/jobAlertA=
+jax.htm?userValidationKey=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&JAK=3D71Gadw9oO_=
+Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLKVc1Llfoka8ea19RZ7X1mQPqJL17M=
+Z8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&oneClick=3Dtrue&keywords=3Dp=
+art time cashier&loc=3DTallinn (Estonia)&source=3DRELATED_EMAIL_JOB_ALERT&u=
+tm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&utm_co=
+ntent=3Dja-loc-rec-1&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" styl=
+e=3D"color: #1861BF; text-decoration: none; font-size: 18px;">
++ part time cashier
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:20px; padding-bottom: 10px;">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/job-alert/jobAlertA=
+jax.htm?userValidationKey=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&JAK=3D71Gadw9oO_=
+Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLKVc1Llfoka8ea19RZ7X1mQPqJL17M=
+Z8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&oneClick=3Dtrue&keywords=3Dp=
+art time associate&loc=3DTallinn (Estonia)&source=3DRELATED_EMAIL_JOB_ALERT=
+&utm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&utm_=
+content=3Dja-loc-rec-2&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" st=
+yle=3D"color: #1861BF; text-decoration: none; font-size: 18px;">
++ part time associate
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:20px; padding-bottom: 10px;">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/job-alert/jobAlertA=
+jax.htm?userValidationKey=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&JAK=3D71Gadw9oO_=
+Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLKVc1Llfoka8ea19RZ7X1mQPqJL17M=
+Z8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&oneClick=3Dtrue&keywords=3Dl=
+aw clerk part time&loc=3DTallinn (Estonia)&source=3DRELATED_EMAIL_JOB_ALERT=
+&utm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&utm_=
+content=3Dja-loc-rec-3&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" st=
+yle=3D"color: #1861BF; text-decoration: none; font-size: 18px;">
++ law clerk part time
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top:20px; padding-bottom: 10px;">
+<a universal=3D'true' href=3D"https://www.glassdoor.com/job-alert/jobAlertA=
+jax.htm?userValidationKey=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&JAK=3D71Gadw9oO_=
+Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLKVc1Llfoka8ea19RZ7X1mQPqJL17M=
+Z8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&oneClick=3Dtrue&keywords=3Dp=
+art time job&loc=3DTallinn (Estonia)&source=3DRELATED_EMAIL_JOB_ALERT&utm_m=
+edium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&utm_conten=
+t=3Dja-loc-rec-4&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D=
+"color: #1861BF; text-decoration: none; font-size: 18px;">
++ part time job
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"">
+<hr style=3D"height: 1px; background-color: #7F7F7F; border: none; margin: =
+0;"/>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left: 8.5%; padding-right: 8.5%; padding-top: 20px; pa=
+dding-bottom: 20px; ">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%; padding-bottom: 10px;">
+<tr>
+<td align=3D"center"
+style=3D"padding-top: 10px; font-size: 20px; font-weight: bold; color: #0D0=
+D0D; line-height: 1.3;">
+Email Settings
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top: 30px;">
+<span style=3D"font-size: 16px; color: #0D0D0D;">Part Time</span>
+<br/>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/profile/editJobAler=
+t_input.htm?JAK=3D71Gadw9oO_Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLK=
+Vc1Llfoka8ea19RZ7X1mQPqJL17MZ8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&=
+amp;key=3DniOpkkh:ZC9xTIHqgzPUnULwqVlWSg&utm_medium=3Demail&utm_source=3Djo=
+balert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-editalert-key&utm_term=
+=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"text-decoration: none; f=
+ont-size: 18px; color: #1861BF;">
+Change keywords
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top: 30px;">
+<span style=3D"font-size: 16px; color: #0D0D0D;">Tallinn (Estonia)</span>
+<br/>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/profile/editJobAler=
+t_input.htm?JAK=3D71Gadw9oO_Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLK=
+Vc1Llfoka8ea19RZ7X1mQPqJL17MZ8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&=
+amp;key=3DniOpkkh:ZC9xTIHqgzPUnULwqVlWSg&utm_medium=3Demail&utm_source=3Djo=
+balert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-editalert-key&utm_term=
+=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw" style=3D"text-decoration: none; f=
+ont-size: 18px; color: #1861BF;">
+Change location
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top: 30px;">
+<span style=3D"font-size: 16px; color: #0D0D0D;">Sent Daily</span>
+<br/>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/profile/editJobAler=
+t_input.htm?JAK=3D71Gadw9oO_Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLK=
+Vc1Llfoka8ea19RZ7X1mQPqJL17MZ8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&=
+amp;key=3DniOpkkh:ZC9xTIHqgzPUnULwqVlWSg&utm_medium=3Demail&utm_source=3Djo=
+balert&utm_campaign=3DjobAlertAlert&utm_content=3Dja-editalert-freq&utm_ter=
+m=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&freq=3D7" style=3D"text-decoratio=
+n: none; font-size: 18px; color: #1861BF;">
+Change to weekly
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"">
+<hr style=3D"height: 1px; background-color: #7F7F7F; border: none; margin: =
+0;"/>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left: 8.5%; padding-right: 8.5%; padding-top: 20px; pa=
+dding-bottom: 20px; ">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center" style=3D"min-width: 100%; padding-top: 20px; padding-bottom: 0=
+px;">
+<tr>
+<td align=3D"center">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" wi=
+dth=3D"280" style=3D"max-width: 280px; min-width: 280px;">
+<tr>
+<td valign=3D"top" style=3D"padding-right: 10px;">
+<img width=3D"72" height=3D"72" src=3D"http://media.glassdoor.com/email/job=
+Alert/profile-icon.png"/>
+</td>
+<td align=3D"left" style=3D"color: #0D0D0D; font-size: 18px; line-height: 1=
+.3;">
+<span style=3D"font-size:16px">Apply to jobs with one click by completing y=
+our profile</span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"padding-top: 20px;">
+<a universal=3D'true' rel=3D"nofollow" target=3D"_blank" href=3D"https://ww=
+w.glassdoor.com/member/profile/stepWelcome.htm?profileOrigin=3DEMAIL_JOB_AL=
+ERT&utm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&u=
+tm_content=3Dja-createprofile&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4Cmc=
+zHw"
+style=3D"text-decoration: none;" universal=3D"true">
+<table cellpadding=3D15 cellspacing=3D"0" align=3D"center" bgcolor=3D"#1861=
+BF" width=3D"280"
+style=3D"min-width: 280px; border-radius: 3px; border: none">
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"font-size: 18px; color: #ff=
+ffff;">
+Complete Your Profile
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"">
+<hr style=3D"height: 1px; background-color: #7F7F7F; border: none; margin: =
+0;"/>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-left: 8.5%; padding-right: 8.5%; padding-top: 20px; pa=
+dding-bottom: 20px; ">
+.
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: #404040; padding-top: 25px; padding-bottom: =
+25px; padding-left: 8.5%; padding-right: 8.5%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wid=
+th=3D"100%" style=3D"min-width: 100%;">
+<tr>
+<td style=3D"font-family: Lato, Arial, Helvetica, sans-serif; font-size: 10=
+px; color: #FFFFFF; line-height: 18px; margin: 0; margin-top: 0px; margin-b=
+ottom: 0px;; text-align: center;">
+<span style=3D"color: #FFFFFF">
+This message was sent to <a universal=3D'true' href=3D"mailto:caretta@gmx.d=
+e" style=3D"color:#FFFFFF;">caretta@gmx.de</a>.
+</span>
+<br>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/about/privacy.htm?u=
+tm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAlert&utm_co=
+ntent=3Dja-footer-privacy&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw"=
+ style=3D"color: #FFFFFF;">Privacy Policy</a>
+<span style=3D"color: #FFFFFF;">&nbsp;|&nbsp;</span>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/member/account/emai=
+lSettings_input.htm?utm_medium=3Demail&utm_source=3Djobalert&utm_campaign=
+=3DjobAlertAlert&utm_content=3Dja-emailpreference&utm_term=3D&uvk=3DAobAOry=
+:mtGMcmPVR2eGBSb4CmczHw" style=3D"color: #FFFFFF;">
+Manage Settings
+</a>
+<span style=3D"color: #FFFFFF;">&nbsp;|&nbsp;</span>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/profile/unsubscribe=
+Email.htm?JAK=3D71Gadw9oO_Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLKVc=
+1Llfoka8ea19RZ7X1mQPqJL17MZ8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g&ke=
+y=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&emailType=3DJOB_ALERT&emailCategory=3DJO=
+B_ALERT&utm_medium=3Demail&utm_source=3Djobalert&utm_campaign=3DjobAlertAle=
+rt&utm_content=3Dja-unsubscribe&utm_term=3D&uvk=3DAobAOry:mtGMcmPVR2eGBSb4C=
+mczHw" style=3D"color: #FFFFFF;">Unsubscribe</a>
+<span style=3D"color: #FFFFFF;">&nbsp;|&nbsp;</span>
+<a universal=3D'true' href=3D"https://www.glassdoor.com/profile/emailFeedba=
+ck_input.htm?key=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&emailType=3DJOB_ALERT&ema=
+ilCategory=3DJOB_ALERT&uvk=3DAobAOry:mtGMcmPVR2eGBSb4CmczHw&JAK=3D71Gadw9oO=
+_Bc6DziZpSrEw:h8TJVPrG5aEDJis23z20bfuAbEFIDGOBLKVc1Llfoka8ea19RZ7X1mQPqJL17=
+MZ8:oGZTohN4NBIFo4urNKmY1iMxEKGOk0Q7xgaQFM3jM9g" style=3D"color: #FFFFFF;">=
+Provide Feedback</a>
+<br>
+<span style=3D"color: #FFFFFF;">
+<a universal=3D'true' href=3D"www.glassdoor.com" target=3D"_blank" style=3D=
+"color: #FFFFFF">Glassdoor</a> &nbsp;|&nbsp; 100 Shoreline Highway - Buildi=
+ng A, Mill Valley, CA 94941
+</span>
+<br>
+<span style=3D"color: #FFFFFF;">
+Copyright =C2=A9 2008-2020, Glassdoor, Inc. "Glassdoor" and logo are regist=
+ered trademarks of Glassdoor, Inc.
+</span>
+<br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class=3D'horzPadding'></td>
+</tr>
+<tr>
+<td class=3D'vertPadding'></td>
+</tr>
+</table>
+</div>
+
+<img src=3D"https://mail8.glassdoor.com/wf/open?upn=3DgeLizqtUiUlfQK0bxFwvI=
+wRj8IXEK6hfe0srrKouF42e6QsEjLRIEeQQYTNdaeKbNN4Mlk5fdlfL-2FtQ44QukDb68z-2FUN=
+lSmEmeijeeZ-2Fen5Kz11uDAuGGrwKWP-2FScAxjCUKoI6NSgWGzNrephTCNm4dirqhJlo7O3jf=
+Uy2uOUkGgpzJ2DbqzHfjZY9ph21Jpm-2FUM-2FA1FmNhjHFh4537tQOa4qzJzQRIHc20C0pPPy-=
+2BPZ3lE3Dx9s-2FZWjgOn3CYXUQsalNMx2t4gR9qLgOFi3-2BmPihYdx8aFJouFKHmy-2BL1TGj=
+Ln62rTbXtHd1BlbM44h5LbHvEi-2FWsZj6JGiqtm-2FzO0NOv-2BJ5IquiSTXuB5IaRFPauSTJ1=
+nD-2Bo8Qm8pimb5I0XU2BBu6LfpkAoo4S3kr-2Bz6-2FOxL7HzyJHJssM4RgFCxO9uCjvrRvisG=
+lWilwCTaaUVaYmeStwsj-2B9qavQ0lvCr9DMUdCoDi1uAL7vewLXiMlGqnrQxB2JStLcdqMrwji=
+" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !impor=
+tant;width:1px !important;border-width:0 !important;margin-top:0 !important=
+;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !import=
+ant;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !i=
+mportant;padding-left:0 !important;"/>
+</body>
+</html>
+
+--f9cc8c2ec6ae006abe2b2f456d45763f2db258095ac31915f9615fa5fe0b--

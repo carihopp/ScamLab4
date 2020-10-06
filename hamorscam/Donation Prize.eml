@@ -1,0 +1,238 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a67:b108:0:0:0:0:0 with SMTP id w8csp909086vsl;
+        Tue, 29 Sep 2020 22:00:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJynbH7uyMrRmcyyW2ToSIRljm1Qhtm3Y4MtA5e9RuWlBuv5pJhlQuQ4JYSRgiL0vapFyO8r
+X-Received: by 2002:a9d:3b76:: with SMTP id z109mr464109otb.250.1601442049062;
+        Tue, 29 Sep 2020 22:00:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601442049; cv=none;
+        d=google.com; s=arc-20160816;
+        b=J42rjMaqTrJeneJJ/5CMXtwoB8uh+UlzPHYgGFhayicjltmgCfGn4RU24wNIZNFAT2
+         urkQJMKNwXHqjorgnDDmFdAWHwei5kiJkUjJry3kIfmQRSpNIgi+Y+qaoWtgi7BscZ04
+         KF5JnMqgkm/UAs98m9LzK2SNdzEb3IU1SZUKJWaqan4pgKf6QrZ0+iCgVZ8wZo5f/Eqy
+         fGJvsXuxlXd8AAnaxgutcyvBss38/T6LZrLBIHE/B6C9yyXNcKYRyFjn1pGf1w2aaokM
+         /UEnWruBEHOOalqYYuRA1zzvl145Hi5cT4BzhzoBhmL1C752/77faqGztej8xxe69nlJ
+         balw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:message-id:references:in-reply-to:mail-reply-to:reply-to
+         :organization:subject:to:from:date:mime-version:dkim-signature;
+        bh=9Bd+CLwaQ4kHsgM4m25uhyr5owyc9F2CZI9O/q690MU=;
+        b=JwE2JYoZ48Nek1Smh4sY8atb4AR8cXxj6BZGBG0uo21RW+RMZy/80nS7KmXK7s4ajb
+         +PSnqgoFcQiW2eqMKOowuuqOwb+mP1iFs7Mo39PIUPz1e1JWpehxEcSMAhW6LoH6KJQL
+         tbkQa0HsrRCmbdr/V5HPj0VyEy7IiEihrgsbbZKbAf4YuMlUsmcyqIw25wkPCti5DNuo
+         sy6pkyoGMHNeubxNd5Hj1e0SLz0e5desvfmS92hsP86QhzanTa7QjGEnUW5BMZhaRx62
+         dwFAdvGw+LpyhB4hHucWErpAEtX+HqNIWp1/hA4SycuZehxr9zHTaPl18+iAGO3pKQfb
+         uv5A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@majidal-futtai.com header.s=default header.b=WXFS0h9C;
+       spf=pass (google.com: domain of donationplan@majidal-futtai.com designates 68.65.122.158 as permitted sender) smtp.mailfrom=donationplan@majidal-futtai.com
+Return-Path: <donationplan@majidal-futtai.com>
+Received: from server116-3.web-hosting.com (server116-3.web-hosting.com. [68.65.122.158])
+        by mx.google.com with ESMTPS id c24si257863ooe.76.2020.09.29.22.00.48
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Sep 2020 22:00:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of donationplan@majidal-futtai.com designates 68.65.122.158 as permitted sender) client-ip=68.65.122.158;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@majidal-futtai.com header.s=default header.b=WXFS0h9C;
+       spf=pass (google.com: domain of donationplan@majidal-futtai.com designates 68.65.122.158 as permitted sender) smtp.mailfrom=donationplan@majidal-futtai.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=majidal-futtai.com; s=default; h=Content-Type:Message-ID:References:
+	In-Reply-To:Reply-To:Subject:To:From:Date:MIME-Version:Sender:Cc:
+	Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	 bh=9Bd+CLwaQ4kHsgM4m25uhyr5owyc9F2CZI9O/q690MU=; b=WXFS0h9C0WkJI3gbG9rcBVY9x
+	cCiMZdsxYnmIXb2M0dpQq3fLVHO9DIsArNz2Dopv82LH73hoo0B/PpHQ2LmFBUP+M5FolcBjKz1FE
+	b0VGAoyAUvj7+5NwuUFw7sLJ36OzIvnxi3Kb70SJT9DmO7sM+wUBFTGl5bFi3GucBuwCwg0N4xC2+
+	099rV9HixvyN2ayjhxKDMyPElrMdsIcxEng519HEU0RwUvWsw+FCk35RsQbENNnF7gr4VzF/W8eyF
+	0xQ0Dn2PmSiwecZoIroMDbXvaOAEUjXACDLVWcA085QXuMdA9qM56Gf+kMlEtwpAmpdS78usBty+W
+	PIqMCJwaA==;
+Received: from [::1] (port=38732 helo=server116.web-hosting.com)
+	by server116.web-hosting.com with esmtpa (Exim 4.93)
+	(envelope-from <donationplan@majidal-futtai.com>)
+	id 1kNUEN-003z2v-Uc
+	for thomposondouglas@gmail.com; Wed, 30 Sep 2020 01:00:48 -0400
+MIME-Version: 1.0
+Date: Wed, 30 Sep 2020 01:00:43 -0400
+From: Majid Al Futtaim <donationplan@majidal-futtai.com>
+To: Douglas Thomposon <thomposondouglas@gmail.com>
+Subject: Re: Donation Prize
+Organization: Majid Al Futtaim
+Reply-To: donationplan@majidal-futtai.com
+Mail-Reply-To: donationplan@majidal-futtai.com
+In-Reply-To: <CAB6pf_Tdp9v_c6kurjv-khuV4Ye1vhLNFeKU2YTgfZYNfBF_cw@mail.gmail.com>
+References: <20200929142529.4EF1DA8DB6DAEA27@webjaguarmail.com>
+ <CAB6pf_Tdp9v_c6kurjv-khuV4Ye1vhLNFeKU2YTgfZYNfBF_cw@mail.gmail.com>
+Message-ID: <43707eb67624f7a49ed9b8a416c714b3@majidal-futtai.com>
+X-Sender: donationplan@majidal-futtai.com
+User-Agent: Roundcube Webmail/1.3.14
+Content-Type: multipart/alternative;
+ boundary="=_4e42945e7fd3b55af443c097f8c8771c"
+X-OutGoing-Spam-Status: No, score=-0.2
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server116.web-hosting.com
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - majidal-futtai.com
+X-Get-Message-Sender-Via: server116.web-hosting.com: authenticated_id: donationplan@majidal-futtai.com
+X-Authenticated-Sender: server116.web-hosting.com: donationplan@majidal-futtai.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-From-Rewrite: unmodified, already matched
+
+--=_4e42945e7fd3b55af443c097f8c8771c
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=UTF-8
+
+Dear Beneficiary, 
+
+Do not be bothered as to why you have been contacted  and its
+genuineness, as I have done so from a pure motive. Since I have your
+mail directly from a list of generous people whose passion is to help
+the poor. Permit me to introduce myself; I am Majid Al Futtaim , a
+United Arab Emirate citizen, You can see here:
+https://en.wikipedia.org/wiki/Majid_Al_Futtaim [1]
+The intention of this email is to empower people from different parts of
+the world. With my age, I can not continue to amass wealth without
+giving out. I own a net worth of US  $5.2B. So you can read on forbes:
+https://www.forbes.com/profile/majid-al-futtaim/#6b26ab041a55 [2]
+As I send this message to you, I also want to make you a bonafide
+beneficiary. I sent to churches, orphanages, and individuals, each
+bonafide beneficiary. You will  be given the sum of US$5,700,000 (Five
+Million, Seven Hundred Thousand United State Dollars ) .Kindly confirm
+readiness by formally introducing yourself in detail (Full name,
+Address, Age, Occupation, Phone number) , thereafter, I shall grant you
+a letter to authorize the money to you from the bank. You must use this
+money to support People who have Cancer, Kidney diseases and poor
+Pregnant women and above all Orphan.
+I would not like to have any formal procedures, and for the sake of
+that, it would seem too easy for you to receive this gift so I can have
+my peace. I am doing this as a free-spirit gifted person and I made the
+contact myself to you, therefore, I would. PLEASE do not refer to any
+person and do not make a public / media show this I would not like any
+publicity of any sort.
+I want to wait for your email to do further. Stay blessed.
+
+Sincerely,
+
+---
+
+ماجد الفطيم 
+
+Majid Al Futtaim Group 
+
+Middle East, Africa and Central Asia 
+
+Property [3] Retail [4] Leisure [5] and entertainment [6] 
+
+On 2020-09-29 19:33, Douglas Thomposon wrote:
+
+> Hey Majid, 
+> 
+> what is the donation? 
+> 
+> Cheers, 
+> Douglas 
+> 
+> On Tue, 29 Sep 2020 at 14:49, Majid Al Futtaim <tann@webjaguarmail.com> wrote: 
+> 
+>> You have been awarded a donation,reply for more details.
+ 
+
+Links:
+------
+[1] https://en.wikipedia.org/wiki/Majid_Al_Futtaim
+[2] https://www.forbes.com/profile/majid-al-futtaim/#6b26ab041a55
+[3] https://en.wikipedia.org/wiki/Property
+[4] https://en.wikipedia.org/wiki/Retail
+[5] https://en.wikipedia.org/wiki/Leisure
+[6] https://en.wikipedia.org/wiki/Entertainment
+--=_4e42945e7fd3b55af443c097f8c8771c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Verdana,Gen=
+eva,sans-serif'>
+<div class=3D"gmail_default">Dear Beneficiary,</div>
+<div>
+<div dir=3D"ltr" data-smartmail=3D"gmail_signature">
+<div><span class=3D"gmail_default"><br />Do not be bothered as to why you h=
+ave been contacted &nbsp;and its genuineness, as I have done so from a pure=
+ motive. Since I have your mail directly from a list of generous people who=
+se passion is to help the poor. Permit me to introduce myself; I am Majid A=
+l Futtaim , a United Arab Emirate citizen, You can see here: <a href=3D"htt=
+ps://en.wikipedia.org/wiki/Majid_Al_Futtaim" target=3D"_blank" rel=3D"noope=
+ner noreferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp=
+s://en.wikipedia.org/wiki/Majid_Al_Futtaim&amp;source=3Dgmail&amp;ust=3D160=
+1527853527000&amp;usg=3DAFQjCNEcSRyyD1FydSZpxjhW0VhW-pUG8w">https://en.wiki=
+pedia.org/wiki/<wbr />Majid_Al_Futtaim</a><br />The intention of this email=
+ is to empower people from different parts of the world. With my age, I can=
+ not continue to amass wealth without giving out. I own a net worth of US &=
+nbsp;$5.2B. So you can read on forbes: <a href=3D"https://www.forbes.com/pr=
+ofile/majid-al-futtaim/#6b26ab041a55" target=3D"_blank" rel=3D"noopener nor=
+eferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://www=
+=2Eforbes.com/profile/majid-al-futtaim/%236b26ab041a55&amp;source=3Dgmail&a=
+mp;ust=3D1601527853527000&amp;usg=3DAFQjCNE7Rze7hw4osLywyjtoT3KHWgNr5w">htt=
+ps://www.forbes.com/<wbr />profile/majid-al-futtaim/#<wbr />6b26ab041a55</a=
+><br />As I send this message to you, I also want to make you a bonafide be=
+neficiary. I sent to churches, orphanages, and individuals, each bonafide b=
+eneficiary. You will &nbsp;be given the sum of US$5,700,000 (Five Million, =
+Seven Hundred Thousand United State Dollars ) .Kindly confirm readiness by =
+formally introducing yourself in detail (Full name, Address, Age, Occupatio=
+n, Phone number) , thereafter, I shall grant you a letter to authorize the =
+money to you from the bank. You must use this money to support People who h=
+ave Cancer, Kidney diseases and poor Pregnant women and above all Orphan.<b=
+r />I would not like to have any formal procedures, and for the sake of tha=
+t, it would seem too easy for you to receive this gift so I can have my pea=
+ce. I am doing this as a free-spirit gifted person and I made the contact m=
+yself to you, therefore, I would. PLEASE do not refer to any person and do =
+not make a public / media show this I would not like any publicity of any s=
+ort.<br />I want to wait for your email to do further. Stay blessed.<br /><=
+br />Sincerely,<br /></span></div>
+</div>
+</div>
+<div>---<br />
+<p><img src=3D"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ma=
+jid_Al_Futtaim_logo.svg/220px-Majid_Al_Futtaim_logo.svg.png" alt=3D"Majid A=
+l Futtaim logo.svg" /></p>
+<p>=D9=85=D8=A7=D8=AC=D8=AF =D8=A7=D9=84=D9=81=D8=B7=D9=8A=D9=85</p>
+<p><span>Majid Al Futtaim Group</span></p>
+<p><span>Middle East, Africa and Central Asia</span></p>
+<p><a title=3D"Property" href=3D"https://en.wikipedia.org/wiki/Property">Pr=
+operty</a>&nbsp;<a title=3D"Retail" href=3D"https://en.wikipedia.org/wiki/R=
+etail">Retail</a>&nbsp;<a title=3D"Leisure" href=3D"https://en.wikipedia.or=
+g/wiki/Leisure">Leisure</a><span>&nbsp;</span>and<span>&nbsp;</span><a titl=
+e=3D"Entertainment" href=3D"https://en.wikipedia.org/wiki/Entertainment">en=
+tertainment</a></p>
+</div>
+<p><br /></p>
+<p>On 2020-09-29 19:33, Douglas Thomposon wrote:</p>
+<blockquote type=3D"cite" style=3D"padding: 0 0.4em; border-left: #1010ff 2=
+px solid; margin: 0"><!-- html ignored --><!-- head ignored --><!-- meta ig=
+nored -->
+<div dir=3D"ltr">
+<div>Hey Majid,</div>
+<div>&nbsp;</div>
+<div>what is the donation?</div>
+<div>&nbsp;</div>
+<div>Cheers,</div>
+<div>Douglas</div>
+</div>
+<br />
+<div class=3D"gmail_quote">
+<div class=3D"gmail_attr" dir=3D"ltr">On Tue, 29 Sep 2020 at 14:49, Majid A=
+l Futtaim &lt;<a href=3D"mailto:tann@webjaguarmail.com">tann@webjaguarmail=
+=2Ecom</a>&gt; wrote:</div>
+<blockquote class=3D"gmail_quote" style=3D"margin: 0px 0px 0px 0.8ex; borde=
+r-left: 1px solid #cccccc; padding-left: 1ex;"><u></u>
+<div style=3D"margin: 0.5em;">
+<p>You have been awarded a donation,reply for more details.</p>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</body></html>
+
+--=_4e42945e7fd3b55af443c097f8c8771c--

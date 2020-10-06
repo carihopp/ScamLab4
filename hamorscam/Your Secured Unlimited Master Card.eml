@@ -1,0 +1,80 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a67:b108:0:0:0:0:0 with SMTP id w8csp586803vsl;
+        Sun, 4 Oct 2020 17:16:32 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJz1E9Ny/nGFSa//60N2ujmWhhCZ51K7RE0hDavIEk2R4jT9YRCY9uYVACaexBp3BG5yh9zX
+X-Received: by 2002:ad4:43e5:: with SMTP id f5mr12227190qvu.12.1601856992332;
+        Sun, 04 Oct 2020 17:16:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601856992; cv=none;
+        d=google.com; s=arc-20160816;
+        b=phgelNAVN0HbGtg+MLHYbHMD1n+hP96gC6eg8TZB9OFfN0uRT+xKyzx84AHCmIEHDX
+         sNm0sezUeT4KgZ3AEy+e06u0p2olyWsM6AHsRnYOhXi5G2EFCpkntPIKJjYiuGhQIs2F
+         2SO0px/OdzGu8DPnVzanrAjGwI628ZXv4BIaRN2EAf7vepT1TrhyjE7TCZstXWPDj8eH
+         x3TzAL8zH49J8DrewxEJ0QqNkEFI3Y2o2Ws8byYwSDILlrqPXTQK65zqEGq6/YrO3cYL
+         yTa1hy88vl4hO5T+GG6m0iZ954ogpiL/hJi8xv0HoZzcpP4yG6+0GowpTx3xqnC66gsm
+         zI5A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=importance:content-transfer-encoding:mime-version:user-agent
+         :reply-to:from:subject:date:message-id:cc;
+        bh=PPo1OCS49dHcxaVH2PvdVJ6xIAgN/LeROw/7IOItNvY=;
+        b=AwPXOaDrwp3JoF8+D5hNK+QwQBhyY38WDR/OC0dHZlP1o1ca+OewPNDxRPPEsNVUv5
+         gJPYJ7N/Y32zYqsb0eVvn0CyOxCf/PuLiH+ZKAdq/eEWnK/KgSmH1wAmI/BpeN/6USWJ
+         0wMQm+1Pe1zdG51ZoHYl8usK8ViR89pLiSqMF+Of4g6sZHWdIeBbPswq6H770b8d+q0e
+         LcnCMYUTNghpDXOFqITWwD5YjUxJzEL7PZkv0iJQRh/HE11Vc3bhBhb2CGHaieLaPOyi
+         W1by15YBbnZutl8iBUspbCR0BCOMdO16ZLRA3CHVPSlD+OvuaOO7TLxV1b5JLV29Ii93
+         DnmA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 189.1.160.103 is neither permitted nor denied by best guess record for domain of admin@arquitrio.com.br) smtp.mailfrom=Admin@arquitrio.com.br
+Return-Path: <Admin@arquitrio.com.br>
+Received: from 17781608.hospedagemdesite.com (pop.hostlocation.com.br. [189.1.160.103])
+        by mx.google.com with SMTP id x14si2467721qtj.158.2020.10.04.17.16.31
+        for <thomposondouglas@gmail.com>;
+        Sun, 04 Oct 2020 17:16:32 -0700 (PDT)
+Received-SPF: neutral (google.com: 189.1.160.103 is neither permitted nor denied by best guess record for domain of admin@arquitrio.com.br) client-ip=189.1.160.103;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 189.1.160.103 is neither permitted nor denied by best guess record for domain of admin@arquitrio.com.br) smtp.mailfrom=Admin@arquitrio.com.br
+Received: (qmail 6983 invoked by uid 48); 4 Oct 2020 21:16:30 -0300
+Cc: recipient list not shown: ;
+Received: from 129.205.113.226
+        (SquirrelMail authenticated user Admin@arquitrio.com.br)
+        by webmail.hostlocation.com.br with HTTP;
+        Sun, 4 Oct 2020 21:16:30 -0300 (BRT)
+Message-ID: <60350.129.205.113.226.1601856990.squirrel@webmail.hostlocation.com.br>
+Date: Sun, 4 Oct 2020 21:16:30 -0300 (BRT)
+Subject: Re: Your Secured Unlimited Master Card
+From: Admin@arquitrio.com.br
+Reply-To: lanceabbie37@gmail.com
+User-Agent: SquirrelMail/1.4.10a
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+
+
+
+
+Good Day
+
+Re: Your Secured Unlimited Master Card
+Despite all efforts to move out your funds from the banks, it has proved
+very difficult over the years due to international clearances being
+demanded by some international organizations. Consequently, I have had a
+series of meetings with officials of the WoodForest National Bank (WFNB),
+regarding the best option to move your fund without problems.
+
+Our financial consultant followed up with the bank and has finally
+resolved with the bank and agreed to move the funds through a privately
+secured unlimited master card, which will be issued in your name or
+company name. With the master card, you can make daily withdrawals of up
+to $10,000.00 from any bank ATM machine. You can also transfer up to
+$300,000.00 weekly using this privately secured unlimited master card.
+
+I think this is the best option for you to receive your fund in your
+country because everything about the privately secured unlimited master
+card has been designed to work anywhere in the world. Acknowledge the
+receipt of this letter via delivery office e-mail
+address: timothynevilleoffice@gmail.com
+
+I look for your urgent response,
+
+TRY AND CALL OUR CORRESPONDENT  NOW Tel: +1 740-901-8481Abbie Lance.

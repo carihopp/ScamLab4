@@ -1,0 +1,125 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a05:6838:350:0:0:0:0 with SMTP id e16csp2381801nke;
+        Sun, 27 Sep 2020 02:47:55 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy8ebzaQEQcOjMjXHfNHud6Xt3rpT9NTwjUCJ5fi/gv7Is2Bs4wxYy7pzvlRcjCSBwmSDl3
+X-Received: by 2002:a17:90a:ea09:: with SMTP id w9mr4809225pjy.203.1601200075411;
+        Sun, 27 Sep 2020 02:47:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601200075; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qRlIc4yf72Enz8bz4sWqZeV02F/9zLzA8uhoOZD5HCW/VvZNzmc/7it3TQfpCg1hzG
+         PPUQCmqyhAl9xDyrUNAjnoY4GCZ2CZzwHhpXhvPdbAlTLETWq6QrpPY29fuRocftULlO
+         DCdhPEJcj7u+OGVSiBykWQ1zuFv7S/zOT+lY14kAzBrkkTK0/jJP5/H4JB8RWhxD83sO
+         bjZkqVWcACRKz/VFZkDARsp1SoCaOl+k/ishEizDxs83z0wDOEq6cNEDhdHcCaNiTeH2
+         AsUncYE/JWkU24MwsMd4cD7NO+2/uPcalUqdhzzEvzpJhmxmIyKC7SckAdUjZTQaWunk
+         9Bcg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:from:content-disposition:content-transfer-encoding
+         :mime-version:date:subject:to:dkim-signature;
+        bh=+BL/yZA8ej0t6MM0faUMztHAPOPeVZUChkop42PlL10=;
+        b=Czq2ym+XOO0/i4s36j+C9+pNoHFbxT5wmscTzUs51xMzwd3sPGk6MBR1R7rHcHTGxg
+         PJZnne9zUOxWzRHwrac70XoKzuZZWVpQ1fDGd5ibfsVxIeLIS045qG7AeGsGfy0UjT9n
+         PN7bsgJkCdXfSckTbEqgZpFjZ3fYi4cP7L8jortGTZMQER9iD5f7aaptdSwIxLJ6QO8w
+         eeyrXxOF4rRuWahFqgmfnORaOzWO0oV/usG1SY3wwnT+bEx6Hde14d/Qt38INcv1+qKB
+         duu73gylCFEf31Ro4D2ANZh17JYQO7EL61ANr1o07f9IaMmn/zKZBh3hyBJoZSLdmWBq
+         Z4/g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dinga.com.au header.s=default header.b=pyAmNr4j;
+       spf=pass (google.com: domain of info@dinga.com.au designates 103.61.229.91 as permitted sender) smtp.mailfrom=info@dinga.com.au;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=dinga.com.au
+Return-Path: <info@dinga.com.au>
+Received: from zeus.dinga.com.au (zeus.dinga.com.au. [103.61.229.91])
+        by mx.google.com with ESMTPS id p21si6302904pli.255.2020.09.27.02.47.54
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 27 Sep 2020 02:47:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of info@dinga.com.au designates 103.61.229.91 as permitted sender) client-ip=103.61.229.91;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dinga.com.au header.s=default header.b=pyAmNr4j;
+       spf=pass (google.com: domain of info@dinga.com.au designates 103.61.229.91 as permitted sender) smtp.mailfrom=info@dinga.com.au;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=dinga.com.au
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=dinga.com.au; s=default; h=Message-Id:From:Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Date:Subject:To:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=+BL/yZA8ej0t6MM0faUMztHAPOPeVZUChkop42PlL10=; b=pyAmNr4jYP1/PYTuJjdf9feigq
+	CKtq/Hy1Tsb/DDm3bJP9Eb5BATxep56E7CQgjmYSAX4iwUqh+caMAhyrLQhSXrsAVl46/R3Ka/THP
+	guQ0RMtkqYooiumolWsvxzJo/LKUlq5vOssSekh6eceQtrzh1+iQesu/j9ItlsvHS+P4XgFyimouo
+	DAugrnnY03PKt5rE/VvBItiyeQsH+43jQ1Mf6g6TOmWDCkxqSK88L4zF7EaxUQYG2qfY0gWp0jdNQ
+	BZ084vF3bmd+KuRHAksMeSXcxy4oGLOA4j/wYZAUKlp/7X7nxrrtenTk0epWrxTYdjvXNHmSBAp1Q
+	PHLOLfyg==;
+Received: from stagedinga by zeus.dinga.com.au with local (Exim 4.93)
+	(envelope-from <info@dinga.com.au>)
+	id 1kMTHc-00064m-EC
+	for thomposondouglas@gmail.com; Sun, 27 Sep 2020 19:47:52 +1000
+To: =?utf-8?Q?Douglas=20Thompson?= <thomposondouglas@gmail.com>
+Subject: =?utf-8?Q?Welcome=20to=20the=20DINGA=20Club?=
+X-PHP-Script: www.dinga.com.au/index.php for 27.50.79.9, 27.50.79.9
+X-PHP-Originating-Script: 1004:Sendmail.php
+Date: Sun, 27 Sep 2020 09:47:52 +0000
+MIME-Version: 1.0
+Content-Type: text/html;
+ charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: =?utf-8?Q?inline?=
+From: =?utf-8?Q?DINGA=20Online?= <info@dinga.com.au>
+Message-Id: <E1kMTHc-00064m-EC@zeus.dinga.com.au>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - zeus.dinga.com.au
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [1004 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - dinga.com.au
+X-Get-Message-Sender-Via: zeus.dinga.com.au: authenticated_id: stagedinga/from_h
+X-Authenticated-Sender: zeus.dinga.com.au: info@dinga.com.au
+X-Source: 
+X-Source-Args: php-fpm: pool dinga_com_au                               
+X-Source-Dir: dinga.com.au:/public_html/pub
+
+<div style=3D"font:12px/1.55em Verdana, Arial, Helvetica, sans-serif;">=
+=0A    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"=
+98%" style=3D"margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetic=
+a, sans-serif; margin-bottom:10px;">=0A        <tr>=0A            <td al=
+ign=3D"center" valign=3D"top">=0A                <!-- [ header starts he=
+re] -->=0A                <table cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" width=3D"690">=0A                    <tr>=0A                 =20=
+    =0A                        <td valign=3D"top" style=3D"padding: 10px=
+ 20px; background-color:#FFC609;"><a href=3D"https://www.dinga.com.au/">=
+<img src=3D"https://www.dinga.com.au/static/frontend/RomaDigital/theme/e=
+n_AU/images/email/dinga_fishing.gif" alt=3D"DINGA PTY LTD"  style=3D"mar=
+gin-bottom:10px;" border=3D"0"/></a></td>=0A=09=09=09=09=0A            =20=
+       </tr>=0A                </table>=0A=0A                <!-- [ midd=
+le starts here] -->=0A                <table cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" width=3D"690">=0A                    <tr>=0A     =20=
+                  <td valign=3D"top" style=3D"padding: 10px 20px; font-f=
+amily: sans-serif; font-size: 14px; line-height: 22px;">=0A            =20=
+               <p><strong>Dear Douglas Thompson,</strong><br/>=0A      =20=
+                     Welcome to DINGA PTY LTD. To log in when visiting o=
+ur site just click <a href=3D"https://www.dinga.com.au/customer/account/=
+" style=3D"color:#1E7EC8;">Login</a> or <a href=3D"https://www.dinga.com=
+=2Eau/customer/account/" style=3D"color:#1E7EC8;">My Account</a> at the to=
+p of every page, and then enter your e-mail address and password.</p>=0A=
+=0A                            <p>When you log in to your account, you w=
+ill be able to do the following:</p>=0A=0A                            <u=
+l>=0A                                <li>Proceed through checkout faster=
+ when making a purchase</li>=0A                                <li> Chec=
+k the status of orders</li>=0A                                <li>View p=
+ast orders</li>=0A                                <li> Make changes to y=
+our account information</li>=0A                                <li>Chang=
+e your password</li>=0A                                <li>Store alterna=
+tive addresses (for shipping to multiple family members and friends!)</l=
+i>=0A                            </ul>=0A=0A                           =20=
+<p>If you have any questions about your account or any other matter, ple=
+ase feel free to contact us at <a href=3D"mailto:info@dinga.com.au" styl=
+e=3D"color:#1E7EC8;">info@dinga.com.au</a> or by phone at +61 2 4960 884=
+0.</p>=0A                            <p></p>=0A=0A=0A                  =20=
+     </td>=0A                    </tr>=0A                </table>=0A=0A=20=
+               <table align=3D"center" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" width=3D"690" style=3D"font-family: sans-serif; margin-l=
+eft: auto; margin-right: auto;">=0A=09=09=09     <tr>=0A=09=09=09      =20=
+     <td valign=3D"top" colspan=3D"2" style=3D"padding: 8px 20px ; font-=
+family: sans-serif;  background-color:#FFC609; text-align:left; color:#2=
+f2f2f; font-size:11px;">Copyright =C2=A9 Dinga Outdoors Pty. Ltd. As Tru=
+stee For Dinga Unit Trust.</td>=0A=09=09=09        </tr>=0A=09=09=09   =20=
+</table>=0A=0A            </td>=0A        </tr>=0A    </table>=0A</div>=
+=0A

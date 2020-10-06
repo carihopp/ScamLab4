@@ -1,0 +1,529 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a05:6838:6504:0:0:0:0 with SMTP id eo4csp413988nkb;
+        Thu, 1 Oct 2020 02:52:17 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwRc9fMP/mQ+rjtWrXTI/imuEi51NIWqwDnG9alnzZgB76k6VPCu46PVSW0sBPfrvDqwe8m
+X-Received: by 2002:a37:8d87:: with SMTP id p129mr6923363qkd.500.1601545937014;
+        Thu, 01 Oct 2020 02:52:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601545937; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zuAR4iWwXWgKGeUwh4WmhiBiNIMAR8I9DEyKd/pFU9mHT39yor1b5yCFiDeiElghFS
+         zZ+ENhKkALQUH0id5RSAQevJGOx86qhI74by9HFUSGm52DUj3b4py9gu6rwBY4oeLOly
+         JW0DNz3oo255icD6yX96xFAKZ+f/SO6boDl/AlFK4nylS0bN1a6ep6Xq8bc3ckOgFmX0
+         a8HDLK7c7cCaBGAFfnPOq82P/MhqhqIOvmn32GAEpFsXOk2AB2/9aeUEdjmCNIZMCihj
+         0qZQiAnO3i2sbFRNzY/SLawPQhqvZJcOVS1l/NMlEuqJJQ8paHCdGvrs+1+5lZv7/DnK
+         d7cA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:list-unsubscribe:feedback-id:sender
+         :content-transfer-encoding:mime-version:date:subject:from:to
+         :dkim-signature:dkim-signature;
+        bh=mRkSaV9PB9ftop93vP6WNGXKsltZ6id9sHvj0Rg5eyM=;
+        b=JxfPY61EJbyzNVoHsmhMavLZWAqmkz8fEMqzjI2BKeiqPpfCrpzUi58Lg9EQYEPoF6
+         8GaVsC/7PJtfyLxf8qa/EX+00S0hg5hv63XGaPjkFHGfav8NCD+mXb6dN18PZJsYFLRZ
+         g4kWRSL1VLQYsnhAHm5v493CT9dX0joANac5TYpqv12fL273kwDuHoS1rHMr/snPpOPg
+         3Q9/beXEIuWmXUq8By8kg5ry8ba4Qnv5gD5e7Za84LJWHhDFMynwp/Ww0h7K/EcYAW1p
+         zGPL8O2J+HpGI1pg9s8jEIgC/drWlc37Mrpxzu7nFFb3PeWxdC3M9iXI62o9HrnEICCV
+         ZGSg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@s6.asa1.acemsa3.com header.s=dk header.b="qOGf/e/G";
+       dkim=pass header.i=@acems1.com header.s=dk header.b=IOjc4X2i;
+       spf=pass (google.com: domain of bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com designates 52.128.40.34 as permitted sender) smtp.mailfrom="bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=dinga.com.au
+Return-Path: <bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com>
+Received: from s6.asa1.acemsa3.com (s6.asa1.acemsa3.com. [52.128.40.34])
+        by mx.google.com with ESMTPS id o64si2527564qtd.116.2020.10.01.02.52.16
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 01 Oct 2020 02:52:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com designates 52.128.40.34 as permitted sender) client-ip=52.128.40.34;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@s6.asa1.acemsa3.com header.s=dk header.b="qOGf/e/G";
+       dkim=pass header.i=@acems1.com header.s=dk header.b=IOjc4X2i;
+       spf=pass (google.com: domain of bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com designates 52.128.40.34 as permitted sender) smtp.mailfrom="bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=dinga.com.au
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk; d=s6.asa1.acemsa3.com;
+ h=To:From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:
+ Sender:List-Unsubscribe:Message-ID;
+ i=dingaonline.activehosted.com@s6.asa1.acemsa3.com;
+ bh=mRkSaV9PB9ftop93vP6WNGXKsltZ6id9sHvj0Rg5eyM=;
+ b=qOGf/e/GtJDmJnXsvNVWzSDilAYVCrI7wW6+GAw38QqgGbAwObt/28gHiCWMsqkCAD9BxFKXtHuI
+   nIPRQNCOkKtDYil6VJgYJah62EGB5eaJg4TP8G2kfqRy4H6z61fE5y+/ZkmS+ySF+DqlcRvzT+mD
+   eUKrEIguSnYaQcC7hzY=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk; d=acems1.com;
+ h=To:From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:
+ Sender:List-Unsubscribe:Message-ID;
+ bh=mRkSaV9PB9ftop93vP6WNGXKsltZ6id9sHvj0Rg5eyM=;
+ b=IOjc4X2i6kle4bpT3CQS6gj1r+v3/4wg+9dKPVtHKj+RiImjoYaaV0lbv4YBtouSwOM1xgTm9y2Y
+   7Ci1wbiMzuO88JQFh6GPIjnL+Q7fEPIUdPDnxO6qTFUcO23b+CdK+uqUB+6i8YdWAj6YR2VzFwT4
+   W/tNDUfeWpgie1tzPbk=
+Received: by s6.asa1.acemsa3.com id hemjd02lsh49 for <thomposondouglas@gmail.com>; Thu, 1 Oct 2020 09:52:16 +0000 (envelope-from <bounce-325124-88-72333-thomposondouglas=gmail.com@s6.asa1.acemsa3.com>)
+To: "Douglas Thompson" <thomposondouglas@gmail.com>
+From: "DINGA Online" <info@dinga.com.au>
+Subject: Inspiring Everyone to Enjoy the Outdoor Experience
+Date: Thu, 01 Oct 2020 04:52:16 -0500
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift-6004604955f75a6d0776846.98919619_=_"
+Content-Transfer-Encoding: 7bit
+Sender: <dingaonline.activehosted.com@s6.asa1.acemsa3.com>
+X-Sender: <dingaonline.activehosted.com@s6.asa1.acemsa3.com>
+X-Report-Abuse: Please report abuse here: abuse@acemserv.com
+X-mid: dGhvbXBvc29uZG91Z2xhc0BnbWFpbC5jb20gLCBjODggLCBtMTAyNyAsIHMxMjU5OTQ
+Feedback-ID: 325124:activecampaign
+X-250ok-CID: 325124-88
+List-Unsubscribe: <mailto:unsubscribe-637410346bf99ff986967624bc57c85d-88-873a718cab607953ac446a201ddd57e8@s6.asa1.acemsa3.com>,
+ <https://dealsby.dinga.com.au/box.php?nl=4&c=88&m=1027&s=873a718cab607953ac446a201ddd57e8&funcml=unsub2&luha=1>
+Message-ID: <20201001095216.26767.882341679.swift@dealsby.dinga.com.au>
+
+
+--_=_swift-6004604955f75a6d0776846.98919619_=_
+Content-Type: text/plain; charset=utf-8
+
+Hey Douglas,
+
+DINGA Online today isn't just fishing, we are an outdoor retail leader
+in fishing tackle, boating, and camping. In addition to fishing tackle,
+we have become one of Australia's premier outdoor retail destinations
+serving sportsmen and women all over the Asia Pacific Region.
+
+If you are here, then you know fishing is fun, and fishing is not just
+about fish. When you are on a fishing trip, families and friends can
+relax together, and enjoy being outdoors as well as learning new skills.
+Anyone, at any age, can learn to fish. At DINGA you can find information
+about how to fish, fishing gear, fishing tackle, boating, camping, and
+the best fishing spots in your area and also how to help with fishing
+conservation.
+
+Visit OnDECK by DINGA Online today to discover Australia:
+* Free informative articles
+
+* Quick Guides (How-To)
+
+* Fish Species Explorer
+
+* Charter Boat Listings 
+
+* Camping Ground Listings
+
+* Boat Ramp Listings
+
+* Place of Interest
+
+* And much more.
+
+https://dealsby.dinga.com.au/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZvbmRlY2tieS5kaW5nYS5jb20uYXU=&a=89254014&account=dingaonline%2Eactivehosted%2Ecom&email=YzFm3ivacqoyQ%2BbqpBEDoWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&s=873a718cab607953ac446a201ddd57e8&i=88A1027A4A2218  
+
+Our coasts, rivers, and waterways are amazing, so amazing. There's a
+whole other world just under the water and all around us that we all
+talk about.
+
+Being greeted by native wallabies in the morning, wild cockatoos,
+screaming out their 4 am song in the morning and 5 pm evening rant. Have
+you ever heard it for real? It feels like they are yelling out, hey, how
+are you doing, are you enjoying yourself?
+
+Inclusivity includes everything to get up close, forget widescreen, this
+is a full panoramic view.
+
+Are you always stuck in your chair, in the office, at home, in your rig,
+or are you banging more nails into wood every day or laying concrete?
+
+Try a bit of the outdoors and get some freedom space into your head.
+
+Give your children somewhere other than the concrete jungle. Or go the
+other way, go with the crowds to camping parks, and all the fun
+facilities of home that you maybe don't have.
+
+Leave your family behind (whoops), or take them with you.
+
+Take on a challenge, be the king of the mountain, even with guided
+tours, it's not the first step, it's the few more you make after
+that.
+
+When was the last time you felt exhilarated over something you can only
+do?
+
+Getting wet when it rains, landing face-first in the snow, even a short
+walk can become quite addictive. Because you feel so good afterwards,
+and your body will appreciate the movement and activity putting you on
+the path to a longer, healthier and happier life.
+
+This is an awesome country, and the best way to enjoy it is to get out
+there. Because those experiences will change you, you'll really love
+Australia and enjoy all the experiences around you.
+
+Visit OnDECK By DINGA today:
+https://dealsby.dinga.com.au/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZvbmRlY2tieS5kaW5nYS5jb20uYXU=&a=89254014&account=dingaonline%2Eactivehosted%2Ecom&email=YzFm3ivacqoyQ%2BbqpBEDoWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&s=873a718cab607953ac446a201ddd57e8&i=88A1027A4A2218  
+You'll be very glad that you did!
+
+We are always happy to help you if you require assistance - please hit
+reply or call us during business hours on 02 4960 8840.
+
+Talk soon,
+Gordon Balcomb.
+
+**Your Best Mates in Fishing!**
+_________________
+
+Sent to thomposondouglas@gmail.com
+
+Unsubscribe:
+https://dealsby.dinga.com.au/proc.php?nl=4&c=88&m=1027&s=873a718cab607953ac446a201ddd57e8&act=unsub
+
+DINGA PTY LTD, 3/23 Ayrshire Crescent, Sandgate New South Wales 2304, Australia
+--_=_swift-6004604955f75a6d0776846.98919619_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html>=0A<head><!--[if !mso]><meta http-equiv=3D"X-UA-Compat=
+ible" content=3D"IE=3Dedge"><!--<![endif]--><meta http-equiv=3D"Content-Typ=
+e" content=3D"text/html; charset=3Dutf-8"><meta http-equiv=3D"Content-Langu=
+age" content=3D"en-us"><meta name=3D"format-detection" content=3D"telephone=
+=3Dno"><meta name=3D"format-detection" content=3D"date=3Dno"><meta name=3D"=
+format-detection" content=3D"address=3Dno"><meta name=3D"format-detection" =
+content=3D"email=3Dno"><style data-ac-keep=3D"true"> .ExternalClass { width=
+: 100%; background: inherit; background-color: inherit; } .ExternalClass p,=
+ .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p, .und=
+oreset p { margin-bottom: 20px; } div[class^=3D"aolmail_divbody"] { overflo=
+w: auto; } [owa] #ac-footer { padding: 20px 0px !important; background: inh=
+erit; background-color: inherit; } </style><style data-ac-keep=3D"true">=0A=
+@media only screen and (max-width: 600px) { /*-----------------------------=
+--------------------------------------------*\ Abandoned Cart widget \*----=
+--------------------------------------------------------------------*/ .td_=
+abandoned-cart img {display: block;padding-right: 0 !important;padding-bott=
+om: 0 !important;width: 100% !important;max-width: 100% !important;height: =
+auto !important;} body { padding: 0!important; font-size:1em!important; } *=
+ { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box; } *[class].divbody {-webkit-text-size-adjust:none !important; =
+width:auto !important;} *[class].td_picture img {width:auto !important;} *[=
+class].td_text { line-height: 110%; } *[class].td_button { width: auto; } /=
+* Collapse all block elements */ :not(.body) table { display: block!importa=
+nt; float:none!important; border-collapse:collapse !important; width:100% !=
+important; min-width:100% !important; clear:both!important; } :not(.body) t=
+head,=0A:not(.body) tbody, :not(.body) tr { display:block!important; float:=
+none!important; width:100% !important; } :not(.body) th, :not(.body) td, :n=
+ot(.body) p { display:block!important; float:none!important; width:100% !im=
+portant; clear:both!important; } /* Remove browser default styling for elem=
+ents */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top: 10px; =
+-webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0=
+; } /* Set default height for spacer once collapse */ *[class].spacer { hei=
+ght: auto!important; } a[href^=3Ddate]{ color:inherit !important; text-deco=
+ration:none !important;} a[href^=3Dtelephone]{ color:inherit !important; te=
+xt-decoration:none !important;} a[href^=3Daddress]{ color:inherit !importan=
+t; text-decoration:none !important;} a[href^=3Demail]{ color:inherit !impor=
+tant; text-decoration:none !important;} /* Default table cell height */ td[=
+height=3D"13"]{height:13px!important;font-size:13px!important;line-height:1=
+3px!important;}=0A/*-------------------------------------------------------=
+------------------*\ Product Widget \*-------------------------------------=
+------------------------------------*/ .td_product > div { float: none !imp=
+ortant; width: 100% !important; margin-bottom: 20px !important; } .td_produ=
+ct > div img { width: 75% !important; } /* Default social icons */ *[class]=
+.ac-social-icon-16 {width:16px !important; height:16px !important;} *[class=
+].ac-social-icon-24 {width:24px !important; height:24px !important;} *[clas=
+s].ac-social-icon-28 {width:28px !important; height:28px !important;} *[cla=
+ss].__ac_social_icons { margin-right: 0px !important; } }=0A</style><style =
+data-ac-keep=3D"true"> @media only screen and (max-width: 320px) { #layout-=
+row6658 img { width: 100% !important; height: auto !important; max-width: 3=
+20px !important; } div.divbody { padding: 20px !important; } .td_rss .rss-i=
+tem img.iphone_large_image { width: auto !important; } u + .body { display:=
+ table !important; width: 100vw !important; min-width: 100vw !important; } =
+u + .body table { display: table !important; width: 100% !important; min-wi=
+dth: 100% !important; } u + .body td { display: block !important; width: 10=
+0% !important; min-width: 100% !important; } u + .body img { display: inlin=
+e-block !important; margin: auto !important; width: auto !important; vertic=
+al-align: bottom !important; } u + .body center { display: block !important=
+; margin: auto !important; width: 100% !important; min-width: 100% !importa=
+nt; text-align: center !important; } u + .body table._ac_social_table, u + =
+.body table._ac_social_table td, u + .body table._ac_social_table=0Adiv, u =
++ .body table._ac_social_table a { display: inline-block !important; margin=
+: auto !important; width: auto !important; min-width: auto !important; text=
+-align: center !important; } u + .body table._ac_social_table img { display=
+: inline-block !important; margin: auto !important; width: 32px !important;=
+ min-width: 32px !important; max-width: 32px !important; }=0A}=0A@media onl=
+y screen and (max-width: 375px) { #layout-row6658 img { width: 100% !import=
+ant; height: auto !important; max-width: 375px !important; } div.divbody { =
+padding: 20px !important; } .td_rss .rss-item img.iphone_large_image { widt=
+h: auto !important; } u + .body { display: table !important; width: 100vw !=
+important; min-width: 100vw !important; } u + .body table { display: table =
+!important; width: 100% !important; min-width: 100% !important; } u + .body=
+ td { display: block !important; width: 100% !important; min-width: 100% !i=
+mportant; } u + .body img { display: inline-block !important; margin: auto =
+!important; width: auto !important; vertical-align: bottom !important; } u =
++ .body center { display: block !important; margin: auto !important; width:=
+ 100% !important; min-width: 100% !important; text-align: center !important=
+; } u + .body table._ac_social_table, u + .body table._ac_social_table td, =
+u + .body table._ac_social_table div, u + .body table._ac_social_table=0Aa =
+{ display: inline-block !important; margin: auto !important; width: auto !i=
+mportant; min-width: auto !important; text-align: center !important; } u + =
+.body table._ac_social_table img { display: inline-block !important; margin=
+: auto !important; width: 32px !important; min-width: 32px !important; max-=
+width: 32px !important; }=0A}=0A@media only screen and (max-width: 414px) {=
+ #layout-row6658 img { width: 100% !important; height: auto !important; max=
+-width: 414px !important; } div.divbody { padding: 20px !important; } .td_r=
+ss .rss-item img.iphone_large_image { width: auto !important; } u + .body {=
+ display: table !important; width: 100vw !important; min-width: 100vw !impo=
+rtant; } u + .body table { display: table !important; width: 100% !importan=
+t; min-width: 100% !important; } u + .body td { display: block !important; =
+width: 100% !important; min-width: 100% !important; } u + .body img { displ=
+ay: inline-block !important; margin: auto !important; width: auto !importan=
+t; vertical-align: bottom !important; } u + .body center { display: block !=
+important; margin: auto !important; width: 100% !important; min-width: 100%=
+ !important; text-align: center !important; } u + .body table._ac_social_ta=
+ble, u + .body table._ac_social_table td, u + .body table._ac_social_table =
+div, u + .body table._ac_social_table=0Aa { display: inline-block !importan=
+t; margin: auto !important; width: auto !important; min-width: auto !import=
+ant; text-align: center !important; } u + .body table._ac_social_table img =
+{ display: inline-block !important; margin: auto !important; width: 32px !i=
+mportant; min-width: 32px !important; max-width: 32px !important; }=0A}=0A@=
+media only screen and (max-width: 667px) { #layout-row6658 img { width: 100=
+% !important; height: auto !important; max-width: 600px !important; } div.d=
+ivbody { padding: 20px !important; } .td_rss .rss-item img.iphone_large_ima=
+ge { width: auto !important; } u + .body { display: table !important; width=
+: 100vw !important; min-width: 100vw !important; } u + .body table { displa=
+y: table !important; width: 100% !important; min-width: 100% !important; } =
+u + .body td { display: block !important; width: 100% !important; min-width=
+: 100% !important; } u + .body img { display: inline-block !important; marg=
+in: auto !important; width: auto !important; vertical-align: bottom !import=
+ant; } u + .body center { display: block !important; margin: auto !importan=
+t; width: 100% !important; min-width: 100% !important; text-align: center !=
+important; } u + .body table._ac_social_table, u + .body table._ac_social_t=
+able td, u + .body table._ac_social_table div, u + .body table._ac_social_t=
+able=0Aa { display: inline-block !important; margin: auto !important; width=
+: auto !important; min-width: auto !important; text-align: center !importan=
+t; } u + .body table._ac_social_table img { display: inline-block !importan=
+t; margin: auto !important; width: 32px !important; min-width: 32px !import=
+ant; max-width: 32px !important; }=0A} </style><!--[if !mso]><!-- webfonts =
+--><!--<![endif]--><!--[if lt mso 12]> <![endif]--></head><body id=3D"ac-de=
+signer" class=3D"body" style=3D"font-family: Arial; line-height: 1.1; margi=
+n: 0px; background-color: #FFFFFF; width: 100%; text-align: center;">=09=09=
+<div style=3D"display:none; padding:0; height:1px; font-size:1px; backgroun=
+d-color:inherit !important; color:inherit !important; line-height:1px; mso-=
+hide:all;">=0A=09=09=09Australia's Local Tackle Store=0A=09=09</div>=0A<div=
+ class=3D"divbody" style=3D"margin: 0px; outline: none; padding: 0px; color=
+: #000000; font-family: arial; line-height: 1.1; width: 100%; background-co=
+lor: #FFFFFF; background: #FFFFFF; text-align: center;"><table class=3D"tem=
+plate-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" align=3D"left" style=3D"font-size: 14px; min-width: auto; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; background: #FFFF=
+FF;"><tr><td align=3D"center" valign=3D"top" width=3D"100%"><table class=3D=
+"template-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+600" bgcolor=3D"#FFFFFF" style=3D"font-size: 14px; min-width: auto; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px;"><tr><td id=3D"lay=
+out_table_da0990c9e5b3cfeb1798fb3fde92b9a433e7367e" valign=3D"top" align=3D=
+"center" width=3D"600"><table cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" class=3D"layout layout-table root-table" width=3D"600" style=3D"font-si=
+ze: 14px; min-width: 100%; mso-table-lspace: 0pt;=0Amso-table-rspace: 0pt;"=
+><tr><td id=3D"layout-row-margin6658" valign=3D"top"><table width=3D"100%" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size: 14px; =
+min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr id=3D"l=
+ayout-row6658" class=3D"layout layout-row widget _widget_picture " align=3D=
+"left"><td id=3D"layout-row-padding6658" valign=3D"top"><table width=3D"100=
+%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size: 14p=
+x; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td =
+class=3D"image-td" align=3D"left" valign=3D"top" width=3D"600"><img src=3D"=
+https://dingaonline.imgus11.com/public//313ce9678e82fc48c7d9895a560a93d6.gi=
+f?r=3D1822253731" alt=3D"" width=3D"600" style=3D"display: block; border: n=
+one; outline: none; width: 600px; opacity: 1; max-width: 100%;"></td>=0A</t=
+r>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A<tr><td id=3D"la=
+yout-row-margin2509" valign=3D"top" style=3D"padding: 0;"><table width=3D"1=
+00%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size: 1=
+4px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-=
+collapse: initial !important;"><tr id=3D"layout-row2509" class=3D"layout la=
+yout-row widget _widget_text style2509" style=3D"margin: 0; padding: 0;"><t=
+d id=3D"layout-row-padding2509" valign=3D"top" style=3D"padding: 0 0 40px 0=
+;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt;"><tr><td id=3D"text_div2496" class=3D"td_text td_block" valign=
+=3D"top" align=3D"left" width=3D"600" style=3D"line-height: 150%; margin: 0=
+; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: =
+inherit; line-height: 1.5; text-decoration: inherit; font-family: Arial; ms=
+o-line-height-rule: exactly;"> <div style=3D"line-height: 150%; margin: 0; =
+outline: none; padding: 0; line-height:=0A1.5; mso-line-height-rule: exactl=
+y;" data-line-height=3D"1.5"> <p style=3D"margin: 0; outline: none; padding=
+: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height:=
+ inherit; text-decoration: inherit;"></p>=0A<div style=3D"margin: 0; outlin=
+e: none; padding: 0; font-size: 15px; display: inline;"></div>=0A<p style=
+=3D"margin: 0; outline: none; padding: 0; color: #222222; font-size: 15px; =
+font-weight: inherit; line-height: inherit; text-decoration: none; font-sty=
+le: normal;"><br><span style=3D"color: inherit; font-size: inherit; font-we=
+ight: bold; line-height: inherit; text-decoration: inherit; font-family: ar=
+ial, helvetica, sans;" class=3D"">Hey Douglas,</span></p>=0A<p style=3D"mar=
+gin: 0; outline: none; padding: 0; color: #222222; font-size: 15px; font-we=
+ight: inherit; line-height: inherit; text-decoration: none; font-style: nor=
+mal;"><br style=3D"font-family: arial, helvetica, sans; font-weight: bold;c=
+olor: #222222; text-decoration: none; text-align: inherit;"></p>=0A<p style=
+=3D"margin: 0; outline: none; padding: 0; color: #222222; font-size: 13px; =
+font-weight: inherit; line-height: inherit; text-decoration: none; font-sty=
+le: normal;"></p>=0A <span style=3D"color: inherit; font-size: 15px; font-w=
+eight: inherit; line-height: inherit; text-decoration: inherit;" class=3D""=
+><span style=3D"color: inherit; font-size: 15px; font-weight: inherit; line=
+-height: inherit; text-decoration: inherit;" class=3D""> </span> <span lang=
+=3D"EN-AU" style=3D"color: inherit; font-size: 15px; font-weight: inherit; =
+line-height: inherit; text-decoration: inherit; font-family: arial;">DINGA =
+Online today isn't just fishing, we are an outdoor retail leader in fishing=
+ tackle, boating, and camping. In addition to fishing tackle, we have becom=
+e one of Australia's premier outdoor retail destinations serving sportsmen =
+and women all over the Asia Pacific Region.<br></span><br><span lang=3D"EN-=
+AU" style=3D"color: inherit; font-size: 15px; font-weight: inherit; line-he=
+ight: inherit; text-decoration: inherit; font-family: arial;">If you are he=
+re, then you know fishing is fun, and fishing is not just about fish. When =
+you are on a fishing trip, families and=0Afriends can relax together, and e=
+njoy being outdoors as well as learning new skills. Anyone, at any age, can=
+ learn to fish. At DINGA you can find information about how to fish, fishin=
+g gear, fishing tackle, boating, camping, and the best fishing spots in you=
+r area and also how to help with fishing conservation.<br><br>Visit OnDECK =
+by DINGA Online today to discover Australia:</span><br><ul type=3D"disc" st=
+yle=3D"margin: 0 0 0 40px; padding: 0;"><li style=3D"display: list-item; li=
+ne-height: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span lang=
+=3D"EN-AU" style=3D"color: inherit; font-size: inherit; font-weight: inheri=
+t; line-height: inherit; text-decoration: inherit; mso-bidi-font-family: Ca=
+libri; mso-bidi-theme-font: minor-latin;">Free informative articles</span><=
+/li> <li style=3D"display: list-item; line-height: inherit; list-style-type=
+: disc; margin: 0 0 0 3px;"><span lang=3D"EN-AU" style=3D"color: inherit; f=
+ont-size: inherit; font-weight: inherit; line-height: inherit;=0Atext-decor=
+ation: inherit; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-l=
+atin;">Quick Guides (How-To)</span></li> <li style=3D"display: list-item; l=
+ine-height: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span lang=
+=3D"EN-AU" style=3D"color: inherit; font-size: inherit; font-weight: inheri=
+t; line-height: inherit; text-decoration: inherit; mso-bidi-font-family: Ca=
+libri; mso-bidi-theme-font: minor-latin;">Fish Species Explorer</span></li>=
+ <li style=3D"display: list-item; line-height: inherit; list-style-type: di=
+sc; margin: 0 0 0 3px;"><span lang=3D"EN-AU" style=3D'color: inherit; font-=
+size: inherit; font-weight: inherit; line-height: inherit; text-decoration:=
+ inherit; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family:=
+ Calibri; mso-bidi-theme-font: minor-latin; mso-fareast-language: EN-AU;'>C=
+harter Boat Listings </span></li> <li style=3D"display: list-item; line-hei=
+ght: inherit; list-style-type: disc; margin: 0 0 0 3px;"><span lang=3D"EN-A=
+U"=0Astyle=3D'color: inherit; font-size: inherit; font-weight: inherit; lin=
+e-height: inherit; text-decoration: inherit; mso-fareast-font-family: "Time=
+s New Roman"; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-lat=
+in; mso-fareast-language: EN-AU;'>Camping Ground Listings</span></li> <li s=
+tyle=3D"display: list-item; line-height: inherit; list-style-type: disc; ma=
+rgin: 0 0 0 3px;"><span lang=3D"EN-AU" style=3D'color: inherit; font-size: =
+inherit; font-weight: inherit; line-height: inherit; text-decoration: inher=
+it; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: Calib=
+ri; mso-bidi-theme-font: minor-latin; mso-fareast-language: EN-AU;'>Boat Ra=
+mp Listings</span></li> <li style=3D"display: list-item; line-height: inher=
+it; list-style-type: disc; margin: 0 0 0 3px;"><span lang=3D"EN-AU" style=
+=3D'color: inherit; font-size: inherit; font-weight: inherit; line-height: =
+inherit; text-decoration: inherit; mso-fareast-font-family: "Times New Roma=
+n"; mso-bidi-font-family:=0ACalibri; mso-bidi-theme-font: minor-latin; mso-=
+fareast-language: EN-AU;'>Place of Interest</span></li> <li style=3D"displa=
+y: list-item; line-height: inherit; list-style-type: disc; margin: 0 0 0 3p=
+x;"><span lang=3D"EN-AU" style=3D'color: inherit; font-size: inherit; font-=
+weight: inherit; line-height: inherit; text-decoration: inherit; mso-fareas=
+t-font-family: "Times New Roman"; mso-bidi-font-family: Calibri; mso-bidi-t=
+heme-font: minor-latin; mso-fareast-language: EN-AU;'>And much more.<br><br=
+></span></li> </ul><a href=3D"https://dealsby.dinga.com.au/Prod/link-tracke=
+r?redirectUrl=3DaHR0cHMlM0ElMkYlMkZvbmRlY2tieS5kaW5nYS5jb20uYXU=3D&a=3D8925=
+4014&account=3Ddingaonline%2Eactivehosted%2Ecom&email=3DYzFm3ivacqoyQ%2Bbqp=
+BEDoWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&s=3D873a718cab607953ac446a201ddd57e8&i=3D88=
+A1027A4A2218" data-ac-default-color=3D"1" style=3D"margin: 0; outline: none=
+; padding: 0; color: #045FB4; text-decoration: underline; font-size: 15px; =
+font-family: arial;" target=3D"_blank"><span style=3D"color: ; font-size: i=
+nherit; font-weight: inherit;=0Aline-height: inherit; text-decoration: inhe=
+rit;">https://ondeckby.dinga.com.au</span></a><span lang=3D"EN-AU" style=3D=
+"color: inherit; font-size: 15px; font-weight: inherit; line-height: inheri=
+t; text-decoration: inherit; font-family: arial;"> </span><br><span lang=3D=
+"EN-AU" style=3D"color: inherit; font-size: 15px; font-weight: inherit; lin=
+e-height: inherit; text-decoration: inherit; font-family: arial;"><br>Our c=
+oasts, rivers, and waterways are amazing, so amazing. There=E2=80=99s a who=
+le other world just under the water and all around us that we all talk abou=
+t.</span><br><span lang=3D"EN-AU" style=3D"color: inherit; font-size: 15px;=
+ font-weight: inherit; line-height: inherit; text-decoration: inherit; font=
+-family: arial;"><br>Being greeted by native wallabies in the morning, wild=
+ cockatoos, screaming out their 4 am song in the morning and 5 pm evening r=
+ant. Have you ever heard it for real? It feels like they are yelling out, h=
+ey, how are you doing, are you enjoying=0Ayourself?</span><br><span lang=3D=
+"EN-AU" style=3D"color: inherit; font-size: 15px; font-weight: inherit; lin=
+e-height: inherit; text-decoration: inherit; font-family: arial;"><br>Inclu=
+sivity includes everything to get up close, forget widescreen, this is a fu=
+ll panoramic view.</span><br><span lang=3D"EN-AU" style=3D"color: inherit; =
+font-size: 15px; font-weight: inherit; line-height: inherit; text-decoratio=
+n: inherit; font-family: arial;"><br>Are you always stuck in your chair, in=
+ the office, at home, in your rig, or are you banging more nails into wood =
+every day or laying concrete?</span><br><span lang=3D"EN-AU" style=3D"color=
+: inherit; font-size: 15px; font-weight: inherit; line-height: inherit; tex=
+t-decoration: inherit; font-family: arial;"><br>Try a bit of the outdoors a=
+nd get some freedom space into your head.</span><br><span lang=3D"EN-AU" st=
+yle=3D"color: inherit; font-size: 15px; font-weight: inherit; line-height: =
+inherit; text-decoration: inherit; font-family:=0Aarial;"><br>Give your chi=
+ldren somewhere other than the concrete jungle. Or go the other way, go wit=
+h the crowds to camping parks, and all the fun facilities of home that you =
+maybe don=E2=80=99t have.</span><br><span lang=3D"EN-AU" style=3D"color: in=
+herit; font-size: 15px; font-weight: inherit; line-height: inherit; text-de=
+coration: inherit; font-family: arial;"><br>Leave your family behind (whoop=
+s), or take them with you.</span><br><span lang=3D"EN-AU" style=3D"color: i=
+nherit; font-size: 15px; font-weight: inherit; line-height: inherit; text-d=
+ecoration: inherit; font-family: arial;"><br>Take on a challenge, be the ki=
+ng of the mountain, even with guided tours, it=E2=80=99s not the first step=
+, it=E2=80=99s the few more you make after that.</span><br><span lang=3D"EN=
+-AU" style=3D"color: inherit; font-size: 15px; font-weight: inherit; line-h=
+eight: inherit; text-decoration: inherit; font-family: arial;"><br>When was=
+ the last time you felt exhilarated over something you can only do?</span><=
+br><span=0Alang=3D"EN-AU" style=3D"color: inherit; font-size: 15px; font-we=
+ight: inherit; line-height: inherit; text-decoration: inherit; font-family:=
+ arial;"><br>Getting wet when it rains, landing face-first in the snow, eve=
+n a short walk can become quite addictive. Because you feel so good afterwa=
+rds, and your body will appreciate the movement and activity putting you on=
+ the path to a longer, healthier and happier life.</span><br><span lang=3D"=
+EN-AU" style=3D"color: inherit; font-size: 15px; font-weight: inherit; line=
+-height: inherit; text-decoration: inherit; font-family: arial;"><br>This i=
+s an awesome country, and the best way to enjoy it is to get out there. Bec=
+ause those experiences will change you, you=E2=80=99ll really love Australi=
+a and enjoy all the experiences around you.<br><br>Visit OnDECK By DINGA to=
+day:</span><br><a=0Ahref=3D"https://dealsby.dinga.com.au/Prod/link-tracker?=
+redirectUrl=3DaHR0cHMlM0ElMkYlMkZvbmRlY2tieS5kaW5nYS5jb20uYXU=3D&a=3D892540=
+14&account=3Ddingaonline%2Eactivehosted%2Ecom&email=3DYzFm3ivacqoyQ%2BbqpBE=
+DoWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&s=3D873a718cab607953ac446a201ddd57e8&i=3D88A1=
+027A4A2218" data-ac-default-color=3D"1" style=3D"margin: 0; outline: none; =
+padding: 0; color: #045FB4; text-decoration: underline; font-size: 15px; fo=
+nt-family: arial;" target=3D"_blank"><span style=3D"color: ; font-size: inh=
+erit; font-weight: inherit; line-height: inherit; text-decoration: inherit;=
+">https://ondeckby.dinga.com.au</span></a><span lang=3D"EN-AU" style=3D"col=
+or: inherit; font-size: 15px; font-weight: inherit; line-height: inherit; t=
+ext-decoration: inherit; font-family: arial;"> </span><br><span lang=3D"EN-=
+AU" style=3D"color: inherit; font-size: inherit; font-weight: inherit; line=
+-height: inherit; text-decoration: inherit; mso-bidi-font-family: Calibri; =
+mso-bidi-theme-font: minor-latin;">You'll be very glad that you did!<br><br=
+><span style=3D"color: #000000;=0Afont-size: inherit; font-weight: inherit;=
+ line-height: inherit; text-decoration: inherit;">We are always happy to he=
+lp you if you require assistance - please hit reply or call us during busin=
+ess hours on 02 4960 8840.</span></span><br><span lang=3D"EN-AU" style=3D"c=
+olor: #000000; font-size: 15px; font-weight: inherit; line-height: inherit;=
+ text-decoration: inherit; font-family: arial;"><br>Talk soon,</span><span =
+lang=3D"EN-AU" style=3D"color: inherit; font-size: 15px; font-weight: inher=
+it; line-height: inherit; text-decoration: inherit; font-family: arial;"><b=
+r>Gordon Balcomb.<b style=3D"margin: 0; outline: none; padding: 0;"><br>You=
+r Best Mates in Fishing!</b></span><br style=3D"font-size: 15px; font-famil=
+y: arial;"><b style=3D"margin: 0; outline: none; padding: 0; font-family: a=
+rial;"></b><span lang=3D"EN-AU" style=3D"color: inherit; font-size: inherit=
+; font-weight: inherit; line-height: inherit; text-decoration: inherit; fon=
+t-family: arial;"> </span> </span> <p style=3D'margin: 0;=0Aoutline: none; =
+padding: 0; color: #222222; font-size: 13px; font-weight: 400; line-height:=
+ inherit; text-decoration: none; font-family: Gotham, "Helvetica Neue", Hel=
+vetica, Arial, sans-serif; font-style: normal;'></p>=0A </div>=0A<!--[if (g=
+te mso 12)&(lte mso 15) ]>=0A<style data-ac-keep=3D"true" data-ac-inline=3D=
+"false"> #text_div2496, #text_div2496 div { line-height: 150% !important; }=
+;=0A</style>=0A<![endif]--></td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</tab=
+le>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=
+=0A</table>=0A</div>=0A<img src=3D"https://dealsby.dinga.com.au/Prod/link-t=
+racker?nl=3D4&c=3D88&m=3D1027&s=3D873a718cab607953ac446a201ddd57e8&l=3Dopen=
+&account=3Ddingaonline.activehosted.com" border=3D"0" width=3D"1" height=3D=
+"1" style=3D"display:block;width:1px!important;min-width:1px!important;max-=
+width:1px!important;height:1px!important;border:0;overflow:hidden;" /><br /=
+><div id=3D"ac-footer" style=3D"clear:both;background-color:inherit;backgro=
+und:inherit;min-width:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;paddin=
+g:20px;color:#000000;font-size:11px;font-family:arial,helvetica,sans-serif;=
+line-height:140%;line-height:1.4;text-align:center;box-sizing:border-box;">=
+=0A=09<center>=0A=09=09Sent to: <span style=3D"font-size:11px;font-family:a=
+rial,helvetica,sans-serif;font-weight:normal;text-decoration:none;outline:n=
+one;">thomposondouglas@gmail.com</span>=0A=09=09<br>=0A=09=09<br>=0A=09=09<=
+a href=3D"https://dealsby.dinga.com.au/proc.php?nl=3D4&c=3D88&m=3D1027&s=3D=
+873a718cab607953ac446a201ddd57e8&act=3Dunsub" style=3D"font-size:11px;font-=
+family:arial,helvetica,sans-serif;font-weight:bold;text-decoration:underlin=
+e;"><span style=3D"font-weight:bold;text-decoration:underline;">Unsubscribe=
+</span></a>=0A=09=09<br>=0A=09=09<br> DINGA PTY LTD, 3/23 Ayrshire Crescent=
+, Sandgate New South Wales 2304, Australia=0A=09</center>=0A</div>=0A<br cl=
+ear=3D"all" /></body>=0A</html>
+--_=_swift-6004604955f75a6d0776846.98919619_=_--
+

@@ -1,0 +1,1981 @@
+X-Envelope-From: <luhopp@taltech.ee>
+X-Envelope-To: <mail@carettahopp.de>
+X-Delivery-Time: 1601414863
+X-UID: 19397
+Return-Path: <luhopp@taltech.ee>
+Authentication-Results: strato.com; dmarc=pass (p=NONE sp=NONE) header.from=rangeforce.com
+Authentication-Results: strato.com; dkim=pass header.d=livettu.onmicrosoft.com
+Authentication-Results: strato.com; dkim=pass header.d=bf02x.hubspotemail.net
+	header.i=@bf02x.hubspotemail.net
+Authentication-Results: strato.com; dkim=pass header.d=rangeforce.com
+	header.i=@rangeforce.com
+Authentication-Results: strato.com; dkim-adsp=pass header.from="lauren.lamp@rangeforce.com"
+Authentication-Results: strato.com; spf=pass smtp.mailfrom="luhopp@taltech.ee"
+X-RZG-Expurgate: clean/normal
+X-RZG-Expurgate-ID: 149500::1601414862-000010EA-066021FF/0/0
+X-RZG-CLASS-ID: mi00
+Received-SPF: pass
+	(strato.com: domain taltech.ee designates 40.107.22.75 as permitted sender)
+	mechanism=ip4;
+	client-ip=40.107.22.75;
+	helo="EUR05-AM6-obe.outbound.protection.outlook.com";
+	envelope-from="luhopp@taltech.ee";
+	receiver=smtpin.rzone.de;
+	identity=mailfrom;
+Received: from EUR05-AM6-obe.outbound.protection.outlook.com (mail-am6eur05on2075.outbound.protection.outlook.com [40.107.22.75])
+	by smtpin.rzone.de (RZmta 46.10.7 OK)
+	with ESMTPS id Z03c44w8TLRgm8H
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (curve X9_62_prime256v1 with 256 ECDH bits, eq. 3072 bits RSA))
+	(Client CN "mail.protection.outlook.com", Issuer "GlobalSign Organization Validation CA - SHA256 - G3" (verified OK))
+	(Client hostname verification FAILED)
+	for <mail@carettahopp.de>;
+	Tue, 29 Sep 2020 23:27:42 +0200 (CEST)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=a51kDunYA6ko90NNZ3zM5PADs2xIcqocmUYYWBff87EGlha6D6pZtuXONmyl78QADJBAOP2iC7cE2hqYJWO015ZXjeDIHCHrdls8VG/pg4p1OjbCeZatGyC3FC3Oodc/VHaNRhMWfFZjXR/ozRp3gmeCQ2TejXiLi3GgfOQAgVwEqPyTokdHdxYgH4+1kY1yMb+mT6nc5xo8ulqpjTJXjFuVSXJEYQDamVN/DTU9fSo7lPL2z5eWBCuBKY8w6HbM5BP+LAbKqK/89ZPkH5jJVANTlM5xbrIFC8AD9jvo1CnlpZoWOsQETLHr2DCb7A5ts0L0ViT/7d54W8OA7NlKRw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=KWjveEB7pfSCp0B6hFvfaMsa4hxS7VFjaHZ7YTrU9iI=;
+ b=Zc13Bfn5mz1fc8QUV/f9GDeSdeD/wEgD640ZnOJAh3Yc1mD4i/+2ikGphIFGl59lzGtpaJsfleVY4lIhyvZ8WUGEZolfnQoK5UxKLOo5ynnjgoeqqT+cwDb4BMg22oVveaQXq5AE29M36rQcG24W7iQ+QxqdKhrZQI3OHBHaZkJn4XtX+b5Rr/akgRf+C7i6N3KD3e5EShnz7hvObizv1KnQXxKNIgMGjY6zvGykeVvhN4xSKxSEyw0ankOHrxrBsBi8nEHF55S5i0TpTOeypbhSiRq9SFa2wccD+UFKkJ6NrNIaIaFXsBPOFjcmH58eJHXu/+maj5zwXAMxhzINVw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=livettu.onmicrosoft.com; s=selector2-livettu-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=KWjveEB7pfSCp0B6hFvfaMsa4hxS7VFjaHZ7YTrU9iI=;
+ b=zKAoUkyWhCy4MV9FwcpeqS4shaW75y5jyjFS885bJiKbVkItqimAGZIaEBG7e+bxhpYJlDXFANp1Fh3PlspdXIhwmFCBZECCaQwQuJ0dKqaRqgcrLkDKKD36onTUY3wGVcGCbDeP4MpI86z+qvZtxHWugzPNXo+fSUxml1L0+0U=
+Resent-From: <luhopp@taltech.ee>
+Received: from AM5P194CA0011.EURP194.PROD.OUTLOOK.COM (2603:10a6:203:8f::21)
+ by DB8PR01MB6280.eurprd01.prod.exchangelabs.com (2603:10a6:10:150::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.32; Tue, 29 Sep
+ 2020 21:27:39 +0000
+Received: from AM5EUR02FT006.eop-EUR02.prod.protection.outlook.com
+ (2603:10a6:203:8f:cafe::30) by AM5P194CA0011.outlook.office365.com
+ (2603:10a6:203:8f::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3412.22 via Frontend
+ Transport; Tue, 29 Sep 2020 21:27:39 +0000
+Authentication-Results: spf=pass (sender IP is 54.174.52.130)
+ smtp.mailfrom=bf02x.hubspotemail.net; ttu.ee; dkim=pass (signature was
+ verified) header.d=bf02x.hubspotemail.net;ttu.ee; dmarc=pass action=none
+ header.from=rangeforce.com;
+Received-SPF: Pass (protection.outlook.com: domain of bf02x.hubspotemail.net
+ designates 54.174.52.130 as permitted sender)
+ receiver=protection.outlook.com; client-ip=54.174.52.130;
+ helo=pgg140.bf02x.hubspotemail.net;
+Received: from pgg140.bf02x.hubspotemail.net (54.174.52.130) by
+ AM5EUR02FT006.mail.protection.outlook.com (10.152.8.77) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.34 via Frontend Transport; Tue, 29 Sep 2020 21:27:39 +0000
+Received: by 172.16.170.87 with SMTP id axhgpp6gfjb4azektxlpabszl0jvrvhtqj4ipu;
+        Tue, 29 Sep 2020 21:27:37 GMT
+DKIM-Signature: v=1; s=hs2; d=bf02x.hubspotemail.net; 
+        i=@bf02x.hubspotemail.net; 
+        h=sender:from:reply-to:to:subject:mime-version:content-type:list-unsubscribe:form-sub:feedback-id; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=KWjveEB7pfSCp0B6hFvfaMsa4hxS7VFjaHZ7YTrU9iI=; 
+        b=BLDeVq6KwCCilujkCFtkUcXbPw7zlA3eP5oUQP4GArTU3JWLyChnitdIgwYm5r
+         Sz15jnkREpI58f2++94lqXmsmV1HNY9+DixX6uewkrfWtVkuIw3vGBZHnsqJN5W
+         flfA4YqkQqEg/+oz6X6BX7w2s93WIWO66lS68bR5hVdd4SJmRNHezAlTsGNN1bL
+         u26eZ5Uf9CkVmG04ytYdaL/Su/3HSXlAPiX85Ocfx7QKc5A7/VIoM/5ctKgh9Rg
+         1AT/yfCX5DAPxfq+V3KKGVGaYf1yc3+3bnLdC5s3cLdXpHNq8+gzgYppYrI6zKf
+         EnJ7NEmMBgH3m05dhb9WJSUDSE1Q==; q=dns/txt; t=1601414857;
+DKIM-Signature: v=1; s=hs2; d=rangeforce.com; i=@rangeforce.com; 
+        h=sender:from:reply-to:to:subject:mime-version:content-type:list-unsubscribe:form-sub:feedback-id; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=KWjveEB7pfSCp0B6hFvfaMsa4hxS7VFjaHZ7YTrU9iI=; 
+        b=TdTPr87s5i5qut9wPSH09FapizUnzD115oTLUvVxWv0QiYNkl4gC1lSE30/2C7
+         lLYuCgXfC/pI1kfPEI4DQO4fGHCIy9myObA/+vl1O6ulTz8NIP2yON0XyeEAZqS
+         0RxqNc+zMFy6pIMzBbD6ENoe2zcaPBImGxLObp6vZZWZN2DDcMBCg8xkwuYB4oB
+         4i6EATaLgPJFXdq+EdJ7fPmUctEJlZlrLeiOGDZGRDGGZ5QBYjJhjJznYgKSoQJ
+         1XT6GHPyVPewIcBZmIik4gkJuRGYjSgH1U7WIgQ89+eTHxqG/BvW3FUW94dSqA/
+         2Csum68u/MWW41j1PYorLItrXcZg==; q=dns/txt; t=1601414857;
+X-HS-Cid: 1axfr6nq0ibj3cxuhytc2sw8llifcyy4epuhcv
+List-Unsubscribe: <mailto:1axdkcteo8uvyxqn5gp1tjxlmxj014y2fip3xb-luhopp=ttu.ee@bf02x.hubspotemail.net?subject=unsubscribe>
+Date: Tue, 29 Sep 2020 17:27:37 -0400
+From: Lauren Lamp <lauren.lamp@rangeforce.com>
+Reply-To: lauren.lamp@rangeforce.com
+To: luhopp@ttu.ee
+Message-ID: <1601414777969.f40c6414-106b-491a-95cc-3ccc18317e91@bf02x.hubspotemail.net>
+Subject: RangeForce Newsletter - Get your Superuser t-shirt now!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_45753088_470588084.1601414856800"
+X-Report-Abuse-To: abuse@hubspot.com (see
+ https://www.hubspot.com/abuse-complaints)
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57:0
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 3d282743-2664-4c71-8fb8-08d864be7e4c
+X-MS-TrafficTypeDiagnostic: DB8PR01MB6280:
+X-LD-Processed: 3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-Microsoft-Antispam-PRVS:
+	<DB8PR01MB6280A8E3138C291F580F9B90A6320@DB8PR01MB6280.eurprd01.prod.exchangelabs.com>
+X-MS-Oob-TLC-OOBClassifiers: OLM:2201;
+X-MS-Exchange-SenderADCheck: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	7xQs/CRgsVMo6Wr/mheDAWLzYOTTpQkquMqgQkX+iRihey3Pd7MPDt+3qtuXeVQsqL6/WAYRSr4uxgg30Ckc7OULWzBnxXZjHXr8Pf2+OD5MEvKzaCrG1EAT6knhq73d+eeh2ry0t4V28Qf4vqBR6NNXGcDmWvwuCF7o+bbY/VIqz8mpCFXez43crbQ9mOaZRZ8y+45H1IzxNerbweGi6LkgoR2UybZWz0712Jel7d7CSSDtbTfgcDKzg6TRuZY0RhBCEEmWTYHsjmy5K/nLGBlGN6mFCJRe7Bw2fZ3t03MV8GdLkJ/A2pbzNKZ1Wfw+UN2E2csPF5WShhUL4G4bRXgx/rQpjz3Qsxsa73BPIZHYPXu5/zLC8DNS9Of2WVsGITP2sS2Wiknk748qqIHKtiQMJ1ZByS0XhWUDOSRj8s06+5RcuBGrkXQR93HIUNxnF8mPh6Ie3WtGh+JekG5M0yOxpXOMKc3Y6Jv3P1t3fatE/jxcHR8oc8BORqywAAvELwpb5CqacB/ahdanxkUR+EEMn+3XT8s8K2564AmpV+o=
+X-Forefront-Antispam-Report:
+	CIP:54.174.52.130;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:pgg140.bf02x.hubspotemail.net;PTR:pgg140.bf02x.hubspotemail.net;CAT:NONE;SFS:(4636009)(346002)(39850400004)(396003)(136003)(376002)(498600001)(33964004)(83380400001)(166002)(5660300002)(2160300002)(356005)(7596003)(83080400001)(7636003)(76236003)(83170400001)(8676002)(68406010)(2906002)(70586007)(336012)(3450700001)(34206002)(19627235002)(42882007)(42186006)(786003)(44832011)(9686003)(19627405001)(26005)(316002)(130070200001)(440514002)(579004)(559001);DIR:OUT;SFP:1101;
+X-ExternalRecipientOutboundConnectors: 3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57
+X-MS-Exchange-ForwardingLoop:
+	luhopp@taltech.ee;3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57
+X-OriginatorOrg: taltech.ee
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Sep 2020 21:27:39.6236
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3d282743-2664-4c71-8fb8-08d864be7e4c
+X-MS-Exchange-CrossTenant-Id: 3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57
+X-MS-Exchange-CrossTenant-AuthSource: AM5EUR02FT006.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB8PR01MB6280
+
+------=_Part_45753088_470588084.1601414856800
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Learn what's new with RangeForce, including new training modules and platfo=
+rm features.
+
+Rangeforce_NewLogo-04 (1) (https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76=
+SW74j1ff8qZHCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN203 )
+
+Customer Newsletter
+
+Issue 2 - September 2020
+
+Calling All RangeForce Superusers
+
+Are you a RangeForce Superuser? Customer learners who complete 15 or more u=
+nique hands-on modules are eligible for a free t-shirt! If you already qual=
+ify, register below with your name, address, and size and we will ship your=
+ shirt at no cost to you. If you haven't completed 15 modules, keep trainin=
+g and your t-shirt will be waiting for you when you do.
+
+T-shirt images (https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8qZ=
+HCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN213 )
+
+Register for T-shirt
+(https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQl=
+qW8XrNw35z-r5Gf1HVPN223 )
+
+Customer News
+
+Introducing Battle Fortress!
+
+battle fortress (https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8q=
+ZHCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN233 )
+
+RangeForce now offers the industry's only integrated hands-on skills traini=
+ng platform and hyper-scalable cloud-based cyber range for continuous remot=
+e team training. Battle Fortress is a scalable and re-usable cyber range to=
+ recreate an entire IT environment and emulate a company=E2=80=99s existing=
+ security tools to support training of remote SOC teams.
+
+Learn more
+(https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQl=
+qW8XrNw35z-r5Gf1HVPN243 )
+
+Customer Feedback Survey
+
+Screen Shot 2020-06-24 at 1.20.48 PM (https://i7.t.hubspotemail.net/e2t/sc2=
+/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN253 )
+
+Would you recommend RangeForce? If you have feedback about the RangeForce p=
+latform and training content, good or bad, check your inbox for our custome=
+r feedback survey. We'd love to hear from you!
+
+Product Releases
+
+Learning Goals - Coming Soon
+
+Setting achievable goals is one of the keys to successful training. In the =
+coming days, the RangeForce platform will be enhanced with Learning Goals. =
+Look for the new Goals tab in the menu coming soon!
+
+Learners can set personal weekly or monthly goals on hours spent training o=
+r modules completed. Administrators can set similar organizational goals fo=
+r learners to achieve to help drive time spent training. Administrators wil=
+l also be able to view learner progress in achieving these goals.
+
+Screen Shot 2020-09-29 at 11.44.05 AM (https://i7.t.hubspotemail.net/e2t/sc=
+2/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN263 )
+
+Events
+
+HMG Strategy Webinar
+
+Join us tomorrow for an interview with Vice Admiral Jan Tighe, Commander U.=
+S. Navy Fleet Cyber. Jan will share her experiences with the risks and thre=
+ats faced by the U.S. military during her tenure, best practices for defend=
+ing against targeted attacks in a distributed and dynamic environment, and =
+how to implement a successful training program across your organization.
+
+Webinar (https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8qZHCsW5F_=
+b3173QQlqW8XrNw35z-r5Gf1HVPN273 )
+
+Register
+(https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQl=
+qW8XrNw35z-r5Gf1HVPN283 )
+
+Training
+
+Screen Shot 2020-09-28 at 11.35.12 AM (https://i7.t.hubspotemail.net/e2t/sc=
+2/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN293 )
+
+Module Walkthrough
+
+In partnership with the Tech Data Cyber Range, watch a walkthrough of the R=
+everse Engineering 2 module using Ghidra.
+
+View
+(https://i7.t.hubspotemail.net/e2t/sc2/Mm-nFbjX76SW74j1ff8qZHCsW5F_b3173QQl=
+qW8XrNw35z-r5Gf1HVPN2b3 )
+
+New Modules Laptop Kubernetes2 (https://i7.t.hubspotemail.net/e2t/sc2/Mm-nF=
+bjX76SW74j1ff8qZHCsW5F_b3173QQlqW8XrNw35z-r5Gf1HVPN2c3 )
+
+New Modules
+
+Learning Paths
+
+- Web Application Security
+
+- Threat Hunter
+
+- Cybersecurity Foundations
+
+DevOps
+
+- Kubernetes ClusterIP Service
+
+- Kubernetes NodePort and LoadBalancer Services
+
+- Kubernetes Deployment and Scaling
+
+-  Insecure PRNG
+
+- Docker Persistent Data: Named Volumes
+
+Microsoft
+
+- PowerShell Basics - Part 2
+
+- PKI Web Cert Template
+
+- Sysmon: Process Injection
+
+- PowerShell Code Signing
+
+- PKI Web Cert Enrollment
+
+SOC
+
+- PostgreSQL Arbitrary Code Execution CVE-2019-9193
+
+- Apache Struts CVE2017-5638
+
+- IOC Scanning with LOKI
+
+- RCE Intro
+
+- Wireshark Basics
+
+- Password Cracking Foundations
+
+- Yextend
+
+- Snyk
+
+- NPM Audit
+
+Web App Security
+
+- Splunk WebApp IR: Brute Force Detection
+
+- Blind XML External Entries
+
+- AWS Instance Metadata SSRF
+
+SOC Solutions
+
+- Carbon Black Endpoint Security
+
+- Splunk Alerts
+
+- Splunk Visualizations
+
+Feedback?
+
+We love your feedback!
+
+Contact (mailto:customer.success@rangeforce.com) the RangeForce Customer Su=
+ccess team.
+
+RangeForce, 10440 Balls Ford Rd Suite 180, Manassas, Virginia 20109, United=
+ States
+
+Unsubscribe (https://hs-7639879.s.hubspotemail.net/hs/manage-preferences/un=
+subscribe-all?d=3DVn9Dk_6585wxVvvf6043VrWdW4fNSM23K3fZwW5Bh-k417f7hvW5l2SrG=
+73_mqgW5r_SYY5mp_9BN4NHXXb28Y5FN521BlTGKd_PV20N8L7LnLGNVHNNs97GlTtBN17Pbwp1=
+Xb-k1&v=3D3&_hsenc=3Dp2ANqtz-9raTESgvtoYBqM_OixhhyfL9wh-lSchuqSiKZ0F7OtRqUD=
+7AHX07ma7IY_GwBevdlIANeq9J6BmhxIOgTVZfcYQi3xvA&_hsmi=3D96321354 )
+
+Manage preferences (https://hs-7639879.s.hubspotemail.net/hs/manage-prefere=
+nces/unsubscribe?d=3DVn9Dk_6585wxVvvf6043VrWdW4fNSM23K3fZwW5Bh-k417f7hvW5l2=
+SrG73_mqgW5r_SYY5mp_9BN4NHXXb28Y5FN521BlTGKd_PV20N8L7LnLGNVHNNs97GlTtBN17Pb=
+wp1Xb-k1&v=3D3&_hsenc=3Dp2ANqtz-9raTESgvtoYBqM_OixhhyfL9wh-lSchuqSiKZ0F7OtR=
+qUD7AHX07ma7IY_GwBevdlIANeq9J6BmhxIOgTVZfcYQi3xvA&_hsmi=3D96321354 )
+------=_Part_45753088_470588084.1601414856800
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3=
+.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" lang=3D"en"><head><link rel=3D"styleshe=
+et" type=3D"text/css" hs-webfonts=3D"true" href=3D"https://fonts.googleapis=
+.com/css?family=3DLato|Lato:i,b,bi">
+    <title>RangeForce Newsletter - Get your Superuser t-shirt now!</title>
+    <meta property=3D"og:title" content=3D"RangeForce Newsletter - Get your=
+ Superuser t-shirt now!">
+    <meta name=3D"twitter:title" content=3D"RangeForce Newsletter - Get you=
+r Superuser t-shirt now!">
+   =20
+   =20
+   =20
+<meta name=3D"x-apple-disable-message-reformatting">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+    <!--[if gte mso 9]>
+  <xml>
+      <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+  </xml>
+ =20
+  <style>
+    ul > li {
+      text-indent: -1em;
+    }
+  </style>
+<![endif]-->
+<!--[if mso]>
+<style type=3D"text/css">
+ body, td {font-family: Arial, Helvetica, sans-serif;}
+</style>
+<![endif]-->
+   =20
+     =20
+   =20
+  <meta name=3D"generator" content=3D"HubSpot"><meta property=3D"og:url" co=
+ntent=3D"http://rangeforce-7639879.hs-sites.com/-temporary-slug-dd61e4c5-81=
+ac-4053-90e4-0f2b3b3e566a"><meta name=3D"robots" content=3D"noindex,follow"=
+><!--[if !((mso)|(IE))]><!-- --><style type=3D"text/css">[owa] .hse-column-=
+container{max-width:600px !important;width:600px !important}[owa] .hse-colu=
+mn{display:table-cell;vertical-align:top}
+[owa] .hse-section .hse-size-4{max-width:200px !important;width:200px !impo=
+rtant}
+[owa] .hse-section .hse-size-8{max-width:400px !important;width:400px !impo=
+rtant}
+[owa] .hse-section .hse-size-12{max-width:600px !important;width:600px !imp=
+ortant}
+@media only screen and (min-width:640px){.hse-column-container{max-width:60=
+0px !important;width:600px !important}
+.hse-column{display:table-cell;vertical-align:top}.hse-section .hse-size-4{=
+max-width:200px !important;width:200px !important}
+.hse-section .hse-size-8{max-width:400px !important;width:400px !important}=
+.hse-section .hse-size-12{max-width:600px !important;width:600px !important=
+}
+}@media only screen and (max-width:639px){img.stretch-on-mobile,.hs_rss_ema=
+il_entries_table img{height:auto !important;width:100% !important}
+.display_block_on_small_screens{display:block}.hs_padded{padding-left:20px =
+!important;padding-right:20px !important}
+}</style><!--<![endif]--><style type=3D"text/css">a[x-apple-data-detectors]=
+{color:inherit !important;text-decoration:none !important;font-size:inherit=
+ !important;font-family:inherit !important;font-weight:inherit !important;l=
+ine-height:inherit !important}
+#outlook a{padding:0}.yshortcuts a{border-bottom:none !important}a{text-dec=
+oration:underline}
+.ExternalClass{width:100%}.ExternalClass,.ExternalClass p,.ExternalClass td=
+,.ExternalClass div,.ExternalClass span,.ExternalClass font{line-height:100=
+%}
+p{margin:0}body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-we=
+bkit-font-smoothing:antialiased;moz-osx-font-smoothing:grayscale}</style></=
+head>
+  <body bgcolor=3D"#0d3689" style=3D"margin:0 !important; padding:0 !import=
+ant; font-family:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; w=
+ord-break:break-word">
+   =20
+<div id=3D"preview_text" style=3D"display:none!important;font-size:1px;colo=
+r:#0d3689;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:h=
+idden;">Learn what's new with RangeForce, including new training modules an=
+d platform features.</div>
+   =20
+<!--[if gte mso 9]>
+<v:background xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t">
+ =20
+    <v:fill type=3D"tile" size=3D"100%,100%" color=3D"#0d3689"/>
+ =20
+</v:background>
+<![endif]-->
+    <div class=3D"hse-body-background" style=3D"background-color:#0d3689" b=
+gcolor=3D"#0d3689">
+      <table role=3D"presentation" class=3D"hse-body-wrapper-table" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin:0; pad=
+ding:0; width:100% !important; min-width:320px !important; height:100% !imp=
+ortant" width=3D"100%" height=3D"100%">
+        <tbody><tr>
+          <td class=3D"hse-body-wrapper-td" valign=3D"top" style=3D"border-=
+collapse:collapse; mso-line-height-rule:exactly; font-family:Lato, Tahoma, =
+sans-serif; font-size:18px; color:#232342; word-break:break-word">
+            <div id=3D"hs_cos_wrapper_main" class=3D"hs_cos_wrapper hs_cos_=
+wrapper_widget hs_cos_wrapper_type_dnd_area" style=3D"color: inherit; font-=
+size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" d=
+ata-hs-cos-type=3D"dnd_area">  <div id=3D"section_1562610061130" class=3D"h=
+se-section hse-section-first" style=3D"padding-left:10px; padding-right:10p=
+x; padding-top:20px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff; padding-top:15px" bgc=
+olor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-top:15px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:600px">
+<![endif]-->
+<div id=3D"column_1562610061130_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_15935220437342" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module">
+=09
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:10px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8Jh3p_8SV1-WJV7CgYv9W214w1z4gJTCKW8Xp4W422=
+bpyMW2-fYQm6lG_GSN4DJlg6-CtbSW4jSYfw3W_9xHW9jPSdL2KF1VrW6XVq7w68dhDgW8RlGhb=
+4ZMDsjW4JYFYb6mr4sTW3CV9NB322P4YW1zn8385dlpV8W8_tXYf5nL651W9jQL0L93Rr0fW1_y=
+6vd4RBG8nW3Z1-RK2W5Ch3W5xTsqM9g874gW6Zfclg3gPC56VBHlhV9lzgXkW6y8wM93k6WmWW2=
+W4k8F86s3yTVCl0j58qfbb3W1hR8D39drTlx3lJG1" target=3D"_blank" style=3D"color=
+:#00a4bd; mso-line-height-rule:exactly" data-hs-link-id=3D"0">
+               =20
+                <img alt=3D"Rangeforce_NewLogo-04 (1)" src=3D"https://hs-76=
+39879.f.hubspotemail.net/hub/7639879/hubfs/Logos/Rangeforce_NewLogo-04%20(1=
+).png?width=3D1120&amp;upscale=3Dtrue&amp;name=3DRangeforce_NewLogo-04%20(1=
+).png" style=3D"outline:none; text-decoration:none; -ms-interpolation-mode:=
+bicubic; border:none; max-width:100%; font-size:16px" width=3D"560" align=
+=3D"middle" srcset=3D"https://hs-7639879.f.hubspotemail.net/hub/7639879/hub=
+fs/Logos/Rangeforce_NewLogo-04%20(1).png?upscale=3Dtrue&amp;width=3D1120&am=
+p;upscale=3Dtrue&amp;name=3DRangeforce_NewLogo-04%20(1).png 560w, https://h=
+s-7639879.f.hubspotemail.net/hub/7639879/hubfs/Logos/Rangeforce_NewLogo-04%=
+20(1).png?upscale=3Dtrue&amp;width=3D2240&amp;upscale=3Dtrue&amp;name=3DRan=
+geforce_NewLogo-04%20(1).png 1120w" sizes=3D"(max-width: 560px) 100vw, 560p=
+x">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1598044543583" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff" bgcolor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:600px">
+<![endif]-->
+<div id=3D"column_1598044543583_0" class=3D"hse-column hse-size-12">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:0px 10px 10px 20px"><div id=3D"hs_cos_wrapper_module_1598044=
+54349313" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type=
+_module" style=3D"color: inherit; font-size: inherit; line-height: inherit;=
+" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=
+=3D"hs_cos_wrapper_module_159804454349313_" class=3D"hs_cos_wrapper hs_cos_=
+wrapper_widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font=
+-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" =
+data-hs-cos-type=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:=
+exactly; font-family:Lato, Tahoma, sans-serif; font-size:28px; line-height:=
+175%">Customer Newsletter</h2>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+>Issue 2 - September 2020</p></div></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1598045184000" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff" bgcolor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:600px">
+<![endif]-->
+<div id=3D"column_1598045184000_0" class=3D"hse-column hse-size-12">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:10px"><div id=3D"hs_cos_wrapper_module_15937252702729" class=
+=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=
+=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-=
+general-type=3D"widget" data-hs-cos-type=3D"module">
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:580px; height:2pt;" fillcolor=3D"none">
+<v:fill type=3D"tile"/>
+<v:textbox inset=3D"0,0,0,0">
+<div>
+<![endif]-->
+<table role=3D"presentation" width=3D"100%" align=3D"center" border=3D"0" s=
+tyle=3D"position:relative; top:-1px; min-width:20px; width:100%; max-width:=
+100%; border-spacing:0; mso-table-lspace:0pt; mso-table-rspace:0pt; border-=
+collapse:collapse; font-size:1px">
+  <tbody><tr>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+   =20
+    <td width=3D"90%" valign=3D"middle" style=3D"border-collapse:collapse; =
+mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-si=
+ze:18px; color:#232342; word-break:break-word; line-height:0; border:transp=
+arent; border-bottom:1px dashed #3D85C6; mso-border-bottom-alt:1px dashed #=
+3D85C6; border-bottom-width:1px">&nbsp;</td>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+  </tr>
+</tbody></table>
+<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+</div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1562609679325" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff; padding-bottom:10px; =
+padding-top:10px" bgcolor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:10px; padding-top:=
+10px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:600px">
+<![endif]-->
+<div id=3D"column_1562609679326_0" class=3D"hse-column hse-size-12">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15628782405252" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_w=
+rapper_module_15628782405252_" class=3D"hs_cos_wrapper hs_cos_wrapper_widge=
+t hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inheri=
+t; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-t=
+ype=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly; font=
+-family:Lato, Tahoma, sans-serif; font-size:24px; line-height:175%">Calling=
+ All RangeForce Superusers</h2>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+><span style=3D"color: #000000;">Are you a RangeForce Superuser? Customer l=
+earners who complete 15 or more unique hands-on modules are eligible for a =
+free t-shirt! If you already qualify, register below with your name, addres=
+s, and size and we will ship your shirt at no cost to you. If you haven't c=
+ompleted 15 modules, keep training and your t-shirt will be waiting for you=
+ when you do.</span></p></div></div></td></tr></tbody></table>
+<div id=3D"hs_cos_wrapper_module_15626096793241" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module">
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:0px 20px 15px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8JB3p_97V1-WJV7CgR-CW5SZRlz4SsVJ-W6MbThM7V=
+zQc6Vqwk8q7z-mrPVvfwLQ8XQkV4W3xPDhT1gpGyjW4_8fc72jWhpdW3t4Hm71N5F8mVVDCVm1t=
+_SmfW3-qLSq65pG4GW65gb5F4JXzjDW2djdGD41vR2TVdMkwW1PPnc_W9hpSvq5gV8cSW7FPZq_=
+5Px2fCW4Snvtq5F6-R8W4_3qzg1r2hH_VWMgvJ6jtNfhW3bZLN-30xxmKVVGzrC7gXQjpW3nXZk=
+c8ZcxKSW6TwCqg8BYW7tVNqpKt6WC_J9W6LMn1m856zSRW52JZSN8Cy0BV34xH1" target=3D"=
+_blank" style=3D"color:#00a4bd; mso-line-height-rule:exactly" data-hs-link-=
+id=3D"0">
+               =20
+                <img alt=3D"T-shirt images" src=3D"https://hs-7639879.f.hub=
+spotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-09-24%20at%2011.06.32%=
+20AM-1.png?width=3D1120&amp;upscale=3Dtrue&amp;name=3DScreen%20Shot%202020-=
+09-24%20at%2011.06.32%20AM-1.png" style=3D"outline:none; text-decoration:no=
+ne; -ms-interpolation-mode:bicubic; border:none; max-width:100%; font-size:=
+16px" width=3D"560" align=3D"middle" srcset=3D"https://hs-7639879.f.hubspot=
+email.net/hub/7639879/hubfs/Screen%20Shot%202020-09-24%20at%2011.06.32%20AM=
+-1.png?upscale=3Dtrue&amp;width=3D1120&amp;upscale=3Dtrue&amp;name=3DScreen=
+%20Shot%202020-09-24%20at%2011.06.32%20AM-1.png 560w, https://hs-7639879.f.=
+hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-09-24%20at%2011.06.=
+32%20AM-1.png?upscale=3Dtrue&amp;width=3D2240&amp;upscale=3Dtrue&amp;name=
+=3DScreen%20Shot%202020-09-24%20at%2011.06.32%20AM-1.png 1120w" sizes=3D"(m=
+ax-width: 560px) 100vw, 560px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15985586781611" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"border-spacing:0 !important; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+    <tbody><tr>
+        <!--[if mso]>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pr=
+esentation"  valign=3D"middle" style=3D"border-radius:10px;cursor:auto;back=
+ground-color:#3574E3;padding:12px 18px;">
+      <a href=3D"https://go.rangeforce.com/super-user-t-shirt"  target=3D"_=
+blank" style=3D"font-size:10px;font-family:Lato,Tahoma,sans-serif;color:#ff=
+ffff;font-weight:bold;text-decoration:none;font-style:normal;Margin:0;text-=
+transform:none;">
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pres=
+entation" style=3D"border-collapse:collapse; mso-line-height-rule:exactly; =
+font-family:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-b=
+reak:break-word; border-radius:10px; cursor:auto; background-color:#3574E3"=
+>
+    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RLBN4pV-syLT7sJxrx=
+W5j5c_V4gzSpvN46-8JB3p_97V1-WJV7CgX0QW3K6pVW2G-wC7W4s8g054CpN_LW1wzc6t21908=
+4N6DNbPsqhjcRVldm6714qslmW19NVrQ85thYkW1_1YS636CDHSW67Rn2c2yTq4DW5sQ1Ft4zJ6=
+LpMGl6SC9tkPFW7VFw0P5pBCd1Vxf1521M3P2nMRNMVqbBFrnW5fq21r5GV2fcW3-z3Q97hwQ6K=
+V1MNzb3CZFT8W6QdmnB28NrcvW45hg936snzSjW3MsFj73Hqs67W1-BM4J6W-60CW519jcy91Cx=
+cXW9frfZr75Q4X4W1XqZNT4HyCSpW13C4vY6kw8tc38051" target=3D"_blank" style=3D"=
+mso-line-height-rule:exactly; font-size:10px; font-family:Lato,Tahoma,sans-=
+serif; color:#ffffff; font-weight:bold; text-decoration:none; font-style:no=
+rmal; Margin:0; text-transform:none; padding:12px 18px; display:block" data=
+-hs-link-id=3D"1">
+   <!--<![endif]-->
+          Register for T-shirt
+        </a>
+      </td>
+    </tr>
+  </tbody></table>
+</div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1593725174987" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff" bgcolor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:600px">
+<![endif]-->
+<div id=3D"column_1593725174987_0" class=3D"hse-column hse-size-12">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:3px 10px 10px"><div id=3D"hs_cos_wrapper_module_159804517588=
+73" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modul=
+e" style=3D"color: inherit; font-size: inherit; line-height: inherit;" data=
+-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module">
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:580px; height:2pt;" fillcolor=3D"none">
+<v:fill type=3D"tile"/>
+<v:textbox inset=3D"0,0,0,0">
+<div>
+<![endif]-->
+<table role=3D"presentation" width=3D"100%" align=3D"center" border=3D"0" s=
+tyle=3D"position:relative; top:-1px; min-width:20px; width:100%; max-width:=
+100%; border-spacing:0; mso-table-lspace:0pt; mso-table-rspace:0pt; border-=
+collapse:collapse; font-size:1px">
+  <tbody><tr>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+   =20
+    <td width=3D"90%" valign=3D"middle" style=3D"border-collapse:collapse; =
+mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-si=
+ze:18px; color:#232342; word-break:break-word; line-height:0; border:transp=
+arent; border-bottom:1px dashed #3D85C6; mso-border-bottom-alt:1px dashed #=
+3D85C6; border-bottom-width:1px">&nbsp;</td>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+  </tr>
+</tbody></table>
+<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+</div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1562878329615" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff; padding-bottom:24px" =
+bgcolor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:400px;padding-bottom:24px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"400" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:400px">
+<![endif]-->
+<div id=3D"column_1562878329616_0" class=3D"hse-column hse-size-8">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:5px 20px"><div id=3D"hs_cos_wrapper_module_15935260839965" c=
+lass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" st=
+yle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-c=
+os-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wr=
+apper_module_15935260839965_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget=
+ hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit=
+; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-ty=
+pe=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly; font-=
+family:Lato, Tahoma, sans-serif; font-size:28px; line-height:175%">Customer=
+ News</h2></div></div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_16013265984421" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wra=
+pper_module_16013265984421_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget =
+hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit;=
+ line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-typ=
+e=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:20px; l=
+ine-height:150%"><strong>Introducing Battle Fortress!</strong></p></div></d=
+iv></td></tr></tbody></table>
+<div id=3D"hs_cos_wrapper_module_15984634702162" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module">
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:0px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8Kt3p_b1V1-WJV7CgLb7W4RGfVM3xPYwCN81qv9k9m=
+5MdW6qKFyj8Y0cBCW6PCwx28Gk3gVW6jzZBp8NkDDjW8nby4w2ZW--4VkfhkG9hBJc9W35xyv75=
+L8vk9N3Q0zT3rSgVZW27hvHn46BDlSW35kRNT1P9515W8vWVdm5KkXp0W55rDCL3fR6wBW2YWjb=
+88LmTpNN7RZcWZF2kGTV6zX2C6sgVhCW3h_d7L11jtTqW80t74Y2_k1WGW96NG1m6HHs7vW4-0F=
+RB3SjWvYW2jK_rZ99MNbGW8nh0CS8-BRPrW8VXqlg5N0LjsW3nfMTd8RWRssW64tt6W4G6kymW1=
+lmXgJ6-nQkkW3BSDC63YgmnYW6RslgY7MLqwhW7wr4YD6kKdVbN6zbtZ2fVbQ43ppR1" target=
+=3D"_blank" style=3D"color:#00a4bd; mso-line-height-rule:exactly" data-hs-l=
+ink-id=3D"0">
+               =20
+                <img alt=3D"battle fortress" src=3D"https://hs-7639879.f.hu=
+bspotemail.net/hub/7639879/hubfs/battle%20fortress.png?width=3D720&amp;upsc=
+ale=3Dtrue&amp;name=3Dbattle%20fortress.png" style=3D"outline:none; text-de=
+coration:none; -ms-interpolation-mode:bicubic; border:none; max-width:100%;=
+ font-size:16px" width=3D"360" align=3D"middle" srcset=3D"https://hs-763987=
+9.f.hubspotemail.net/hub/7639879/hubfs/battle%20fortress.png?upscale=3Dtrue=
+&amp;width=3D720&amp;upscale=3Dtrue&amp;name=3Dbattle%20fortress.png 360w, =
+https://hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/battle%20fortress.p=
+ng?upscale=3Dtrue&amp;width=3D1440&amp;upscale=3Dtrue&amp;name=3Dbattle%20f=
+ortress.png 720w" sizes=3D"(max-width: 360px) 100vw, 360px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:0px 20px 10px"><div id=3D"hs_cos_wrapper_module_15984635136805=
+" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"=
+ style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-h=
+s-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos=
+_wrapper_module_15984635136805_" class=3D"hs_cos_wrapper hs_cos_wrapper_wid=
+get hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inhe=
+rit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos=
+-type=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:14p=
+x; line-height:175%">RangeForce now offers the industry's only integrated h=
+ands-on skills training platform and hyper-scalable cloud-based cyber range=
+ for continuous remote team training. Battle Fortress is a scalable and re-=
+usable cyber range to recreate an entire IT environment and emulate a compa=
+ny=E2=80=99s existing security tools to support training of remote SOC team=
+s.&nbsp;</p></div></div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15985577331271" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"border-spacing:0 !important; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+    <tbody><tr>
+        <!--[if mso]>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pr=
+esentation"  valign=3D"middle" style=3D"border-radius:10px;cursor:auto;back=
+ground-color:#3574E3;padding:12px 18px;">
+      <a href=3D"https://www.rangeforce.com/press-releases/rangeforce-launc=
+hes-battle-fortress-cyber-range"  target=3D"_blank" style=3D"font-size:10px=
+;font-family:Lato,Tahoma,sans-serif;color:#ffffff;font-weight:bold;text-dec=
+oration:none;font-style:normal;Margin:0;text-transform:none;">
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pres=
+entation" style=3D"border-collapse:collapse; mso-line-height-rule:exactly; =
+font-family:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-b=
+reak:break-word; border-radius:10px; cursor:auto; background-color:#3574E3"=
+>
+    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RLBN4pV-syLT7sJxrx=
+W5j5c_V4gzSpvN46-8Kt3p_b1V1-WJV7CgTY2W1zyCCh86nHTYN2HQn_1bc36ZVH9qY48_m-M0W=
+4CjcQB8Hlf4JN1_tKXcmMlsyW9j7hSk9jgJRfW8M9lWl2gbkF9W15bP5z4v8NMpW3mFy-w1fbSW=
+sW7SK6gz2wH5YpN21yCdqT7msvW8mHK0Z1h-s6dW7vMNpH4pYw6fVB14L04XCblxW3MZ_0C5C9c=
+_6W48klZv3R3W5PW7lnT-76x_sPsW2Y89G25r9WpLW8PCxtf4_HfwYW83gb0G1CDPk4W3l8Lq85=
+D5NSWW1h85x28XcYnJW12y9Mq8Ft9nFW2qBmpK6NqN53W6Nvp2Q3ZqTx6W8kc_lF9llc1nW72qG=
+9M3v9Z7_W2L8pNv2mM_27N6TR1fy28b7fW25qJSn5wb-HP3fTc1" target=3D"_blank" styl=
+e=3D"mso-line-height-rule:exactly; font-size:10px; font-family:Lato,Tahoma,=
+sans-serif; color:#ffffff; font-weight:bold; text-decoration:none; font-sty=
+le:normal; Margin:0; text-transform:none; padding:12px 18px; display:block"=
+ data-hs-link-id=3D"1">
+   <!--<![endif]-->
+          Learn more
+        </a>
+      </td>
+    </tr>
+  </tbody></table>
+</div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_16014051717581" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wra=
+pper_module_16014051717581_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget =
+hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit;=
+ line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-typ=
+e=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:20px; l=
+ine-height:150%"><strong>Customer Feedback Survey</strong></p></div></div><=
+/td></tr></tbody></table>
+<div id=3D"hs_cos_wrapper_module_16014051884312" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module">
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:0px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8Jh3p_8SV1-WJV7CgS45W3flr8y3tSr_qW6ZzxMM8s=
+s5yMW5SM0PP6J-LK1W1vVfk66wlBSPN11RfcmDcd6TW6BwKN-2ddKK4W12_lXG323N4PW1nk3fj=
+6JTrt0W34nPY46zPMdDW7S2DRX1Wlz93W3f7QTb5G2JpzN1rrQVKN0yb8W1WZ_DP30mt6JV5_HY=
+S3km7JRVVWmrV35V0GsVGb7073VwbNLW3TVd4S7Hg940N6f6ntt45F_sW3Zr1SR4QGSM3W7C3Tp=
+_2lK2gwW7JvlnY8pGbmGW5g4zPp5_H7323bR11" target=3D"_blank" style=3D"color:#0=
+0a4bd; mso-line-height-rule:exactly" data-hs-link-id=3D"0">
+               =20
+                <img alt=3D"Screen Shot 2020-06-24 at 1.20.48 PM" src=3D"ht=
+tps://hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-=
+06-24%20at%201.20.48%20PM.png?width=3D580&amp;upscale=3Dtrue&amp;name=3DScr=
+een%20Shot%202020-06-24%20at%201.20.48%20PM.png" style=3D"outline:none; tex=
+t-decoration:none; -ms-interpolation-mode:bicubic; border:none; max-width:1=
+00%; font-size:16px" width=3D"290" align=3D"middle" srcset=3D"https://hs-76=
+39879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-06-24%20at%=
+201.20.48%20PM.png?upscale=3Dtrue&amp;width=3D580&amp;upscale=3Dtrue&amp;na=
+me=3DScreen%20Shot%202020-06-24%20at%201.20.48%20PM.png 290w, https://hs-76=
+39879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-06-24%20at%=
+201.20.48%20PM.png?upscale=3Dtrue&amp;width=3D1160&amp;upscale=3Dtrue&amp;n=
+ame=3DScreen%20Shot%202020-06-24%20at%201.20.48%20PM.png 580w" sizes=3D"(ma=
+x-width: 290px) 100vw, 290px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:0px 20px 10px"><div id=3D"hs_cos_wrapper_module_16014052096434=
+" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"=
+ style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-h=
+s-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos=
+_wrapper_module_16014052096434_" class=3D"hs_cos_wrapper hs_cos_wrapper_wid=
+get hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inhe=
+rit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos=
+-type=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:14p=
+x; line-height:175%">Would you recommend RangeForce? If you have feedback a=
+bout the RangeForce platform and training content, good or bad, check your =
+inbox for our customer feedback survey. We'd love to hear from you!</p></di=
+v></div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_159372564781911" c=
+lass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" st=
+yle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-c=
+os-general-type=3D"widget" data-hs-cos-type=3D"module">
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:360px; height:2pt;" fillcolor=3D"none">
+<v:fill type=3D"tile"/>
+<v:textbox inset=3D"0,0,0,0">
+<div>
+<![endif]-->
+<table role=3D"presentation" width=3D"100%" align=3D"center" border=3D"0" s=
+tyle=3D"position:relative; top:-1px; min-width:20px; width:100%; max-width:=
+100%; border-spacing:0; mso-table-lspace:0pt; mso-table-rspace:0pt; border-=
+collapse:collapse; font-size:1px">
+  <tbody><tr>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+   =20
+    <td width=3D"50%" valign=3D"middle" style=3D"border-collapse:collapse; =
+mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-si=
+ze:18px; color:#232342; word-break:break-word; line-height:0; border:transp=
+arent; border-bottom:1px dashed #3574E3; mso-border-bottom-alt:1px dashed #=
+3574E3; border-bottom-width:1px">&nbsp;</td>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+  </tr>
+</tbody></table>
+<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+</div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:5px 20px"><div id=3D"hs_cos_wrapper_module_15984634935164" cla=
+ss=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" styl=
+e=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos=
+-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrap=
+per_module_15984634935164_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget h=
+s_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit; =
+line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=
+=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly; font-fa=
+mily:Lato, Tahoma, sans-serif; font-size:28px; line-height:175%">Product Re=
+leases</h2></div></div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px 1px"><div id=3D"hs_cos_wrapper_module_15940842213907=
+" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"=
+ style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-h=
+s-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos=
+_wrapper_module_15940842213907_" class=3D"hs_cos_wrapper hs_cos_wrapper_wid=
+get hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inhe=
+rit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos=
+-type=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:20p=
+x; line-height:150%"><strong>Learning Goals - Coming Soon</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+>Setting achievable goals is one of the keys to successful training. In the=
+ coming days, the RangeForce platform will be enhanced with Learning Goals.=
+ Look for the new Goals tab in the menu coming soon!</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+>Learners can set personal weekly or monthly goals on hours spent training =
+or modules completed. Administrators can set similar organizational goals f=
+or learners to achieve to help drive time spent training. Administrators wi=
+ll also be able to view learner progress in achieving these goals.&nbsp;</p=
+></div></div></td></tr></tbody></table>
+<div id=3D"hs_cos_wrapper_module_15980450543871" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module">
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:10px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8Jh3p_8SV1-WJV7CgD1ZVvMnkq8Y48WzW1c1bSc59p=
+qr_N5l0KFHW_0SCW5SytTz53m-PMW3KCcRv3BsJ7wMSjnvNhVRHGW23PHhY3clJhKW8CCQcg46B=
+CcSVm-2Vt3KtT_RW74LWBp1NbTHHW7CmvFv4-Lh6bVbg9k791XXhxW8C-RGz2y3b29W7TPk727w=
+wh8qW2m3XTB6BFN-TW5dJ-zq8XXCG8W88PGch2PszllW7TLVfk63yBC8W82HWvZ86tdDLW91s5c=
+p3mqFhmW4917VZ93j9FyW2pGcNG6zJ2wM3f651" target=3D"_blank" style=3D"color:#0=
+0a4bd; mso-line-height-rule:exactly" data-hs-link-id=3D"0">
+               =20
+                <img alt=3D"Screen Shot 2020-09-29 at 11.44.05 AM" src=3D"h=
+ttps://hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020=
+-09-29%20at%2011.44.05%20AM.png?width=3D720&amp;upscale=3Dtrue&amp;name=3DS=
+creen%20Shot%202020-09-29%20at%2011.44.05%20AM.png" style=3D"outline:none; =
+text-decoration:none; -ms-interpolation-mode:bicubic; border:none; max-widt=
+h:100%; font-size:16px" width=3D"360" align=3D"middle" srcset=3D"https://hs=
+-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-09-29%20=
+at%2011.44.05%20AM.png?upscale=3Dtrue&amp;width=3D720&amp;upscale=3Dtrue&am=
+p;name=3DScreen%20Shot%202020-09-29%20at%2011.44.05%20AM.png 360w, https://=
+hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-09-29%=
+20at%2011.44.05%20AM.png?upscale=3Dtrue&amp;width=3D1440&amp;upscale=3Dtrue=
+&amp;name=3DScreen%20Shot%202020-09-29%20at%2011.44.05%20AM.png 720w" sizes=
+=3D"(max-width: 360px) 100vw, 360px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15984667156344" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:360px; height:2pt;" fillcolor=3D"none">
+<v:fill type=3D"tile"/>
+<v:textbox inset=3D"0,0,0,0">
+<div>
+<![endif]-->
+<table role=3D"presentation" width=3D"100%" align=3D"center" border=3D"0" s=
+tyle=3D"position:relative; top:-1px; min-width:20px; width:100%; max-width:=
+100%; border-spacing:0; mso-table-lspace:0pt; mso-table-rspace:0pt; border-=
+collapse:collapse; font-size:1px">
+  <tbody><tr>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+   =20
+    <td width=3D"50%" valign=3D"middle" style=3D"border-collapse:collapse; =
+mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-si=
+ze:18px; color:#232342; word-break:break-word; line-height:0; border:transp=
+arent; border-bottom:1px dashed #3574E3; mso-border-bottom-alt:1px dashed #=
+3574E3; border-bottom-width:1px">&nbsp;</td>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+  </tr>
+</tbody></table>
+<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+</div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:5px 20px"><div id=3D"hs_cos_wrapper_module_15980356047744" cla=
+ss=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" styl=
+e=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos=
+-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrap=
+per_module_15980356047744_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget h=
+s_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit; =
+line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=
+=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly; font-fa=
+mily:Lato, Tahoma, sans-serif; font-size:28px; line-height:175%">Events</h2=
+></div></div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_16010516358193" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wra=
+pper_module_16010516358193_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget =
+hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit;=
+ line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-typ=
+e=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:20px; l=
+ine-height:150%"><strong>HMG Strategy Webinar</strong></p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%; font-size:14px"=
+>Join us <span style=3D"color: #990100;">tomorrow</span> for an interview w=
+ith Vice Admiral Jan Tighe, Commander U.S. Navy Fleet Cyber. Jan will share=
+ her experiences with the risks and threats faced by the U.S. military duri=
+ng her tenure, best practices for defending against targeted attacks in a d=
+istributed and dynamic environment, and how to implement a successful train=
+ing program across your organization.</p></div></div></td></tr></tbody></ta=
+ble>
+<div id=3D"hs_cos_wrapper_module_15940843090928" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module">
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:10px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8JV3p_9rV1-WJV7CgF1bW5pkjPg2KDyKdW5PKnhb3d=
+nDHGW2kSvG_12BNXYW33ZsyF6v_C2ZW1fq9229k2jYqW3JjT3j3mZRD6W8PfYPt1XrNCVW2Zw4Y=
+R8JwkS-W3ymx7h6mysZcW5kqKKq4QsQk5W506yb52NX3_yW7LkVqQ4JsW_FN5ZV9k23vPcmW8R7=
+ZSF1jhlCKW1KVk-K6jdjsGN6rfcC4qfyj5W1B6VMS3sWp0cN7WQx2rxq1VwW1dGKrP3KTz4VW1x=
+QQKZ5xKT-hW5FNxGz52VMjbW1P4gXy6PGTlTW39HtYC8Sm8cDVVFtXv1dcX5PW6srC7J3VGnMkM=
+54YTyJDvJm3nMs1" target=3D"_blank" style=3D"color:#00a4bd; mso-line-height-=
+rule:exactly" data-hs-link-id=3D"0">
+               =20
+                <img alt=3D"Webinar" src=3D"https://hs-7639879.f.hubspotema=
+il.net/hub/7639879/hubfs/Webinar.jpeg?width=3D720&amp;upscale=3Dtrue&amp;na=
+me=3DWebinar.jpeg" style=3D"outline:none; text-decoration:none; -ms-interpo=
+lation-mode:bicubic; border:none; max-width:100%; font-size:16px" width=3D"=
+360" align=3D"middle" srcset=3D"https://hs-7639879.f.hubspotemail.net/hub/7=
+639879/hubfs/Webinar.jpeg?upscale=3Dtrue&amp;width=3D720&amp;upscale=3Dtrue=
+&amp;name=3DWebinar.jpeg 360w, https://hs-7639879.f.hubspotemail.net/hub/76=
+39879/hubfs/Webinar.jpeg?upscale=3Dtrue&amp;width=3D1440&amp;upscale=3Dtrue=
+&amp;name=3DWebinar.jpeg 720w" sizes=3D"(max-width: 360px) 100vw, 360px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_16014052528425" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"border-spacing:0 !important; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+    <tbody><tr>
+        <!--[if mso]>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pr=
+esentation"  valign=3D"middle" style=3D"border-radius:10px;cursor:auto;back=
+ground-color:#3574E3;padding:12px 18px;">
+      <a href=3D"https://hmgstrategy.lpages.co/rangeforce-webinar-registrat=
+ion-3/"  target=3D"_blank" style=3D"font-size:10px;font-family:Lato,Tahoma,=
+sans-serif;color:#ffffff;font-weight:bold;text-decoration:none;font-style:n=
+ormal;Margin:0;text-transform:none;">
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pres=
+entation" style=3D"border-collapse:collapse; mso-line-height-rule:exactly; =
+font-family:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-b=
+reak:break-word; border-radius:10px; cursor:auto; background-color:#3574E3"=
+>
+    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RLBN4pV-syLT7sJxrx=
+W5j5c_V4gzSpvN46-8JV3p_9rV1-WJV7CgZ57W3dWhH28W-PZXW7R6tnD35QNqvW2FCc5f8yFn4=
+bMMfqdGzQ4kcN7wsmT4BdnlyW71MFGn4_NnnCW1xj9ls8zpD_zW2W9BTq7f140FW206Wfk6CfRp=
+PN8HY1m4jJc_1W5gL_qw2L47PXW99CtLL27jkZ4W5rg4JB3RsFXnN6TpSNH_Q1MQW8rd0Xm7tLX=
+ZYW6ZFHWG96kHHQVJmbkn79DX1zW3RySPd72yF03W5C7TVJ6vF6mxW6FLv5q3Qwt4tW3rk-G-5J=
+Tr2SW5pjRVr29--vGW1xCKds4lSL1RT58f46pnMfdW7Rmhc67ltPZDN1lnr-T7sXtg3l6t1" ta=
+rget=3D"_blank" style=3D"mso-line-height-rule:exactly; font-size:10px; font=
+-family:Lato,Tahoma,sans-serif; color:#ffffff; font-weight:bold; text-decor=
+ation:none; font-style:normal; Margin:0; text-transform:none; padding:12px =
+18px; display:block" data-hs-link-id=3D"1">
+   <!--<![endif]-->
+          Register
+        </a>
+      </td>
+    </tr>
+  </tbody></table>
+</div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+<!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:200px;padding-bottom:24px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"200" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:200px">
+<![endif]-->
+<div id=3D"column_1562878329616_1" class=3D"hse-column hse-size-4">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15935259654603" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_w=
+rapper_module_15935259654603_" class=3D"hs_cos_wrapper hs_cos_wrapper_widge=
+t hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inheri=
+t; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-t=
+ype=3D"rich_text"><p style=3D"mso-line-height-rule:exactly; font-size:28px;=
+ line-height:175%"><strong>Training</strong></p></div></div></td></tr></tbo=
+dy></table>
+<div id=3D"hs_cos_wrapper_module_15935448451578" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module">
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:10px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8JB3p_97V1-WJV7CgGSXW5THnQ71MHRTrN49cLQt42=
+PcJW6GD44H8b5rMLW2wMhvJ31HHfMW5vzYgr4Lg-lbW79zH_Z860VVNW8CS_7h5ttDTCW6cHqL7=
+73nbl_W96l48h2QrPJXVmRfv88Dw5W8W4YDlqs3qmrnTW3Kw9yS9h5VZLW3CsGLg6zKk5VW6tjm=
+zF7S0JmMV51SZz6xHD4bW7LT_3_4CB2SMW18n-t1172dVyW34ZVZZ6CVrhWW43HtlC2_5gGyW3x=
+s7F93jSQL3W5s47Yb2P73grW8hRHLT6DqdZ7W2PG1-p86Tr61W25M6Xg7P461G37Fk1" target=
+=3D"_blank" style=3D"color:#00a4bd; mso-line-height-rule:exactly" data-hs-l=
+ink-id=3D"0">
+               =20
+                <img alt=3D"Screen Shot 2020-09-28 at 11.35.12 AM" src=3D"h=
+ttps://hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020=
+-09-28%20at%2011.35.12%20AM.png?width=3D320&amp;upscale=3Dtrue&amp;name=3DS=
+creen%20Shot%202020-09-28%20at%2011.35.12%20AM.png" style=3D"outline:none; =
+text-decoration:none; -ms-interpolation-mode:bicubic; border:none; max-widt=
+h:100%; font-size:16px" width=3D"160" align=3D"middle" srcset=3D"https://hs=
+-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-09-28%20=
+at%2011.35.12%20AM.png?upscale=3Dtrue&amp;width=3D320&amp;upscale=3Dtrue&am=
+p;name=3DScreen%20Shot%202020-09-28%20at%2011.35.12%20AM.png 160w, https://=
+hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/Screen%20Shot%202020-09-28%=
+20at%2011.35.12%20AM.png?upscale=3Dtrue&amp;width=3D640&amp;upscale=3Dtrue&=
+amp;name=3DScreen%20Shot%202020-09-28%20at%2011.35.12%20AM.png 320w" sizes=
+=3D"(max-width: 160px) 100vw, 160px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_159354485587910" c=
+lass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" st=
+yle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-c=
+os-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wr=
+apper_module_159354485587910_" class=3D"hs_cos_wrapper hs_cos_wrapper_widge=
+t hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inheri=
+t; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-t=
+ype=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly; font=
+-family:Lato, Tahoma, sans-serif; font-size:15px; line-height:150%; font-we=
+ight:bold"><span style=3D"background-color: #ffffff;">Module Walkthrough</s=
+pan></h2>
+<h2 style=3D"margin:0; mso-line-height-rule:exactly; font-family:Lato, Taho=
+ma, sans-serif; font-size:14px; line-height:150%; font-weight:normal">In pa=
+rtnership with the Tech Data Cyber Range, watch a walkthrough of the Revers=
+e Engineering 2 module using Ghidra.&nbsp;</h2></div></div></td></tr></tbod=
+y></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15984635808447" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"border-spacing:0 !important; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+    <tbody><tr>
+        <!--[if mso]>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pr=
+esentation"  valign=3D"middle" style=3D"border-radius:10px;cursor:auto;back=
+ground-color:#3574E3;padding:12px 18px;">
+      <a href=3D"https://www.youtube.com/watch?v=3DJ3uxU8O06r4"  target=3D"=
+_blank" style=3D"font-size:10px;font-family:Lato,Tahoma,sans-serif;color:#f=
+fffff;font-weight:bold;text-decoration:none;font-style:normal;Margin:0;text=
+-transform:none;">
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <td align=3D"center" valign=3D"middle" bgcolor=3D"#3574E3" role=3D"pres=
+entation" style=3D"border-collapse:collapse; mso-line-height-rule:exactly; =
+font-family:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-b=
+reak:break-word; border-radius:10px; cursor:auto; background-color:#3574E3"=
+>
+    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RLBN4pV-syLT7sJxrx=
+W5j5c_V4gzSpvN46-8JB3p_97V1-WJV7CgPX0W46bDVJ1bfybyW1fcB8x4ZFkdvW4SS7tp39B8v=
+lW9kghCv5-wLt3W7xzhF04kGQMhW7v2NKH8X10q2W3GTNg-11-7kFW6rj3vM5bp419N2h9XDnvV=
+wq4W1gXgqM8m25ygW5wLzfm6zPVRVW6QLMGv5p9KnBW5mzst92FHvgNW8b2wtd7-fcHhW3r_jXG=
+23H1qdW2gKbw03_yd8YW660Kh62PW59JW8jXDkR6z-67NVpW1nL16xy8qW78t0ZN63-htRN27VK=
+dGRFrGzW78lLt04Cw_wLW9lmKcm1VJT30W238pnb3G1gJk3hxN1" target=3D"_blank" styl=
+e=3D"mso-line-height-rule:exactly; font-size:10px; font-family:Lato,Tahoma,=
+sans-serif; color:#ffffff; font-weight:bold; text-decoration:none; font-sty=
+le:normal; Margin:0; text-transform:none; padding:12px 18px; display:block"=
+ data-hs-link-id=3D"1">
+   <!--<![endif]-->
+          View
+        </a>
+      </td>
+    </tr>
+  </tbody></table>
+</div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15980456886056" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:160px; height:2pt;" fillcolor=3D"none">
+<v:fill type=3D"tile"/>
+<v:textbox inset=3D"0,0,0,0">
+<div>
+<![endif]-->
+<table role=3D"presentation" width=3D"100%" align=3D"center" border=3D"0" s=
+tyle=3D"position:relative; top:-1px; min-width:20px; width:100%; max-width:=
+100%; border-spacing:0; mso-table-lspace:0pt; mso-table-rspace:0pt; border-=
+collapse:collapse; font-size:1px">
+  <tbody><tr>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+   =20
+    <td width=3D"50%" valign=3D"middle" style=3D"border-collapse:collapse; =
+mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-si=
+ze:18px; color:#232342; word-break:break-word; line-height:0; border:transp=
+arent; border-bottom:1px dashed #3574E3; mso-border-bottom-alt:1px dashed #=
+3574E3; border-bottom-width:1px">&nbsp;</td>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+  </tr>
+</tbody></table>
+<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+</div></td></tr></tbody></table>
+<div id=3D"hs_cos_wrapper_module_159354506132712" class=3D"hs_cos_wrapper h=
+s_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; f=
+ont-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widge=
+t" data-hs-cos-type=3D"module">
+=09
+=09
+<table class=3D"hse-image-wrapper" role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !important; bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+    <tbody>
+        <tr>
+            <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=
+=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:Lat=
+o, Tahoma, sans-serif; color:#232342; word-break:break-word; text-align:cen=
+ter; padding:10px 20px; font-size:0px">
+               =20
+                    <a href=3D"https://i7.t.hubspotemail.net/e2t/tc/MXdH-RL=
+BN4pV-syLT7sJxrxW5j5c_V4gzSpvN46-8JV3p_9rV1-WJV7CgVbgW6gDzmD2hD93nN4pf_-L97=
+35GW2-5hJL1FxXsmW3v6R6c1Z-DdlN6pZYh5ckhfdW6hzwvW7HgKY9W3q3Kgt6qFqvrW843jkZ7=
+l315zN3hnZQtFQlRDW35K9jH7ktd7gN2SHBZ6GRZNdW9jkr8B7V8NzdW29hP_h5ZqPFqW7QBPxw=
+5CFSCtW8FLwsr6PQxbKW6SX66W4XXz76W1drjdY2RNHsfW9llXcg8qHy3kW58zZrh7w1YYhW7rf=
+BYH25J7xWW38B-W07h_TmpW3MyjWj62QYR5W71Tg1w9jyN4qW4_KnsJ2BNtF4VQCNGb7WvS-gN3=
+dnP8w39Lbq36tk1" target=3D"_blank" style=3D"color:#00a4bd; mso-line-height-=
+rule:exactly" data-hs-link-id=3D"0">
+               =20
+                <img alt=3D"New Modules Laptop Kubernetes2" src=3D"https://=
+hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/New%20Modules%20Laptop%20Ku=
+bernetes2.png?width=3D320&amp;upscale=3Dtrue&amp;name=3DNew%20Modules%20Lap=
+top%20Kubernetes2.png" style=3D"outline:none; text-decoration:none; -ms-int=
+erpolation-mode:bicubic; border:none; max-width:100%; font-size:16px" width=
+=3D"160" align=3D"middle" srcset=3D"https://hs-7639879.f.hubspotemail.net/h=
+ub/7639879/hubfs/New%20Modules%20Laptop%20Kubernetes2.png?upscale=3Dtrue&am=
+p;width=3D320&amp;upscale=3Dtrue&amp;name=3DNew%20Modules%20Laptop%20Kubern=
+etes2.png 160w, https://hs-7639879.f.hubspotemail.net/hub/7639879/hubfs/New=
+%20Modules%20Laptop%20Kubernetes2.png?upscale=3Dtrue&amp;width=3D640&amp;up=
+scale=3Dtrue&amp;name=3DNew%20Modules%20Laptop%20Kubernetes2.png 320w" size=
+s=3D"(max-width: 160px) 100vw, 160px">
+               =20
+                    </a>
+               =20
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px 15px"><div id=3D"hs_cos_wrapper_module_1593545077766=
+14" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modul=
+e" style=3D"color: inherit; font-size: inherit; line-height: inherit;" data=
+-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_c=
+os_wrapper_module_159354507776614_" class=3D"hs_cos_wrapper hs_cos_wrapper_=
+widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: i=
+nherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-=
+cos-type=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly;=
+ font-family:Lato, Tahoma, sans-serif; font-size:16px; line-height:125%; fo=
+nt-weight:bold; text-align:center" align=3D"center">New Modules</h2>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+><strong>Learning Paths</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:8px; line-height:125%">=
+&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Web Application Security</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Threat Hunter</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Cybersecurity Foundations</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+><strong>DevOps</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:8px; line-height:125%">=
+&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Kubernetes ClusterIP Service</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Kubernetes NodePort and LoadBalancer Services</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Kubernetes Deployment and Scaling</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- &nbsp;Insecure PRNG</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Docker Persistent Data: Named Volumes</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+><strong>Microsoft</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:8px; line-height:125%">=
+&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- PowerShell Basics - Part 2</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- PKI Web Cert Template</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Sysmon: Process Injection</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- PowerShell Code Signing</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- PKI Web Cert Enrollment</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+><strong>SOC</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:8px; line-height:125%">=
+&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- PostgreSQL Arbitrary Code Execution CVE-2019-9193</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Apache Struts CVE2017-5638</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- IOC Scanning with LOKI</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- RCE Intro</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Wireshark Basics</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Password Cracking Foundations</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Yextend</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Snyk</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- NPM Audit</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+><strong>Web App Security</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:8px; line-height:125%">=
+&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Splunk WebApp IR: Brute Force Detection</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Blind XML External Entries</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- AWS Instance Metadata SSRF</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;<strong>SOC Solutions</strong></p>
+<p style=3D"mso-line-height-rule:exactly; font-size:8px; line-height:125%">=
+&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Carbon Black Endpoint Security</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Splunk Alerts</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:125%"=
+>- Splunk Visualizations</p></div></div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15984662357113" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module">
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:160px; height:2pt;" fillcolor=3D"none">
+<v:fill type=3D"tile"/>
+<v:textbox inset=3D"0,0,0,0">
+<div>
+<![endif]-->
+<table role=3D"presentation" width=3D"100%" align=3D"center" border=3D"0" s=
+tyle=3D"position:relative; top:-1px; min-width:20px; width:100%; max-width:=
+100%; border-spacing:0; mso-table-lspace:0pt; mso-table-rspace:0pt; border-=
+collapse:collapse; font-size:1px">
+  <tbody><tr>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+   =20
+    <td width=3D"50%" valign=3D"middle" style=3D"border-collapse:collapse; =
+mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-si=
+ze:18px; color:#232342; word-break:break-word; line-height:0; border:transp=
+arent; border-bottom:1px dashed #3574E3; mso-border-bottom-alt:1px dashed #=
+3574E3; border-bottom-width:1px">&nbsp;</td>
+   =20
+   =20
+    =09<td width=3D"auto" style=3D"border-collapse:collapse; mso-line-heigh=
+t-rule:exactly; font-family:Lato, Tahoma, sans-serif; font-size:18px; color=
+:#232342; word-break:break-word; line-height:0">&nbsp;</td>
+   =20
+  </tr>
+</tbody></table>
+<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+</div></td></tr></tbody></table>
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" st=
+yle=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-family:=
+Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break-w=
+ord; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_15984661875472" cl=
+ass=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" sty=
+le=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-co=
+s-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wra=
+pper_module_15984661875472_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget =
+hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit;=
+ line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-typ=
+e=3D"rich_text"><h2 style=3D"margin:0; mso-line-height-rule:exactly; font-f=
+amily:Lato, Tahoma, sans-serif; font-size:16px; line-height:175%">Feedback?=
+</h2>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+>&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+>We love your feedback!</p>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:175%"=
+><a href=3D"mailto:customer.success@rangeforce.com" rel=3D" noopener" style=
+=3D"mso-line-height-rule:exactly; color:#79859a" data-hs-link-id=3D"0" targ=
+et=3D"_blank">Contact</a> the RangeForce Customer Success team.</p></div></=
+div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"builtin_section-1" class=3D"hse-section hse-section-last" styl=
+e=3D"padding-left:10px; padding-right:10px; padding-bottom:20px">
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:=
+collapse; border-spacing:0; background-color:#ffffff; padding-bottom:24px" =
+bgcolor=3D"#ffffff">
+    <!--<![endif]-->
+   =20
+    <!--[if (mso)|(IE)]>
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:colla=
+pse;border-spacing:0;">
+      <table align=3D"center" style=3D"border-collapse:collapse;mso-table-l=
+space:0pt;mso-table-rspace:0pt;width:600px;" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:24px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-collapse:collapse;mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;width:600px">
+<![endif]-->
+<div id=3D"builtin_column_1-0" class=3D"hse-column hse-size-12">
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"border-spacing:0 !important; border-collapse:collapse; mso-=
+table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td class=3D"hs_padded" =
+style=3D"border-collapse:collapse; mso-line-height-rule:exactly; font-famil=
+y:Lato, Tahoma, sans-serif; font-size:18px; color:#232342; word-break:break=
+-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_footer_module" class=3D=
+"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"=
+color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-gene=
+ral-type=3D"widget" data-hs-cos-type=3D"module">
+ =20
+ =20
+ =20
+ =20
+ =20
+ =20
+ =20
+<table role=3D"presentation" class=3D"hse-footer hse-secondary" width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:0 !importan=
+t; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; fo=
+nt-family:Arial, sans-serif; font-size:12px; line-height:135%; color:#23496=
+d; margin-bottom:0; padding:0">
+    <tbody>
+        <tr>
+            <td align=3D"center" valign=3D"top" style=3D"border-collapse:co=
+llapse; mso-line-height-rule:exactly; font-family:Lato, Tahoma, sans-serif;=
+ font-size:18px; color:#232342; word-break:break-word; text-align:center; m=
+argin-bottom:0; line-height:135%; padding:10px 20px">
+                <p style=3D"mso-line-height-rule:exactly; font-family:Lato,=
+Tahoma,sans-serif; font-size:12px; font-weight:normal; text-decoration:none=
+; font-style:normal; color:#79859a">
+                  RangeForce, 10440 Balls Ford Rd Suite 180, Manassas, Virg=
+inia 20109, United States
+                </p>
+                <p style=3D"mso-line-height-rule:exactly">
+                 =20
+                  <a data-unsubscribe=3D"true"  href=3D"https://hs-7639879.=
+s.hubspotemail.net/hs/manage-preferences/unsubscribe-all?d=3DVn9Dk_6585wxVv=
+vf6043VrWdW4fNSM23K3fZwW5Bh-k417f7hvW5l2SrG73_mqgW5r_SYY5mp_9BN4NHXXb28Y5FN=
+521BlTGKd_PV20N8L7LnLGNVHNNs97GlTtBN17Pbwp1Xb-k1&amp;v=3D3&amp;utm_campaign=
+=3DCustomer%20Communications&amp;utm_source=3Dhs_email&amp;utm_medium=3Dema=
+il&amp;utm_content=3D96321354&amp;_hsenc=3Dp2ANqtz-_UxHviYlx3kpp6icGu6qqb4S=
+QVaubaSIY4GG5lRICRtBKB7p6YecaDIlpJeKt-kBLneE73AXntLyF7OKHF8u0au9JGWQ&amp;_h=
+smi=3D96321354" style=3D"mso-line-height-rule:exactly; font-family:Lato,Tah=
+oma,sans-serif; font-size:12px; color:#79859a; font-weight:normal; text-dec=
+oration:underline; font-style:normal" data-hs-link-id=3D"0" target=3D"_blan=
+k">Unsubscribe</a>
+                 =20
+                  <a data-unsubscribe=3D"true"  href=3D"https://hs-7639879.=
+s.hubspotemail.net/hs/manage-preferences/unsubscribe?d=3DVn9Dk_6585wxVvvf60=
+43VrWdW4fNSM23K3fZwW5Bh-k417f7hvW5l2SrG73_mqgW5r_SYY5mp_9BN4NHXXb28Y5FN521B=
+lTGKd_PV20N8L7LnLGNVHNNs97GlTtBN17Pbwp1Xb-k1&amp;v=3D3&amp;utm_campaign=3DC=
+ustomer%20Communications&amp;utm_source=3Dhs_email&amp;utm_medium=3Demail&a=
+mp;utm_content=3D96321354&amp;_hsenc=3Dp2ANqtz-_UxHviYlx3kpp6icGu6qqb4SQVau=
+baSIY4GG5lRICRtBKB7p6YecaDIlpJeKt-kBLneE73AXntLyF7OKHF8u0au9JGWQ&amp;_hsmi=
+=3D96321354" style=3D"mso-line-height-rule:exactly; font-family:Lato,Tahoma=
+,sans-serif; font-size:12px; color:#79859a; font-weight:normal; text-decora=
+tion:underline; font-style:normal" data-hs-link-id=3D"0" target=3D"_blank">=
+Manage preferences</a>
+                 =20
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+</div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+ =20
+<img src=3D"https://i7.t.hubspotemail.net/e2t/to/MXdH-RLBN4pV-syLT7sJxrxW5j=
+5c_V4gzSpvf46-8sk22" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=
+=3D"display:none!important;min-height:1px!important;width:1px!important;bor=
+der-width:0!important;margin-top:0!important;margin-bottom:0!important;marg=
+in-right:0!important;margin-left:0!important;padding-top:0!important;paddin=
+g-bottom:0!important;padding-right:0!important;padding-left:0!important"></=
+body></html>
+------=_Part_45753088_470588084.1601414856800--

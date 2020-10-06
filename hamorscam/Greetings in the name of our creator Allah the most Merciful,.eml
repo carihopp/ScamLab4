@@ -1,0 +1,126 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a67:b108:0:0:0:0:0 with SMTP id w8csp130940vsl;
+        Mon, 5 Oct 2020 15:40:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwlYQRfzkLTNv9qj4yalIb+qLbkqR8v0EaUCODQzBMvmT7ACPaUkz6ndPaZXOaZs9MjIGaN
+X-Received: by 2002:a37:76c2:: with SMTP id r185mr2447683qkc.122.1601937643111;
+        Mon, 05 Oct 2020 15:40:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601937643; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Vs8UeyYtE/Nmdk5hMEqAGiN/4U0PAemyw2CTFH2Mdsf6o0CKg+S0RebfuaOIRyP1lz
+         gtRJ19vlUhbuSVihOyrFBfB7fudGvRGQSRSWgNjhe1pqci/hJEMK10/6TEk6i+rXvUrm
+         uefdL9YU+5tiYPf0MLWUX3FAdxj3drS7pkNmIWBQfhTK5GUTX2vjnUDzdXV/HNvD7J+t
+         H9SW6hop1FNuVjyZ9eIQlZbla8V4OE/JXdM5RRVD6aQh8QK+bJeyolqbxTmwaDRU+1XM
+         jqqvC5Ict+wssV1HLKR/p4g6g76hIDjE6nITRYN/nonLkzE5tX7gSGFEMdYAThUgrKiz
+         mqKg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=references:mime-version:subject:message-id:reply-to:from:date
+         :dkim-signature;
+        bh=M6pJ+a7tLcoWY44dm55YaH1Dqjcuw8Y3fTQx+hxrUFw=;
+        b=ekRW8Q5Aw09+cW+aC9xCRlxlzIVm7x62YFrGDM3QeHj7d2u2HlT2rGGdjqRQUQ1sCC
+         hw/Idl3Rq6H3bSv9GWTU8qoh4Zmecn7Xq1SeCJkYdVfCMLpr1T4CSN/ONWcSb9DxxvsL
+         DfnC0NEJvRYHuE8HJSsq5/ncCcy9xCTqaVXYaj++xunst6mBCWnn0p3G//ONNOscfMSr
+         EF/H86SFlwcbOTd44HBur1iIfoJ82j6uH25Fgp1JzkN//YuqesbKuMk7zKHxayOvNBDC
+         oprDX44hr7qIfexaq6Nfy//+g3iVbuqc68cUMFmeXyLzFwjLg9uBZEtp6R3N2qOd1Yfj
+         lmDg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=fGnr+Nhp;
+       spf=softfail (google.com: domain of transitioning abdullahfraammishail01@gmail.com does not designate 74.6.129.42 as permitted sender) smtp.mailfrom=abdullahfraammishail01@gmail.com;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <abdullahfraammishail01@gmail.com>
+Received: from sonic301-3.consmr.mail.bf2.yahoo.com (sonic301-3.consmr.mail.bf2.yahoo.com. [74.6.129.42])
+        by mx.google.com with ESMTPS id l28si666706qtv.402.2020.10.05.15.40.42
+        for <thomposondouglas@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 05 Oct 2020 15:40:43 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning abdullahfraammishail01@gmail.com does not designate 74.6.129.42 as permitted sender) client-ip=74.6.129.42;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=fGnr+Nhp;
+       spf=softfail (google.com: domain of transitioning abdullahfraammishail01@gmail.com does not designate 74.6.129.42 as permitted sender) smtp.mailfrom=abdullahfraammishail01@gmail.com;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1601937642; bh=M6pJ+a7tLcoWY44dm55YaH1Dqjcuw8Y3fTQx+hxrUFw=; h=Date:From:Reply-To:Subject:References:From:Subject; b=fGnr+Nhprj3G6P2cfGiLx9b0BrrXXNc81gmn9LW39OZGH0240asoRN0oM3c/z6VwOnu5qwTCJeqzxH80l2aezu0WKu84lZZdeFEOLN7CuCrGd7RPaQeU6z+okSWXpDqAFNZ3oBX+8kIkjcyDk9lhDrp0xoD75nMrOYZ6JwISF8Oh8KEkcZjJ49q+8Vs4D3o7gsd7PlYgR4Rw5uj/M+9fnib2nnxyzWHkwgCXrsAj+rwzvJ8MhgAWzgQBJZL5OgAJdEVti2e26wkuDWkwTW8ioFSZSbIzIid05ExetNGNQIXzV6v2KDV0X9x4zmYF3SzB+hybj9Dzwsk7rTaCGNOQ4A==
+X-YMail-OSG: PZmqK10VM1mGW6G4kz93rAJzZQRre3gKvLtdlsZBm2IRU3JoQepAct2fmmdsAlO
+ b5j8np1KOhnOtgpzCCI2meuiL_Mf2kX0a_lpYpDl4D1XVZu6fKBoJKVp7ijdu153nLBelyxPwCok
+ 6XYnyRLvpGWKFLhi8_27fDYfTYboBVpxSunlDhjaWhCq6Rib3KxQroksONeETe7TsDqQWdnJ3RHF
+ FwFxbJRO3cBbWprlLiJc.JCONlPOXKFdXolgmQHDJ7Us86tIHuQny1c0HY0.LiDMRGN4RDYhGZbW
+ dplcdcPKWz1V.w4YzaaXESqptdONG2i3q.A6zw6iKa5KqUaaSKw6prUrSskciW74L_kSUHyFcbxN
+ bpJQ9NQiujng3kh2573DgCnfaaXUdaa5w_ZPJ599vhhj2rHkkLLjjlMxHzhAFTEBQW31DMF_WgVx
+ EevMqWRkJ33TgTqsK7HkwgE6S3TNU4dPwKxlYwcatEBRJgpJ2LjEbH6xigJ9snGSuTglWjgx1OU_
+ FLNNFORoAfcOe4jWTCLnOrXcfbwF_GYiAgJSHKjjAkdnwJW5v8v0vCnSoNILnxBAUgwzMG3PI8XY
+ DS1gAqy5I3YppzptStmi8FQY2j2U8CR2UWF8RBWvyA045v2UVvkxVEi2AoF0FTkUdT6ACigfyOm.
+ kj0PcpsS4D_i8m1jtoPTI4QkjK9HMd_rvlRFZmr9nJ57qldafyA11ea9TZ5eiaPxR7RHOk48_6qd
+ IkJR1REI3ERwhOZVKhRTIMKYUYIF5Meppgv.VtijduFL1p3fb6XwLlN89uMwqaeCiHqVBByyB9zK
+ EbGeDmJhXZzEuPfBP0Jq4crjTtnvmt5fXqFx8ovGA.ji35smzFyufYStMhZIXeak_Nc8tDLYULRW
+ 5yCl2Aw_eDlmQvoo197Ovq4IsSFgJvrs_WnEjm0Kc8G_Oo96JCETzz6BqQAnTwoUbocajY5cg3Xw
+ KEoYWmXgApsBJciB0NXEExlYv5KzGJF2akfGR.2l9Zmyunaq_XUUwAHg5HRlzAYPWy.viGSJa9WZ
+ RXb1vf.hfUt1dH2TlXANBbYOhO7_7fhhXc5c.19trdA.2fQU4hzU4AW4zEHWY07P8g28wfwRnLu5
+ HdHyxUrXObio1BNnntaZK1Jskde7Jxu9pFEIhT8B1EHL5Y4XH6NcoRwHrL41AyOS_a_MeiPIROjh
+ BT.TYr0vCbnEpqGLmGKpf2gqq3zUgvChdl41inbW.eqtHYxpeMKjbOB7EqilMMor6XLB3Fnkhfb9
+ KhVieGWFMiI5SLGsldZtW3Gd91WZbXUDpaqhzBjlmg1Pe9WAG9aIoiAGdy7kBZfsCQuzDe5OZ6M5
+ pb5ceLxiyw8SWtTd7bH3ZOTW_ANaweDhOnsLZrWCFRD0EfXddJYtBs97zl6N9BZzIxUN_KdXFF8Z
+ DH95arAxhO30VO09GKdB_Eywytd6fAUAesYPLKBrvONYTdP7x
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic301.consmr.mail.bf2.yahoo.com with HTTP; Mon, 5 Oct 2020 22:40:42 +0000
+Date: Mon, 5 Oct 2020 22:40:38 +0000 (UTC)
+From: Abdullah Fraam Mishail <abdullahfraammishail01@gmail.com>
+Reply-To: Abdullah Fraam Mishail <abdullahfmishail04@gmail.com>
+Message-ID: <1901126710.2092540.1601937638131@mail.yahoo.com>
+Subject: Greetings in the name of our creator Allah the most Merciful,
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2092539_370165191.1601937638130"
+References: <1901126710.2092540.1601937638131.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.16718 YMailNorrin Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+Content-Length: 3724
+
+------=_Part_2092539_370165191.1601937638130
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+My Name is Dr. Abdullah Mishail from Damascus, Syria I am now 51 years Old, and I am now resigned from the government. I was a former personal investor & financial consultant adviser to Syrian Government.
+
+I got your Contact through Chambers & Commerce Industry Yellow Page and I decided to contact you directly to ask you if you know any Lucrative Business Investment in your Country I can invest my Money since my Country Syria Security and Economic Independent has been lost
+to the Greatest Lower level, and our Culture has lost forever including our happiness has been taken away from us.
+
+Our Country has been on fire for many years now and I will like to relocate my family out from Syria.
+I write to seek for your assistance to help me and two young daughters achieve our aim of relocating out of Syria to your country.
+
+I need a foreign partner to enable me transport my investment capital and then Relocate with my family, honestly I wish I will discuss more and get along I need a partner because my investment capital is in my international account. Am interested in buying Properties, houses,
+Building, real estate and some tourist places, my capital for investment is $11,600,000.00 million.
+
+If you are capable of handling this deal Contact me for more details i will appreciate it if you can contact me with my private (abdullahfmishail04@gmail.com )immediately.
+
+You may as well tell me little more about yourself. Contact me urgently to enable us proceed with the business.
+
+SINCERELY YOURS
+Dr. Abdullah Fraam Mishail
+------=_Part_2092539_370165191.1601937638130
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydpc8044154yahoo-style-wrap" style=
+=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px=
+;"><div><div><br></div><div><br></div><div class=3D"ydpc8044154signature">M=
+y Name is Dr. Abdullah Mishail from Damascus, Syria I am now 51 years Old, =
+and I am now resigned from the government. I was a former personal investor=
+ &amp; financial consultant adviser to Syrian Government.<br><br>I got your=
+ Contact through Chambers &amp; Commerce Industry Yellow Page and I decided=
+ to contact you directly to ask you if you know any Lucrative Business Inve=
+stment in your Country I can invest my Money since my Country Syria Securit=
+y and Economic Independent has been lost<br>to the Greatest Lower level, an=
+d our Culture has lost forever including our happiness has been taken away =
+from us.<br><br>Our Country has been on fire for many years now and I will =
+like to relocate my family out from Syria.<br>I write to seek for your assi=
+stance to help me and two young daughters achieve our aim of relocating out=
+ of Syria to your country.<br><br>I need a foreign partner to enable me tra=
+nsport my investment capital and then Relocate with my family, honestly I w=
+ish I will discuss more and get along I need a partner because my investmen=
+t capital is in my international account. Am interested in buying Propertie=
+s, houses,<br>Building, real estate and some tourist places, my capital for=
+ investment is $11,600,000.00 million.<br><br>If you are capable of handlin=
+g this deal Contact me for more details i will appreciate it if you can con=
+tact me with my private (abdullahfmishail04@gmail.com )immediately.<br><br>=
+You may as well tell me little more about yourself. Contact me urgently to =
+enable us proceed with the business.<br><br>SINCERELY YOURS<br>Dr. Abdullah=
+ Fraam Mishail</div></div></div></body></html>
+------=_Part_2092539_370165191.1601937638130--

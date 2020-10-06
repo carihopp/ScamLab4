@@ -1,0 +1,452 @@
+Delivered-To: thomposondouglas@gmail.com
+Received: by 2002:a05:6838:6504:0:0:0:0 with SMTP id eo4csp1067045nkb;
+        Thu, 1 Oct 2020 16:45:15 -0700 (PDT)
+X-Received: by 2002:a05:6830:1553:: with SMTP id l19mr6300535otp.6.1601595915091;
+        Thu, 01 Oct 2020 16:45:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601595915; cv=none;
+        d=google.com; s=arc-20160816;
+        b=mDuEhmXEW7osg067Tqh94IGrzTmXDUNYIyJFpLH6SUPSl1hQ2TMDGlUIIk6DbSfMLt
+         tZBEfUYfiAAWqxNh9eBPu+Y0DXmkTNTIo6h8aGHUuzCOFMF7msyjHbl3k1WUZPAH1O8E
+         i9XFldV5Vxln5wJtD9Opfxx7loAt4kXDQlK5G5OOB2JrsCdwkQUzyMqQwA5g/zIT9W0y
+         e0AdreQYesOx0rIG3UOUMRxRJ9yckds3RK+v4bF3G1+Hjsdn0sMW/Ikqa1dPt75TIS93
+         2B4OvupLVE+nDVPlIYQvzNq8T8lLk96aQYAzA+PajxgqbA5Bo2FHrEkj8uYXj8hiAXNe
+         IpWg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:thread-index:mime-version:from
+         :dkim-signature;
+        bh=+CWMq3s0vabL1Dd2l0stLc0dWFNXiisD7gTQU9RrFnw=;
+        b=xrykCDHgy/UHmGwt8kFcYPZ8j/VZPypoQVudh59dGLXMUyFDpgRZlFmZua1nrF9djd
+         EbR/eskHZIUsqI5YArWph7wO0sEV1ru1S5q+Ay3RzIG+qUOr0NVTC2/2RG3b+7Ts5Oqo
+         QDkeMAANCFoL2Vvh8qO9jL4FOHGrGXGhhLPOD5Za0nizfuHjDR6rB514SOTxfMZi/boU
+         zSm7N2UiwOSToMquiqA8cXrdiBK5jGt5AuG7+mIj+nF6NSocJvmA8WXNEPo4Pr/Sa6h3
+         6za5Kg0d4MLtHGudQOnUiHVfytrmpzhq9fvB12lCZsUy23UMMPWmrmaUZ9y8BB+r76Bx
+         4SUA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@diamondportfolio.com.au header.s=google header.b=Lu74NmAu;
+       spf=pass (google.com: domain of adilorenzo@diamondportfolio.com.au designates 209.85.220.41 as permitted sender) smtp.mailfrom=adilorenzo@diamondportfolio.com.au
+Return-Path: <adilorenzo@diamondportfolio.com.au>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u8sor3416881ooj.10.2020.10.01.16.45.14
+        for <thomposondouglas@gmail.com>
+        (Google Transport Security);
+        Thu, 01 Oct 2020 16:45:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of adilorenzo@diamondportfolio.com.au designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@diamondportfolio.com.au header.s=google header.b=Lu74NmAu;
+       spf=pass (google.com: domain of adilorenzo@diamondportfolio.com.au designates 209.85.220.41 as permitted sender) smtp.mailfrom=adilorenzo@diamondportfolio.com.au
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=diamondportfolio.com.au; s=google;
+        h=from:mime-version:thread-index:date:message-id:subject:to;
+        bh=+CWMq3s0vabL1Dd2l0stLc0dWFNXiisD7gTQU9RrFnw=;
+        b=Lu74NmAuGViThq+nW+Na73xh9MzoaId3w0V1QspT9d9S+nvsFbl4pvdKZWNsWhrcx8
+         8REaE25QAzNub7PS58oPuADhgDvqs9SfNJe619mwTFUJpVvxld78l4FHkGS7mQsVwfjZ
+         OtxhxZovKnjvJRjs/kOkQYUG5EhJWSunVsNei8bDJJh3raVMK6KHw4eE0KSgTiSKB8KH
+         HOEQTMcrRZs+JIrgWRbvD+D97IozkD631JKlQuWMn1zIQ59bbAU6HFaEN7cIB60PJMWe
+         /LlOHwFC+XMRovAnxJqgRKSX+ecjZhAkb7XxeJlvvDDbGJ9n6p5XvpD8YpcXSueatnYl
+         KusA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:mime-version:thread-index:date:message-id
+         :subject:to;
+        bh=+CWMq3s0vabL1Dd2l0stLc0dWFNXiisD7gTQU9RrFnw=;
+        b=W25YyHsCtCZWxQBL70IwUoEqjrgNGNuY6JE4Kvt1H/F/J6TTlAIQXJeiuntGGFSrUw
+         R/4PigF2MVbEfX83/NaMWXoWuwDFszx/Lj8Ux4yulG8qRKHe6JFNAiqiYw0oKNEr1mHN
+         zyDkajOsf+1aSShDjHxSGXVXWYzUdxSFsF9cukzkN/JAMsVfPBoknyC0YGWWAh1Jkx+U
+         2czzIqfLA0tvNaWQKS0FMqyphJTOts0RiZX1xOePgsKztRllSMuZHzd/5gIfpWKS2wl/
+         RwPHjv1D/KMxyeq6hEOHYNseMdXJUvOslqiL7CCGaV8cnCPnAyN1HFh1dI17lbXTMSgG
+         qhgw==
+X-Gm-Message-State: AOAM532EgH+Cd3GiXJ2L32nP1jHsSJcc9UII2SBPAl98zqKdmzwX2MC0
+	768eu9PfHh0YgHC/4wIzRbOaNQtBvZbmszKe/k7yeneHlSU=
+X-Google-Smtp-Source: ABdhPJwNN8+BsuJl1sT66eLSbd0N6LkQbNsq8AV3Bk6hilfD5TaJnE4Uzpiv9jkCTS232LRCj+9algFE8EYlu9YKEj0=
+X-Received: by 2002:a4a:dc06:: with SMTP id p6mr7650765oov.10.1601595914072;
+ Thu, 01 Oct 2020 16:45:14 -0700 (PDT)
+From: Adrian Di Lorenzo <adilorenzo@diamondportfolio.com.au>
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdaYTH7ZPHW5aEzfRWKqIm0+E0igSQ==
+Date: Fri, 2 Oct 2020 09:45:12 +1000
+Message-ID: <bf45bdd38eb771fed82eca1372aefa1f@mail.gmail.com>
+Subject: Pink Diamond Investment
+To: thomposondouglas@gmail.com
+Content-Type: multipart/related; boundary="000000000000886d8605b0a49b26"
+
+--000000000000886d8605b0a49b26
+Content-Type: multipart/alternative; boundary="000000000000886d8505b0a49b25"
+
+--000000000000886d8505b0a49b25
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Good Morning Douglas,
+
+
+
+Trust this email finds you safe and well.
+
+
+
+I am just following up regarding our discussion earlier in the week and
+your investment enquiry. You mentioned you were meeting with an investment
+advisor so I was just touching base to see how you  went with that.
+
+
+
+Is pink diamond investment something you would still like to pursue further=
+?
+
+
+
+If so and or if you have any further questions or queries please feel free
+to reach out.
+
+
+
+Kind regards,
+
+
+
+*ADRIAN DI LORENZO*
+Senior Investment Diamond Advisor
+
+[image: Australian Diamond Portfolio logo]
+
+*D:* 02 8378 2945 <+61283782945>
+*O:* 02 9238 2727 <+61292382727>
+*E:* adilorenzo@diamondportfolio.com.au
+*W:* www.diamondportfolio.com.au
+*A:* Lower Ground=E2=80=8C, 151 Castlereagh Street=E2=80=8C, Sydney=E2=80=
+=8C NSW=E2=80=8C 2000=E2=80=8C
+
+[image: Partners and associations]
+
+Disclaimer: The information contained in this email is purely factual in
+nature and does not take account of your personal objectives, situation or
+needs. The information is objectively ascertainable and does not constitute
+financial product advice. In particular, it is not intended to be a
+recommendation or statement of opinion or to influence you in relation to
+making any decision about a financial product. Australian Diamond Portfolio
+Pty Ltd, its officers, agents, representatives and employees do not hold an
+Australian Financial Services Licence (AFSL). If you require advice about a
+financial product, you should contact a properly licensed or authorised
+financial advisor.
+
+--000000000000886d8505b0a49b25
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+256">
+<html><head><meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered=
+ medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style></head><body lang=3D"EN-AU" link=3D"#0563C1" vlink=3D"#954F72"><=
+div class=3D"WordSection1"><p class=3D"MsoNormal">Good Morning Douglas,</p>=
+<p class=3D"MsoNormal">=C2=A0</p><p class=3D"MsoNormal">Trust this email fi=
+nds you safe and well.</p><p class=3D"MsoNormal">=C2=A0</p><p class=3D"MsoN=
+ormal">I am just following up regarding our discussion earlier in the week =
+and your investment enquiry. You mentioned you were meeting with an investm=
+ent advisor so I was just touching base to see how you =C2=A0went with that=
+.</p><p class=3D"MsoNormal">=C2=A0</p><p class=3D"MsoNormal">Is pink diamon=
+d investment something you would still like to pursue further?</p><p class=
+=3D"MsoNormal">=C2=A0</p><p class=3D"MsoNormal">If so and or if you have an=
+y further questions or queries please feel free to reach out.</p><p class=
+=3D"MsoNormal">=C2=A0</p><p class=3D"MsoNormal">Kind regards,</p><p class=
+=3D"MsoNormal">=C2=A0</p><div><div style=3D"margin-bottom:11.25pt"><p class=
+=3D"MsoNormal"><b><span style=3D"font-size:10.5pt;font-family:&quot;Arial&q=
+uot;,sans-serif;color:#111111">ADRIAN DI LORENZO</span></b><span style=3D"f=
+ont-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#555555"><br=
+>Senior Investment Diamond Advisor</span><span style=3D"font-size:10.5pt;fo=
+nt-family:&quot;Arial&quot;,sans-serif;color:#414042"></span></p><p class=
+=3D"MsoNormal" style=3D"line-height:14.7pt"><span style=3D"font-size:10.5pt=
+;font-family:&quot;Arial&quot;,sans-serif;color:#414042"><img width=3D"339"=
+ height=3D"91" style=3D"width:3.5312in;height:.9479in" id=3D"Picture_x0020_=
+2" src=3D"cid:image001.jpg@01D698A0.B9427D20" alt=3D"Australian Diamond Por=
+tfolio logo"></span></p><p class=3D"MsoNormal"><b><span style=3D"font-size:=
+10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#111111">D:</span></b=
+><span style=3D"font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;c=
+olor:#555555">=C2=A0<a href=3D"tel:+61283782945"><span style=3D"color:#5555=
+55">02 8378 2945</span></a><br></span><b><span style=3D"font-size:10.5pt;fo=
+nt-family:&quot;Arial&quot;,sans-serif;color:#111111">O:</span></b><span st=
+yle=3D"font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#555=
+555">=C2=A0<a href=3D"tel:+61292382727"><span style=3D"color:#555555">02 92=
+38 2727</span></a><br></span><b><span style=3D"font-size:10.5pt;font-family=
+:&quot;Arial&quot;,sans-serif;color:#111111">E:</span></b><span style=3D"fo=
+nt-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#555555">=C2=
+=A0<a href=3D"mailto:adilorenzo@diamondportfolio.com.au"><span style=3D"col=
+or:#d576aa">adilorenzo@diamondportfolio.com.au</span></a><br></span><b><spa=
+n style=3D"font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:=
+#111111">W:</span></b><span style=3D"font-size:10.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#555555">=C2=A0<a href=3D"https://www.diamondport=
+folio.com.au/"><span style=3D"color:#d576aa">www.diamondportfolio.com.au</s=
+pan></a><br></span><b><span style=3D"font-size:10.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#111111">A:</span></b><span style=3D"font-size:10=
+.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#555555">=C2=A0Lower Gr=
+ound=E2=80=8C, 151 Castlereagh Street=E2=80=8C, Sydney=E2=80=8C NSW=E2=80=
+=8C 2000=E2=80=8C</span><span style=3D"font-size:10.5pt;font-family:&quot;A=
+rial&quot;,sans-serif;color:#414042"></span></p><p class=3D"MsoNormal" styl=
+e=3D"line-height:14.7pt"><span style=3D"font-size:10.5pt;font-family:&quot;=
+Arial&quot;,sans-serif;color:#414042"><img border=3D"0" width=3D"344" heigh=
+t=3D"129" style=3D"width:3.5833in;height:1.3437in" id=3D"Picture_x0020_3" s=
+rc=3D"cid:image002.jpg@01D698A0.B9427D20" alt=3D"Partners and associations"=
+></span></p><p class=3D"MsoNormal" style=3D"line-height:10.5pt"><span style=
+=3D"font-size:7.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#555555"=
+>Disclaimer: The information contained in this email is purely factual in n=
+ature and does not take account of your personal objectives, situation or n=
+eeds. The information is objectively ascertainable and does not constitute =
+financial product advice. In particular, it is not intended to be a recomme=
+ndation or statement of opinion or to influence you in relation to making a=
+ny decision about a financial product. Australian Diamond Portfolio Pty Ltd=
+, its officers, agents, representatives and employees do not hold an Austra=
+lian Financial Services Licence (AFSL). If you require advice about a finan=
+cial product, you should contact a properly licensed or authorised financia=
+l advisor.</span><span style=3D"font-size:7.5pt;font-family:&quot;Arial&quo=
+t;,sans-serif;color:#414042"></span></p><p class=3D"MsoNormal" style=3D"lin=
+e-height:10.5pt"><span style=3D"font-size:7.5pt;font-family:&quot;Arial&quo=
+t;,sans-serif;color:#414042">=C2=A0</span></p></div></div><p class=3D"MsoNo=
+rmal">=C2=A0</p></div></body></html>
+
+--000000000000886d8505b0a49b25--
+--000000000000886d8605b0a49b26
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Disposition: inline; filename="image001.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.jpg@01D698A0.B9427D20>
+X-Attachment-Id: e80f5658532a656e_0.1
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABbAVMDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiii
+gAooooAKKKKACiiigBKKztb1aLSLPzHP7xztjHv6/QVyUEE8q7p7m4Mu4neJCC2fWmlc6aOGlUXN
+eyO+pa5KwmmtYzGlxIzocncxPX61sW2sqwxcLtP95elDiTPDyjtqatFNRw6hlIKnoRTqRgFFFFAB
+RRRQAUUUUAFFFFABRRRQAUgORkUUifcX6UAOoopCcCgBaKg+1f8ATGb/AL4o+1f9MZv++KAJ6Kg+
+1f8ATGb/AL4pftI8t3McoCDJyvJ+lAEtFVZrhhsaM4TaWY4zj0zVSG+KyGSaKZpGwANvCg84/Lk/
+lQBrUVnSaizZEUbKBlixH8I/qaU6qF6283AJPy+n/wBc4oAvPIkYy7BR6mlVgwBUgg9CKy1vzGzN
+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
+igD/2Q==
+--000000000000886d8605b0a49b26
+Content-Type: image/jpeg; name="image002.jpg"
+Content-Disposition: inline; filename="image002.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <image002.jpg@01D698A0.B9427D20>
+X-Attachment-Id: e80f5658532a656e_0.2
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCACBAVgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD137ZH
+9sa2+beqbiccfT69KhGqRm2E/lvtZgqcj5ifx4/GmC1tVn83zyJhIXLZ9eMY+nH4U0WsIjlH2sbp
+SCxKrg49sYp6GvuFiTUFjJHlSuUUPJtA+QH1/wDrUv25Wl2RRySgAFmQDC56VXNrbhdsV20amMRv
+jB3AcD6GniKGObfBdGNSFDIMEHHA69OKNBe4Pk1GKKCSVlfEchjIAySR6U5rwi5SEQu28blcEYI4
+yevvUBtbR3zJNuXe0m3OBlv8/rT4Y7eFoD9o3eShRcnscfyxRoHuDjqCkJsjkkd92EXGcA4JNA1K
+BniXLAyqWXIx06j61H5ECiMxXRjkTcAwwcgnJBFNa0s2jEbTZXYU685Jzuz65o0H7hPHfpLPHEqO
+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
+--000000000000886d8605b0a49b26--

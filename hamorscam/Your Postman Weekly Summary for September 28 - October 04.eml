@@ -1,0 +1,697 @@
+Return-Path: <msprvs1=18547gvimxsPp=bounces-277996@sparkpost.bounce.postman.com>
+Received: from mta-214-231.sparkpostmail.com ([147.253.214.231]) by
+ mx-ha.gmx.net (mxgmx116 [212.227.17.5]) with ESMTPS (Nemesis) id
+ 1MSrw6-1jxOHk31xu-00UJ2i for <caretta@gmx.de>; Mon, 05 Oct 2020 18:08:11
+ +0200
+X-MSFBL: V+pyt9+9P0Jog3zz1x+BXDMuKcPEVXsKdd/+WD4JvyI=|eyJtZXNzYWdlX2lkIjo
+	iMDAyN2U5NDQ3YjVmZjBiYjA3ZTYiLCJyIjoiY2FyZXR0YUBnbXguZGUiLCJzdWJ
+	hY2NvdW50X2lkIjoiMCIsImN1c3RvbWVyX2lkIjoiMjc3OTk2IiwidGVuYW50X2l
+	kIjoic3BjIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=email.postman.com;
+	s=scph0120; t=1601914089; i=@email.postman.com;
+	bh=knefQP8kd4IZhx6s29yDpfElbW2jWyltt64uVFbfKFE=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=P4qYIDN0kXGntYlKiaHLFL+5bESDMmif5OOd3r2gIEa174zm2RqPPAOwDoDBdBWZG
+	 jowRtNPg0qOobvjEpEMImTqubUFUN98RuboO8CF4ODiRszjtL2XtDIy9zacWJxJAB+
+	 sVidsx8tQFX026pTVLuevqZspWwp56jw+lANXAOY=
+To: "Caretta" <caretta@gmx.de>
+Message-ID: <70.6E.48112.9E44B7F5@am.mta1vrest.cc.prd.sparkpost>
+Date: Mon, 05 Oct 2020 16:08:09 +0000
+Content-Type: multipart/alternative; boundary="_----HUf2YqDRajn+oRF3P2gYIg===_DE/5E-48112-9E44B7F5"
+MIME-Version: 1.0
+Reply-To: no-reply@postman.com
+Subject: Your Postman Weekly Summary for September 28 - October 04
+X-Campaign-ID: 1583822
+From: "The Postman Team" <postman-team@email.postman.com>
+X-Message-ID: bec1461345d74b4c941bbd8a5f8ca8be
+X-Feedback-ID: 2189035:1583822:26874:iterable
+Feedback-ID: 2189035:1583822:26874:iterable
+List-Unsubscribe: <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:J5F42-88jo11mvU5MvuwW1o60nRIyzJeWxAhdVStMgg~|eyAicmNwdF90byI6ICJjYXJldHRhQGdteC5kZSIsICJ0ZW5hbnRfaWQiOiAic3BjIiwgImN1c3RvbWVyX2lkIjogIjI3Nzk5NiIsICJtZXNzYWdlX2lkIjogIjAwMjdlOTQ0N2I1ZmYwYmIwN2U2IiwgInN1YmFjY291bnRfaWQiOiAiMCIgfQ~~>
+List-Id: <spc.277996.0.sparkpostmail.com>
+Envelope-To: <caretta@gmx.de>
+X-GMX-Antispam: 0 (Mail was not recognized as spam); Detail=V3;
+X-Spam-Flag: NO
+X-UI-Filterresults: notjunk:1;V03:K0:XIJAU9IPb6s=:IZ23y4Sjtney6PhkDbq8CEVltT
+ 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
+
+--_----HUf2YqDRajn+oRF3P2gYIg===_DE/5E-48112-9E44B7F5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Insights from your Postman usage of last week =0A=0A=0A=0A=0A=0AWeekly Summ=
+ary =0A=0A=0A=0A=0A=0AYou, by the Numbers =0A=0ASeptember 28 - October 04 =
+=0A=0A=0A=0A=0AREQUESTS  <https://go.postman.co/me/history> =0A=0A+0  <http=
+s://go.postman.co/me/history> =0A=0A8 Total Requests  <https://go.postman.c=
+o/me/history> =0A=0A=0A=0A=0A=0AThere=E2=80=99s more you can do with Postma=
+n =0A=0A=0A=0A=0A=0AUse Postman Collections to keep your API requests and e=
+lements organized, to =0Adocument APIs, for automated testing, and for lots=
+ more.=0A=0ALearn more <https://www.postman.com/collection/> =0A=0A=0A=0A=
+=0APostman API Builder helps you define, develop, test, monitor, and manage=
+ your =0AAPIs faster.=0A=0ALearn more <https://www.postman.com/api-design/>=
+ =0A=0A=0A=0A=0APostman's mock servers simplify API design and planning, su=
+pport split-stack =0Adevelopment, and lets you see exactly how your API wil=
+l run =E2=80=94 even before it's =0Ain production.=0A=0ALearn more <https:/=
+/www.postman.com/features/mock-api/> =0A=0A=0A=0A=0APostman API Monitoring =
+allows you to review your API responses, availability, =0Aand performance w=
+ith each run so you can ensure that your API is always healthy.=0A=0ALearn =
+more <https://www.postman.com/api-monitoring/> =0A=0A=0A=0A=0ABring your te=
+am to Postman and supercharge your API development =0A=0A=0ACreate a Team <=
+https://go.postman.co/settings/me/team> =0A=0A <https://twitter.com/getpost=
+man>  <https://www.facebook.com/getpostman>  =0A<https://www.linkedin.com/c=
+ompany/postman-platform> =0A=0A55 2nd Street, Suite 300, San Francisco, CA =
+94105=0A=0A=0AYou are receiving this product email because you have an acco=
+unt on Postman.=0A If you no longer wish to receive these emails, please up=
+date your =0Anotification preferences =0A<https://iterable.links.postman.co=
+m/e/eh=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8=
+a5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT8591-HYI-7PQKvTp53P1R2-ER6ThRUZ9AVz5a5f-Sd5=
+_pjJmEh2f0CCh6HuuyHwKjmdlWJM1ScQFnfvrTyFt-cfZSzXZpdrWOPbID2Uj-aEJtKtAxjjE6F=
+Wou1blwNziLn6lxiZw5_KeXIAfXYQxzIuQn-_Aw8rD62oOn57wXQZSp7FOl-fkVi8L1TzJTXQMH=
+lbsCIDd5kvwldBK_tdQB6igb0%3D>=0A.=0A=0A=0AView in Browser =0A<https://itera=
+ble.links.postman.com/e/evib=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Db=
+ec1461345d74b4c941bbd8a5f8ca8be&_e=3DpnYWLW4pml8wmeASMFSFNAdMcp4sT1ErzU7nKN=
+6LSe0fTmMb-cNoGKFxKjcG6rKiYfeXcbisCfJRpyEmlWmQEZ5XSIJoBIPOGc9eGPjBo-o%3D>=
+=0A=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0|=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0Unsubscribe=
+ =0A<https://iterable.links.postman.com/e/encryptedUnsubscribe=3F_r=3D45a94=
+676dd7342a9a5d24a86b9d12ca9&_s=3Dbec1461345d74b4c941bbd8a5f8ca8be&_t=3DpnYW=
+LW4pml8wmeASMFSFNFSjLskLNIteNU5sbTF26L6bGQWei9xPbKI10mKj0LehOhRx_BQd1q-jPgc=
+L5TYZM3dRP2cv1l8aaRRwAaS_m3-b8jpirfedcJLvgfIlrDqLy55ePk3YV7UZslVdCHVBAGZFiK=
+itrKfKmpZwji-rt0lcXbF_ttLMmM2Mz8AV6g3RRh7lOj5MlA4jkkwOdDNjlg%3D%3D>=0A=0A=
+=0A=C2=A9 2020 Postman, Inc. All rights reserved=0A
+--_----HUf2YqDRajn+oRF3P2gYIg===_DE/5E-48112-9E44B7F5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns=3D"http://www.=
+w3.org/1999/xhtml" style=3D"direction:ltr;"> <head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3Dutf-8"><!--[if !mso]><!--><meta h=
+ttp-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><!--<![endif]--><meta n=
+ame=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"> <ti=
+tle></title> <!-- leave blank --><!-- <style type=3D"text/css"> </style> --=
+><!--[if (gte mso 9)|(IE)]><style type=3D"text/css">table{border-collapse:c=
+ollapse!important}</style><![endif]--> <link href=3D"https://fonts.googleap=
+is.com/css=3Ffamily=3DOpen+Sans:600&amp;display=3Dswap" rel=3D"stylesheet">=
+<!--[if mso]><style type=3D=E2=80=9Dtext/css=E2=80=9D>.fallback-text-button=
+{font-family:Arial,Helvetica,sans-serif!important;color:#fff!important}.fal=
+lback-text-black{font-family:Arial,Helvetica,sans-serif!important;color:#28=
+2828!important}.fallback-text-white{font-family:Arial,Helvetica,sans-serif!=
+important;color:#fff!important}</style><![endif]--> <style type=3D"text/css=
+">@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font=
+-display:swap;src:local('Open Sans SemiBold'),local('OpenSans-SemiBold'),ur=
+l(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhpKKST=
+jw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02=
+BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193=
+,U+2212,U+2215,U+FEFF,U+FFFD}body{margin:0!important;padding:0;background-c=
+olor:#fff}table{border-spacing:0;font-family:Arial,Helvetica,sans-serif;col=
+or:#666}td{padding:0}img{border:0}.full-width-image img{width:100%;height:a=
+uto}div[style*=3D"margin: 16px 0"]{margin:0!important}.wrapper{width:100%;t=
+able-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}.=
+webkit{margin:0 auto}.outer{Margin:0 auto;width:100%}.webkit,.outer,.full-w=
+idth-image img{max-width:600px}.inner,.altInner{padding:10px}.feature-box{p=
+adding:40px}.background-gray-1{background-color:#dbe9f2}.background-night-s=
+ky{background-color:#2b3b41}p{Margin:0;Margin-bottom:16px;color:#666;font-s=
+ize:16px;line-height:22px}p a{color:#ff6c37;text-decoration:none;font-weigh=
+t:600}p.h1{font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:22p=
+x;font-weight:bold;Margin-bottom:24px;color:#282828}p.h2{font-family:'Open =
+Sans',Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;Margin-bot=
+tom:16px;color:#282828}p.h3{font-family:'Open Sans',Arial,Helvetica,sans-se=
+rif;font-size:16px;font-weight:bold;Margin-bottom:16px;color:#282828}p.h4{f=
+ont-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:16px;font-weigh=
+t:bold;Margin-bottom:0;color:#282828}.masthead{text-align:center;font-size:=
+0;background-color:#1c272b;color:#fff;padding:20px}.masthead .column{width:=
+100%;max-width:280px;display:inline-block;vertical-align:middle}.masthead .=
+contents{font-size:16px;text-align:left}.mastheadLogo{width:150px;height:au=
+to}.masthead p.type-of-email{color:#fff;text-align:right}.masthead .text{pa=
+dding-top:10px}.one-column .contents{text-align:left}.one-column .contents.=
+text-center{text-align:center}.two-column{font-size:0}.two-column .column{w=
+idth:100%;max-width:300px;display:inline-block;vertical-align:top}.two-colu=
+mn .contents{font-size:16px;text-align:left}.two-column img{width:100%;max-=
+width:280px;height:auto}.two-column .text{padding-top:10px}.left-sidebar,.r=
+ight-sidebar{font-size:0}.left-sidebar .column,.right-sidebar .column{width=
+:100%;display:inline-block}.left-sidebar .column{vertical-align:top}.left-s=
+idebar .left{max-width:33%}.left-sidebar .right{max-width:64%}.left-sidebar=
+ .contents,.right-sidebar .contents{font-size:16px}.right-sidebar .left{max=
+-width:64%}.right-sidebar .right{max-width:33%}.right-sidebar .column{verti=
+cal-align:middle}.right-sidebar .column.right{text-align:right}.font-white{=
+color:#fff!important}.footer{background-color:#1c272b;color:#fff;padding:20=
+px}.footer .column{width:100%;max-width:280px;display:inline-block;vertical=
+-align:middle}.footer .contents{font-size:16px;text-align:center}.footer .t=
+ext-small{color:#fff;font-size:12px}.footer .text-bold{font-weight:600}.foo=
+ter .social-icon{padding-right:10px;padding-left:10px}.contents{width:100%}=
+.emailButton{border-radius:3px;background-color:#ff6c37;display:inline-tab=
+le;-webkit-text-size-adjust:none}.emailButtonContent{padding-top:15px;paddi=
+ng-right:30px;padding-bottom:15px;padding-left:30px}.emailButtonText{color:=
+#fff;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:16px;font=
+-weight:600;text-decoration:none}.mb-0{Margin-bottom:0!important}.mb-1{Marg=
+in-bottom:8px!important}@media screen and (max-width:415px){.two-column .co=
+lumn,.new-three-column .column,.three-column .column,.two-column img,.new-t=
+hree-column img,.left-sidebar .left,.left-sidebar .right{max-width:100%!imp=
+ortant}.three-column img{max-width:50%!important}.mastheadLogo{width:auto;h=
+eight:60px;Margin:0 auto;display:block}p.type-of-email{text-align:center!im=
+portant}.center-align{text-align:center!important}}@media screen and (min-w=
+idth:416px) and (max-width:620px){.three-column .column,.new-three-column .=
+column{max-width:33%!important}.two-column .column,.masthead .column{max-wi=
+dth:50%!important}}@media screen and (max-width:620px){.feature-box{padding=
+:20px!important}.feature-box-alt{padding:10px!important}}@media screen and =
+(max-width:540px){.right-sidebar .left,.right-sidebar .right{max-width:100%=
+!important}.right-sidebar .column.right{text-align:left}}@media(prefers-col=
+or-scheme:dark){.masthead{background-color:#1c272b!important;color:#fff!imp=
+ortant}.emailButton{background-color:#ff6c37!important}.emailButtonText{col=
+or:#fff!important}.background-night-sky{background-color:#2b3b41!important}=
+.footer{background-color:#1c272b!important;color:#fff!important}}</style> =
+</head> <body style=3D"padding: 0; padding-top: 0; padding-bottom: 0; paddi=
+ng-right: 0; padding-left: 0; background-color: #ffffff; margin: 0 !importa=
+nt; margin-top: 0 !important; margin-bottom: 0 !important; margin-right: 0 =
+!important; margin-left: 0 !important;" data-gr-c-s-loaded=3D"true">=0D=0A<=
+div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;bo=
+rder:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!imp=
+ortant;display:none!important;line-height:0px!important;"><img border=3D"0"=
+ width=3D"1" height=3D"1" src=3D"http://sparkpost.links.postman.com/q/wUX_t=
+pBx9GLL2WuxGVJnlA~~/AAQ97AA~/RgRhXcnpPVcDc3BjQgoAJ-lEe1_wuwfmUg5jYXJldHRhQG=
+dteC5kZVgEAAAAAA~~"/></div>=0D=0A<span style=3D"color:transparent;visibilit=
+y:hidden;display:none;opacity:0;height:0;width:0;font-size:0;">Insights fro=
+m your Postman usage of last week</span><img src=3D"https://iterable.links.=
+postman.com/e/eo=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&amp;_m=3Dbec146134=
+5d74b4c941bbd8a5f8ca8be&amp;_e=3DpnYWLW4pml8wmeASMFSFNFSjLskLNIteNU5sbTF26L=
+6bGQWei9xPbKI10mKj0LehOhRx_BQd1q-jPgcL5TYZM3dRP2cv1l8aaRRwAaS_m3_58im0fhlu4=
+W5CSb0wfOki0p2C6Y0yysVubdpkWjkyW3OZ44qxN4EFR1uDPNT9s_Y%3D" style=3D"border:=
+0;width:1px;height:1px;border-width:0px!important;display:none!important;li=
+ne-height:0!important;" width=3D"1" height=3D"1"/> <center class=3D"wrapper=
+" style=3D"width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%;"> <div class=3D"webkit" style=3D"margin: 0 au=
+to; margin-top: 0; margin-bottom: 0; margin-right: auto; margin-left: auto;=
+ max-width: 600px;"><!--[if (gte mso 9)|(IE)]><table width=3D"600" align=3D=
+"center" style=3D"border-spacing:0;font-family:Arial, Helvetica, sans-serif=
+;color:#666666;"> <tr> <td style=3D"padding-top:0;padding-bottom:0;padding-=
+right:0;padding-left:0;"><![endif]--> <table align=3D"center" class=3D"oute=
+r" style=3D"border-spacing: 0; font-family: Arial, Helvetica, sans-serif; c=
+olor: #666666; Margin: 0 auto; width: 100%; max-width: 600px;" width=3D"100=
+%"><!-- START full-width masthead section --> <tbody> <tr> <td class=3D"mas=
+thead" style=3D"padding: 20px; text-align: center; font-size: 0; background=
+-color: #1C272B; color: #ffffff; padding-top: 20px; padding-bottom: 20px; p=
+adding-right: 20px; padding-left: 20px;" align=3D"center" bgcolor=3D"#1C272=
+B"><!--[if (gte mso 9)|(IE)]><table width=3D"100%" style=3D"border-spacing:=
+0;font-family:Arial, Helvetica, sans-serif;color:#666666;"> <tr> <td width=
+=3D"50%" valign=3D"middle" style=3D"padding-top:0;padding-bottom:0;padding-=
+right:0;padding-left:0;"><![endif]--> <div class=3D"column" style=3D"width:=
+ 100%; max-width: 280px; display: inline-block; vertical-align: middle;"> <=
+table style=3D"border-spacing: 0; font-family: Arial, Helvetica, sans-serif=
+; color: #666666;" width=3D"100%"> <tbody> <tr> <td style=3D"padding: 0; pa=
+dding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0;"> <tabl=
+e class=3D"contents" style=3D"border-spacing: 0; font-family: Arial, Helvet=
+ica, sans-serif; color: #666666; width: 100%; font-size: 16px; text-align: =
+left;" width=3D"100%" align=3D"left"> <tbody> <tr> <td style=3D"padding: 0;=
+ padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0;"><im=
+g alt=3D"Postman" class=3D"mastheadLogo" style=3D"border: 0; border-width: =
+0; width: 150px; height: auto;" width=3D"150" src=3D"https://assets.getpost=
+man.com/email/postman-logo-horizontal.png"> </td> </tr> </tbody> </table> <=
+/td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td><td widt=
+h=3D"50%" valign=3D"middle" style=3D"padding-top:0;padding-bottom:0;padding=
+-right:0;padding-left:0;"><![endif]--> <div class=3D"column" style=3D"width=
+: 100%; max-width: 280px; display: inline-block; vertical-align: middle;"> =
+<table style=3D"border-spacing: 0; font-family: Arial, Helvetica, sans-seri=
+f; color: #666666;" width=3D"100%"> <tbody> <tr> <td style=3D"padding: 0; p=
+adding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0;"> <tab=
+le class=3D"contents" style=3D"border-spacing: 0; font-family: Arial, Helve=
+tica, sans-serif; color: #666666; width: 100%; font-size: 16px; text-align:=
+ left;" width=3D"100%" align=3D"left"> <tbody> <tr> <td class=3D"text" styl=
+e=3D"padding: 0; padding-bottom: 0; padding-right: 0; padding-left: 0; padd=
+ing-top: 10px;"> <p class=3D"fallback-text-white h2 type-of-email mb-1" sty=
+le=3D"Margin: 0; line-height: 22px; font-family: 'Open Sans', Arial, Helvet=
+ica, sans-serif; font-size: 20px; font-weight: bold; color: #ffffff; text-a=
+lign: right; Margin-bottom: 8px !important;">Weekly Summary </p> </td> </tr=
+> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9=
+)|(IE)]></td> </tr> </table><![endif]--></td> </tr> <!-- START single-colum=
+n section, with light-blue background --> <tr> <td class=3D"one-column" sty=
+le=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding-right: 0; padd=
+ing-left: 0;"> <table style=3D"border-spacing: 0; font-family: Arial, Helve=
+tica, sans-serif; color: #666666; margin-bottom: 32px !important;" width=3D=
+"100%"> <tbody> <tr> <td class=3D"feature-box-alt contents background-white=
+" style=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding-right: 0;=
+ padding-left: 0; width: 100%; text-align: left;" width=3D"100%" align=3D"l=
+eft"> <table style=3D"border-spacing: 0; font-family: Arial, Helvetica, san=
+s-serif; color: #666666;" width=3D"100%"><!-- START section heading --> <tb=
+ody> <tr> <td class=3D"one-column" style=3D"padding: 0; padding-top: 0; pad=
+ding-bottom: 0; padding-right: 0; padding-left: 0;"> <table style=3D"border=
+-spacing: 0; font-family: Arial, Helvetica, sans-serif; color: #666666; mar=
+gin: 16px 0px !important;" width=3D"100%"> <tbody> <tr> <td class=3D"inner =
+contents" style=3D"padding: 10px; padding-top: 10px; padding-bottom: 10px; =
+padding-right: 10px; padding-left: 10px; width: 100%; text-align: left;" wi=
+dth=3D"100%" align=3D"left"> <p class=3D"fallback-text-black h1" style=3D"M=
+argin: 0; Margin-bottom: 24px; margin: 0px 0px 16px; line-height: 34px; fon=
+t-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 32px; font-=
+weight: bold; color: #505050; text-align: center;">You, by the Numbers </p>=
+ <p class=3D"fallback-text-black" style=3D"Margin: 0; Margin-bottom: 16px; =
+margin: 0px 0px 16px; line-height: 22px; font-family: 'Open Sans', Arial, H=
+elvetica, sans-serif; font-size: 24px; font-weight: bold; color: #666666; t=
+ext-align: center;">September 28 - October 04 </p> </td> </tr> </tbody> </t=
+able> </td> </tr> <!-- START 1/3 + 2/3 section --> <tr> <td style=3D"paddin=
+g: 0; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0;=
+"> <table style=3D"border-spacing: 0; font-family: Arial, Helvetica, sans-s=
+erif; color: #666666;" width=3D"100%"> <tbody> <tr> <td class=3D"two-column=
+" style=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding-right: 0;=
+ padding-left: 0; font-size: 0;"><!--[if (gte mso 9)|(IE)]><table width=3D"=
+100%" style=3D"border-spacing:0;font-family:Arial, Helvetica, sans-serif;co=
+lor:#666666;"> <tr><![endif]--> <!--[if (gte mso 9)|(IE)]><td width=3D"50%"=
+ valign=3D"top" style=3D"padding-top:0;padding-bottom:0;padding-right:0;pad=
+ding-left:0;"><![endif]--> <div class=3D"column" style=3D"max-width: 300px;=
+ width: 100%; display: inline-block; vertical-align: top;"> <table style=3D=
+"border-spacing: 20px; font-family: Arial, Helvetica, sans-serif; color: #6=
+66666;" width=3D"100%"> <tbody> <tr> <td class=3D"inner contents" style=3D"=
+padding: 10px; font-size: 16px; padding-top: 25px; padding-bottom: 25px; pa=
+dding-right: 10px; padding-left: 10px; width: 100%; text-align: left; borde=
+r: 1px solid #C4C4C4; border-radius: 8px;" width=3D"100%" align=3D"left"> <=
+p class=3D"fallback-text-black" style=3D"Margin-bottom: 16px; color: #66666=
+6; Margin: 0; font-size: 24px; line-height: 38px; font-family: 'Open Sans',=
+ Arial, Helvetica, sans-serif; font-weight: bold; text-align: center;"><a s=
+tyle=3D"color: #FF6C37; font-weight: 600; text-decoration: none;" href=3D"h=
+ttps://iterable.links.postman.com/u/click=3F_t=3D45a94676dd7342a9a5d24a86b9=
+d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT85919-nu=
+oMlZQwp4MsNt6MywDmk8apWFrqx4UKGdBngMUeHs75gjEw7TBlwSiPYuAWMBKWIVeB4dP3UcYdb=
+mUG7HkqlFd1TLQZAUvKq2E4Y_oj5fb6aq46pfL30CdTcQZk1PSzbwCS65VB_AFnTNIbX2TGMSla=
+GONnEseX2id_FMNjQdA1hb3As931wjamtBasiGQ2jEsYsyRR-63PsPMfDKY5cAicvj-7YUpgR3-=
+k86ou-YrafazA_pEH3JdJi5PgwlPiglT9RR3JU5z_AaOJIka-G1P0bsv0ey2o0LEnlsMEzinlmc=
+sq35N6TSAppOQH_MDjAcFXd6LnMz0sAkyQArRc%3D"><span style=3D"color:#282828;">R=
+EQUESTS</span> </a> </p> <p class=3D"fallback-text-black" style=3D"Margin-b=
+ottom: 16px; color: #666666; Margin: 16px 0px; font-size: 60px; line-height=
+: 70px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight=
+: bold; text-align: center;"><a style=3D"color: #FF6C37; font-weight: 600; =
+text-decoration: none;" href=3D"https://iterable.links.postman.com/u/click=
+=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca=
+8be&_e=3DL3w0i9m4Lg92W7SlT85919-nuoMlZQwp4MsNt6MywDmk8apWFrqx4UKGdBngMUeHs7=
+5gjEw7TBlwSiPYuAWMBKWIVeB4dP3UcYdbmUG7HkqlFd1TLQZAUvKq2E4Y_oj5fb6aq46pfL30C=
+dTcQZk1PeWABzjkkHTIGYuhYY_JpVIrhNRSVwDrc-UqaZoRiOenME4zRZHCK-XUov0UGff3swxg=
+LdkBRT2qdLkTrcOTlfzTK4eThg51Vv76j8t8gZIqRi6-EMlyakLGiuKd_HTC6Jt6Oj5an6OzAaZ=
+AL6N85Jsla7zseJcn3vXW0eLXOhrbnJb03KgMJ_u2A5dWqG7jqg0Fn52UuKuvaOqHVpYI64Q%3D=
+"><span style=3D"color:#282828;">+0</span> </a> </p> <p class=3D"fallback-t=
+ext-black" style=3D"Margin-bottom: 16px; color: #666666; Margin: 0; line-he=
+ight: 25px; font-size: 16px; font-family: 'Open Sans', Arial, Helvetica, sa=
+ns-serif; text-align: center;"><a style=3D"color: #FF6C37; font-weight: 600=
+; text-decoration: none;" href=3D"https://iterable.links.postman.com/u/clic=
+k=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8c=
+a8be&_e=3DL3w0i9m4Lg92W7SlT85919-nuoMlZQwp4MsNt6MywDmk8apWFrqx4UKGdBngMUeHs=
+75gjEw7TBlwSiPYuAWMBKWIVeB4dP3UcYdbmUG7HkqlFd1TLQZAUvKq2E4Y_oj5fb6aq46pfL30=
+CdTcQZk1PW2LaqlbP7SSvkMAAoDVZ85l-gtuo1jO9K1kTjSgXNTyikpKmXeeBiXvhJ0qZ1RyujG=
+XQWxD-8FzuuF-aWjWAYnlIGhkScWVpJwfOc2b7hCpprc7dgMbyiyMyVXBK_GsoBj6IsMYS0z2M6=
+KCDFtkLUZi0nmzt8JENqaCNUTTyr_BNxyqbb6VBnRJgknFS4Z7uFTyOdeYXOmM6rATcYgPt0Y%3=
+D"><span style=3D"color:#666666;">8 Total Requests</span> </a> </p> </td> <=
+/tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td><![endif]--> <=
+!--[if (gte mso 9)|(IE)]></tr> </table><![endif]--></td> </tr> </tbody> </t=
+able> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </t=
+r> <!-- START single-column section, with gray background --><!-- --> <tr> =
+<td class=3D"one-column" style=3D"padding: 0; padding-top: 0; padding-botto=
+m: 0; padding-right: 0; padding-left: 0;"> <table style=3D"border-spacing: =
+0; font-family: Arial, Helvetica, sans-serif; color: #666666; margin-bottom=
+: 32px !important;" width=3D"100%"> <tbody> <tr> <td class=3D"feature-box-a=
+lt contents background-white" style=3D"padding: 0; padding-top: 0; padding-=
+bottom: 0; padding-right: 0; padding-left: 0; width: 100%; text-align: left=
+;" width=3D"100%" align=3D"left"> <table style=3D"border-spacing: 0; font-f=
+amily: Arial, Helvetica, sans-serif; color: #666666;" width=3D"100%"><!-- S=
+TART section heading --> <tbody> <tr> <td class=3D"one-column" style=3D"pad=
+ding: 0; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left:=
+ 0;"> <table style=3D"border-spacing: 0; font-family: Arial, Helvetica, san=
+s-serif; color: #666666; margin-bottom: 16px !important;" width=3D"100%"> <=
+tbody> <tr> <td class=3D"inner contents" style=3D"padding: 10px; padding-to=
+p: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; wid=
+th: 100%; text-align: left;" width=3D"100%" align=3D"left"> <p class=3D"fal=
+lback-text-black h2" style=3D"Margin: 0; line-height: 22px; font-family: 'O=
+pen Sans', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold=
+; Margin-bottom: 16px; color: #282828;">There=E2=80=99s more you can do wit=
+h Postman </p> <img alt height=3D"2" style=3D"border: 0; border-width: 0;" =
+width=3D"200" src=3D"https://assets.getpostman.com/email/rule-orange-80.jpg=
+"> </td> </tr> </tbody> </table> </td> </tr> <!-- START 1/3 + 2/3 section -=
+-> <tr> <td style=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding=
+-right: 0; padding-left: 0;"> <table style=3D"border-spacing: 0; font-famil=
+y: Arial, Helvetica, sans-serif; color: #666666;" width=3D"100%"> <tbody><!=
+-- --> <tr> <td class=3D"left-sidebar" style=3D"padding: 0; padding-top: 0;=
+ padding-bottom: 0; padding-right: 0; padding-left: 0; font-size: 0;"><!--[=
+if (gte mso 9)|(IE)]><table width=3D"100%" style=3D"border-spacing:0;font-f=
+amily:Arial, Helvetica, sans-serif;color:#666666;"> <tr> <td width=3D"15%" =
+valign=3D"top" style=3D"padding-top:0;padding-bottom:0;padding-right:0;padd=
+ing-left:0;"><![endif]--> <div class=3D"column left" style=3D"width: 100%; =
+display: inline-block; vertical-align: top; max-width: 15%;"> <table style=
+=3D"border-spacing: 0; font-family: Arial, Helvetica, sans-serif; color: #6=
+66666; margin-bottom: 8px !important;" width=3D"100%"> <tbody> <tr> <td cla=
+ss=3D"inner full-width-image" style=3D"padding: 10px; padding-top: 10px; pa=
+dding-bottom: 10px; padding-right: 10px; padding-left: 10px;"> <div style=
+=3D"text-align:center"><img alt style=3D"border: 0; border-width: 0; width:=
+ 100%; height: auto; max-width: 100px;" width=3D"70" src=3D"https://skills-=
+assets.pstmn.io/email-assets/collection_icon.png"> </div> </td> </tr> </tbo=
+dy> </table> </div> <!--[if (gte mso 9)|(IE)]></td><td width=3D"85%" valign=
+=3D"top" style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-le=
+ft:0;"><![endif]--> <div class=3D"column right" style=3D"width: 100%; displ=
+ay: inline-block; vertical-align: top; max-width: 85%;"> <table style=3D"bo=
+rder-spacing: 0; font-family: Arial, Helvetica, sans-serif; color: #666666;=
+" width=3D"100%"> <tbody> <tr> <td class=3D"inner contents" style=3D"paddin=
+g: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padd=
+ing-left: 10px; width: 100%; text-align: left; font-size: 16px;" width=3D"1=
+00%" align=3D"left"> <p style=3D"Margin: 0; Margin-bottom: 16px; color: #66=
+6666; font-size: 14px; font-family: 'Open Sans', Arial, Helvetica, sans-ser=
+if; line-height: 22px;">Use Postman Collections to keep your API requests a=
+nd elements organized, to document APIs, for automated testing, and for lot=
+s more. </p> <p style=3D"color: #666666; Margin: 0; Margin-bottom: 16px; fo=
+nt-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; line=
+-height: 22px;"><a style=3D"color: #FF6C37; text-decoration: none; font-wei=
+ght: 600;" href=3D"https://iterable.links.postman.com/u/click=3F_t=3D45a946=
+76dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i=
+9m4Lg92W7SlT85914Lk2z84iIB5A1n_GcnAmxzfXmekz4EmMoU5Vsx_2M7xjgTUF9gctxU1y4rP=
+aKBiLqy9cnLLa738i2K9oZ2Q265D1bfYcuoflagwIRz5g2Q0X2G6ttP_WavaQBjNzyhCN82TFcM=
+-EP_BlZ6L613Wszd_y8-Lz81FgzCOdAPdA1oQ8AjoiU04BO__SE5-0LGLD315ljPxWaWha0djz1=
+8tjIz8clWopzsa6cwXA6DveLRL4iPPTuCwvEK84fZnREmUVocZ5PopBDnoaUUXPNdB0i2kPigXl=
+fZPpTgQKTYkTOQj8l8V_M1Z48CxCzfT9R1tzqf_bNYtHW1S3jJmMk8yK_Y%3D">Learn more</=
+a> </p> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td=
+> </tr> </table><![endif]--></td> </tr> <!-- --> <tr> <td class=3D"left-sid=
+ebar" style=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding-right=
+: 0; padding-left: 0; font-size: 0;"><!--[if (gte mso 9)|(IE)]><table width=
+=3D"100%" style=3D"border-spacing:0;font-family:Arial, Helvetica, sans-seri=
+f;color:#666666;"> <tr> <td width=3D"15%" valign=3D"top" style=3D"padding-t=
+op:0;padding-bottom:0;padding-right:0;padding-left:0;"><![endif]--> <div cl=
+ass=3D"column left" style=3D"width: 100%; display: inline-block; vertical-a=
+lign: top; max-width: 15%;"> <table style=3D"border-spacing: 0; font-family=
+: Arial, Helvetica, sans-serif; color: #666666; margin-bottom: 8px !importa=
+nt;" width=3D"100%"> <tbody> <tr> <td class=3D"inner full-width-image" styl=
+e=3D"padding: 10px; padding-top: 10px; padding-bottom: 10px; padding-right:=
+ 10px; padding-left: 10px;"> <div style=3D"text-align:center"><img alt styl=
+e=3D"border: 0; border-width: 0; width: 100%; height: auto; max-width: 100p=
+x;" width=3D"70" src=3D"https://skills-assets.pstmn.io/email-assets/api_ico=
+n.png"> </div> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE=
+)]></td><td width=3D"85%" valign=3D"top" style=3D"padding-top:0;padding-bot=
+tom:0;padding-right:0;padding-left:0;"><![endif]--> <div class=3D"column ri=
+ght" style=3D"width: 100%; display: inline-block; vertical-align: top; max-=
+width: 85%;"> <table style=3D"border-spacing: 0; font-family: Arial, Helvet=
+ica, sans-serif; color: #666666;" width=3D"100%"> <tbody> <tr> <td class=3D=
+"inner contents" style=3D"padding: 10px; padding-top: 10px; padding-bottom:=
+ 10px; padding-right: 10px; padding-left: 10px; width: 100%; text-align: le=
+ft; font-size: 16px;" width=3D"100%" align=3D"left"> <p style=3D"Margin: 0;=
+ Margin-bottom: 16px; color: #666666; font-size: 14px; font-family: 'Open S=
+ans', Arial, Helvetica, sans-serif; line-height: 22px;">Postman API Builder=
+ helps you define, develop, test, monitor, and manage your APIs faster. </p=
+> <p style=3D"color: #666666; Margin: 0; Margin-bottom: 16px; font-family: =
+'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22=
+px;"><a style=3D"color: #FF6C37; text-decoration: none; font-weight: 600;" =
+href=3D"https://iterable.links.postman.com/u/click=3F_t=3D45a94676dd7342a9a=
+5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W7Sl=
+T85914Lk2z84iIB5A1n_GcnAmxzC3Yz2o8NAJgZVWE-gjNCBh0nUA5cfbiecu99KscSnJst3pGL=
+QZOHbEy3vPPfBZ2F10B7nCnq2NM3z1XDXkF94C9DsSZ3LlDzTDGHu7hdykBGE3PpKLvOQI33K0c=
+-xzxJgxsmJdiJ61M5Zmuf2eH-pATS6ek_qx55aX8xMareEodN9i--2VJH8h16zighw2NIHrn7Pc=
+pGRCtRUOTUr0oo4vY2cPuqtOuG0DRsumatLj_AkFxIjxSlW5_dR4XEpS0LkaN2Z4a9s81te1XYW=
+30b-g9r6nMaXwgxuZX3ETa2zUx9Ra_q8BKw-vzUuAdGoMPo%3D">Learn more</a> </p> </t=
+d> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td> </tr> </t=
+able><![endif]--></td> </tr> <!-- --> <tr> <td class=3D"left-sidebar" style=
+=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding-right: 0; paddin=
+g-left: 0; font-size: 0;"><!--[if (gte mso 9)|(IE)]><table width=3D"100%" s=
+tyle=3D"border-spacing:0;font-family:Arial, Helvetica, sans-serif;color:#66=
+6666;"> <tr> <td width=3D"15%" valign=3D"top" style=3D"padding-top:0;paddin=
+g-bottom:0;padding-right:0;padding-left:0;"><![endif]--> <div class=3D"colu=
+mn left" style=3D"width: 100%; display: inline-block; vertical-align: top; =
+max-width: 15%;"> <table style=3D"border-spacing: 0; font-family: Arial, He=
+lvetica, sans-serif; color: #666666; margin-bottom: 8px !important;" width=
+=3D"100%"> <tbody> <tr> <td class=3D"inner full-width-image" style=3D"paddi=
+ng: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; pad=
+ding-left: 10px;"> <div style=3D"text-align:center"><img alt style=3D"borde=
+r: 0; border-width: 0; width: 100%; height: auto; max-width: 100px;" width=
+=3D"70" src=3D"https://skills-assets.pstmn.io/email-assets/mock_icon.png"> =
+</div> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td>=
+<td width=3D"85%" valign=3D"top" style=3D"padding-top:0;padding-bottom:0;pa=
+dding-right:0;padding-left:0;"><![endif]--> <div class=3D"column right" sty=
+le=3D"width: 100%; display: inline-block; vertical-align: top; max-width: 8=
+5%;"> <table style=3D"border-spacing: 0; font-family: Arial, Helvetica, san=
+s-serif; color: #666666;" width=3D"100%"> <tbody> <tr> <td class=3D"inner c=
+ontents" style=3D"padding: 10px; padding-top: 10px; padding-bottom: 10px; p=
+adding-right: 10px; padding-left: 10px; width: 100%; text-align: left; font=
+-size: 16px;" width=3D"100%" align=3D"left"> <p style=3D"Margin: 0; Margin-=
+bottom: 16px; color: #666666; font-size: 14px; font-family: 'Open Sans', Ar=
+ial, Helvetica, sans-serif; line-height: 22px;">Postman's mock servers simp=
+lify API design and planning, support split-stack development, and lets you=
+ see exactly how your API will run =E2=80=94 even before it's in production=
+. </p> <p style=3D"color: #666666; Margin: 0; Margin-bottom: 16px; font-fa=
+mily: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-heig=
+ht: 22px;"><a style=3D"color: #FF6C37; text-decoration: none; font-weight: =
+600;" href=3D"https://iterable.links.postman.com/u/click=3F_t=3D45a94676dd7=
+342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg=
+92W7SlT85914Lk2z84iIB5A1n_GcnAmxxeg8a9NVPMasPBCCwXfs5exsaVE-pZFekqqkA2ayHA8=
+EVXLZP9Vb7igangruc6hs-e8a4nRtFzhfKhxwBMPfRGcZKNuaQky7nGcIIiTIEO22U1OajkI4HL=
+BHmcJaLSfqmwEVLrSLOWG9-ImJNnspB-tkiq92uHnK8Mzu-7Q5kKYWfbEzHOX9aHpmO9TyCWFPx=
+JP8ZRKl7cg3lUxqKClq5sAyTWGYHTYDttaZaZz5nGhTUCRDJKRnPn040lG4CApfPZb2DZIZzQUE=
+Yofv0PyGjuaqp03_cixcOLbUycqAGoZ1s7HDeJcZFTJzVFy1MWcb8%3D">Learn more</a> </=
+p> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td> </t=
+r> </table><![endif]--></td> </tr> <!-- --> <tr> <td class=3D"left-sidebar"=
+ style=3D"padding: 0; padding-top: 0; padding-bottom: 0; padding-right: 0; =
+padding-left: 0; font-size: 0;"><!--[if (gte mso 9)|(IE)]><table width=3D"1=
+00%" style=3D"border-spacing:0;font-family:Arial, Helvetica, sans-serif;col=
+or:#666666;"> <tr> <td width=3D"15%" valign=3D"top" style=3D"padding-top:0;=
+padding-bottom:0;padding-right:0;padding-left:0;"><![endif]--> <div class=
+=3D"column left" style=3D"width: 100%; display: inline-block; vertical-alig=
+n: top; max-width: 15%;"> <table style=3D"border-spacing: 0; font-family: A=
+rial, Helvetica, sans-serif; color: #666666; margin-bottom: 8px !important;=
+" width=3D"100%"> <tbody> <tr> <td class=3D"inner full-width-image" style=
+=3D"padding: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: =
+10px; padding-left: 10px;"> <div style=3D"text-align:center"><img alt style=
+=3D"border: 0; border-width: 0; width: 100%; height: auto; max-width: 100px=
+;" width=3D"70" src=3D"https://skills-assets.pstmn.io/email-assets/monitor_=
+icon.png"> </div> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|=
+(IE)]></td><td width=3D"85%" valign=3D"top" style=3D"padding-top:0;padding-=
+bottom:0;padding-right:0;padding-left:0;"><![endif]--> <div class=3D"column=
+ right" style=3D"width: 100%; display: inline-block; vertical-align: top; m=
+ax-width: 85%;"> <table style=3D"border-spacing: 0; font-family: Arial, Hel=
+vetica, sans-serif; color: #666666;" width=3D"100%"> <tbody> <tr> <td class=
+=3D"inner contents" style=3D"padding: 10px; padding-top: 10px; padding-bott=
+om: 10px; padding-right: 10px; padding-left: 10px; width: 100%; text-align:=
+ left; font-size: 16px;" width=3D"100%" align=3D"left"> <p style=3D"Margin:=
+ 0; Margin-bottom: 16px; color: #666666; font-size: 14px; font-family: 'Ope=
+n Sans', Arial, Helvetica, sans-serif; line-height: 22px;">Postman API Moni=
+toring allows you to review your API responses, availability, and performan=
+ce with each run so you can ensure that your API is always healthy. </p> <p=
+ style=3D"color: #666666; Margin: 0; Margin-bottom: 16px; font-family: 'Ope=
+n Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px;"=
+><a style=3D"color: #FF6C37; text-decoration: none; font-weight: 600;" href=
+=3D"https://iterable.links.postman.com/u/click=3F_t=3D45a94676dd7342a9a5d24=
+a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT859=
+14Lk2z84iIB5A1n_GcnAmxy37pQwTGhdIdeOJzijKpBikFQ27Was9NQIWGtGCxeyTy6mrTBMWu9=
+-enTQHgXO8ySTx4B2Zzss360KKYUvc_brsR3J6vA-TUJMhTgL-wFMKL60SCbvDKzv1AzC8No9eG=
+3vyEhjnM64A9B4zlhlya4VjghIAtOmIK-X5MGLQTKmUTIpTKBf-P2SQsg77wUME3-idRBKfjpLH=
+vophyKkGCSU4PyXyoOqfiggEXNezMkmSnu7DttpWgoDU38zZR71b5ZcsIb0Qp8uHzc08G_gJ16x=
+whO-lRdTQJCscz7yrb6YFgDLyPBDx80H_gms0c92t7I%3D">Learn more</a> </p> </td> <=
+/tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]></td> </tr> </table=
+><![endif]--></td> </tr> <!-- --> </tbody> </table> </td> </tr> </tbody> </=
+table> </td> </tr> </tbody> </table> </td> </tr> <!-- --><!-- START Promo S=
+trip with 2/3 + 1/3 section --><!-- --> <tr> <td style=3D"padding: 0; paddi=
+ng-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0;"> <table s=
+tyle=3D"border-spacing: 0; font-family: Arial, Helvetica, sans-serif; color=
+: #666666; margin-bottom: 40px !important;" width=3D"100%"> <tbody> <tr> <t=
+d class=3D"feature-box right-sidebar background-night-sky" style=3D"padding=
+: 40px; padding-top: 20px; padding-bottom: 20px; padding-right: 40px; paddi=
+ng-left: 40px; background-color: #2B3B41; font-size: 0;" bgcolor=3D"#2B3B41=
+"><!--[if (gte mso 9)|(IE)]><table width=3D"100%" style=3D"border-spacing:0=
+;font-family:Arial, Helvetica, sans-serif;color:#666666;"> <tr> <td width=
+=3D"60%" valign=3D"middle" style=3D"padding-top:0;padding-bottom:0;padding-=
+right:0;padding-left:0;"><![endif]--> <div class=3D"column left center-alig=
+n" style=3D"width: 100%; display: inline-block; max-width: 60%; vertical-al=
+ign: middle;"> <table style=3D"border-spacing: 0; font-family: Arial, Helve=
+tica, sans-serif; color: #666666;" width=3D"100%"> <tbody> <tr> <td class=
+=3D"altInner" style=3D"padding: 10px; padding-top: 10px; padding-bottom: 10=
+px; padding-right: 10px; padding-left: 10px;"> <p class=3D"font-white mb-0"=
+ style=3D"Margin: 0; font-size: 16px; line-height: 22px; font-family: 'Open=
+ Sans', Arial, Helvetica, sans-serif; color: #fff !important; Margin-bottom=
+: 0px !important;">Bring your team to Postman and supercharge your API deve=
+lopment </p> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]=
+></td><td width=3D"40%" valign=3D"middle" style=3D"padding-top:0;padding-bo=
+ttom:0;padding-right:0;padding-left:0;"><![endif]--> <div class=3D"column r=
+ight center-align" style=3D"text-align: right; width: 100%; display: inline=
+-block; max-width: 40%; vertical-align: middle;"> <table style=3D"border-sp=
+acing: 0; font-family: Arial, Helvetica, sans-serif; color: #666666;" width=
+=3D"100%"> <tbody> <tr> <td class=3D"altInner contents" style=3D"padding: 1=
+0px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-=
+left: 10px; width: 100%; font-size: 16px;" width=3D"100%"> <table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"emailButton" style=3D"bord=
+er-spacing: 0; font-family: Arial, Helvetica, sans-serif; color: #666666; b=
+order-radius: 3px; background-color: #FF6C37; display: inline-table; -webki=
+t-text-size-adjust: none;" bgcolor=3D"#FF6C37"> <tbody> <tr> <td align=3D"c=
+enter" class=3D"emailButtonContent" style=3D"padding: 0; padding-top: 15px;=
+ padding-right: 30px; padding-bottom: 15px; padding-left: 30px;" valign=3D"=
+middle"><a class=3D"fallback-text-button emailButtonText" style=3D"color: #=
+FFFFFF; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: =
+16px; font-weight: 600; text-decoration: none;" target=3D"_blank" href=3D"h=
+ttps://iterable.links.postman.com/u/click=3F_t=3D45a94676dd7342a9a5d24a86b9=
+d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT8591-HYI=
+-7PQKvTp53P1R2-ER7tt6Lz6bJvKInIbheGahC2uET7OiXRuUUA2F7yufMbD5nBpf-hnvgVk0PX=
+HZPRC9On0djZZ4p5R-cEMtg-1jE3KSNxxfYKMKObcqoS7fBM-lF9Hkhlt7IUtNqUBMfWQZW15OS=
+IinnjtrYEj-4-7q1ctxlu-jxX1CAWDJxBCQyy5_DIvJW1p-Ub4-TY1cZKmL7o5EkRy4U0b2NrVY=
+efTNSudvof5A8vrcbAKpmK0YQr0-v1TS0He6BWO8ic7h32vYUp97YLKM4cm-Mky5qudGrXjWSoN=
+tANQObBQvJEQ-G28Gy9rXLdghNEPG-zRVjBtNQ%3D">Create a Team</a> </td> </tr> </=
+tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(I=
+E)]></td> </tr> </table><![endif]--></td> </tr> </tbody> </table> </td> </t=
+r> <!-- --> </tbody> </table> <!--[if (gte mso 9)|(IE)]></td> </tr> </table=
+><![endif]--></div> <!-- START full-width footer --><table width=3D"100%" s=
+tyle=3D"border-spacing:0;font-family:Arial, Helvetica, sans-serif;color:#66=
+6666;"> <tbody> <tr> <td class=3D"footer" style=3D"background-color:#1C272B=
+;color:#ffffff;padding-top:20px;padding-bottom:20px;padding-right:20px;padd=
+ing-left:20px;"> <table width=3D"100%" style=3D"border-spacing:0;font-famil=
+y:Arial, Helvetica, sans-serif;color:#666666;"> <tbody> <tr> <td class=3D"a=
+ltInner contents text-center" style=3D"padding-top:10px;padding-bottom:10px=
+;padding-right:10px;padding-left:10px;width:100%;font-size:16px;text-align:=
+center;"><a target=3D"_blank" href=3D"https://iterable.links.postman.com/u/=
+click=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a=
+5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT8591xU5l5gfQcgvBgVafUZFZjK1MPp3yE2U7QXqEFkmH=
+6xsAah5bTM5GHl6nARQTOCFTioJvT_JtjGMuIGV4uUZ8xrdKPBAWgHgcXFQlFiCzO5h2LVdW1Rd=
+DozVmybtLBDw0XhIRkeQTAaP_GP6bVYmTRo44i_gXjwUkn8FAl54v6FFDYSP22jRkAtQ6KrRKDz=
+gLIviPNPaL0_H8x4_6Afnm-e4I4WKfWJPrdXKJ8UJmBV0HMRhGC7XHOcF3-TnrdYQSGQzvqMmZB=
+Ae_KASoQG1zsvRZfqkQPtphpFoCLRETXSR_Ekp745Wcjsshh4Ll8LkcZpCR7d2d_0Ddudvihkoh=
+oA%3D"><img class=3D"social-icon" width=3D"42" height=3D"42" alt=3D"Twitter=
+" style=3D"border-width:0;padding-right:10px;padding-left:10px;" src=3D"htt=
+ps://assets.getpostman.com/email/twitter-icon.png"/></a> <a target=3D"_blan=
+k" href=3D"https://iterable.links.postman.com/u/click=3F_t=3D45a94676dd7342=
+a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W=
+7SlT8591z51psjgNxezIteRhHk4lhSQRELoE3GmXXfqUnE6VUUbUCSADeyrTTkfrrPT4-JIAWVc=
+abguJFYzQ-bX7aj6S8m3gtkZbePV8BcxPMqfcPNLvDbeinAFaE6xCKptxTxoIrDATyDOFU2Z9sc=
+wFoxaiLqpELsVbpUB1YqWfHv6qSHsRwObNZUmcb9AwIdHgKpYJH9dZIKfw8sF57UCE-GJYjswwA=
+V6rtky7qGOxt1t8eEiJE4TVMLQDmDfNsowU4WwUvE4eQak0D7iPkavp7T1wXJSYurBsJT6DEoMH=
+55byO3ferEp73hxEGUnAcJtHqWuVGVqAtEbQnoxiXWjV4_ZK1E%3D"><img class=3D"social=
+-icon" width=3D"42" height=3D"42" alt=3D"Facebook" style=3D"border-width:0;=
+padding-right:10px;padding-left:10px;" src=3D"https://assets.getpostman.com=
+/email/facebook-icon.png"/></a> <a target=3D"_blank" href=3D"https://iterab=
+le.links.postman.com/u/click=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Db=
+ec1461345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT85913WSO0mzwTaCooMagG=
+RiqyHGEncn6MkOc5uCL9-Lx1JROqyFuUmGDSZRPTw1jl3u0xmJ_ZduQYfhsnnypbpF2RfhK8odr=
+aRIr9x-8DP-NApyt_sj3axpxwS9Ij5x_uf0p9GBZKsquFZCtS11xnZqwqSj2C4wOiC7EPVRujdy=
+tGeKlVaRjXrcN-lbJy-U9Uws5U0JI96LjwLUSGDENdbyxKvkZQX6ibPEGXlHD3IrGm4NBrlgaj5=
+HFWlmpTUUaIYwJ6oDispVK7dCOgfvq8aqeexNw75fhr9VmtVnL8aIgQ0sE0cdYCjW02Nacyl4xl=
+2sap0OqGSW5L8vxm6UM2Et8-6us4qOqgHMPJOPWsIfprpw"><img class=3D"social-icon" =
+width=3D"42" height=3D"42" alt=3D"LinkedIn" style=3D"border-width:0;padding=
+-right:10px;padding-left:10px;" src=3D"https://assets.getpostman.com/email/=
+linkedin-icon.png"/></a></td> </tr> <tr> <td class=3D"altInner contents tex=
+t-center" style=3D"padding-top:10px;padding-bottom:10px;padding-right:10px;=
+padding-left:10px;width:100%;font-size:16px;text-align:center;"> <p class=
+=3D"text-small mb-0" style=3D"Margin:0;line-height:22px;Margin-bottom:0px !=
+important;color:#ffffff;font-size:12px;">55 2nd Street, Suite 300, San Fran=
+cisco, CA 94105</p> </td> </tr> <!-- --> <tr> <td class=3D"altInner content=
+s text-center" style=3D"padding-top:10px;padding-bottom:10px;padding-right:=
+10px;padding-left:10px;width:100%;font-size:16px;text-align:center;"> <p cl=
+ass=3D"text-small mb-0" style=3D"Margin:0;line-height:22px;Margin-bottom:0p=
+x !important;color:#ffffff;font-size:12px;">You are receiving this product =
+email because you have an account on Postman.<br/> If you no longer wish to=
+ receive these emails, please update your <a target=3D"_blank" style=3D"col=
+or:#FF6C37;text-decoration:none;font-weight:600;" href=3D"https://iterable.=
+links.postman.com/e/eh=3F_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461=
+345d74b4c941bbd8a5f8ca8be&_e=3DL3w0i9m4Lg92W7SlT8591-HYI-7PQKvTp53P1R2-ER6T=
+hRUZ9AVz5a5f-Sd5_pjJ0dwcSt6KdtbNUpQMSRfEwkERUMsrL0N9AJ24-ZA2UqF5PDGWJzHlq4k=
+rfnE4_0gazNBZT0KAR5MiMsfURf9oJn7EmgoSEoahPOlLlkhNHT5b31Lwnevyc-f4SFhqJUKXA4=
+pbOitLQ49nvkfJBtb2CUPgHpM97f1TKZHi8u4QRqDhVoGVW1SCD_4fuI-JjKqeDuTwEMnF1hoHt=
+VRlVOtOlcDueZqrDzqsrr0hfaUH6DdjCXqKUPZdiTJ9C98_Oo_ojifseIcG0w5F8n2TPjKirQ%3=
+D%3D">notification preferences</a>.</p> </td> </tr> <!-- --> <tr> <td class=
+=3D"altInner contents text-center" style=3D"padding-top:10px;padding-bottom=
+:10px;padding-right:10px;padding-left:10px;width:100%;font-size:16px;text-a=
+lign:center;"> <p class=3D"text-small text-bold mb-0" style=3D"Margin:0;lin=
+e-height:22px;Margin-bottom:0px !important;color:#ffffff;font-size:12px;fon=
+t-weight:600;"><a target=3D"_blank" style=3D"color:#FF6C37;text-decoration:=
+none;font-weight:600;" href=3D"https://iterable.links.postman.com/e/evib=3F=
+_t=3D45a94676dd7342a9a5d24a86b9d12ca9&_m=3Dbec1461345d74b4c941bbd8a5f8ca8be=
+&_e=3DpnYWLW4pml8wmeASMFSFNAdMcp4sT1ErzU7nKN6LSe0fTmMb-cNoGKFxKjcG6rKiYfeXc=
+bisCfJRpyEmlWmQEZ5XSIJoBIPOGc9eGPjBo-o%3D">View in Browser</a>&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target=3D"_blank" style=
+=3D"color:#FF6C37;text-decoration:none;font-weight:600;" href=3D"https://it=
+erable.links.postman.com/e/encryptedUnsubscribe=3F_r=3D45a94676dd7342a9a5d2=
+4a86b9d12ca9&_s=3Dbec1461345d74b4c941bbd8a5f8ca8be&_t=3DpnYWLW4pml8wmeASMFS=
+FNFSjLskLNIteNU5sbTF26L6bGQWei9xPbKI10mKj0LehOhRx_BQd1q-jPgcL5TYZM3dRP2cv1l=
+8aaRRwAaS_m3-b8jpirfedcJLvgfIlrDqLy55ePk3YV7UZslVdCHVBAGZFiKitrKfKmpZwji-rt=
+0lcXbF_ttLMmM2Mz8AV6g3RRh7lOj5MlA4jkkwOdDNjlg%3D%3D">Unsubscribe</a></p> </=
+td> </tr> <tr> <td class=3D"altInner contents text-center" style=3D"padding=
+-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;width:10=
+0%;font-size:16px;text-align:center;"> <p class=3D"text-small mb-0" style=
+=3D"Margin:0;line-height:22px;Margin-bottom:0px !important;color:#ffffff;fo=
+nt-size:12px;">=C2=A9 2020 Postman, Inc. All rights reserved</p> </td> </tr=
+> </tbody> </table> </td> </tr> </tbody> </table> </center> =0D=0A<img bord=
+er=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://sparkpost.links.po=
+stman.com/q/-9o99jl3-dv69rRPyqu2gg~~/AAQ97AA~/RgRhXcnpPlcDc3BjQgoAJ-lEe1_wu=
+wfmUg5jYXJldHRhQGdteC5kZVgEAAAAAA~~">=0D=0A</body> </html>
+--_----HUf2YqDRajn+oRF3P2gYIg===_DE/5E-48112-9E44B7F5--
+

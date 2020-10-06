@@ -1,0 +1,646 @@
+Return-Path: <bounce-68_HTML-14542410-489063-7210964-6148@bounce.e1.victoriassecret.com>
+Received: from mta15.e1.victoriassecret.com ([136.147.180.85]) by
+ mx-ha.gmx.net (mxgmx101 [212.227.17.5]) with ESMTPS (Nemesis) id
+ 1MAwfx-1kF2LG2ycL-00BKlV for <CARETTA@GMX.DE>; Tue, 06 Oct 2020 16:29:52
+ +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=e1.victoriassecret.com;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID:
+ X-CSA-Complaints:Message-ID:Content-Type;
+ i=VictoriasSecret@e1.victoriassecret.com;
+ bh=f67hYotUJ11OMRiCHZPL6Fmyii9Pt18SyS9NG7kxdvc=;
+ b=Bwy+30OnXzDQ05fGhOvxQb4ZDnrG5GRRfKRXKA+mg3vEhncjE5uScBsQi/X5sUkkJAS4MaBz5Iqz
+   3JtzpbA1IjR+/hj4vq9duRwmnWpqQzrCTEFxuGPJtrCaGGOlVgHudUgBkTpocg7WT3gdbTtsxC03
+   8Tyg7uEI/Jf4CW8JGTI=
+Received: by mta15.e1.victoriassecret.com id hfhvlu2fmd49 for <CARETTA@GMX.DE>; Tue, 6 Oct 2020 14:29:50 +0000 (envelope-from <bounce-68_HTML-14542410-489063-7210964-6148@bounce.e1.victoriassecret.com>)
+From: "Victoria's Secret" <VictoriasSecret@e1.victoriassecret.com>
+To: <CARETTA@GMX.DE>
+Subject: The unofficial bras of 2020
+Date: Tue, 06 Oct 2020 08:29:50 -0600
+List-Unsubscribe: <mailto:leave-fd7d12781a3c402029-fe6a1574706006797414-fec110787c64027e-fe92137274640d7b71-ff2c1271716c@leave.e1.victoriassecret.com>
+MIME-Version: 1.0
+Reply-To: "Victoria's Secret" <reply-fec110787c64027e-68_HTML-14542410-7210964-6148@e1.victoriassecret.com>
+List-ID: <7210036.xt.local>
+X-CSA-Complaints: whitelist-complaints@eco.de
+X-SFMC-Stack: 7
+x-job: 7210964_489063
+Message-ID: <520b3bdd-5597-4f34-97cd-a1bc606ba64e@atl1s07mta2015.xt.local>
+Content-Type: multipart/alternative;
+	boundary="QirWaa8VVOJA=_?:"
+Envelope-To: <CARETTA@GMX.DE>
+X-GMX-Antispam: 0 (Mail was not recognized as spam); Detail=V3;
+X-Spam-Flag: NO
+X-UI-Filterresults: notjunk:1;V03:K0:CsRHx8QxrUQ=:UEo6170LIGhwm6EXyPJS29bk01
+ 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
+
+This is a multi-part message in MIME format.
+
+--QirWaa8VVOJA=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Victoria's Secret
+
+To view this email in a browser, click here:
+https://view.e1.victoriassecret.com/?qs=2c70caf251047f2d48e860d2a7110864190ea71ed980ecf1e89b266117c4285a9f4b33ddc49c654f9dbdd76e9e48d1940c67639d76b33e51494f75939e5113e20fe59f6ace37c15c1f335ef6cabd20e7
+
+
+__________________________________
+
+Find a Store Near You: https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3571a19773fe4242dcbee87f7ff9032e6fcbae6d11addc6bf59379a010e6d1c132f79393a138ef9257b7f675e447154ca1186894e4391b67a
+locator  Angel Credit Card: https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba38b54b23f6e804033d10242a4cdc7e5102511e2cd89c68d6f3c9f4e3698e6725571699cbb4b3c040affe1498e2cd54e9e3b02b9c4002ebb7d
+ Customer Service:
+https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3a828154a66a43fe8cc76303a61a905ee8d36569d2d5c6a72bcd84e21373cd4b56e9380754ae6076e37821a9fe18fe0141d7064ea962bda28 Call 1.800.888.8200
+(outside U.S./Canada, dial 937.438.4200)
+__________________________________
+
+ This email comes to you from
+Victoria's Secret,
+which also includes Victoria's Secret Beauty, Victoria Sport, and
+Victoria's Secret PINK. If you'd like to unsubscribe
+or receive fewer marketing emails, please click here:
+https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3158b6c043cf35467499da54d0a4a4abaf736a477b3a0f95e92c921f6c84337428ecc9193dfbf92b811b0dff254ff86562a206231743ff559
+To read our privacy policy, please click here:
+https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba34ab8c823f0183826dd644dc4f5c1f9638f5d1eeb43457120bcfa7a20c715f289181d5b69182be5a2b13af85bb50ee33bd826a602dfb41f36 This is a
+product offering from VictoriasSecret.com, 8655 East Broad St,
+Reynoldsburg, OH 43068. If you have any questions, email
+CustomerCare@Victoriassecret.com or call 1.800.970.1109 (outside
+the U.S./Canada, dial 937.438.4197). Please do not reply to this
+email. ©2020 Victoria's Secret. All rights reserved. 
+
+
+--QirWaa8VVOJA=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      p {margin: 1em 0;}
+      @-ms-viewport{ width: device-width;}
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .content-padding{ padding:4px !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style>
+    <!--[if mso]>       <style type="text/css">           /* Begin Outlook Font Fix */           body, table, td {               font-family: Arial, Helvetica, sans-serif ;               font-size:16px;               color:#808080;               line-height:1;           }           /* End Outlook Font Fix */       </style>     <![endif]-->
+  </head>
+  <body bgcolor="#ffffff" text="#000000" style="background-color: #ffffff; color: #000000; padding: 0px; -webkit-text-size-adjust:none; font-size: 16px; font-family:arial,helvetica,sans-serif;">
+    <div style="font-size:0; line-height:0;"><img src="https://click.e1.victoriassecret.com/open.aspx?ffcb10-fec110787c64027e-fe5c15747060077b7c17-fe92137274640d7b71-ff911278-fe6a1574706006797414-ff2c1271716c" width="1" height="1"></div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center" valign="top">
+          
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="600" class="container" align="center">
+            <tr>
+              <td>
+                <table class="tb_properties border_style" style="background-color:#FFFFFF;" cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- added padding here -->
+                          <td class="content_padding" style="">
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr> <!-- top slot -->
+                                <td align="center" class="header" valign="top">
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <table cellspacing="0" cellpadding="0" style="width:100%">
+                                              <tbody>
+                                              <tr>
+                                                <td class="responsive-td" valign="top" style="width: 100%;">
+                                                  <table style="min-width: 100%; " class="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tr><td class="stylingblock-content-wrapper camarker-inner"><!-- End table used to set width of email --><!-- End table used to center email -->
+<title style="display: none; max-height: 0px; overflow: hidden;"></title>
+<style type="text/css">
+.ReadMsgBody {
+ width: 100%;
+}
+.ExternalClass {
+ width: 100%;
+}
+.applelinks a {
+ color: inherit;
+ text-decoration: none;
+}
+</style>
+
+<!-- `date "+ET%m.%y"` -->
+
+<img src="https://click.e1.victoriassecret.com/open.aspx?ffcb10-fec110787c64027e-fe5c15747060077b7c17-fe92137274640d7b71-ff911278-fe6a1574706006797414-ff2c1271716c" width="1" height="1">
+<div id="AMPScript">
+ 
+</div>
+<!-- MI -->
+
+<div style="font-size:0; line-height:0;">
+<table width="1" height="1" cellspacing="0" cellpadding="0" border="0">
+<tr><td style="font-size:0px; line-height:0px;">
+<img src="http://mi.victoriassecret.com/p/up/bc3d99b3ec2e075f/o.gif?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" alt="" aria-hidden="true" width="1" height="1">
+</td></tr>
+</table>
+</div>
+<!-- END MI -->
+
+
+<!-- Begin table used to center email -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td bgcolor="#ffffff"><div align="center"> 
+      <!-- Begin table used to set width of email -->
+        <table width="600" cellspacing="0" cellpadding="0" border="0">
+           <tr>
+             <td style="padding: 10px 0px 10px 0px;" width="600" valign="top" align="center"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+             <td style="padding-bottom:8px;" width="600" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+             <td style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #999999; padding: 0px 0px 0px 0px;" width="600" valign="top" align="center">
+             <!-- Begin Conversany Tag -->
+             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">                
+                  
+                    <img src="http://login.dotomi.com/ucm/UCMController?dtm_com=2&dtm_cid=2482&dtm_cmagic=f55cad&dtm_fid=103&dtm_format=6&cli_promo_id=99&dtm_email_hash=c085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154&amp;dtm_user_id=&amp;dtmc_drop_id=10/06/2020&amp;dtmc_email_category=20201006_VSL_8019_BBVLOUNGE_SL1" width="1" height="1" border="0">
+                    <img src="http://ads.dotomi.com/cookieredir/2482/pub1.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">                     <img src="http://ads.dotomi.com/cookieredir/2482/pub2.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">
+                    <img src="http://ads.dotomi.com/cookieredir/2482/pub3.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">                     <img src="http://ads.dotomi.com/cookieredir/2482/pub4.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">
+                    <img src="http://ads.dotomi.com/cookieredir/2482/pub5.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">                     <img src="http://ads.dotomi.com/cookieredir/2482/pub6.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">
+                    <img src="http://ads.dotomi.com/cookieredir/2482/pub7.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">                     <img src="http://ads.dotomi.com/cookieredir/2482/pub8.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">
+                    <img src="http://ads.dotomi.com/cookieredir/2482/pub9.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">                     <img src="http://ads.dotomi.com/cookieredir/2482/pub10.php?ac085e89cb3b07a1f06def5a45b55e9495bacc92137142ccebb694c6e469ca154=1" width="1" height="1" border="0">
+                  
+                </td></tr></table>
+             <!-- End Conversany Tag -->
+             </td>
+             </tr>
+             </table>
+             </td>
+             </tr>
+             <tr>
+             <td style="padding-bottom:8px;" width="600" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+             <td style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #999999; padding: 0px 0px 0px 0px;" width="600" valign="top" align="center">
+             <!-- Begin MSN UNSUB -->
+             <div data-marker="wrapper" style="" class="stylingblock-content-wrapper"></div>
+             <!-- Begin MSN UNSUB -->
+             </td>
+             </tr>
+             </table>
+             </td>
+             </tr>
+             
+             <tr>
+             <td style="padding-bottom:8px;" width="600" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+             <td style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #999999; padding: 0px 0px 0px 0px;" width="600" valign="top" align="center">
+             <!-- Begin Pre Header --> 
+             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+       <td style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #999999; padding: 0px 0px 0px 0px;" width="520" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee28393431386f30a1cd528981ff29d072e9d79b23e6c520d48a020af56c4d8d95a47e8ab2afc6f1223f15953ac8a8b5ed3fbb85c9f2430646df469f1"  style="text-decoration: underline; color: #999999;"><span style="text-decoration: underline; color: #999999;">Plus, 3/$30 panties to make it a set…<span></span></span></a>&nbsp;&nbsp;View on <a href="https://view.e1.victoriassecret.com/?qs=2c70caf251047f2d48e860d2a7110864190ea71ed980ecf1e89b266117c4285a9f4b33ddc49c654f9dbdd76e9e48d1940c67639d76b33e510b319780c77980b1fcb5cc425d60f02b8eba527bd2a41df2"  style="text-decoration: underline; color: #999999;"><span style="text-decoration: underline; color: #999999;">browser</span></a></td>
+      </tr>
+                    </table>
+                
+                </td></tr></table>
+             <!-- End Pre Header -->
+             </td>
+             </tr>
+             </table>
+             </td>
+             </tr>
+             <tr>
+             <td style="padding-bottom:8px;" width="600" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+             <td style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #999999; padding: 0px 0px 0px 0px;" width="600" valign="top" align="center">
+             <!--INTL Language Toggles Start (do not touch)-->
+             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+                
+                </td></tr></table>
+             <!--INTL Language Toggles End (do not touch)-->
+             </td>
+             </tr>
+             </table>
+             </td>
+             </tr>
+              
+                
+             <tr>
+             <td width="600" valign="top" align="left"><br><table width="600" cellspacing="0" cellpadding="0" border="0">
+             <!-- Begin Header -->
+             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee28393437c25b0d66404ff5f07dd194df4de46a67a4cacacde9f64a2bef65998657a81f0f61ec657641268e0d621c39123396698072df86551e38bad"  style="text-decoration: none; display: block;"><img alt="Victoria's Secret" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/6dc062280c7594f2.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a>
+</td></tr></table>
+             <!-- End Header --> 
+             
+             <!-- Start CASL -->
+             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"></td></tr></table>
+             <!-- End CASL -->
+             <!--Lookup Dyanmic Banner Start PINK (do not touch)-->
+             
+             <!--Lookup Dyanmic Banner End PINK (do not touch)-->
+             
+             <!--INTL Dynamic Offers Valid Banner Start (do not touch)-->
+             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">          </td></tr></table>
+             <!--INTL Dynamic Offers Valid Banner End (do not touch)-->
+             
+          
+     <!--Abandon Cart Banner Start (do not touch)-->
+     </table><table width="600" cellspacing="0" cellpadding="0" border="0">
+     <tr>
+     <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center">
+     <a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee28393434425bf923020423cca9f8af9146c6fdadc670d6cc7f6579cd94c4ba56d1f5c2d9133eb1a79a6e6cee74cd8885de965482e15f4714ca968b3" target="_blank"  style="display: block"><img alt="Abandon Cart Banner" style="border: 0; display: block;" src="http://mi.victoriassecret.com/p/rp/83f6a2863d0fb9b8.png?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" border="0"></a>
+     
+     
+     
+     </td>
+              </tr>
+              </table>  
+              <!--Abandon Cart Banner End (do not touch)-->
+     
+             <!--Main Content Area Start (do not touch)-->
+             <table style="min-width: 100%; " class="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tr><td class="stylingblock-content-wrapper camarker-inner"><!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee28393433c3d029bee30080a9b3dfcb862c5fa4af25b7d7a670af93f08d6d3d1790555d73864204b81ecfa7e1b99a9550f995c77572e03b091c6f5ae"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/abb69e00-5c2e-4955-9e84-844d88e5ba1f.jpg" alt="off duty bras" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> 
+<!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee2839343135b05bde2b8870f4ac715bd89eb03de6c0bda13394004bfea0a2ba6ece4dd6cfc36da23db2c0b3c4122506e851174f8a2edff515b2f0274"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/a0d74705-a8e5-4087-9ddc-82363bb43508.jpg" alt="bbv wireless" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee2839343f8287bdfc0e4c213edec934c595ae0e9debe44b99b435517566495a0be4d3cab43110db6219c66b0166b7220c1b826e0265d00b037a7d0da"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/002eacb7-0cbc-4aa9-81b8-2ab41528962e.jpg" alt="image bbv wireless " style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee2839343910d8942da2d649765b300b33fd888089c33039c81bd11ad368d11366465b895aded49dba45cfdde7b4b69c60dda3abe081d38644940788f"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/9b1eb0eb-96fd-419c-8363-ad22908c75b3.jpg" alt="lounge bras" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=266fbc1ee2839343f3f39468dbab97eb0facd773305efa6c2bd75b262c9cb9d80b5950d7ac11839dd3994245ab9d8849b9364ac315073daadadb2dfa3b580b62"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/4088128e-7cf3-4874-8a99-aecb7eec3b59.jpg" alt="image lounge bras " style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba38b842bd5f945c30f049e45f03d16a676f7a8844ddb25ed3bc5246ac552519254406589e8015885617c6db4ac5083f6847ac53deb453566e1"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/9f20b193-9630-47e5-b020-0077bfa538a4.jpg" alt="everyday panties" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba348645b1e936d8a73b24c1379f9ea03376aa73975ba752f58f0ce06ca35fe66eaafa44a4cc0f9a33f9d019a90a6be875964998f5c39a2e989"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/7803410b-0402-40c6-bf4e-4ef297bf984b.jpg" alt="take it easy" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba31eeeb288e334b45ffbcb6d2f94bb37b27bc30208f050b4611f7eea22553755ab8d1af23a1100bfa5670de8fc6362db4d91a5ac0fecfceafb"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/fd059406-eb1b-43fa-bd06-bc6ea0c1b8bd.jpg" alt="$10 off cozy robe and slippers" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3e0e10054604528434b748ed4d225f78d6d8ea2aa23368678fda4b6d3574a0cf8ec053bc3c98008562f015241bc22163fe3c499b07be38150"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/f07c5328-a4a3-47f2-a972-f2bafec59508.jpg" alt="3/$30 panties" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://www.instagram.com/tv/CFw0RFsgqub/?igshid=3v20rno9vcmo" alias="BODY_brafitt" style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/11788b2c-9831-4c92-9481-ccf45094a6d9.jpg" alt="bra fitting" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba32bcfcf7d7830a3151871ae1902e2d6317bffd935ee26f9fdd0bbb352add778734a4f94699d5a2e958e56f523243484a9bf6acdad4312af3f"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/3934b243-0d45-46f8-882e-7579e61ff170.jpg" alt="how to measure" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba363449311af08ac279cba107ee5cea09a61f8e10e17192aa1909faebc653bba5deb4f820dc035ebcdc4c6cc964ebd259d963d9b92fd84c4b3"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/0cdce075-94f8-49b4-be49-95938fa6447e.jpg" alt="tease bundle" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba307e556b3410a6a23a2b075dbb147b2441870de43b1fe88127458c791ba1d535bc16961e5939149930211b08b1f8e5eec9bdd83d6554b5c14"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/c523bd78-755f-49dd-a465-8d7446f2ea53.jpg" alt="$75 bundle" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->  <table width="600" cellspacing="0" cellpadding="0" border="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba338d6db39fcf1b5765d2b8e4c8aff13e5744ea1f5943606b16c14bd915a24d5f2b38abcc74ec92e07e868a6d38ae6916d91e8845790a7ea43"  style="text-decoration: none;"><img src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/150/1168205c-9c2b-48c1-a9c8-c874c11931b2.jpg" alt="$95 bundle" style="text-align: center; font-size: 18px; color: #e61678; font-family: Palatino, Times, Georgia; display:block;" width="600" border="0"></a></td>     </tr> </table> <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+
+
+
+<!--Main Content Area Banners (DO NOT TOUCH) START-->
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) --><table width="600" cellspacing="0" cellpadding="0"><tr><td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a  href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3bddef95b9a7b040743d949f63f8ce5f4206a8deeef802a139549af74e9ff60aa9e9f6ae3d30a521abd6b542476cac2b18919f764a8234e39" style="display: block"><img alt="Face Masks" style="border: 0; display: block;" src="http://mi.victoriassecret.com/p/rp/a2c0355ddde2007f.png?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" border="0"></a></td></tr></table><!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) --><table width="600" cellspacing="0" cellpadding="0"><tr><td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a  href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3aa075468ababa4625a99b0a4eb55a0ced3a322509d3173e5deed4a563ba90fdb27928b8dd30f26b96db84ebcab03414b0da4ccc5ab10514d" style="display: block"><img alt="Get the App" style="border: 0; display: block;" src="http://mi.victoriassecret.com/p/rp/e735f93117d2f106.png?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" border="0"></a></td></tr></table><!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) --><table width="600" cellspacing="0" cellpadding="0">  <tr> <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a  href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3b888fc579dfd916d535b5110b50e3f9d4cc4df54fb143474e33f5d57248063671cc5f7f853f38393fc3658402514c54a37867723dd0e8497" style="display: block"><img alt="VS 3" style="border: 0; display: block;" src="http://mi.victoriassecret.com/p/rp/8433f6cbaa38debd.png?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" border="0"></a></td></tr></table><!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) --><table width="600" cellspacing="0" cellpadding="0"><tr><td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a  href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba34ed4f7c527bbbf4f9ca9a7577c2ccfa0a9386b2a5cbc2ba82cdfd85295eae20361881ce454cc4a618279d86eb767ab3e52d455382cd50b8c" style="display: block"><img alt="VS 4" style="border: 0; display: block;" src="http://mi.victoriassecret.com/p/rp/bb48c5c3f584d8da.png?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" border="0"></a></td></tr></table><!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+<!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) --><table width="600" cellspacing="0" cellpadding="0"><tr><td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a  href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3aeb9267271267c98b06be60c69e133f469dd07973c22903567d2f05521cdf8e910571699b0efa71de438e4a57150092abdd0b2a9d28b81b3" style="display: block"><img alt="VS 5" style="border: 0; display: block;" src="http://mi.victoriassecret.com/p/rp/be5cf2c3a1e2e737.png?mi_u=200230315056&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1" border="0"></a></td></tr></table><!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+
+
+<!--Main Content Area Banners (DO NOT TOUCH) END--></td></tr></table>
+             <!--Main Content Area End (do not touch)-->
+       
+             <!--Certona Start (do not touch)-->
+             
+             
+             <!--Certona End (do not touch)-->
+       
+           <!--Lookup Dyanmic LC Banner (do not touch)-->
+                 
+                    
+           <!--Lookup Dyanmic Banner Start VS, Beauty, ACH and SPORT (do not touch)-->
+           <tr>
+           <td width="600" valign="top" align="left">
+           <table width="600" cellspacing="0" cellpadding="0" border="0">
+           <tr>
+           <td style="padding-bottom:0px; padding-top:0px;" width="600" valign="top" align="center">
+           <!-- General Use Dynamic Banners -->
+           
+           <!-- RC Banners -->   
+           
+              
+           </td>
+           </tr>
+           </table>
+           </td>
+           </tr>
+           <!--Lookup Dyanmic Banner End VS, Beauty, ACH and SPORT (do not touch)-->
+           <!--  -->
+           <tr>
+           <td width="600" valign="top" align="left">
+           <table width="600" cellspacing="0" cellpadding="0" border="0">
+           <tr>
+           <td style="padding-bottom:0px; padding-top:25px;" width="600" valign="top" align="center">
+           <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3f24aba8bfbb400f4ca9bbe2a0fdc22392831582548b7fa5e7af7dfd5402bd8662617d34050abd8d907dbada698973b410b2cf3ec26a3b16f" style="display: block; font-family:arial; font-size:12.3px; color:#666666;"><img alt="Free Shipping Offer" style="border: 0; display: block; font-family:arial; font-size:12.3px; color:#666666;" border="0" src="http://mi.victoriassecret.com/p/rp/62d80526774cf183.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a>
+
+</td></tr></table>
+           </td>
+           </tr>
+           </table> 
+           </td>
+           </tr>
+           
+           
+            <!--  -->
+            
+            <!-- ACH Points Banner End -->
+            
+                     
+                 <!-- Main Content Area End --> 
+                     
+                 <!-- Begin Footer -->
+                  <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">        <!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3082c91330d651f5b6327dda51af9bc4b3a06ba4180abf0e0cc5f3717a63eb2910307fea422192ac655884f1b883effcffe73a38258d15969" style="display: block" ><img alt="new arrivals" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/ad0266101d44f5a1.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+    <!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba34ad88ffadd3a30d602b71ae715a2bc634ae34eb1e2bd88581fe6c9515103a96fb33f6dc9d38e471250001cf2b99cd88bc20f75d492eb12d4" style="display: block" ><img alt="shop bras by size" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/812d82f8e161c09c.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+    <!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba361e337e7bd6c960116c26e3283aa027087a5e084efc147770d1788f114fcb16d42be76a486ff710a5fa86d9f81258e948756ca60de62aa51" style="display: block" ><img alt="panty guide" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/3e651fe31a5913a2.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+    <!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba36211f8573e99980d57981a31b68bae5e9d55603a77f9903380a010b6bb17a430255ab1b33d601835b20d3093c11c4cfd34193f30ed33baab" style="display: block" ><img alt="sleep" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/bf9ae5b4923f6622.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+    <!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3445d6382613185f25d12440c8e0a569361ea892fe6284171fc21edf6b644961aedcbe299135879a4cdf56c2dd3cdc5f5148746d721855fe2" style="display: block" ><img alt="beauty" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/f9f2b5fce0853a81.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+    <!-- START MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3fab26f94313b6ada740ca0daff3a447f64a972077761105bb1601c86e10115b5a0cf180d79dc8c0cc2ef50dcb6122a50229c6e53923cf3f0" style="display: block" ><img alt="sale" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/d3790e2f23e375d7.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 1 ACROSS (DELETE IF NOT NEEDED) -->
+       <!-- START MODULE 3 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba33584952cd126af3d39ce021f987edc54cbd687e2c5783f0667500356baafdb108289100818464e7134c30d7a5fb607e19fb8114f31db1aee" style="display: block" ><img alt="store locator" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/db33241ec0c7f9e6.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+  <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3b4cbdc686e4d0b805dc95632ce3c808db843e7ebde31fe3e8d28e425c258a6787899933b5371acf79fa6621e449264a3ef53e20ab224be40" style="display: block" ><img alt="angel card" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/d219cce5e74e7212.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+  <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3c081c797d9481007938aefd0f8b7463577ce29a253f98e918180866beed3f90cf3426d1e624fad3e6ddd0741bd20ca0e5d34ea006d2d3da0" style="display: block" ><img alt="bra fit guide" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/a76269adc90c9a61.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 3 ACROSS (DELETE IF NOT NEEDED) -->
+    <table width="600" cellspacing="0" cellpadding="0" border="0">
+       <tr>
+        <td style="padding-bottom:0px; padding-top:0px;" valign="top" align="center"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3b97f47ae3e32ac9a242149897e888a8e13061ec369ee501c7fdfcbd0ec4a6b052b68b5ac39e40670cedef99edb572fa016050c5aa827dee1" style="display: block"><img alt="@victoriassecret " style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/c78f82d1d4775024.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+       </tr>
+       </table>
+    
+       <!-- START MODULE 2 ACROSS (DELETE IF NOT NEEDED) -->
+       <table width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+        <td style="padding-bottom:0px;" valign="top" align="right"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3ab58fec54ec6be178832bdfd93cf5c0dee772f6d1c3c3764f3b5345a0c9dff83c2a829a11f3c09ab0d0a0eab39e31258f2c50675d026e858" style="display: block"><img alt="Download on the App Store" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/92b849c1bec77f5c.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        <td style="padding-bottom:0px;" valign="top" align="left"><a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3d4ef88bc3019396abc2a671ba10cf8ea30687059e7b5d37244f9cec00071db60afa7860906cf940ee237061580843f0cda8ec13a1db76294" style="display: block"><img alt="Get It On Google Play" style="border: 0; display: block;" border="0" src="http://mi.victoriassecret.com/p/rp/2e2af2d98fd41856.png?mi_u=200230315056%20&mi_ecmp=20201006_VSL_8019_BBVLOUNGE_SL1"></a></td>
+        </tr>
+       </table>
+       <!-- END MODULE 2 ACROSS (DELETE IF NOT NEEDED) -->
+       </td></tr></table>
+                 <!-- End Footer -->
+                     
+                 <!-- ALL Insta -->
+                 
+                 <!-- End ALL Insta --> 
+     
+                           <!-- Begin Offer Footer Disclaimer -->
+                          </td></tr><tr>
+                           <td width="600" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tr>
+                                <td style="font-family: Arial; font-size: 12.3px; color: #000000; padding: 10px 0px 10px 0px; line-height: 20px;" class="applelinks" width="600" valign="top" align="left">
+                                    <table style="min-width: 100%; " class="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="font-family: Arial; font-size: 12px; color: #000000; line-height: 20px;">
+
+</div></td></tr></table>
+                                    
+                                    
+                                    
+                                    
+                                    <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+</td></tr></table>
+                                    
+                                    
+                                    
+                                    <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="font-family: Arial; font-size: 12px; color: #000000;">
+
+</div></td></tr></table>
+                                    
+                                    <br>
+                                    <img alt="" src="http://image.e1.victoriassecret.com/lib/fe92137274640d7b71/m/56/a3ab1de7-4f3f-492e-9f28-66c76d255fe9.png?b=1519672803000" style="text-align: center; font-size: 10px; color: #000001; font-family: Palatino, Times, Georgia; text-transform: uppercase; display:block;" width="600" height="3px" border="0">
+                                    <br>
+                                    <!-- Begin Standard Footer Disclaimer -->
+                                    <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="line-height: 20px; font-family: Arial; font-size: 12px; color: #000000;">
+
+
+This email comes to you from Victoria's Secret, which also includes Victoria's Secret Beauty, Victoria Sport, and Victoria's Secret PINK. If you'd like to unsubscribe or receive fewer marketing emails, please <a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3716d3d731ee914f753bc260d6c96d202c91d81129ebeec95905fd0807b6972b5d782c7395aac039ec403dc5e0c53c6ff939a7082ef37c03c"  style="text-decoration: underline; color: #000000;">click here</a>. To read our privacy policy, please <a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3e27e2bb2e38d267239afc54d0ef0fa286d94991a97890f4caf69684ec9e98fb5b790d3c333533bd65dd4188b09107aa0041c9454d9c52c3e"  style="text-decoration: underline; color: #000000;">click here</a>. This is a product offering from VictoriasSecret.com, 
+<a href="" style="color: #000000; text-decoration:none;">8655 East Broad St, Reynoldsburg, OH 43068</a>. If you have any questions, please visit <a href="https://click.e1.victoriassecret.com/?qs=d0230af1681f6ba3eb70e8c2d2d0ad921c03cc6e226408c630f5341cba662cf882eb678d957539d1dc064b62cc65ac467ad215c8e78d9f84cbc481c5a8304660"  style="text-decoration: underline; color: #000000;">https://customercare.victoriassecret.com</a>. Please do not reply to this email. &copy;2020 Victoria's Secret. All rights reserved.
+
+
+</div></td></tr></table>
+                         <!-- End Standard Footer Disclaimer -->
+                              </td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                      <!-- End Offer Footer Disclaimer -->
+                    </table></div></td>
+                </tr>
+              </table></custom></td></tr></table>
+												  
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+--QirWaa8VVOJA=_?:--
+

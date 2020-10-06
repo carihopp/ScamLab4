@@ -1,0 +1,1650 @@
+X-Envelope-From: <discovery@email.discoveryloyalty.com>
+X-Envelope-To: <mail@carettahopp.de>
+X-Delivery-Time: 1601975595
+X-UID: 19554
+Return-Path: <discovery@email.discoveryloyalty.com>
+Authentication-Results: strato.com; dmarc=pass (p=REJECT sp=NONE) header.from=email.discoveryloyalty.com
+Authentication-Results: strato.com; arc=none
+Authentication-Results: strato.com; dkim=pass header.d=email.discoveryloyalty.com
+	header.i=discovery@email.discoveryloyalty.com
+Authentication-Results: strato.com; dkim-adsp=pass header.from="discovery@email.discoveryloyalty.com"
+Authentication-Results: strato.com; spf=pass smtp.mailfrom="discovery@email.discoveryloyalty.com"
+X-RZG-CLASS-ID: mi07
+X-RZG-Expurgate: bulk/normal
+X-RZG-Expurgate-ID: 149500::1601975595-000079BA-DDB8D6F3/9/78292
+Received-SPF: pass
+	(strato.com: domain email.discoveryloyalty.com designates 140.86.230.96 as permitted sender)
+	mechanism=ip4;
+	client-ip=140.86.230.96;
+	helo="omp.email.discoveryloyalty.com";
+	envelope-from="discovery@email.discoveryloyalty.com";
+	receiver=smtpin.rzone.de;
+	identity=mailfrom;
+Received: from omp.email.discoveryloyalty.com ([140.86.230.96])
+	by smtpin.rzone.de (RZmta 47.2.1 OK)
+	with ESMTPS id E07d70w969DEen9
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits))
+	(Client did not present a certificate)
+	for <mail@carettahopp.de>;
+	Tue, 6 Oct 2020 11:13:14 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ghaloyalt-20190701;
+ d=email.discoveryloyalty.com;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:List-Unsubscribe:Message-ID; i=discovery@email.discoveryloyalty.com;
+ bh=s9SU0sYTucrTBLw+/iXEC+E1owEcWOq16c8dA8pi/CQ=;
+ b=t2NHNrKnjq2atqp4vStDkdxQvIuEod6YcV5RutsVvnPwRafmogGelKHdf/M8JqqXRxhaR8no6Trl
+   yTiOh+7rGbdlJdUyVw5jOohmyZd7DDgHOUdPX92Wad0LgmcDax9xUaHSIpg9UmchNAvlIe6BZJsT
+   0wYnWwilkpfba5+Y7cS1s/496vM67M+Jh04P9RNYiuAO1MeRPvNPDnXSW9gdQkug/kJMXBeNiTO3
+   tRl0tWj+udQLEJQb1fbT4y+eWUmxvO9gTPIOIT7y/XTaiPIZgqDaz3tzZBoXX17OIFg+HKlm773e
+   Ia5y9HUQrUHYAJ0HNcvioBzFm95fglrJhVQUOQ==
+Received: by omp.email.discoveryloyalty.com id hfgqik2lr0o6 for <mail@carettahopp.de>; Tue, 6 Oct 2020 09:13:13 +0000 (envelope-from <discovery@email.discoveryloyalty.com>)
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 6 Oct 2020 09:13:13 +0000
+To: mail@carettahopp.de
+From: =?UTF-8?B?RElTQ09WRVJZ?= <discovery@email.discoveryloyalty.com>
+Reply-To: =?UTF-8?B?RElTQ09WRVJZ?= <reply@email.discoveryloyalty.com>
+Subject: New hotels to inspire your next trip!
+Feedback-ID: 80730:173168:oraclersys
+List-Unsubscribe: <mailto:unsubscribe-AQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzd@imh.rsys8.net?subject=List-Unsubscribe>, <https://email.discoveryloyalty.com/pub/optout/UnsubscribeOneStepConfirmAction?YES=true&_ri_=X0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzd&_ei_=EolaGGF4SNMvxFF7KucKuWMjgh6eBSmkyGntk_hrppix95_C5L0ZCpO6JbE5vilhJrLvjeq0hq5gKtfuTAaT9N-Ov9OmCQgzBVQRrA2Ihrw.>
+X-sgxh1: uHptxJHjLllHohiiQKL
+X-rext: 6.interact8.Ejql16XfdAeqeWGpF6_j5g4SGKF0--Qhfkgj-6k2E9wTkTrZkepnDXtFJL5Z
+X-cid: ghaloyalt.415508
+X-ei: EkZYj1vQGZbk3gS-tGgvYNTHTpGVY6ky
+Message-ID: <0.0.D.C5.1D69BC0EB605656.0@omp.email.discoveryloyalty.com>
+
+<=21DOCTYPE html PUBLIC =22-//W3C//DTD XHTML 1=2E0 Transitional//EN=22 =22h=
+ttp://www=2Ew3=2Eorg/TR/xhtml1/DTD/xhtml1-transitional=2Edtd=22>
+<html style=3D=22opacity: 1;=22 xmlns=3D=22http://www=2Ew3=2Eorg/1999/xhtml=
+=22>
+<head>
+   <meta content=3D=22text/html; charset=3Dutf-8=22 http-equiv=3D=22Content=
+-Type=22 /><=21--=5Bif =21mso=5D>
+<meta http-equiv=3D=22X-UA-Compatible=22 content=3D=22IE=3Dedge=22 />
+<=21=5Bendif=5D-->
+   <meta content=3D=22width=3Ddevice-width, initial-scale=3D1=2E0=22 name=
+=3D=22viewport=22 />
+   <title>DISCOVERY</title>
+   <link href=3D=22https://www=2Egha=2Ecom/extension/booking_gha/design/gha=
+2015/images/favicon=2Eico=22 rel=3D=22shortcut icon=22 />
+   <style type=3D=22text/css=22>/* --- Begin Desktop Reset Styles */
+      a, a:link =7B
+        color: =23000000;
+        text-decoration: none;
+      =7D
+      body =7B
+        margin: 0;
+        min-width: 100%;
+        padding: 0;
+        table-layout: fixed;
+        width: 100%;
+        mso-line-height-rule: exactly;
+        -ms-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+      =7D
+      p =7B
+        margin: 0;
+        padding: 0;
+      =7D
+      h1, h2, h3, h4, h5, h6 =7B
+        line-height:100%;
+      =7D
+      img =7B
+        border: none;
+        display: block;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      =7D
+      table td =7B
+        border-spacing: 0;
+        border-collapse: collapse;
+      =7D
+      =23outlook a =7B
+        padding: 0;
+      =7D
+      =2EReadMsgBody =7B
+        width: 100%;
+      =7D
+      =2EExternalClass =7B
+      =7D
+      =2EExternalClass, =2EExternalClass p, =2EExternalClass span, =2EExter=
+nalClass font, =2EExternalClass td, =2EExternalClass div =7B
+        width: 100%;
+        line-height:100%;
+      =7D
+      /* End Desktop Reset Styles --- */
+      /* --- Begin Editable Desktop Reset Styles */
+      a:visited =7B
+        color: =23000000;
+        text-decoration: none
+      =7D
+      a:focus =7B
+        color: =23000000;
+        text-decoration: none
+      =7D
+      a:hover =7B
+        color: =23000000;
+        text-decoration: underline
+      =7D
+      body, =23body-style =7B
+        background-color: =23f5f5f5;
+        font-family: 'Century Gothic', Arial, sans-serif;
+        font-size: 100%;
+      =7D
+      span=2Eyshortcuts, span=2Eyshortcuts:hover, span=2Eyshortcuts:active,=
+ span=2Eyshortcuts:focus =7B
+        background: transparent;
+        border: none;
+        color: =23000000;
+      =7D
+      /* End Editable Desktop Reset Styles --- */
+      /* --- Begin Century Gothic Web Font Styles */
+      /* Regular */
+      =40font-face =7B
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: local('Century Gothic Regular'),
+          local('Century-Gothic-Regularr'),
+          local('CenturyGothic-Regularr'),
+          local('CenturyGothicRegular'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458512/12a5dc1b-8011-4861-8a21-756d2821a8b6=2Ewoff') format('woff'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458512/4c97aaa1-f8d3-4460-a769-1d16df90ee1c=2Ettf') format('truetyp=
+e');
+      =7D
+      /* Regular Italic */
+      =40font-face =7B
+        font-family: 'Century Gothic';
+        font-style: italic;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: local('Century Gothic Italic'),
+          local('Century-Gothic-Italic'),
+          local('CenturyGothic-Italic'),
+          local('CenturyGothicItalic'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458514/9407422a-3879-4061-bde9-66d86e957b56=2Ewoff') format('woff'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458514/dadd5822-b0da-4a45-aaec-d99ca6d35e7b=2Ettf') format('truetyp=
+e');
+      =7D
+      /* Bold */
+      =40font-face =7B
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: 700;
+        mso-font-alt: 'Arial';
+        src: local('Century Gothic Bold'),
+          local('Century-Gothic-Bold'),
+          local('CenturyGothic-Bold'),
+          local('CenturyGothicBold'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458516/a3d8ec8e-b555-4d59-a3bb-e91f43163838=2Ewoff') format('woff'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458516/44e79fac-8c3e-413f-9157-81933472a440=2Ettf') format('truetyp=
+e');
+      =7D
+      /* Bold Italic */
+      =40font-face =7B
+        font-family: 'Century Gothic';
+        font-style: italic;
+        font-weight: 700;
+        mso-font-alt: 'Arial';
+        src: local('Century Gothic Bold Italic'),
+          local('Century-Gothic-Bold-Italic'),
+          local('CenturyGothic-BoldItalic'),
+          local('CenturyGothicBoldItalic'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458518/f887a2e7-c903-415e-b2e4-8764080670fa=2Ewoff') format('woff'),
+          url('https://www=2Egha=2Ecom/extension/booking_gha/design/gha2015=
+/fonts/1458518/c54bba49-292e-493f-bb6d-272f1d8ce262=2Ettf') format('truetyp=
+e');
+      =7D
+      /* End Century Gothic Web Font Styles --- */
+      /********************************************************************=
+*****************************************
+      *********************************************************************=
+*****************************************
+      **                                                                   =
+                                       **
+      **  https://www=2Eemailonacid=2Ecom/blog/article/email-development/tu=
+torial-animated-image-carousel-for-email/  **
+      **                                                                   =
+                                       **
+      *********************************************************************=
+*****************************************
+      *********************************************************************=
+****************************************/
+      /* --- Begin Image Carousel Styles */
+      =40media screen and (-webkit-min-device-pixel-ratio: 0) =7B
+        /* Hide Fallback content first */
+        =2Efallback =7B
+          display: none;
+        =7D
+        =2Ecarousel =7B
+          display: block =21important;
+          max-height: none =21important;
+          position: relative;
+        =7D
+        /* Selective blocking for clients=2E
+        - Samsung (=23MessageViewBody) - no absolute positioning
+        - Comcast/Zimbra (body=2EMsgBody) - inconsistent CSS support
+        */
+        =23MessageViewBody =2Efallback, body=2EMsgBody =2Efallback =7B
+          display: block;
+        =7D
+        =23MessageViewBody =2Ecarousel, body=2EMsgBody =2Ecarousel =7B
+          display: none =21important;
+        =7D
+        =2Ecarousel a =7B
+          width: 100%;
+          display: block;
+        =7D
+        =2Ecarousel img =7B
+          display: block =21important;
+          width: 100% =21important;
+          height: auto =21important;
+        =7D
+        /* Fade  */
+        =2Efade a =7B
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          -webkit-animation: car-anim 16s linear infinite;
+        =7D
+        =2Efade a:nth-child(1) =7B
+          position: relative;
+          -webkit-animation-delay: -17s;
+        =7D
+        =2Efade a:nth-child(2) =7B
+          -webkit-animation-delay: -13s;
+        =7D
+        =2Efade a:nth-child(3) =7B
+          -webkit-animation-delay: -9s;
+        =7D
+        =2Efade a:nth-child(4) =7B
+          -webkit-animation-delay: -5s;
+        =7D
+      =7D
+      /* End Image Carousel Styles --- */
+      /* --- Begin Shared Image Carousel Styles */
+      =40-webkit-keyframes car-anim =7B
+        /* start fade in */
+        0% =7B
+          z-index:2;
+          opacity:0;
+        =7D
+        /* end fade in */
+        5% =7B
+          opacity:1;
+        =7D
+        25% =7B
+          z-index:2;
+        =7D
+        /* lower z-index, allow next image to fade in */
+        25=2E1% =7B
+          z-index:1;
+        =7D
+        /* already obscured */
+        30% =7B
+          opacity:1;
+        =7D
+        /* hide */
+        30=2E1% =7B
+          opacity:0;
+        =7D
+        100% =7B
+          z-index:1;
+          opacity:0;
+        =7D
+      =7D
+      /* End Shared Image Carousel Styles --- */
+      /* --- Begin Responsive Styles */
+      =40media screen and (max-width: 600px) =7B
+        =2Etext-align-center =7B
+          text-align: center =21important;
+        =7D
+        =2Edisplay-block =7B
+          display: block =21important;
+        =7D
+        =2Edisplay-inline-block =7B
+          display: inline-block =21important;
+          white-space: nowrap;
+        =7D
+        =2Edisplay-none =7B
+          display: none =21important;
+        =7D
+        =2Eline-height-125 =7B
+          line-height: 125% =21important;
+        =7D
+        =2Eline-height-150 =7B
+          line-height: 150% =21important;
+        =7D
+        =2Eline-height-175 =7B
+          line-height: 175% =21important;
+        =7D
+        =2Eline-height-200 =7B
+          line-height: 200% =21important;
+        =7D
+        =2Emax-width-142px =7B
+          max-width: 142px =21important;
+          /* 50% of 185px */
+        =7D
+        =2Epadding-left-10px =7B
+          padding-left: 10px =21important;
+        =7D
+        =2Epadding-left-40px =7B
+          padding-left: 40px =21important;
+        =7D
+        =2Epadding-right-10px =7B
+          padding-right: 10px =21important;
+        =7D
+        =2Epadding-right-40px =7B
+          padding-right: 40px =21important;
+        =7D
+        /*image Swap on hover*/
+        =2Eimg-swap:hover img =7B
+          max-height: 0px =21important;
+          height:0px =21important;
+        =7D
+      =7D
+      /* End Responsive Styles --- */
+   </style>
+   <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+<style type=3D=22text/css=22>
+table =7B
+border-collapse: collapse =21important;
+=7D
+</style>
+<=21=5Bendif=5D-->
+</head>
+<=21-- =23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23=23=23=23
+=23=23=23=23                              =23=23=23=23
+=23=23=23=23    v2=2E0=2E0 Master Template    =23=23=23=23
+=23=23=23=23                              =23=23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23=23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23 --><=21-- =7C=7C=7C Begin BODY tag -->
+<body -webkit-font-smoothing:=3D=22=22 century=3D=22=22 data-gramm=3D=22tru=
+e=22 data-gramm_editor=3D=22true=22 data-gramm_id=3D=2208c0b8a5-5b1a-d353-8=
+def-f76dd8023141=22 data-new-gr-c-s-loaded=3D=22true=22 font-size:=3D=22=22=
+ font-weight:=3D=22=22 margin:=3D=22=22 min-width:=3D=22=22 padding:=3D=22=
+=22 style=3D=22background-color: rgb(245, 245, 245);=22 table-layout:=3D=22=
+=22 text-size-adjust:=3D=22=22 width:=3D=22=22><=21-- =7C=7C=7C Begin CENTE=
+R tag -->
+<center><=21-- =7C=7C=7C Begin Email Container Table --><span style=3D=22fo=
+nt-size:20px;=22></span>
+<table bgcolor=3D=22=23f5f5f5=22 border=3D=220=22 cellpadding=3D=220=22 cel=
+lspacing=3D=220=22 style=3D=22background-color: =23f5f5f5; border-spacing: =
+0; width: 100%;=22 width=3D=22100%=22>
+   <tbody>
+      <tr>
+         <td style=3D=22width: 100%;=22 width=3D=22100%=22><=21-- =7C=7C=7C=
+ Begin Email Wrapper Div -->
+         <div style=3D=22margin-left: auto; margin-right: auto; max-width: =
+650px;=22><=21-- *** Begin MSO Email Container Table --><=21--=5Bif (gte ms=
+o 9)=7C(IE)=5D>
+<table align=3D=22center=22 border=3D=220=22 cellpadding=3D=220=22 cellspac=
+ing=3D=220=22 width=3D=22650=22>
+<tr>
+<td valign=3D=22top=22 width=3D=22100%=22>
+<=21=5Bendif=5D--><=21-- /// Begin Email Preheader Table -->
+         <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 border=3D=22=
+0=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22background-colo=
+r: =23ffffff; border-spacing: 0; max-width: 650px; width: 100%;=22 width=3D=
+=22100%=22>
+            <tbody>
+               <tr>
+                  <td class=3D=22padding-left-40px padding-right-40px=22 st=
+yle=3D=22padding-bottom: 10px; padding-top: 25px; width: auto;=22 width=3D=
+=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 data-content-region-nam=
+e=3D=22Snippet=22 style=3D=22color: =23a7a8aa; font-family: 'Century Gothic=
+', Arial, sans-serif; font-size: 10px; font-weight: 400; line-height: norma=
+l; text-align: center; width: auto;=22 width=3D=22auto=22>
+<=21-- =23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23=23=23=23
+=23=23=23   Begin visible preheader text   =23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23=23 --><=21-- Put your preheader text here if=
+ you want it to display in the inbox and be visible in the email --><=21-- =
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23
+=23=23=23   End visible preheader text   =23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23 --><span style=3D=22color: =23ffffff =21importa=
+nt; display: none =21important; font-size: 1px =21important; line-height: 1=
+px =21important; max-height: 0px =21important; max-width: 0px =21important;=
+ mso-hide: all =21important; opacity: 0 =21important; overflow: hidden =21i=
+mportant; visibility: hidden =21important;=22> <=21-- =23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23
+=23=23=23   Begin hidden preheader text   =23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23 --><=21-- Put your preheader text here if yo=
+u want it to display in the inbox but not visible in the email -->With spec=
+tacular views and ultraluxe amenities, the newest additions to the DISCOVER=
+Y collection are truly worth exploring=2E
+<=21-- =23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23=23=23
+=23=23=23   End hidden preheader text   =23=23=23
+=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=23=
+=23=23=23=23=23=23=23=23 --> </span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Email Preheader Table =5C=5C=5C -->     <table align=3D=
+=22center=22 bgcolor=3D=22=23ffffff=22 border=3D=220=22 cellpadding=3D=220=
+=22 cellspacing=3D=220=22 style=3D=22background-color: =23ffffff; border-sp=
+acing: 0; max-width: 650px; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td class=3D=22padding-left-40px padding-right-40px=22 st=
+yle=3D=22padding-bottom: 10px; padding-top: 5px; width: auto;=22 width=3D=
+=22auto=22>
+ <center>
+<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=
+=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                   <tr>
+                       <td align=3D=22center=22 style=3D=22color: =23a7a8aa=
+; font-family: 'Century Gothic', Arial, sans-serif; font-size: 10px; font-w=
+eight: 400; line-height: normal; padding-bottom: 25px; text-align: center; =
+width: auto;=22 width=3D=22auto=22><span class=3D=22display-inline-block li=
+ne-height-125=22>View in a <a href=3D=22https://email=2Ediscoveryloyalty=2E=
+com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqq=
+zaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYTRC&_ei_=3DEm_69lmmJWESgcXO_=
+__zxQiNmMsmuTElCyRG5pFHHajMbNlh3YxmlIUG956Lzfctj_wkqOeDdvkSY7NKkn1LTmjk0_pL=
+sArqdoqaYvmhlaBxAqB-B6kvh4gscKzrN-pGfaoz2Hl6r0UJj8gEPQTvA4yHM10QIi7PASKd8av=
+jVPchxAfEnaylM6pMlaIJqLnR50nAW_Ab8mKC6IdUOSTVOwDLGd2QWE0SAEyJ_KAp_4Sef1gvYP=
+piAzfEb9ENEN0hy0ZQfCLd0uAawzR1uFQNjnp2SEhtkjUL2K3p89p6p-FFGfdUZMsmag49aZwTR=
+DuNEE32Ozw_fV_8kRzgKukfooXOGtuC_NIgeBhFpwerWSzDFNjCL5gI3VwNL9ptYM8W6PJ-UA6i=
+4yJ87AKbwJCPRXky6FmF_vr5F0Vh0NYhwiY4CNLKuGjmhaHLP42CtpYqWQU2GfG7-bBw7ZVRexs=
+PxaWYTrZwNA6_uwHiBIFw3PJ9wY3UbOISHpibR46OZXRG8xS9_xIMSMffChqdajP83F1K7E1vk4=
+xfjdacHZbAwc_m2MD6H93dX3-HfFkKrusdEbgMaSCXXMkBrYFwTO9stTgselqQjzCEt4Mnp43KO=
+Y5Er166VKJyv1Fo4sVL0R3x5RMz5pr9ikZ2hfj6HkGi0AdRfxrJ8A8EhEpFPcMnSBuGuyKA2Mm7=
+2oWQWuL1BT-q-nnqV0DTz1gwd9t5SLonGwGVomVI=2E&_di_=3D1jj89uokst52t22p5kcuqupb=
+bia01qppbq5vocsp6ortn8uo0dug=22 style=3D=22color: =23a7a8aa; text-decoratio=
+n: underline;=22 target=3D=22_blank=22>web browser</a>=2E</span></td>
+                        </tr>
+                        =20
+                     </tbody>
+                  </table>
+<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=
+=3D=22border-spacing: 0; width: auto;=22 width=3D=22auto=22>
+                     <tbody>
+                        <tr>
+                           <td style=3D=22width: 26px; mso-hide:all;=22 wid=
+th=3D=2226=22><img src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i8/respo=
+nsysimages/ghaloyalt/contentlibrary/template2=2E0/globe-icon-70x71-v1=2Epng=
+=22 style=3D=22border: none; display: block; max-width: 26px; width: 100%;=
+=22 width=3D=2226=22 /></td>
+                           <td align=3D=22center=22 class=3D=22text-align-c=
+enter=22 style=3D=22color: =23000000; font-family: 'Century Gothic', Arial,=
+ sans-serif; font-size: 11px; font-weight: 400; line-height: normal; paddin=
+g-left: 8px; text-align: center; vertical-align: middle; width: inherit;=22=
+ valign=3D=22middle=22 width=3D=22auto=22><span class=3D=22display-block=22=
+>570+ hotels, 85
+
+ countries <span class=3D=22display-none=22>&mdash;</span></span> <span cla=
+ss=3D=22display-block=22>one rewarding programme</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+      </center>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+                     =20
+
+
+
+
+<=21-- =7C=7C=7C Begin Module: E Header -->
+   =20
+
+
+
+	<=21-- =7C=7C=7C Begin Gold Member Bar -->
+				<table bgcolor=3D=22=23ae9962=22 border=3D=220=22 cellpadding=3D=220=22=
+ cellspacing=3D=220=22 width=3D=22100%=22 style=3D=22background-color: =23a=
+e9962; border-spacing: 0; width: 100%;=22>
+					<tr>
+						<td width=3D=22auto=22 class=3D=22padding-left-40px padding-right-40p=
+x=22 style=3D=22padding-left: 70px; padding-right: 70px; width: auto;=22>
+							<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 =
+width=3D=22100%=22 style=3D=22border-spacing: 0; width: 100%;=22>
+								<tr>
+									<td align=3D=22center=22 valign=3D=22middle=22 width=3D=22auto=22 =
+style=3D=22color: =23ffffff; font-family: 'Century Gothic', Arial, sans-ser=
+if; font-size: 11px; font-weight: 400; line-height: normal; padding-bottom:=
+ 15px; padding-top: 15px; text-align: center; vertical-align: middle; width=
+: auto;=22>
+										<span class=3D=22display-inline-block line-height-125=22>
+											LUISA CARETTA
+										</span>
+										<span class=3D=22display-inline-block line-height-125=22>
+											HOPP
+										</span>
+										<br />
+										<span class=3D=22line-height-125=22>
+											GOLD MEMBER: =23<a href=3D=22https://email=2Ediscoveryloyalty=2E=
+com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqq=
+zaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYTTC&_ei_=3DEkLIVj8x9EsyUELCt=
+X-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_u=
+w5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3Ds6os9=
+tr39rhp6dq517sufu9aeo9lfim11n7og57o6ljthfllebu0=22 style=3D=22color: =23fff=
+fff; text-decoration: none;=22>8585050675</a>
+										</span>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<=21-- End Gold Member Bar =7C=7C=7C -->
+   =20
+   =20
+   =20
+
+
+
+
+   =20
+   =20
+    <=21-- =7C=7C=7C Begin Brand Logo & DISCOVERY Logo -->
+
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23=
+ffffff;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td style=3D=22padding-bottom: 25px; padding-lef=
+t: 40px; padding-right: 40px; padding-top: 25px; width: auto;=22 width=3D=
+=22auto=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td align=3D=22right=22 style=3D=22vert=
+ical-align: middle; width: 245px;=22 valign=3D=22middle=22 width=3D=22245=
+=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22right=22 style=
+=3D=22padding-bottom: 5px; padding-right: 25px; padding-top: 5px; width: au=
+to;=22 width=3D=22auto=22>
+    <img src=3D=22http://static=2Ecdn=2Eresponsys=2Enet/i2/responsysimages/=
+dscvry/contentlibrary/gha_logos/avani-logo_black_290x120=2Epng=22 width=3D=
+=22121=22 height=3D=2250=22 class=3D=22height-auto margin-left-auto width-1=
+00-percent=22 style=3D=22border: none; display: block; max-height: 50px; ma=
+x-width: 120px;=22 />
+
+
+
+</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                    <td style=3D=22border-left: 1px solid =
+=23212531; vertical-align: middle; width: 324px;=22 valign=3D=22middle=22 w=
+idth=3D=22324=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                              <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; padding-left: 35px; padding-top: 5px; text-align=
+: left; width: auto;=22 width=3D=22auto=22><a href=3D=22https://email=2Edis=
+coveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4Ei=
+zgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYTWC&_ei_=3DE=
+kLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre=
+0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=
+=2E&_di_=3D68gl2t14jfokukhh2k6lru8pqkar3ah0v0ifefcdlmgdq9j8ejog=22 style=3D=
+=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22=22><img alt=
+=3D=22=22 src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i8/responsysimage=
+s/ghaloyalt/contentlibrary/template2=2E0/discovery-logo-596x73-v1=2Epng=22 =
+style=3D=22border: none; display: block; margin-right: auto; max-width: 200=
+px; width: 100%;=22 width=3D=22200=22 /></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <=21-- End Brand Logo & DISCOVERY Logo =7C=7C=7C -->
+       =20
+       <=21-- =7C=7C=7C Begin Navigation Bar Logic -->    =20
+       =20
+  <=21-- =7C=7C=7C Begin Navigation Bar -->
+
+                  <table bgcolor=3D=22=231d252d=22 border=3D=220=22 cellpad=
+ding=3D=220=22 cellspacing=3D=220=22 style=3D=22background-color: =231d252d=
+; border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td class=3D=22padding-left-10px padding-right-1=
+0px=22 style=3D=22padding-left: 40px; padding-right: 40px; width: auto;=22 =
+width=3D=22auto=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td align=3D=22center=22 style=3D=22col=
+or: =23ffffff; font-family: 'Century Gothic', Arial, sans-serif; font-size:=
+ 11px; font-weight: 400; line-height: normal; padding-bottom: 15px; padding=
+-top: 15px; text-align: center; vertical-align: middle; width: auto;=22 val=
+ign=3D=22middle=22 width=3D=22auto=22><span class=3D=22display-block line-h=
+eight-200 padding-left-10px padding-right-10px=22 style=3D=22display: inlin=
+e-block;=22> <a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri=
+_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO=
+2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYTAC&_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXg=
+xU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMf=
+lQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3D4ekf1171kthrqcv1tv4=
+7p4858u21ha4frd54un72o6ru9o2e2lb0=22 style=3D=22color: =23ffffff; text-deco=
+ration: none;=22 target=3D=22_blank=22>SPECIAL OFFERS</a> <span style=3D=22=
+display: inline-block;=22>&nbsp;<span class=3D=22display-none=22>&nbsp;&nbs=
+p;&nbsp;&nbsp;</span>&nbsp;</span> <a href=3D=22https://email=2Ediscoverylo=
+yalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW=
+1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYTCC&_ei_=3DEkLIVj8x9=
+EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1A=
+fSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=
+=3Dentkhu2697s1hv6t7ustqk6il0rlvqbfhipgrk5sqo1p9dqet45g=22 style=3D=22color=
+: =23ffffff; text-decoration: none;=22 target=3D=22_blank=22>DESTINATIONS</=
+a> <span style=3D=22display: inline-block;=22>&nbsp;<span class=3D=22displa=
+y-none=22>&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;</span> <a href=3D=22https:/=
+/email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSA=
+zcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUY=
+URC&_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAes=
+L-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyI=
+v3_Cqwp7HfCs=2E&_di_=3Delo3jh6sqfjeesi979on1ikq2jc048v02rm8qhdirpqst8kfi2h0=
+=22 style=3D=22color: =23ffffff; text-decoration: none;=22 target=3D=22_bla=
+nk=22>FIND HOTELS</a> </span> <span class=3D=22display-none=22 style=3D=22d=
+isplay: inline-block;=22>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span =
+class=3D=22display-block line-height-200 padding-left-10px padding-right-10=
+px=22 style=3D=22display: inline-block;=22> <a href=3D=22https://email=2Edi=
+scoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4E=
+izgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYUTC&_ei_=3D=
+EkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimr=
+e0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfC=
+s=2E&_di_=3Db44bmba4uko14m3oda4g6tvvpgg0b3eb4sa58iopjsalgvqsfv3g=22 style=
+=3D=22color: =23ffffff; text-decoration: none;=22 target=3D=22_blank=22>BEN=
+EFITS</a> <span style=3D=22display: inline-block;=22>&nbsp;<span class=3D=
+=22display-none=22>&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;</span> <a href=3D=
+=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJ=
+lCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVX=
+tpKX%3DUUYUWC&_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ=
+7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviA=
+mIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3D4p2u9dahol3eusu563odhudt1t54v0i42qm6ab0dlt=
+95a627iseg=22 style=3D=22color: =23ffffff; text-decoration: none;=22 target=
+=3D=22_blank=22>LOCAL EXPERIENCES</a> </span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <=21-- End Navigation Bar =7C=7C=7C -->
+           =20
+   =20
+   =20
+    <=21-- =7C=7C=7C Begin Navigation Bar Logic --><=21-- =7C=7C=7C Begin F=
+ull-Width Image -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td align=3D=22left=22 data-content-region-name=3D=22Main=
+Hero=22 style=3D=22text-align: left; vertical-align: top; width: auto;=22 v=
+align=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ediscovery=
+loyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrY=
+nW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUADCC&amp;_ei_=3DEkL=
+IVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b=
+8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=
+=2E&amp;_di_=3Df2349n3i580e2mqfrpvmvsk6mioak53m0cch730oo5hrl7f2nd2g=22 styl=
+e=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22MYSK AL B=
+ADAYER RETREAT=22><img alt=3D=22MYSK AL BADAYER RETREAT=22 src=3D=22https:/=
+/static=2Ecdn=2Eresponsys=2Enet/i8/responsysimages/ghaloyalt/contentlibrary=
+/crm_2020/2020_46/hero_sept-new-hotels_al-badayer-retreat_1300x800_v2=2Ejpg=
+=22 style=3D=22border: none; color: =23000000; display: block; font-family:=
+ 'Century Gothic', Arial, sans-serif; font-size: 16px; font-weight: 400; ma=
+x-width: 650px; text-align: left; text-decoration: none; vertical-align: to=
+p; width: 100%;=22 width=3D=22650=22 /> </a>
+</td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Full-Width Image =7C=7C=7C --><=21-- =7C=7C=7C Begin On=
+e (1/1) Column Headline / Copy / 1x CTA -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23ffffff;=
+=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td data-content-region-name=3D=22MainCopy=22 style=3D=22=
+padding-bottom: 20px; padding-left: 40px; padding-right: 40px; padding-top:=
+ 35px; width: auto;=22 width=3D=22auto=22><table border=3D=220=22 cellpaddi=
+ng=3D=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100=
+%;=22 width=3D=22100%=22>
+   <tbody>
+      <tr>
+      </tr>
+      <tr>
+         <td align=3D=22center=22 style=3D=22color: =23000000; font-family:=
+ 'Century Gothic', Arial, sans-serif; font-size: 22px; font-weight: 700; li=
+ne-height: normal; padding-bottom: 20px; text-align: center; width: auto;=
+=22 width=3D=22auto=22>NEW HIDEAWAYS FOR YOUR DREAM HOLIDAY</td>
+      </tr>
+      <tr>
+         <td align=3D=22center=22 style=3D=22color: =23000000; font-family:=
+ 'Century Gothic', Arial, sans-serif; font-size: 16px; font-weight: 400; li=
+ne-height: normal; padding-bottom: 5px; text-align: center; width: auto;=22=
+ width=3D=22auto=22>It&rsquo;s time to dream up some travel plans, and ther=
+e&rsquo;s no better place to start than with DISCOVERY&rsquo;s fresh collec=
+tion of luxury hotels and resorts=2E From eco-retreats deep into the heart =
+of the desert to bold and breathtaking city escapes, extraordinary experien=
+ces are waiting for you in our brand new properties=2E</td>
+      </tr>
+      <tr>
+         <td style=3D=22padding-bottom: 5px; padding-left: 25px; padding-ri=
+ght: 5px; padding-top: 5px; width: auto;=22 width=3D=22auto=22>
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td align=3D=22center=22 style=3D=22text-align: center; w=
+idth: auto;=22 width=3D=22auto=22>
+                  <div><=21--=5Bif mso=5D>
+<v:roundrect xmlns:v=3D=22urn:schemas-microsoft-com:vml=22 xmlns:w=3D=22urn=
+:schemas-microsoft-com:office:word=22 href=3D=22https://email=2Ediscoverylo=
+yalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW=
+1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYUAC&amp;_ei_=3DEkLIV=
+j8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M=
+3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&=
+amp;_di_=3Duim1gearbcfaa180t4nq08kclc813s7ab08jtam21qeu677i5h90=22 style=3D=
+=22height: 40px; v-text-anchor: middle; width: 200px;=22 arcsize=3D=2216%=
+=22 strokecolor=3D=22=23929392=22 fillcolor=3D=22=23040707=22>
+<w:anchorlock/>
+<center style=3D=22color: =23ffffff; font-family: 'Century Gothic', Arial, =
+sans-serif; font-size: 16px; font-weight: 700;=22>
+VISIT NEW HOTELS
+</center>
+</v:roundrect>
+<=21=5Bendif=5D--><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/c=
+c?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqA=
+sTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYUAC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUi=
+InGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO=
+3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Duim1ge=
+arbcfaa180t4nq08kclc813s7ab08jtam21qeu677i5h90=22 style=3D=22background-col=
+or: =23040707; border: 1px solid =23929392; border-radius: 4px; color: =23f=
+fffff; display: inline-block; font-family: 'Century Gothic', Arial, sans-se=
+rif; font-size: 16px; font-weight: 700; line-height: normal; padding-bottom=
+: 10px; padding-left: 35px; padding-right: 35px; padding-top: 10px; text-al=
+ign: center; text-decoration: none; width: auto; -webkit-text-size-adjust: =
+none; mso-hide: all;=22 target=3D=22_blank=22><span class=3D=22display-inli=
+ne-block=22>VISIT NEW HOTELS</span></a>
+                  </div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+</td>
+               </tr>
+               <tr>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End One (1/1) Column Headline / Copy / 1x CTA =7C=7C=7C -->=
+<=21-- =7C=7C=7C=7C  Begin Blank + Gold Divider  =7C=7C=7C=7C -->
+
+         <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 border=3D=22=
+0=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border-spacing:=
+ 0; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td width=3D=22auto=22>
+                  <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 bor=
+der=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border=
+-spacing: 0; width: 50%; text-align: center;=22 width=3D=2250%=22>
+                     <tbody>
+                        <tr>
+                           <td style=3D=22border-bottom: 1px solid =23ae996=
+2; width: 50%; padding-top: 10px;=22 width=3D=22auto=22></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; padding-bottom: 10px; paddin=
+g-top: 10px; background-color: =23ffffff;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22width: auto;=22 width=3D=22auto=22></td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End 75% Small Gold Divider =7C=7C=7C --><=21-- Begin Full W=
+idth Banner =7C=7C=7C -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td align=3D=22left=22 style=3D=22text-align: left; verti=
+cal-align: top; width: auto;=22 valign=3D=22top=22 width=3D=22auto=22><a hr=
+ef=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpg=
+lLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgce=
+YzdVXtpKX%3DUUYBWC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubn=
+md3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUl=
+jsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Dderik4d3ek03s4rqud9c6hn7dk8ui=
+rqqnr0h70n6hqsbsj4cebc0=22 style=3D=22text-decoration: none;=22 target=3D=
+=22_blank=22 title=3D=22SHARJAH COLLECTION BY MYSK=22><img alt=3D=22SHARJAH=
+ COLLECTION BY MYSK=22 src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i8/r=
+esponsysimages/ghaloyalt/contentlibrary/crm_2020/2020_46/banner_sept-new-ho=
+tels_1300x300=2Ejpg=22 style=3D=22border: none; color: =23000000; display: =
+block; font-family: 'Century Gothic', Arial, sans-serif; font-size: 16px; f=
+ont-weight: 400; max-width: 650px; text-align: left; text-decoration: none;=
+ vertical-align: top; width: 100%;=22 width=3D=22650=22 /> </a></td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Full-Width Image =7C=7C=7C --><=21-- =7C=7C=7C Begin On=
+e (1/1) Column Headline / Copy  -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23ffffff;=
+=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22padding-bottom: 0px; padding-left: 40px; p=
+adding-right: 40px; padding-top: 35px; width: auto;=22 width=3D=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22color: =2300=
+0000; font-family: 'Century Gothic', Arial, sans-serif; font-size: 20px; fo=
+nt-weight: 700; line-height: normal; padding-bottom: 20px; text-align: cent=
+er; width: auto;=22 width=3D=22auto=22><nobr>A WARM WELCOME ACROSS THE UAE<=
+/nobr></td>
+                        </tr>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22color: =2300=
+0000; font-family: 'Century Gothic', Arial, sans-serif; font-size: 16px; fo=
+nt-weight: 400; line-height: normal; padding-bottom: 20px; text-align: cent=
+er; width: auto;=22 width=3D=22auto=22>The United Arab Emirates has officia=
+lly reopened for travellers and is ready to share its wonders once more=2E =
+Escape at our exceptional properties across the country and discover one of=
+ our newest soulful retreats in the heart of Sharjah=2E</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- =7C=7C=7C=7C  Begin Blank + Gold Divider  =7C=7C=7C=7C -->
+
+         <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 border=3D=22=
+0=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border-spacing:=
+ 0; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td width=3D=22auto=22>
+                  <table align=3D=22center=22 bgcolor=3D=22=23ffffff=22 bor=
+der=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border=
+-spacing: 0; width: 50%; text-align: center;=22 width=3D=2250%=22>
+                     <tbody>
+                        <tr>
+                           <td style=3D=22border-bottom: 1px solid =23ae996=
+2; width: 50%; padding-top: 5px;=22 width=3D=22auto=22></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; padding-bottom: 20px; paddin=
+g-top: 5px; background-color: =23ffffff;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22width: auto;=22 width=3D=22auto=22></td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End 75% Small Gold Divider =7C=7C=7C --><=21-- =7C=7C=7C Be=
+gin Two (2/1) Column Image / Headline / Copy / CTA -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23ffffff;=
+=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22padding-left: 35px; padding-right: 35px; p=
+adding-top: 5px; width: auto;=22 width=3D=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22font-size: 0=
+; text-align: center; vertical-align: top; width: auto;=22 valign=3D=22top=
+=22 width=3D=22auto=22><=21--=5Bif (gte mso 9)=7C(IE)=5D>
+<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 width=
+=3D=22100%=22 style=3D=22border-spacing: 0; font-family: Arial, sans-serif;=
+ width: 100%;=22>
+<tr>
+<td valign=3D=22middle=22 width=3D=22290=22 style=3D=22vertical-align: midd=
+le; width: 290px;=22>
+<=21=5Bendif=5D-->
+                           <div style=3D=22display: inline-block; max-width=
+: 290px; width: 100%; vertical-align: top;=22 valign=3D=22top=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td style=3D=22padding-bottom: 5px; pad=
+ding-left: 5px; padding-right: 5px; padding-top: 5px; width: auto;=22 width=
+=3D=22auto=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; text-align: left; vertical-align: top; width: au=
+to;=22 valign=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ed=
+iscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4=
+EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYUCC&amp;_e=
+i_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kU=
+Usimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqw=
+p7HfCs=2E&amp;_di_=3Daqjl6g8er5inv9tifanq378u45knr2a7kf4msrsh1bi8pjpufs9g=
+=22 style=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22M=
+YSK KINGFISHER RETREAT=22><img alt=3D=22MYSK KINGFISHER RETREAT=22 src=3D=
+=22https://static=2Ecdn=2Eresponsys=2Enet/i8/responsysimages/ghaloyalt/cont=
+entlibrary/crm_2020/2020_46/submod1_sept-new-hotels_kingfisher-retreat_600x=
+480=2Ejpg=22 style=3D=22border: none; display: block; margin-left: auto; ma=
+rgin-right: auto; max-width: 280px; width: 100%;=22 width=3D=22280=22 /> </=
+a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 20px; text-decoration: underline; font-weight: 700; line-height: =
+normal; padding-bottom: 10px; text-align: center; width: auto;=22 width=3D=
+=22auto=22><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=
+=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2=
+s2jzdsLig9zclzgceYzdVXtpKX%3DUUYWRC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6=
+FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCt=
+BMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Dj05k0f72bv43=
+9gan3gb6h6k05e4413vqanch02bu2slcnnnajo90=22 style=3D=22color: =23000000; te=
+xt-decoration: none;=22 target=3D=22_blank=22>MYSK KINGFISHER RETREAT</a></=
+td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 14px; font-weight: 400; line-height: normal; padding-bottom: 15px=
+; text-align: center; width: auto;=22 width=3D=22auto=22>SHARJAH, UNITED AR=
+AB EMIRATES</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </div>
+                           <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+</td>
+<td valign=3D=22middle=22 width=3D=22290=22 style=3D=22vertical-align: midd=
+le; width: 290px;=22>
+<=21=5Bendif=5D-->
+
+                           <div style=3D=22display: inline-block; max-width=
+: 290px; width: 100%; vertical-align: top;=22 valign=3D=22top=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td style=3D=22padding-bottom: 5px; pad=
+ding-left: 5px; padding-right: 5px; padding-top: 5px; width: auto;=22 width=
+=3D=22auto=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; text-align: left; vertical-align: top; width: au=
+to;=22 valign=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ed=
+iscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4=
+EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYWTC&amp;_e=
+i_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kU=
+Usimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqw=
+p7HfCs=2E&amp;_di_=3D11t31hmmgvtarol64t8fde5sd9kuf0b0vil8p5jpcvq0cdeecemg=
+=22 style=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22M=
+YSK AL FAYA RETREAT=22><img alt=3D=22MYSK AL FAYA RETREAT=22 src=3D=22https=
+://static=2Ecdn=2Eresponsys=2Enet/i8/responsysimages/ghaloyalt/contentlibra=
+ry/crm_2020/2020_46/submod2_sept-new-hotels_alfaya-retreat_600x480=2Ejpg=22=
+ style=3D=22border: none; display: block; margin-left: auto; margin-right: =
+auto; max-width: 280px; width: 100%;=22 width=3D=22280=22 /> </a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 20px; text-decoration: underline; font-weight: 700; line-height: =
+normal; padding-bottom: 10px; text-align: center; width: auto;=22 width=3D=
+=22auto=22><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=
+=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2=
+s2jzdsLig9zclzgceYzdVXtpKX%3DUUYWWC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6=
+FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCt=
+BMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Dj9h0fectqlmp=
+hmekschtrffo29upnsgabbi4054drq59evmivthg=22 style=3D=22color: =23000000; te=
+xt-decoration: none;=22 target=3D=22_blank=22>MYSK AL FAYA RETREAT</a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 14px; font-weight: 400; line-height: normal; padding-bottom: 15px=
+; text-align: center; width: auto;=22 width=3D=22auto=22>SHARJAH, UNITED AR=
+AB EMIRATES</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </div>
+                           <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+</td>
+</tr>
+</table>
+<=21=5Bendif=5D--></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Two (2/1) Column Image / Headline / Copy / CTA =7C=7C=
+=7C --><=21-- =7C=7C=7C Begin Two (2/1) Column Image / Headline / Copy / CT=
+A -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23ffffff;=
+=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22padding-left: 35px; padding-right: 35px; p=
+adding-top: 5px; width: auto;=22 width=3D=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22font-size: 0=
+; text-align: center; vertical-align: top; width: auto;=22 valign=3D=22top=
+=22 width=3D=22auto=22><=21--=5Bif (gte mso 9)=7C(IE)=5D>
+<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 width=
+=3D=22100%=22 style=3D=22border-spacing: 0; font-family: Arial, sans-serif;=
+ width: 100%;=22>
+<tr>
+<td valign=3D=22middle=22 width=3D=22290=22 style=3D=22vertical-align: midd=
+le; width: 290px;=22>
+<=21=5Bendif=5D-->
+                           <div style=3D=22display: inline-block; max-width=
+: 290px; width: 100%; vertical-align: top;=22 valign=3D=22top=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td style=3D=22padding-bottom: 5px; pad=
+ding-left: 5px; padding-right: 5px; padding-top: 5px; width: auto;=22 width=
+=3D=22auto=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; text-align: left; vertical-align: top; width: au=
+to;=22 valign=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ed=
+iscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4=
+EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYWAC&amp;_e=
+i_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kU=
+Usimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqw=
+p7HfCs=2E&amp;_di_=3D51m21vq2fvunnecj8p5qieautbejtq9ouhsd661eiob2h839qjt0=
+=22 style=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22M=
+YSK AL BADAYER RETREAT=22><img alt=3D=22MYSK AL BADAYER RETREAT=22 src=3D=
+=22https://static=2Ecdn=2Eresponsys=2Enet/i8/responsysimages/ghaloyalt/cont=
+entlibrary/crm_2020/2020_46/submod3_sept-new-hotels_albadayer-retreat_600x4=
+80=2Ejpg=22 style=3D=22border: none; display: block; margin-left: auto; mar=
+gin-right: auto; max-width: 280px; width: 100%;=22 width=3D=22280=22 /></a>=
+</td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 20px; font-weight: 700; text-decoration: underline; line-height: =
+normal; padding-bottom: 10px; text-align: center; width: auto;=22 width=3D=
+=22auto=22><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=
+=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2=
+s2jzdsLig9zclzgceYzdVXtpKX%3DUUYWCC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6=
+FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCt=
+BMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Dd9vcvpi4j15h=
+64t19gb98ll30ht16d70tmcr7m8uu0lopv92tv50=22 style=3D=22color: =23000000; te=
+xt-decoration: none;=22 target=3D=22_blank=22>MYSK AL BADAYER RETREAT</a></=
+td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 14px; font-weight: 400; line-height: normal; padding-bottom: 15px=
+; text-align: center; width: auto;=22 width=3D=22auto=22>SHARJAH, UNITED AR=
+AB EMIRATES</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </div>
+                           <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+</td>
+<td valign=3D=22middle=22 width=3D=22290=22 style=3D=22vertical-align: midd=
+le; width: 290px;=22>
+<=21=5Bendif=5D-->
+
+                           <div style=3D=22display: inline-block; max-width=
+: 290px; width: 100%; vertical-align: top;=22 valign=3D=22top=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td style=3D=22padding-bottom: 5px; pad=
+ding-left: 5px; padding-right: 5px; padding-top: 5px; width: auto;=22 width=
+=3D=22auto=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; text-align: left; vertical-align: top; width: au=
+to;=22 valign=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ed=
+iscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4=
+EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYYRC&amp;_e=
+i_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kU=
+Usimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqw=
+p7HfCs=2E&amp;_di_=3Dv3te159tiqkgdij8akmrm07nuq7gn1bkgu6fgbb64ibe6b8mbpm0=
+=22 style=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22V=
+ICEROY WASHINGTON DC=22><img alt=3D=22VICEROY WASHINGTON DC=22 src=3D=22htt=
+ps://static=2Ecdn=2Eresponsys=2Enet/i8/responsysimages/ghaloyalt/contentlib=
+rary/crm_2020/2020_46/submod4_sept-new-hotels_viceroy-dc_600x480=2Ejpg=22 s=
+tyle=3D=22border: none; display: block; margin-left: auto; margin-right: au=
+to; max-width: 280px; width: 100%;=22 width=3D=22280=22 /></a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 20px; font-weight: 700; line-height: normal; padding-bottom: 10px=
+; text-align: center; text-decoration: underline; width: auto;=22 width=3D=
+=22auto=22><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=
+=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2=
+s2jzdsLig9zclzgceYzdVXtpKX%3DUUYYTC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6=
+FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCt=
+BMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Dr10l48g0u47v=
+n2nj2c219n5f2jeptqpiol3smb80s2vn8b2gv0ig=22 style=3D=22color: =23000000; te=
+xt-decoration: none;=22 target=3D=22_blank=22>VICEROY WASHINGTON DC</a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 14px; font-weight: 400; line-height: normal; padding-bottom: 15px=
+; text-align: center; width: auto;=22 width=3D=22auto=22>WASHINGTON D=2EC=
+=2E, USA</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </div>
+                           <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+</td>
+</tr>
+</table>
+<=21=5Bendif=5D--></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Two (2/1) Column Image / Headline / Copy / CTA =7C=7C=
+=7C --><=21-- =7C=7C=7C Begin Two (2/1) Column Image / Headline / Copy / CT=
+A -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23ffffff;=
+=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22padding-left: 35px; padding-right: 35px; p=
+adding-top: 5px; width: auto;=22 width=3D=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22font-size: 0=
+; text-align: center; vertical-align: top; width: auto;=22 valign=3D=22top=
+=22 width=3D=22auto=22><=21--=5Bif (gte mso 9)=7C(IE)=5D>
+<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 width=
+=3D=22100%=22 style=3D=22border-spacing: 0; font-family: Arial, sans-serif;=
+ width: 100%;=22>
+<tr>
+<td valign=3D=22middle=22 width=3D=22290=22 style=3D=22vertical-align: midd=
+le; width: 290px;=22>
+<=21=5Bendif=5D-->
+                           <div style=3D=22display: inline-block; max-width=
+: 290px; width: 100%; vertical-align: top;=22 valign=3D=22top=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td style=3D=22padding-bottom: 5px; pad=
+ding-left: 5px; padding-right: 5px; padding-top: 5px; width: auto;=22 width=
+=3D=22auto=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; text-align: left; vertical-align: top; width: au=
+to;=22 valign=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ed=
+iscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4=
+EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYYWC&amp;_e=
+i_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kU=
+Usimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqw=
+p7HfCs=2E&amp;_di_=3Due17q8oqt7n2qnme4n14rabluv15dtparsda3s8c7qikb4di0vkg=
+=22 style=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22Q=
+T AUCKLAND=22><img alt=3D=22QT AUCKLAND=22 src=3D=22https://static=2Ecdn=2E=
+responsys=2Enet/i8/responsysimages/ghaloyalt/contentlibrary/crm_2020/2020_4=
+6/submod5_sept-new-hotels_qt-auckland_600x480=2Ejpg=22 style=3D=22border: n=
+one; display: block; margin-left: auto; margin-right: auto; max-width: 280p=
+x; width: 100%;=22 width=3D=22280=22 /></a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 20px; font-weight: 700; line-height: normal; text-decoration: und=
+erline; padding-bottom: 10px; text-align: center; width: auto;=22 width=3D=
+=22auto=22><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=
+=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2=
+s2jzdsLig9zclzgceYzdVXtpKX%3DUUYYAC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6=
+FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCt=
+BMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3D7ild658bun5i=
+e2ri4eorqvo5h2g4avk646cla6l4t24ml3i73nh0=22 style=3D=22color: =23000000; te=
+xt-decoration: none;=22 target=3D=22_blank=22>QT AUCKLAND</a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 14px; font-weight: 400; line-height: normal; padding-bottom: 15px=
+; text-align: center; width: auto;=22 width=3D=22auto=22>AUCKLAND, NEW ZEAL=
+AND</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </div>
+                           <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+</td>
+<td valign=3D=22middle=22 width=3D=22290=22 style=3D=22vertical-align: midd=
+le; width: 290px;=22>
+<=21=5Bendif=5D-->
+
+                           <div style=3D=22display: inline-block; max-width=
+: 290px; width: 100%; vertical-align: top;=22 valign=3D=22top=22>
+                           <table border=3D=220=22 cellpadding=3D=220=22 ce=
+llspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=
+=22100%=22>
+                              <tbody>
+                                 <tr>
+                                    <td style=3D=22padding-bottom: 5px; pad=
+ding-left: 5px; padding-right: 5px; padding-top: 5px; width: auto;=22 width=
+=3D=22auto=22>
+                                    <table border=3D=220=22 cellpadding=3D=
+=220=22 cellspacing=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22=
+ width=3D=22100%=22>
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D=22left=22 style=
+=3D=22padding-bottom: 5px; text-align: left; vertical-align: top; width: au=
+to;=22 valign=3D=22top=22 width=3D=22auto=22><a href=3D=22https://email=2Ed=
+iscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4=
+EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYYCC&amp;_e=
+i_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kU=
+Usimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqw=
+p7HfCs=2E&amp;_di_=3D73cusiu0qs25qiit7r06blnmd6i814fq95k2i1lcbtterfgcjvn0=
+=22 style=3D=22text-decoration: none;=22 target=3D=22_blank=22 title=3D=22C=
+APELLA BANGKOK=22><img alt=3D=22CAPELLA BANGKOK=22 src=3D=22https://static=
+=2Ecdn=2Eresponsys=2Enet/i8/responsysimages/ghaloyalt/contentlibrary/crm_20=
+20/2020_46/submod6_sept-new-hotels_capella-bangkok_v2_600x480=2Ejpg=22 styl=
+e=3D=22border: none; display: block; margin-left: auto; margin-right: auto;=
+ max-width: 280px; width: 100%;=22 width=3D=22280=22 /> </a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 20px; font-weight: 700; text-decoration: underline; line-height: =
+normal; padding-bottom: 10px; text-align: center; width: auto;=22 width=3D=
+=22auto=22><a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=
+=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2=
+s2jzdsLig9zclzgceYzdVXtpKX%3DUUYARC&amp;_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6=
+FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCt=
+BMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&amp;_di_=3Dv64cj0s1u2jf=
+brkeql764h9hc718a03sqr7rl0cfopg5d84nrhng=22 style=3D=22color: =23000000; te=
+xt-decoration: none;=22 target=3D=22_blank=22>CAPELLA BANGKOK</a></td>
+                                          </tr>
+                                          <tr>
+                                             <td align=3D=22center=22 style=
+=3D=22color: =23000000; font-family: 'Century Gothic', Arial, sans-serif; f=
+ont-size: 14px; font-weight: 400; line-height: normal; padding-bottom: 15px=
+; text-align: center; width: auto;=22 width=3D=22auto=22>BANGKOK, THAILAND<=
+/td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </div>
+                           <=21--=5Bif (gte mso 9)=7C(IE)=5D>
+</td>
+</tr>
+</table>
+<=21=5Bendif=5D--></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Two (2/1) Column Image / Headline / Copy / CTA =7C=7C=
+=7C --><=21-- =7C=7C=7C Begin Blank Divider --><=21-- End Blank Divider =7C=
+=7C=7C --><=21-- =7C=7C=7C Begin DISCOVERY Logo Divider -->
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; padding-bottom: 10px; paddin=
+g-top: 10px; background-color: =23ffffff;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22width: auto;=22 width=3D=22auto=22></td>
+               </tr>
+            </tbody>
+         </table>
+
+         <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=
+=22 style=3D=22border-spacing: 0; width: 100%; background-color: =23ffffff;=
+=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22width: auto;=22 width=3D=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 height=3D=222=22 style=
+=3D=22border-bottom: 2px solid =23ae9962; font-size: 2px; line-height: 2px;=
+ text-align: center; vertical-align: middle;=22 valign=3D=22middle=22><img =
+height=3D=220=22 src=3D=22http://static=2Ecdn=2Eresponsys=2Enet/i2/responsy=
+simages/dscvry/contentlibrary/template2=2E0/discovery_template_spacer=2Egif=
+=22 style=3D=22border: none; display: block; margin-left: auto; margin-righ=
+t: auto; max-width: 0px; width: 100%;=22 width=3D=220=22 /></td>
+                        </tr>
+                        <tr>
+                           <td align=3D=22center=22 height=3D=221=22 style=
+=3D=22font-size: 1px; line-height: 1px; padding-top: 20px; text-align: cent=
+er; vertical-align: middle;=22 valign=3D=22middle=22></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <td style=3D=22padding-left: 12px; padding-right: 12px; w=
+idth: 190px;=22 width=3D=22190=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22text-align: =
+center; vertical-align: middle; width: auto;=22 valign=3D=22middle=22 width=
+=3D=22auto=22><img src=3D=22http://static=2Ecdn=2Eresponsys=2Enet/i2/respon=
+sysimages/dscvry/contentlibrary/template2=2E0/discovery-logo-596x127-1=2Epn=
+g=22 style=3D=22border: none; display: block; margin-left: auto; margin-rig=
+ht: auto; max-width: 190px; width: 100%;=22 width=3D=22190=22 /></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <td style=3D=22width: auto;=22 width=3D=22auto=22>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 height=3D=222=22 style=
+=3D=22border-bottom: 2px solid =23ae9962; font-size: 2px; line-height: 2px;=
+ text-align: center; vertical-align: middle;=22 valign=3D=22middle=22></td>
+                        </tr>
+                        <tr>
+                           <td align=3D=22center=22 height=3D=221=22 style=
+=3D=22font-size: 1px; line-height: 1px; padding-top: 20px; text-align: cent=
+er; vertical-align: middle;=22 valign=3D=22middle=22></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End DISCOVERY Logo Divider =7C=7C=7C --><=21-- /// Begin Em=
+ail Footer Table -->
+
+  <=21-- /// Begin Email Footer Table -->
+
+         <table bgcolor=3D=22=23ffffff=22 align=3D=22center=22 border=3D=22=
+0=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border-spacing:=
+ 0; max-width: 650px; width: 100%;=22 width=3D=22100%=22>
+            <tbody>
+               <tr>
+                  <td style=3D=22padding-bottom: 25px; padding-left: 40px; =
+padding-right: 40px; padding-top: 25px; width: auto;=22 width=3D=22auto=22>
+                  <center>
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 112px;=22 width=3D=22112=22>
+                     <tbody>
+                        <tr>
+                           <td style=3D=22width: 48px;=22 width=3D=2248=22>=
+<a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3=
+DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zc=
+lzgceYzdVXtpKX%3DUUYATC&_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ub=
+nmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsU=
+ljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3Dn7at4lhldb1ctbknumoestf02cd6f7bh=
+i7d5l4g8mkngghr2prs0=22 style=3D=22text-decoration: none;=22 target=3D=22_b=
+lank=22 title=3D=22=22><img src=3D=22https://static=2Ecdn=2Eresponsys=2Enet=
+/i8/responsysimages/ghaloyalt/contentlibrary/template2=2E0/instagram-icon-9=
+7x97-v1=2Epng=22 style=3D=22border: none; display: block; margin-left: auto=
+; margin-right: auto; max-width: 48px; width: 100%;=22 width=3D=2248=22 /> =
+</a></td>
+                           <td style=3D=22width: 16px;=22 width=3D=2216=22>=
+</td>
+                           <td style=3D=22width: 48px;=22 width=3D=2248=22>=
+<a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3=
+DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zc=
+lzgceYzdVXtpKX%3DUUYAWC&_ei_=3DEkLIVj8x9EsyUELCtX-jUiInGMu6FXgxU-hfAYh4Y-ub=
+nmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3K0gCtBMflQiP1_eJZVpsU=
+ljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3Dbqg4tbler3a9dhcf92jvkccdoct5vlau=
+b0c5g5bkhcmfm2lgvffg=22 style=3D=22text-decoration: none;=22 target=3D=22_b=
+lank=22 title=3D=22=22><img src=3D=22https://static=2Ecdn=2Eresponsys=2Enet=
+/i8/responsysimages/ghaloyalt/contentlibrary/template2=2E0/facebook-icon-97=
+x97-v1=2Epng=22 style=3D=22border: none; display: block; margin-left: auto;=
+ margin-right: auto; max-width: 48px; width: 100%;=22 width=3D=2248=22 /> <=
+/a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </center>
+
+                  <table border=3D=220=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border-spacing: 0; width: 100%;=22 width=3D=22100%=22>
+                     <tbody>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22color: =2300=
+0000; font-family: 'Century Gothic', Arial, sans-serif; font-size: 10px; fo=
+nt-weight: 700; line-height: normal; padding-top: 25px; text-align: center;=
+ width: auto;=22 width=3D=22auto=22><span class=3D=22display-block=22> <a h=
+ref=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DAQp=
+glLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsLig9zclzgc=
+eYzdVXtpKX%3DUUYAAC&_ei_=3DEn7Zyxw7ZeHQ15uFy7bgpOY_jUn9XKejO9im2vS37v-5P7Kh=
+exyixnIowDmKSG4wKlOlHLN20ld-DOSHtBe02henLK8_0EsuBdwm-K-LEVdaEsysJ9I14CbdGUu=
+lII0MAzqVkMhbZRWcZ5UUpEFD8HpgsbzyvPZgouOmGiHV-O0cpFH7rM0Mrfg7DVMspREfs3RZqF=
+jm3tOKEppw75voZuXYCKHzYUq0RgTZNC_2ZUZ86toOmQEeJw=2E&_di_=3D1mu6745nbs1jse4e=
+j39d2oc4pccmb92d1fmb7qn0gch853lq4or0=22 style=3D=22color: =23000000; text-d=
+ecoration: none;=22 target=3D=22_blank=22>UNSUBSCRIBE</a> </span> <span cla=
+ss=3D=22display-none=22> &nbsp;=7C&nbsp; </span> <span class=3D=22display-b=
+lock line-height-200=22> <a href=3D=22https://email=2Ediscoveryloyalty=2Eco=
+m/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqza=
+oMsnrqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYACC&_ei_=3DEkLIVj8x9EsyUELCtX-=
+jUiInGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5=
+UMO3K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3D392bb5e=
+3afkj01j99s3m5df1f7eqtgpa7e0tbmrgtho1mlhm92tg=22 style=3D=22color: =2300000=
+0; text-decoration: none;=22 target=3D=22_blank=22>PRIVACY POLICY</a> </spa=
+n> <span class=3D=22display-none=22> &nbsp;=7C&nbsp; </span> <span class=3D=
+=22display-block=22> <a href=3D=22https://email=2Ediscoveryloyalty=2Ecom/pu=
+b/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsn=
+rqAsTGDO2s2jzdsLig9zclzgceYzdVXtpKX%3DUUYBRC&_ei_=3DEkLIVj8x9EsyUELCtX-jUiI=
+nGMu6FXgxU-hfAYh4Y-ubnmd3cBhCZJ7XJ-akzAesL-N-kUUsimre0b8M3Z1AfSIqRs_uw5UMO3=
+K0gCtBMflQiP1_eJZVpsUljsICniviAmIJPuS3EyIv3_Cqwp7HfCs=2E&_di_=3Dcei3fvq0bjo=
+a85t5nsq82jvr6mshn20gptarjkavvjm0rns81tj0=22 style=3D=22color: =23000000; t=
+ext-decoration: none;=22 target=3D=22_blank=22>CONTACT US</a> </span></td>
+                        </tr>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22color: =2300=
+0000; font-family: 'Century Gothic', Arial, sans-serif; font-size: 10px; fo=
+nt-weight: 400; line-height: normal; padding-top: 25px; text-align: center;=
+ width: auto;=22 width=3D=22auto=22>GHA Loyalty DMCC<br />
+                           21st Floor<br />
+                           Jumeirah Business Center 5 Tower<br />
+                           Jumeirah Lake Towers<br />
+                           PO Box 487771<br />
+                           Dubai, UAE</td>
+                        </tr>
+                        <tr>
+                           <td align=3D=22center=22 style=3D=22color: =2300=
+0000; font-family: 'Century Gothic', Arial, sans-serif; font-size: 10px; fo=
+nt-weight: 400; line-height: normal; padding-top: 25px; text-align: center;=
+ width: auto;=22 width=3D=22auto=22>&copy;2020 Global Hotel Alliance=2E All=
+ Rights Reserved=2E</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <=21-- End Email Footer Table =5C=5C=5C -->
+
+
+
+<=21-- End Email Footer Table =5C=5C=5C --><=21--=5Bif (gte mso 9)=7C(IE)=
+=5D>
+</td>
+</tr>
+</table>
+<=21=5Bendif=5D-->
+         </div>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<=21-- End Email Body Table =5C=5C=5C --><=21-- End MSO Email Container Tab=
+le *** --><=21-- End Email Wrapper Div =7C=7C=7C --><=21-- End Email Contai=
+ner Table =7C=7C=7C --></center>
+<=21-- End CENTER tag =7C=7C=7C --><table cellpadding=3D=220=22 cellspacing=
+=3D=220=22 style=3D=22border: 0px; padding: 0px; margin: 0px; position: abs=
+olute; display: none; float: left=22>
+<tr>
+<td height=3D=221=22 style=3D=22font-size: 1px; line-height: 1px; padding: =
+0px;=22>
+<br><img src=3D=22https://email=2Ediscoveryloyalty=2Ecom/pub/as?_ri_=3DX0Gz=
+c2X%3DAQpglLjHJlCQGrzbtSAzcMK6LzbL4EizgAXrYnW1EdzgRqqzaoMsnrqAsTGDO2s2jzdsL=
+ig9zclzgceYzdVXHkMX%3Dw&_ei_=3DEolaGGF4SNMvxFF7KucKuWMjgh6eBSmkyGntk_hrppix=
+95_C5L0ZCpO6JbE5vilhJrLvjeq0hq5gKtfuTAaT9N-Ov9OmCQgzBVQRrA2Ihrw=2E=22></img>
+</td>
+</tr>
+</table></body>
+<=21-- End BODY tag =7C=7C=7C --></html>
+
+
